@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ittrium
+Comment=Ittrium P2P Cryptocurrency
+Comment[fr]=Ittrium, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Ittrium, eşten eşe kriptografik sanal para birimi
+Exec=ittrium-qt %u
+Terminal=false
+Type=Application
+Icon=ittrium128
+MimeType=x-scheme-handler/ittrium;
+Categories=Office;Finance;

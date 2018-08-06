@@ -1,0 +1,26 @@
+[Unit]
+Description=Ittrium's distributed currency daemon
+After=network.target
+
+[Service]
+User=ittrium
+Group=ittrium
+
+Type=forking
+PIDFile=/var/lib/ittriumd/ittriumd.pid
+
+ExecStart=/usr/bin/ittriumd -daemon -pid=/var/lib/ittriumd/ittriumd.pid \
+          -conf=/etc/ittrium/ittrium.conf -datadir=/var/lib/ittriumd
+
+ExecStop=-/usr/bin/ittrium-cli -conf=/etc/ittrium/ittrium.conf \
+         -datadir=/var/lib/ittriumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
