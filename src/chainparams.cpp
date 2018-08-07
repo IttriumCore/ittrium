@@ -149,7 +149,10 @@ public:
         assert(hashGenesisBlock == uint256("0x000000fdacddaba54eb66a4c09dc795efbfc75fcd0572c99f489424367bc9ec9"));
         assert(genesis.hashMerkleRoot == uint256("0xfc052cd7cd34c839bde40a2c9e484ef50c48858667c3d6dd2938b6668479c374"));
 
-        //vSeeds.push_back(CDNSSeedData("xxx.xxx.xxx.xxx", "xxx.xxx.xxx.xxx"));
+	vSeeds.push_back(CDNSSeedData("01.ittriumno.de", "01.ittriumno.de"));
+	vSeeds.push_back(CDNSSeedData("02.ittriumno.de", "02.ittriumno.de"));
+	vSeeds.push_back(CDNSSeedData("03.ittriumno.de", "03.ittriumno.de"));
+	vSeeds.push_back(CDNSSeedData("04.ittriumno.de", "04.ittriumno.de"));
 
         // Ittrium addresses start with 'i'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
