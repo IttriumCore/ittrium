@@ -119,9 +119,6 @@ public:
         nMaxMoneyOut = 33000000 * COIN;
 
         /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
 		block.nTime = 1533333333 
 		block.nNonce = 445453 
 		block.GetHash = 000000fdacddaba54eb66a4c09dc795efbfc75fcd0572c99f489424367bc9ec9
@@ -156,6 +153,7 @@ public:
 	vSeeds.push_back(CDNSSeedData("02.ittriumno.de", "02.ittriumno.de"));
 	vSeeds.push_back(CDNSSeedData("03.ittriumno.de", "03.ittriumno.de"));
 	vSeeds.push_back(CDNSSeedData("04.ittriumno.de", "04.ittriumno.de"));
+	vSeeds.push_back(CDNSSeedData("05.ittriumno.de", "05.ittriumno.de"));
 
         // Ittrium addresses start with 'i'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
