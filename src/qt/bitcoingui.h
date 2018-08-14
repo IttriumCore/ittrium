@@ -18,6 +18,7 @@
 #include <QPoint>
 #include <QPushButton>
 #include <QSystemTrayIcon>
+#include <QStyle>
 
 class ClientModel;
 class NetworkStyle;
