@@ -53,6 +53,7 @@
 #include <QThread>
 #include <QTimer>
 #include <QTranslator>
+#include <QStyle>
 
 #if defined(QT_STATICPLUGIN)
 #include <QtPlugin>
