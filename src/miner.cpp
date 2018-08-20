@@ -455,7 +455,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     //control the amount of times the client will check for mintable coins
     static bool fMintableCoins = false;
     static int nMintableLastCheck = 0;
-
+    
+     if (fProofOfStake && (GetTime() - nMintableLastCheck > 1 * 60)) // 1 minute check time
+       {
+            nMintableLastCheck = GetTime();
+            fMintableCoins = pwallet->MintableCoins();
+       }
 
     while (fGenerateBitcoins || fProofOfStake) {
         if (fProofOfStake) {
@@ -464,18 +469,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 continue;
             }
 
-            while (vNodes.empty() || pwallet->IsLocked() || nReserveBalance >= pwallet->GetBalance() /*|| !masternodeSync.IsSynced()*/)
+            while (vNodes.empty() || pwallet->IsLocked() || !fMintableCoins || nReserveBalance >= pwallet->GetBalance() || !masternodeSync.IsSynced())
             {
-
-                if (fProofOfStake && (GetTime() - nMintableLastCheck > 1 * 60)) // 5 minute check time
-                {
-                    nMintableLastCheck = GetTime();
-                    fMintableCoins = pwallet->MintableCoins();
-                }
-
-                if(fProofOfStake && fMintableCoins)
-                    break;
-
                 nLastCoinStakeSearchInterval = 0;
                 MilliSleep(5000);
                 if (!fGenerateBitcoins && !fProofOfStake)
