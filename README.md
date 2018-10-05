@@ -19,13 +19,13 @@
 ### Addnodes
 To improve the network speed/performance it's recommended that you connect to the following nodes. 
 How to add nodes to the ittrium.conf file. 
-    a. Backup your wallet file by clicking File > Backup Wallet 
-    b. Shut your wallet. 
-    c. Navigate to %AppData%/Ittrium (Windows), ~./ittrium (Linux) or ~/Library/Application Support/Ittrium (Mac) 
-    d. Open ittrium.conf file in a word editor (i.e. Notepad). 
-    e. Paste the following text into the ittrium.conf file, Save and Exit.
+    1. Backup your wallet file by clicking File > Backup Wallet 
+    2. Shut your wallet. 
+    3. Navigate to %AppData%/Ittrium (Windows), ~./ittrium (Linux) or ~/Library/Application Support/Ittrium (Mac) 
+    4. Open ittrium.conf file in a word editor (i.e. Notepad). 
+    5. Paste the following text into the ittrium.conf file, Save and Exit.
 
-<table>
+```
 addnode=195.201.28.86
 addnode=195.201.30.56
 addnode=51.38.127.99
@@ -37,7 +37,7 @@ addnode=95.216.136.26
 addnode=95.216.148.31
 addnode=95.216.169.173
 addnode=159.69.3.16
-</table>
+```
 
 ### Coin Specs
 <table>
