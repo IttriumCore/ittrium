@@ -16,6 +16,29 @@
 - Near instantaneous transactions via SwiftTX.
 - Masternode technology used to secure the network and provide the above features.
 
+### Addnodes
+To improve the network speed/performance it's recommended that you connect to the following nodes. 
+How to add nodes to the ittrium.conf file. 
+    a. Backup your wallet file by clicking File > Backup Wallet 
+    b. Shut your wallet. 
+    c. Navigate to %AppData%/Ittrium (Windows), ~./ittrium (Linux) or ~/Library/Application Support/Ittrium (Mac) 
+    d. Open ittrium.conf file in a word editor (i.e. Notepad). 
+    e. Paste the following text into the ittrium.conf file, Save and Exit.
+
+<table>
+addnode=195.201.28.86
+addnode=195.201.30.56
+addnode=51.38.127.99
+addnode=51.38.68.244
+addnode=51.38.68.255
+addnode=51.38.98.231
+addnode=88.99.123.145
+addnode=95.216.136.26
+addnode=95.216.148.31
+addnode=95.216.169.173
+addnode=159.69.3.16
+</table>
+
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Lyra2z</td></tr>
@@ -27,7 +50,6 @@
 </table>
 
 ### Reward Distribution
-
 <table>
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Proof of Stake (27%)</th><th>Masternodes (73%)</th>
 <tr><td>Phase 1</td><td>0-300</td><td>1650 XIT</td><td>na</td><td>na</td></tr>
@@ -44,24 +66,4 @@
 <tr><td>Phase 12</td><td>1,800,000-7,868,633</td><td>3 XIT</td><td>0.81 XIT</td><td>2.19 XIT</td></tr>
 
 
-### Addnodes
 
-To improve the network speed/performance it's recommended that you connect to the following nodes. 
-How to add nodes to the ittrium.conf file. 
-    a. Backup your wallet file by clicking File > Backup Wallet 
-    b. Shut your wallet. 
-    c. Navigate to %AppData%/Ittrium (Windows), ~./ittrium (Linux) or ~/Library/Application Support/Ittrium (Mac) 
-    d. Open ittrium.conf file in a word editor (i.e. Notepad). 
-    e. Paste the following text into the ittrium.conf file, Save and Exit.
-
-addnode=195.201.28.86 
-addnode=195.201.30.56
-addnode=51.38.127.99 
-addnode=51.38.68.244 
-addnode=51.38.68.255 
-addnode=51.38.98.231 
-addnode=88.99.123.145
-addnode=95.216.136.26
-addnode=95.216.148.31
-addnode=95.216.169.173 
-addnode=159.69.3.16
