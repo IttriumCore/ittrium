@@ -43,3 +43,25 @@
 <tr><td>Phase 11</td><td>650,001-1,800,000</td><td>6 XIT</td><td>1.62 XIT</td><td>4.38 XIT</td></tr>
 <tr><td>Phase 12</td><td>1,800,000-7,868,633</td><td>3 XIT</td><td>0.81 XIT</td><td>2.19 XIT</td></tr>
 
+
+### Addnodes
+
+To improve the network speed/performance it's recommended that you connect to the following nodes. 
+How to add nodes to the ittrium.conf file. 
+    a. Backup your wallet file by clicking File > Backup Wallet 
+    b. Shut your wallet. 
+    c. Navigate to %AppData%/Ittrium (Windows), ~./ittrium (Linux) or ~/Library/Application Support/Ittrium (Mac) 
+    d. Open ittrium.conf file in a word editor (i.e. Notepad). 
+    e. Paste the following text into the ittrium.conf file, Save and Exit.
+
+addnode=195.201.28.86 
+addnode=195.201.30.56
+addnode=51.38.127.99 
+addnode=51.38.68.244 
+addnode=51.38.68.255 
+addnode=51.38.98.231 
+addnode=88.99.123.145
+addnode=95.216.136.26
+addnode=95.216.148.31
+addnode=95.216.169.173 
+addnode=159.69.3.16
