@@ -19,8 +19,8 @@ static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
 
-/* Invalid field background style (was FF8080)*/
-#define STYLE_INVALID "background:#4169E3"
+/* Invalid field background style */
+#define STYLE_INVALID "background:#FF8080"
 
 /* Transaction list -- unconfirmed transaction */
 #define COLOR_UNCONFIRMED QColor(128, 128, 128)
@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "Ittrium"
 #define QAPP_ORG_DOMAIN "ittrium.io"
-#define QAPP_APP_NAME_DEFAULT "ittrium-Qt"
-#define QAPP_APP_NAME_TESTNET "ittrium-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Ittrium-Qt"
+#define QAPP_APP_NAME_TESTNET "Ittrium-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

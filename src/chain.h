@@ -119,7 +119,7 @@ public:
     //! pointer to the index of some further predecessor of this block
     CBlockIndex* pskip;
 
-    //ittrium: trust score of block chain
+    //ppcoin: trust score of block chain
     uint256 bnChainTrust;
 
     //! height of the entry in the chain. The genesis block has height 0
@@ -149,7 +149,7 @@ public:
     //! Verification status of this block. See enum BlockStatus
     unsigned int nStatus;
 
-    unsigned int nFlags; // ittrium: block index flags
+    unsigned int nFlags; // ppcoin: block index flags
     enum {
         BLOCK_PROOF_OF_STAKE = (1 << 0), // is proof-of-stake block
         BLOCK_STAKE_ENTROPY = (1 << 1),  // entropy bit for stake modifier

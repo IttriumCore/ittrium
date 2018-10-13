@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>598</width>
-    <height>222</height>
+    <width>638</width>
+    <height>164</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -113,64 +113,65 @@
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="visible">
+        <bool>false</bool>
+       </property>
        <property name="toolTip">
         <string>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</string>
        </property>
        <property name="text">
-        <string>For anonymization and staking only</string>
-       </property>
-       <property name="visible">
-        <bool>false</bool>
+        <string>For anonymization, multisend and staking only</string>
        </property>
       </widget>
      </item>
     </layout>
    </item>
    <item>
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-     </property>
-    </widget>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QtMaterialFlatButton" name="acceptButton" native="true">
+       <property name="text" stdset="0">
+        <string>OK</string>
+       </property>
+       <property name="autoDefault" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QtMaterialFlatButton" name="cancelButton" native="true">
+       <property name="text" stdset="0">
+        <string>Cancel</string>
+       </property>
+       <property name="autoDefault" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>AskPassphraseDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>AskPassphraseDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

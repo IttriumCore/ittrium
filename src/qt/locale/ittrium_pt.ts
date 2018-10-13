@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços ITTRIUM para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Ittrium para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços ITTRIUM para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Ittrium para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas XITs contra roubo por malware infectando seu computador.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas XITs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -247,8 +247,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>Um endereço ITTRIUM para assinar a mensagem</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Um endereço Ittrium para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço ITTRIUM.</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Ittrium.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,8 +299,8 @@
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>O endereço ITTRIUM que foi assinado com</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>O endereço Ittrium que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -633,8 +633,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>Um endereço ITTRIUM para assinar a mensagem</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Um endereço Ittrium para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -665,12 +665,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço ITTRIUM.</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Ittrium.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>O endereço ITTRIUM que foi assinado com</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>O endereço Ittrium que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -874,8 +874,8 @@
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all ITTRIUM specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da ITTRIUM (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
+        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionacilidades específicas da Ittrium (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -1242,8 +1242,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ITTRIUM Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o ITTRIUM Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Ittrium Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Ittrium Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

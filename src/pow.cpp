@@ -12,10 +12,11 @@
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
+#include "spork.h"
 
 #include <math.h>
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
+unsigned int static DarkGravityWave(const CBlockIndex* pindexLast) 
 {
     /* current difficulty formula, ittrium - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
     const CBlockIndex* BlockLastSolved = pindexLast;
@@ -44,8 +45,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         if (nActualSpacing < 0)
             nActualSpacing = 1;
 
-        // ittrium: target change every block
-        // ittrium: retarget with exponential moving toward target spacing
+        // ppcoin: target change every block
+        // ppcoin: retarget with exponential moving toward target spacing
         uint256 bnNew;
         bnNew.SetCompact(pindexLast->nBits);
 
@@ -104,7 +105,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         bnNew = Params().ProofOfWorkLimit();
     }
 
-    return bnNew.GetCompact();
+    return bnNew.GetCompact();	
+}
+	
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
+{
+	return DarkGravityWave(pindexLast);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)

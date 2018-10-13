@@ -70,31 +70,31 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="btnCopyURI">
-       <property name="text">
-        <string>Copy &amp;URI</string>
+      <widget class="QtMaterialFlatButton" name="btnCopyURI" native="true">
+       <property name="text" stdset="0">
+        <string>Copy URI</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnCopyAddress">
-       <property name="text">
-        <string>Copy &amp;Address</string>
+      <widget class="QtMaterialFlatButton" name="btnCopyAddress" native="true">
+       <property name="text" stdset="0">
+        <string>Copy Address</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnSaveAs">
-       <property name="text">
-        <string>&amp;Save Image...</string>
+      <widget class="QtMaterialFlatButton" name="btnSaveAs" native="true">
+       <property name="text" stdset="0">
+        <string>Save Image...</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -113,11 +113,11 @@
       </spacer>
      </item>
      <item>
-      <widget class="QDialogButtonBox" name="buttonBox">
-       <property name="standardButtons">
-        <set>QDialogButtonBox::Close</set>
-       </property>
-      </widget>
+      <widget class="QtMaterialFlatButton" name="closeButton" native="true">
+	  <property name="text" stdset="0">
+         <string>Close</string>
+        </property>
+		</widget>
      </item>
     </layout>
    </item>
@@ -129,40 +129,12 @@
    <extends>QLabel</extends>
    <header>receiverequestdialog.h</header>
   </customwidget>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
  </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>ReceiveRequestDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>452</x>
-     <y>573</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>243</x>
-     <y>298</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>ReceiveRequestDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>452</x>
-     <y>573</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>243</x>
-     <y>298</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

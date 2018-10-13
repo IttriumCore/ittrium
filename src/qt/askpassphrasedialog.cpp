@@ -16,6 +16,7 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QPushButton>
+#include "qtmaterialflatbutton.h"
 
 AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel* model) : QDialog(parent),
                                                                                            ui(new Ui::AskPassphraseDialog),
@@ -89,7 +90,7 @@ AskPassphraseDialog::~AskPassphraseDialog()
     delete ui;
 }
 
-void AskPassphraseDialog::accept()
+void AskPassphraseDialog::on_acceptButton_clicked()
 {
     SecureString oldpass, newpass1, newpass2;
     if (!model)
@@ -176,6 +177,11 @@ void AskPassphraseDialog::accept()
     }
 }
 
+void AskPassphraseDialog::on_cancelButton_clicked()
+{
+	this->close();
+}
+
 void AskPassphraseDialog::textChanged()
 {
     // Validate input, set Ok button to enabled when acceptable
@@ -193,7 +199,7 @@ void AskPassphraseDialog::textChanged()
         acceptable = !ui->passEdit1->text().isEmpty() && !ui->passEdit2->text().isEmpty() && !ui->passEdit3->text().isEmpty();
         break;
     }
-    ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(acceptable);
+    ui->acceptButton->setEnabled(true);
 }
 
 bool AskPassphraseDialog::event(QEvent* event)

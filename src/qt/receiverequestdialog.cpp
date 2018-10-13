@@ -10,6 +10,7 @@
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
+#include "qtmaterialflatbutton.h"
 
 #include <QClipboard>
 #include <QDrag>
@@ -137,7 +138,7 @@ void ReceiveRequestDialog::update()
     html += "<html><font face='verdana, arial, helvetica, sans-serif'>";
     html += "<b>" + tr("Payment information") + "</b><br>";
     html += "<b>" + tr("URI") + "</b>: ";
-    html += "<a style=\"color:#5B4C7C;\" href=\"" + uri + "\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
+    html += "<a style=\"color:#000000;\" href=\"" + uri + "\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
     html += "<b>" + tr("Address") + "</b>: " + GUIUtil::HtmlEscape(info.address) + "<br>";
     if (info.amount)
         html += "<b>" + tr("Amount") + "</b>: " + BitcoinUnits::formatWithUnit(model->getDisplayUnit(), info.amount) + "<br>";
@@ -180,6 +181,11 @@ void ReceiveRequestDialog::update()
 void ReceiveRequestDialog::on_btnCopyURI_clicked()
 {
     GUIUtil::setClipboard(GUIUtil::formatBitcoinURI(info));
+}
+
+void ReceiveRequestDialog::on_closeButton_clicked()
+{
+	this->close();
 }
 
 void ReceiveRequestDialog::on_btnCopyAddress_clicked()

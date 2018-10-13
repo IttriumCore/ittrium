@@ -19,13 +19,14 @@
 #include "main.h"
 #include "obfuscation.h"
 #include "wallet.h"
+#include "multisigdialog.h"
+#include "qtmaterialflatbutton.h"
 
 #include <boost/assign/list_of.hpp> // for 'map_list_of()'
 
 #include <QApplication>
 #include <QCheckBox>
 #include <QCursor>
-#include <QDialogButtonBox>
 #include <QFlags>
 #include <QIcon>
 #include <QSettings>
@@ -38,11 +39,13 @@ QList<CAmount> CoinControlDialog::payAmounts;
 int CoinControlDialog::nSplitBlockDummy;
 CCoinControl* CoinControlDialog::coinControl = new CCoinControl();
 
-CoinControlDialog::CoinControlDialog(QWidget* parent) : QDialog(parent),
-                                                        ui(new Ui::CoinControlDialog),
-                                                        model(0)
+CoinControlDialog::CoinControlDialog(QWidget* parent, bool fMultisigEnabled) : QDialog(parent),
+							ui(new Ui::CoinControlDialog),
+							model(0)
 {
     ui->setupUi(this);
+    this->fMultisigEnabled = fMultisigEnabled;
+
 
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());
@@ -118,7 +121,7 @@ CoinControlDialog::CoinControlDialog(QWidget* parent) : QDialog(parent),
     connect(ui->treeWidget->header(), SIGNAL(sectionClicked(int)), this, SLOT(headerSectionClicked(int)));
 
     // ok button
-    connect(ui->buttonBox, SIGNAL(clicked(QAbstractButton*)), this, SLOT(buttonBoxClicked(QAbstractButton*)));
+    connect(ui->selectButton, SIGNAL(clicked()), this, SLOT(selectButtonClicked()));
 
     // (un)select all
     connect(ui->pushButtonSelectAll, SIGNAL(clicked()), this, SLOT(buttonSelectAllClicked()));
@@ -173,6 +176,7 @@ void CoinControlDialog::setModel(WalletModel* model)
         updateView();
         updateLabelLocked();
         CoinControlDialog::updateLabels(model, this);
+	updateDialogLabels();
     }
 }
 
@@ -186,10 +190,9 @@ QString CoinControlDialog::strPad(QString s, int nPadLength, QString sPadding)
 }
 
 // ok button
-void CoinControlDialog::buttonBoxClicked(QAbstractButton* button)
+void CoinControlDialog::selectButtonClicked()
 {
-    if (ui->buttonBox->buttonRole(button) == QDialogButtonBox::AcceptRole)
-        done(QDialog::Accepted); // closes the dialog
+		this->close(); // closes the dialog
 }
 
 // (un)select all
@@ -210,6 +213,7 @@ void CoinControlDialog::buttonSelectAllClicked()
     if (state == Qt::Unchecked)
         coinControl->UnSelectAll(); // just to be sure
     CoinControlDialog::updateLabels(model, this);
+    updateDialogLabels();
 }
 
 // Toggle lock state
@@ -221,6 +225,10 @@ void CoinControlDialog::buttonToggleLockClicked()
         ui->treeWidget->setEnabled(false);
         for (int i = 0; i < ui->treeWidget->topLevelItemCount(); i++) {
             item = ui->treeWidget->topLevelItem(i);
+
+	    if (item->text(COLUMN_TYPE) == "MultiSig")
+		    continue;
+
             COutPoint outpt(uint256(item->text(COLUMN_TXHASH).toStdString()), item->text(COLUMN_VOUT_INDEX).toUInt());
             if (model->isLockedCoin(uint256(item->text(COLUMN_TXHASH).toStdString()), item->text(COLUMN_VOUT_INDEX).toUInt())) {
                 model->unlockCoin(outpt);
@@ -235,6 +243,7 @@ void CoinControlDialog::buttonToggleLockClicked()
         }
         ui->treeWidget->setEnabled(true);
         CoinControlDialog::updateLabels(model, this);
+	updateDialogLabels();
     } else {
         QMessageBox msgBox;
         msgBox.setObjectName("lockMessageBox");
@@ -442,8 +451,10 @@ void CoinControlDialog::viewItemChanged(QTreeWidgetItem* item, int column)
         }
 
         // selection changed -> update labels
-        if (ui->treeWidget->isEnabled()) // do not update on every click for (un)select all
+        if (ui->treeWidget->isEnabled()){ // do not update on every click for (un)select all
             CoinControlDialog::updateLabels(model, this);
+	    updateDialogLabels();
+	}
     }
 // todo: this is a temporary qt5 fix: when clicking a parent node in tree mode, the parent node
 //       including all childs are partially selected. But the parent node should be fully selected
@@ -495,6 +506,42 @@ void CoinControlDialog::updateLabelLocked()
         ui->labelLocked->setVisible(true);
     } else
         ui->labelLocked->setVisible(false);
+}
+
+void CoinControlDialog::updateDialogLabels()
+{
+
+    if (this->parentWidget() == nullptr) {
+        CoinControlDialog::updateLabels(model, this);
+        return;
+    }
+
+    vector<COutPoint> vCoinControl;
+    vector<COutput> vOutputs;
+    coinControl->ListSelected(vCoinControl);
+    model->getOutputs(vCoinControl, vOutputs);
+
+    CAmount nAmount = 0;
+    unsigned int nQuantity = 0;
+    for (const COutput& out : vOutputs) {
+        // unselect already spent, very unlikely scenario, this could happen
+        // when selected are spent elsewhere, like rpc or another computer
+        uint256 txhash = out.tx->GetHash();
+        COutPoint outpt(txhash, out.i);
+        if(model->isSpent(outpt)) {
+            coinControl->UnSelect(outpt);
+            continue;
+        }
+
+        // Quantity
+        nQuantity++;
+
+        // Amount
+        nAmount += out.tx->vout[out.i].nValue;
+    }
+    MultisigDialog* multisigDialog = (MultisigDialog*)this->parentWidget();
+
+    multisigDialog->updateCoinControl(nAmount, nQuantity);
 }
 
 void CoinControlDialog::updateLabels(WalletModel* model, QDialog* dialog)
@@ -679,7 +726,7 @@ void CoinControlDialog::updateLabels(WalletModel* model, QDialog* dialog)
         dFeeVary = (double)std::max(CWallet::minTxFee.GetFeePerK(), payTxFee.GetFeePerK()) / 1000;
     else
         dFeeVary = (double)std::max(CWallet::minTxFee.GetFeePerK(), mempool.estimateFee(nTxConfirmTarget).GetFeePerK()) / 1000;
-    QString toolTip4 = tr("Can vary +/- %1 uxit per input.").arg(dFeeVary);
+    QString toolTip4 = tr("Can vary +/- %1 duff(s) per input.").arg(dFeeVary);
 
     l3->setToolTip(toolTip4);
     l4->setToolTip(toolTip4);
@@ -747,7 +794,14 @@ void CoinControlDialog::updateView()
         double dPrioritySum = 0;
         int nChildren = 0;
         int nInputSum = 0;
-        BOOST_FOREACH (const COutput& out, coins.second) {
+	for(const COutput& out: coins.second) {
+		isminetype mine = pwalletMain->IsMine(out.tx->vout[out.i]);
+		bool fMultiSigUTXO = (mine & ISMINE_MULTISIG);
+		// when multisig is enabled, it will only display outputs from multisig addresses
+		if (fMultisigEnabled && !fMultiSigUTXO)
+			continue;
+
+
             int nInputSize = 0;
             nSum += out.tx->vout[out.i].nValue;
             nChildren++;
@@ -759,6 +813,21 @@ void CoinControlDialog::updateView()
                 itemOutput = new QTreeWidgetItem(ui->treeWidget);
             itemOutput->setFlags(flgCheckbox);
             itemOutput->setCheckState(COLUMN_CHECKBOX, Qt::Unchecked);
+
+            //MultiSig
+            if (fMultiSigUTXO) {
+                itemOutput->setText(COLUMN_TYPE, "MultiSig");
+
+                if (!fMultisigEnabled) {
+                    COutPoint outpt(out.tx->GetHash(), out.i);
+                    coinControl->UnSelect(outpt); // just to be sure
+                    itemOutput->setDisabled(true);
+                    itemOutput->setIcon(COLUMN_CHECKBOX, QIcon(":/icons/lock_closed"));
+                }
+            } else {
+                itemOutput->setText(COLUMN_TYPE, "Personal");
+            }
+
 
             // address
             CTxDestination outputAddress;

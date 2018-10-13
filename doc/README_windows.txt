@@ -3,7 +3,7 @@ Ittrium Core
 
 Intro
 -----
-Ittrium is a free open source peer-to-peer electronic cash system that is
+Ittrium is a free open source peer-to-peer electronic cash system based on PIVX that is
 completely decentralized, without the need for a central server or trusted
 parties.  Users hold the crypto keys to their own money and transact directly
 with each other, with the help of a P2P network to check for double-spending.

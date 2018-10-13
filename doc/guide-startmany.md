@@ -48,7 +48,7 @@ The wallet will re-scan and you will see your available balance increase by the 
 2. Click the Receive tab.
 3. Fill in the form to request a payment.
     * Label: mn01
-    * Amount: 5000 (optional)
+    * Amount: 1000 (optional)
     * Click *Request payment*
 5. Click the *Copy Address* button
 
@@ -78,7 +78,7 @@ Remember... this is local. Make sure your QT is not running.
 
 Create the masternode.conf file in the same directory as your wallet.dat.
 
-Copy the masternode private key and correspondig collateral output transaction that holds the 5,000 XIT.
+Copy the masternode private key and correspondig collateral output transaction that holds the 1K Ittrium.
 
 The masternode private key may be an existing key from [Option 1](#option1), or a newly generated key from [Option 2](#option2). 
 
@@ -108,8 +108,8 @@ alias ipaddress:port masternode_private_key collateral_output collateral_output_
 Example:
 
 ```
-mn01 127.0.0.1:39993 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
-mn02 127.0.0.2:39993 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh:25
+mn01 127.0.0.1:51472 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
+mn02 127.0.0.2:51472 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh:25
 ```
 
 ## What about the ittrium.conf file?
@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```ittriumd getinfo```
 
-And compare with the official explorer (see www.ittrium.io for explorer link)
+And compare with the official explorer at https://explorer.ittrium.io
 
 ### Local
 

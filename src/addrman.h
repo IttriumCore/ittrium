@@ -47,7 +47,6 @@ private:
     friend class CAddrMan;
 
 public:
-
     ADD_SERIALIZE_METHODS;
 
     template <typename Stream, typename Operation>
@@ -200,7 +199,6 @@ private:
     int vvNew[ADDRMAN_NEW_BUCKET_COUNT][ADDRMAN_BUCKET_SIZE];
 
 protected:
-
     //! Find an entry.
     CAddrInfo* Find(const CNetAddr& addr, int* pnId = NULL);
 

@@ -43,6 +43,7 @@
 #include <QDesktopWidget>
 #include <QDragEnterEvent>
 #include <QIcon>
+#include <QFontDatabase>
 #include <QListWidget>
 #include <QMenuBar>
 #include <QMessageBox>
@@ -56,6 +57,7 @@
 #include <QTimer>
 #include <QToolBar>
 #include <QVBoxLayout>
+#include "qtmaterialflatbutton.h"
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
@@ -88,6 +90,9 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             signMessageAction(0),
                                                                             verifyMessageAction(0),
                                                                             bip38ToolAction(0),
+									    multisigCreateAction(0),
+									    multisigSpendAction(0),
+									    multisigSignAction(0),
                                                                             aboutAction(0),
                                                                             receiveCoinsAction(0),
                                                                             optionsAction(0),
@@ -112,6 +117,10 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     this->setStyleSheet(GUIUtil::loadStyleSheet());
 
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
+	QFontDatabase::addApplicationFont(":/fonts/Roboto-Medium");
+	QFontDatabase::addApplicationFont(":/fonts/Roboto-Bold");
+	QFont font("Roboto",10,QFont::Medium);
+	QApplication::setFont(font);
 
     QString windowTitle = tr("Ittrium Core") + " - ";
 #ifdef ENABLE_WALLET
@@ -280,7 +289,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 {
     QActionGroup* tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Overview"), this);
+    overviewAction = new QAction(QIcon(":/icons/overview_m"), tr("&Overview"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
@@ -291,7 +300,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
+    sendCoinsAction = new QAction(QIcon(":/icons/send_m"), tr("&Send"), this);
     sendCoinsAction->setStatusTip(tr("Send coins to a Ittrium address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
@@ -302,7 +311,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses_m"), tr("&Receive"), this);
     receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and ittrium: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
@@ -313,7 +322,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
+    historyAction = new QAction(QIcon(":/icons/history_m"), tr("&Transactions"), this);
     historyAction->setStatusTip(tr("Browse transaction history"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
@@ -328,7 +337,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
-        masternodeAction = new QAction(QIcon(":/icons/masternodes"), tr("&Masternodes"), this);
+        masternodeAction = new QAction(QIcon(":/icons/masternodes_m"), tr("&Masternodes"), this);
         masternodeAction->setStatusTip(tr("Browse masternodes"));
         masternodeAction->setToolTip(masternodeAction->statusTip());
         masternodeAction->setCheckable(true);
@@ -381,9 +390,13 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     backupWalletAction->setStatusTip(tr("Backup wallet to another location"));
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
-    unlockWalletAction = new QAction(tr("&Unlock Wallet..."), this);
+
+    unlockWalletAction = new QAction(QIcon(":/icons/lock_open"), tr("&Unlock Wallet..."), this);
     unlockWalletAction->setToolTip(tr("Unlock wallet"));
-    lockWalletAction = new QAction(tr("&Lock Wallet"), this);
+
+    lockWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Lock Wallet"), this);
+    lockWalletAction->setToolTip(tr("Lock Wallet"));
+
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
     signMessageAction->setStatusTip(tr("Sign messages with your Ittrium addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
@@ -394,7 +407,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     multiSendAction->setToolTip(tr("MultiSend Settings"));
     multiSendAction->setCheckable(true);
 
-    openInfoAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Information"), this);
+    openInfoAction = new QAction(QIcon(":/icons/information"), tr("&Information"), this);
     openInfoAction->setStatusTip(tr("Show diagnostic information"));
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug console"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging console"));
@@ -416,12 +429,20 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     usedReceivingAddressesAction = new QAction(QIcon(":/icons/address-book"), tr("&Receiving addresses..."), this);
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
-    openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
+    multisigCreateAction = new QAction(QIcon(":/icons/address-book"), tr("&Multisignature creation..."), this);
+    multisigCreateAction->setStatusTip(tr("Create a new multisignature address and add it to this wallet"));
+    multisigSpendAction = new QAction(QIcon(":/icons/send"), tr("&Multisignature spending..."), this);
+    multisigSpendAction->setStatusTip(tr("Spend from a multisignature address"));
+    multisigSignAction = new QAction(QIcon(":/icons/editpaste"), tr("&Multisignature signing..."), this);
+    multisigSignAction->setStatusTip(tr("Sign with a multisignature address"));
+
+    openAction = new QAction(QIcon(":/icons/open"), tr("Open &URI..."), this);
     openAction->setStatusTip(tr("Open a Ittrium: URI or payment request"));
+
     openBlockExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&Blockchain explorer"), this);
     openBlockExplorerAction->setStatusTip(tr("Block explorer window"));
 
-    showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
+    showHelpMessageAction = new QAction(QIcon(":/icons/information"), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
     showHelpMessageAction->setStatusTip(tr("Show the Ittrium Core help message to get a list with possible Ittrium command-line options"));
 
@@ -445,6 +466,9 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
         connect(usedReceivingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedReceivingAddresses()));
         connect(openAction, SIGNAL(triggered()), this, SLOT(openClicked()));
         connect(multiSendAction, SIGNAL(triggered()), this, SLOT(gotoMultiSendDialog()));
+	connect(multisigCreateAction, SIGNAL(triggered()), this, SLOT(gotoMultisigCreate()));
+	connect(multisigSpendAction, SIGNAL(triggered()), this, SLOT(gotoMultisigSpend()));
+	connect(multisigSignAction, SIGNAL(triggered()), this, SLOT(gotoMultisigSign()));
     }
 #endif // ENABLE_WALLET
 }
@@ -470,6 +494,10 @@ void BitcoinGUI::createMenuBar()
         file->addAction(usedSendingAddressesAction);
         file->addAction(usedReceivingAddressesAction);
         file->addSeparator();
+	file->addAction(multisigCreateAction);
+	file->addAction(multisigSpendAction);
+	file->addAction(multisigSignAction);
+	file->addSeparator();
     }
     file->addAction(quitAction);
 
@@ -510,7 +538,13 @@ void BitcoinGUI::createToolBars()
 {
     if (walletFrame) {
         QToolBar* toolbar = new QToolBar(tr("Tabs toolbar"));
-        toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        toolbar->setObjectName("Main-Toolbar"); // Name for CSS addressing
+        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+//        // Add some empty space at the top of the toolbars
+//        QAction* spacer = new QAction(this);
+//        toolbar->addAction(spacer);
+//        toolbar->widgetForAction(spacer)->setObjectName("ToolbarSpacer");
+
         toolbar->addAction(overviewAction);
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
@@ -520,6 +554,8 @@ void BitcoinGUI::createToolBars()
             toolbar->addAction(masternodeAction);
         }
         toolbar->setMovable(false); // remove unused icon in upper left corner
+        toolbar->setOrientation(Qt::Vertical);
+        toolbar->setIconSize(QSize(40,40));
         overviewAction->setChecked(true);
 
         /** Create additional container for toolbar and walletFrame and make it the central widget.
@@ -530,11 +566,13 @@ void BitcoinGUI::createToolBars()
         layout->addWidget(walletFrame);
         layout->setSpacing(0);
         layout->setContentsMargins(QMargins());
+        layout->setDirection(QBoxLayout::LeftToRight);
         QWidget* containerWidget = new QWidget();
         containerWidget->setLayout(layout);
         setCentralWidget(containerWidget);
     }
 }
+
 
 void BitcoinGUI::setClientModel(ClientModel* clientModel)
 {
@@ -614,6 +652,9 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     changePassphraseAction->setEnabled(enabled);
     signMessageAction->setEnabled(enabled);
     verifyMessageAction->setEnabled(enabled);
+    multisigCreateAction->setEnabled(enabled);
+    multisigSpendAction->setEnabled(enabled);
+    multisigSignAction->setEnabled(enabled);
     bip38ToolAction->setEnabled(enabled);
     usedSendingAddressesAction->setEnabled(enabled);
     usedReceivingAddressesAction->setEnabled(enabled);
@@ -768,6 +809,21 @@ void BitcoinGUI::gotoVerifyMessageTab(QString addr)
     if (walletFrame) walletFrame->gotoVerifyMessageTab(addr);
 }
 
+void BitcoinGUI::gotoMultisigCreate()
+{
+    if(walletFrame) walletFrame->gotoMultisigDialog(0);
+}
+
+void BitcoinGUI::gotoMultisigSpend()
+{
+    if(walletFrame) walletFrame->gotoMultisigDialog(1);
+}
+
+void BitcoinGUI::gotoMultisigSign()
+{
+    if(walletFrame) walletFrame->gotoMultisigDialog(2);
+}
+
 void BitcoinGUI::gotoBip38Tool()
 {
     if (walletFrame) walletFrame->gotoBip38Tool();
@@ -908,7 +964,7 @@ void BitcoinGUI::setNumBlocks(int count)
         }
 
         progressBarLabel->setVisible(true);
-        progressBar->setFormat(tr("%1 behind").arg(timeBehindText));
+	progressBar->setFormat(tr("%1 behind. Scanning block %2").arg(timeBehindText).arg(count));
         progressBar->setMaximum(1000000000);
         progressBar->setValue(clientModel->getVerificationProgress() * 1000000000.0 + 0.5);
         progressBar->setVisible(true);
@@ -1075,18 +1131,46 @@ bool BitcoinGUI::eventFilter(QObject* object, QEvent* event)
 
 void BitcoinGUI::setStakingStatus()
 {
-    if (pwalletMain)
-        fMultiSend = pwalletMain->isMultiSendEnabled();
-
-    if (nLastCoinStakeSearchInterval) {
-        labelStakingIcon->show();
-        labelStakingIcon->setPixmap(QIcon(":/icons/staking_active").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        labelStakingIcon->setToolTip(tr("Staking is active\n MultiSend: %1").arg(fMultiSend ? tr("Active") : tr("Not Active")));
-    } else {
-        labelStakingIcon->show();
-        labelStakingIcon->setPixmap(QIcon(":/icons/staking_inactive").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        labelStakingIcon->setToolTip(tr("Staking is not active\n MultiSend: %1").arg(fMultiSend ? tr("Active") : tr("Not Active")));
-    }
+	if (pwalletMain) {
+		fMultiSend = pwalletMain->isMultiSendEnabled();
+		labelStakingIcon->show();
+		QString tooltip = "";
+		tooltip.append("walletunlocked: ");
+		if (!pwalletMain->IsLocked())
+			tooltip.append("true\n");
+		else
+			tooltip.append("false\n");
+		tooltip.append("mintablecoins: ");
+		if (!pwalletMain->MintableCoins())
+			tooltip.append("true\n");
+		else
+			tooltip.append("false\n");
+		tooltip.append("enoughCoins: ");
+		if (nReserveBalance <= pwalletMain->GetBalance())
+			tooltip.append("true\n");
+		else
+			tooltip.append("false\n");
+		tooltip.append("mnsync: ");
+		if (masternodeSync.IsSynced())
+			tooltip.append("true\n");
+		else
+			tooltip.append("false\n");
+		tooltip.append("staking status: ");
+		if (nLastCoinStakeSearchInterval) {
+			tooltip.append("true\n");
+			labelStakingIcon->setPixmap(QIcon(":/icons/staking_active").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+		}
+		else {
+			tooltip.append("false\n");
+			labelStakingIcon->setPixmap(QIcon(":/icons/staking_inactive").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+		}
+		tooltip.append("multisend: ");
+		if (fMultiSend)
+			tooltip.append("true\n");
+		else
+			tooltip.append("false\n");
+		labelStakingIcon->setToolTip(tooltip);
+	}
 }
 
 #ifdef ENABLE_WALLET
@@ -1125,7 +1209,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::UnlockedForAnonymizationOnly:
         labelEncryptionIcon->show();
         labelEncryptionIcon->setPixmap(QIcon(":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-        labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b> for anonimization and staking only"));
+        labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b> for anonymization and staking only"));
         encryptWalletAction->setChecked(true);
         changePassphraseAction->setEnabled(true);
         unlockWalletAction->setVisible(true);
@@ -1275,7 +1359,11 @@ void UnitDisplayStatusBarControl::setOptionsModel(OptionsModel* optionsModel)
 /** When Display Units are changed on OptionsModel it will refresh the display text of the control on the status bar */
 void UnitDisplayStatusBarControl::updateDisplayUnit(int newUnits)
 {
-    setText(BitcoinUnits::name(newUnits));
+    if (Params().NetworkID() == CBaseChainParams::MAIN) {
+        setPixmap(QIcon(":/icons/unit_" + BitcoinUnits::id(newUnits)).pixmap(39, STATUSBAR_ICONSIZE));
+    } else {
+        setPixmap(QIcon(":/icons/unit_t" + BitcoinUnits::id(newUnits)).pixmap(39, STATUSBAR_ICONSIZE));
+    }
 }
 
 /** Shows context menu with Display Unit options by the mouse coordinates */

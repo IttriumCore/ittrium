@@ -84,7 +84,7 @@ static CNode* pnodeLocalHost = NULL;
 uint64_t nLocalHostNonce = 0;
 static std::vector<ListenSocket> vhListenSocket;
 CAddrMan addrman;
-int nMaxConnections = 125;
+int nMaxConnections = 64;
 bool fAddressesInitialized = false;
 
 vector<CNode*> vNodes;
@@ -220,10 +220,11 @@ bool IsPeerAddrLocalGood(CNode* pnode)
 }
 
 // pushes our own address to a peer
-void AdvertizeLocal(CNode* pnode)
+void AdvertiseLocal(CNode* pnode)
 {
     if (fListen && pnode->fSuccessfullyConnected) {
         CAddress addrLocal = GetLocalAddress(&pnode->addr);
+	LogPrintf("AdvertiseLocal: advertising address %s\n", addrLocal.ToString());
         // If discovery is enabled, sometimes give our peer the address it
         // tells us that it sees us as in case it has a better idea of our
         // address than we do.
@@ -349,6 +350,15 @@ CNode* FindNode(const CNetAddr& ip)
     BOOST_FOREACH (CNode* pnode, vNodes)
         if ((CNetAddr)pnode->addr == ip)
             return (pnode);
+    return NULL;
+}
+
+CNode* FindNode(const CSubNet& subNet) 
+{
+    LOCK(cs_vNodes);
+    BOOST_FOREACH(CNode* pnode, vNodes)
+    if (subNet.Match((CNetAddr)pnode->addr))
+        return (pnode);
     return NULL;
 }
 
@@ -478,9 +488,9 @@ void CNode::PushVersion()
         nLocalHostNonce, FormatSubVersion(CLIENT_NAME, CLIENT_VERSION, std::vector<string>()), nBestHeight, true);
 }
 
-
-std::map<CNetAddr, int64_t> CNode::setBanned;
+banmap_t CNode::setBanned;
 CCriticalSection CNode::cs_setBanned;
+bool CNode::setBannedIsDirty;
 
 void CNode::ClearBanned()
 {
@@ -489,30 +499,83 @@ void CNode::ClearBanned()
 
 bool CNode::IsBanned(CNetAddr ip)
 {
-    bool fResult = false;
-    {
-        LOCK(cs_setBanned);
-        std::map<CNetAddr, int64_t>::iterator i = setBanned.find(ip);
-        if (i != setBanned.end()) {
-            int64_t t = (*i).second;
-            if (GetTime() < t)
-                fResult = true;
-        }
-    }
-    return fResult;
+	bool fResult = false;
+	{
+		LOCK(cs_setBanned);
+		for (banmap_t::iterator it = setBanned.begin(); it != setBanned.end(); it++)
+		{
+			CSubNet subNet = (*it).first;
+			CBanEntry banEntry = (*it).second;
+
+			if (subNet.Match(ip) && GetTime() < banEntry.nBanUntil)
+				fResult = true;
+		}
+	}
+	return fResult;
 }
 
-bool CNode::Ban(const CNetAddr& addr)
+bool CNode::IsBanned(CSubNet subnet)
 {
-    int64_t banTime = GetTime() + GetArg("-bantime", 60 * 60 * 24); // Default 24-hour ban
-    {
-        LOCK(cs_setBanned);
-        if (setBanned[addr] < banTime)
-            setBanned[addr] = banTime;
-    }
-    return true;
+	bool fResult = false;
+	{
+		LOCK(cs_setBanned);
+		banmap_t::iterator i = setBanned.find(subnet);
+		if (i != setBanned.end())
+		{
+			CBanEntry banEntry = (*i).second;
+			if (GetTime() < banEntry.nBanUntil)
+				fResult = true;
+		}
+	}
+	return fResult;
 }
 
+
+void CNode::Ban(const CNetAddr& addr,int64_t bantimeoffset, bool sinceUnixEpoch) {
+	CSubNet subNet(addr);
+	Ban(subNet, bantimeoffset, sinceUnixEpoch);
+	DumpBanlist();
+}
+
+
+void CNode::Ban(const CSubNet& subNet, int64_t bantimeoffset, bool sinceUnixEpoch) {
+	CBanEntry banEntry(GetTime());
+	if (bantimeoffset <= 0)
+	{
+		bantimeoffset = GetArg("-bantime", 60 * 60 * 24); // Default 24-hour ban
+		sinceUnixEpoch = false;
+	}
+	banEntry.nBanUntil = (sinceUnixEpoch ? 0 : GetTime()) + bantimeoffset;
+
+
+	LOCK(cs_setBanned);
+	if (setBanned[subNet].nBanUntil < banEntry.nBanUntil)
+		setBanned[subNet] = banEntry;
+
+	setBannedIsDirty = true;
+}
+
+bool CNode::Unban(const CNetAddr& addr)
+{
+    CSubNet subNet(addr.ToString()+(addr.IsIPv4() ? "/32" : "/128"));
+    return Unban(subNet);
+}
+
+bool CNode::Unban(const CSubNet& subNet)
+{
+	LOCK(cs_setBanned);
+	if (setBanned.erase(subNet)) {
+		DumpBanlist();
+		return true;
+}	
+    return false;
+}
+
+void CNode::GetBanned(banmap_t &banMap)
+{
+    LOCK(cs_setBanned);
+    banMap = setBanned; // thread safe copy
+}
 
 std::vector<CSubNet> CNode::vWhitelistedRange;
 CCriticalSection CNode::cs_vWhitelistedRange;
@@ -1139,6 +1202,40 @@ void DumpAddresses()
         addrman.size(), GetTimeMillis() - nStart);
 }
 
+void CNode::DumpBanlist()
+{
+	int64_t nStart = GetTimeMillis();
+
+	//CNode::SweepBanned(); clean unused entries (if bantime has expired)
+
+	CBanDB bandb;
+	banmap_t banmap;
+	CNode::GetBanned(banmap);
+	bandb.Write(banmap);
+
+	LogPrint("net", "Flushed %d banned node ips/subnets to banlist.dat  %dms\n",
+		banmap.size(), GetTimeMillis() - nStart);
+}
+
+void CNode::SweepBanned()
+{
+	int64_t now = GetTime();
+
+	LOCK(cs_setBanned);
+	banmap_t::iterator it = setBanned.begin();
+	while (it != setBanned.end())
+	{
+		CBanEntry banEntry = (*it).second;
+		if (now > banEntry.nBanUntil)
+		{
+			setBanned.erase(it++);
+			setBannedIsDirty = true;
+		}
+		else
+			++it;
+	}
+}
+
 void static ProcessOneShot()
 {
     string strDest;
@@ -1411,7 +1508,7 @@ void ThreadMessageHandler()
     }
 }
 
-// ittrium: stake minter thread
+// ppcoin: stake minter thread
 void static ThreadStakeMinter()
 {
     boost::this_thread::interruption_point();
@@ -1611,7 +1708,7 @@ void StartNode(boost::thread_group& threadGroup)
     // Dump network addresses
     threadGroup.create_thread(boost::bind(&LoopForever<void (*)()>, "dumpaddr", &DumpAddresses, DUMP_ADDRESSES_INTERVAL * 1000));
 
-    // ittrium:mint proof-of-stake blocks in the background
+    // ppcoin:mint proof-of-stake blocks in the background
     if (GetBoolArg("-staking", true))
         threadGroup.create_thread(boost::bind(&TraceThread<void (*)()>, "stakemint", &ThreadStakeMinter));
 }
@@ -1730,7 +1827,7 @@ void RelayInv(CInv& inv)
 {
     LOCK(cs_vNodes);
     BOOST_FOREACH (CNode* pnode, vNodes){
-    		if((pnode->nServices==NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
+	    if((pnode->nServices==NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
         if (pnode->nVersion >= ActiveProtocol())
             pnode->PushInventory(inv);
     }

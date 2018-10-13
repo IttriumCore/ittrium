@@ -102,14 +102,14 @@
            <number>10</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButtonCoinControl">
+           <widget class="QtMaterialFlatButton" name="pushButtonCoinControl" native="true">
             <property name="styleSheet">
              <string notr="true"/>
             </property>
-            <property name="text">
+            <property name="text" stdset="0">
              <string>Inputs...</string>
             </property>
-            <property name="autoDefault">
+            <property name="autoDefault" stdset="0">
              <bool>false</bool>
             </property>
            </widget>
@@ -651,7 +651,7 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>95</height>
+        <height>161</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -799,18 +799,18 @@
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="buttonChooseFee">
-                <property name="text">
+               <widget class="QtMaterialFlatButton" name="buttonChooseFee" native="true">
+                <property name="text" stdset="0">
                  <string>Choose...</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="buttonMinimizeFee">
+               <widget class="QtMaterialFlatButton" name="buttonMinimizeFee" native="true">
                 <property name="toolTip">
                  <string>collapse fee-settings</string>
                 </property>
-                <property name="text">
+                <property name="text" stdset="0">
                  <string>Minimize</string>
                 </property>
                </widget>
@@ -1301,7 +1301,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="sendButton">
+      <widget class="QtMaterialFlatButton" name="sendButton" native="true">
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -1311,23 +1311,23 @@
        <property name="toolTip">
         <string>Confirm the send action</string>
        </property>
-       <property name="text">
-        <string>S&amp;end</string>
+       <property name="text" stdset="0">
+        <string>Send</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="default">
+       <property name="default" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="clearButton">
+      <widget class="QtMaterialFlatButton" name="clearButton" native="true">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -1337,31 +1337,31 @@
        <property name="toolTip">
         <string>Clear all fields of the form.</string>
        </property>
-       <property name="text">
-        <string>Clear &amp;All</string>
+       <property name="text" stdset="0">
+        <string>Clear All</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="addButton">
+      <widget class="QtMaterialFlatButton" name="addButton" native="true">
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
        </property>
-       <property name="text">
-        <string>Add &amp;Recipient</string>
+       <property name="text" stdset="0">
+        <string>Add Recipient</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -1449,6 +1449,11 @@
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
   <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>

@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy ittriumd.init to /etc/init.d/ittriumd. Test by running "service ittriumd start".
 
 Using this script, you can adjust the path and flags to the ittriumd program by
-setting the ittriumd and FLAGS environment variables in the file
+setting the ITTRIUMD and FLAGS environment variables in the file
 /etc/sysconfig/ittriumd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

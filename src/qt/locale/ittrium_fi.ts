@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun ITTRIUM osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Ittrium osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun ITTRIUM osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Ittrium osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella XITien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella XITien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ITTRIUM osoitteen</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Ittrium osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla ITTRIUM osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Ittrium osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Ydin</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Lähetä kolikkoja ITTRIUM osoitteeseen</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Lähetä kolikkoja Ittrium osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja xit: URIja)</translation>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja ittrium: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>ITTRIUM Core &amp;ytimestä</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>Ittrium Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Näytä tietoja ITTRIUM Ytimestä</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Näytä tietoja Ittrium Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja ITTRIUM:lle</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Ittrium:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä ITTRIUM osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Ittrium osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a ITTRIUM: URI or payment request</source>
-        <translation>Avaa ITTRIUM: URI tai pyydä maksua</translation>
+        <source>Open a Ittrium: URI or payment request</source>
+        <translation>Avaa Ittrium: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the ITTRIUM Core help message to get a list with possible ITTRIUM command-line options</source>
-        <translation>Näytä ITTRIUM Ydin apuviesti saadaksesi lista mahdollisista ITTRIUM komentolinja komennoista.</translation>
+        <source>Show the Ittrium Core help message to get a list with possible Ittrium command-line options</source>
+        <translation>Näytä Ittrium Ydin apuviesti saadaksesi lista mahdollisista Ittrium komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>ITTRIUM Ydin asiakasohjelma</translation>
+        <source>Ittrium Core client</source>
+        <translation>Ittrium Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Ydin</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Tervetuloa ITTRIUM Ytimeen.</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Tervetuloa Ittrium Ytimeen.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Ydin</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 ITTRIUM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 5000 Ittrium</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 ITTRIUM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 5000 Ittrium</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 10000 XIT</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 XIT anonymoidaksesi 10000 ITTRIUM</translation>
+        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 5000 XIT</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 XIT anonymoidaksesi 5000 Ittrium</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 10000 XIT</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 ITTRIUM anonymoidaksesi 10000 ITTRIUM</translation>
+        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 5000 XIT</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Ittrium anonymoidaksesi 5000 Ittrium</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 XIT per 10000 XIT you anonymize.</source>
-        <translation>0.1 per 10000 ITTRIUM, jotka anonymisoit.</translation>
+        <source>0.1 XIT per 5000 XIT you anonymize.</source>
+        <translation>0.1 per 5000 Ittrium, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,16 +1209,16 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start ITTRIUM after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä ITTRIUM kun kirjaudut sisään.</translation>
+        <source>Automatically start Ittrium after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Ittrium kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start ITTRIUM on system login</source>
-        <translation>&amp;Aloita ITTRIUM järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Ittrium on system login</source>
+        <translation>&amp;Aloita Ittrium järjestelmän kirjautumisessa</translation>
     </message>
     <message>
-        <source>Amount of ITTRIUM to keep anonymized</source>
-        <translation>ITTRIUM määrä joka pidetään anonymisoituna</translation>
+        <source>Amount of Ittrium to keep anonymized</source>
+        <translation>Ittrium määrä joka pidetään anonymisoituna</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1237,12 +1237,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ITTRIUM.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ittrium.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the ITTRIUM network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä ITTRIUM verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Ittrium network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Ittrium verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1475,8 +1475,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the ITTRIUM debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa ITTRIUM debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Ittrium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Ittrium debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1587,8 +1587,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the ITTRIUM RPC console.</source>
-        <translation>Tervetuloa ITTRIUM RPC konsoliin.</translation>
+        <source>Welcome to the Ittrium RPC console.</source>
+        <translation>Tervetuloa Ittrium RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1630,12 +1630,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ITTRIUM network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana ITTRIUM verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ittrium network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Ittrium verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ITTRIUM network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana ITTRIUM  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Ittrium network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Ittrium  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1919,8 +1919,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid ITTRIUM address</source>
-        <translation>Varoitus: Virheellinen ITTRIUM osoite</translation>
+        <source>Warning: Invalid Ittrium address</source>
+        <translation>Varoitus: Virheellinen Ittrium osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1966,8 +1966,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to send the payment to</source>
-        <translation>ITTRIUM osoite johon maksu lähetetään</translation>
+        <source>The Ittrium address to send the payment to</source>
+        <translation>Ittrium osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2009,8 +2009,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ITTRIUM Core is shutting down...</source>
-        <translation>ITTRIUM core sammuu...</translation>
+        <source>Ittrium Core is shutting down...</source>
+        <translation>Ittrium core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2028,8 +2028,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2060,16 +2060,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ITTRIUM osoitteen</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Ittrium osoitteen</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla ITTRIUM osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Ittrium osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2151,8 +2151,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Ydin</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2167,8 +2167,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The ITTRIUM Core developers</source>
-        <translation>ITTRIUM core kehittäjät</translation>
+        <source>The Ittrium Core developers</source>
+        <translation>Ittrium core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2521,8 +2521,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ITTRIUM Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version ITTRIUM Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ittrium Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Ittrium Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

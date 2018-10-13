@@ -18,7 +18,6 @@
 #include "utilmoneystr.h"
 #include "wallet.h"
 #include "walletdb.h"
-#include "coincontrol.h"
 
 #include <stdint.h>
 
@@ -290,7 +289,7 @@ Value getaddressesbyaccount(const Array& params, bool fHelp)
     return ret;
 }
 
-void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew, CCoinControl* coinControl = NULL, bool fUseIX = false)
+void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew, bool fUseIX = false)
 {
     // Check amount
     if (nValue <= 0)
@@ -312,7 +311,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
     // Create and send the transaction
     CReserveKey reservekey(pwalletMain);
     CAmount nFeeRequired;
-    if (!pwalletMain->CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired, strError, coinControl, ALL_COINS, fUseIX, (CAmount)0)) {
+    if (!pwalletMain->CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired, strError, NULL, ALL_COINS, fUseIX, (CAmount)0)) {
         if (nValue + nFeeRequired > pwalletMain->GetBalance())
             strError = strprintf("Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!", FormatMoney(nFeeRequired));
         LogPrintf("SendMoney() : %s\n", strError);
@@ -332,7 +331,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
             "\nArguments:\n"
             "1. \"ittriumaddress\"  (string, required) The ittrium address to send to.\n"
             "2. \"amount\"      (numeric, required) The amount in btc to send. eg 0.1\n"
-            "3. \"amount of splits\"     (numeric, optional) amount of UTXO splits. \n"
+            "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
             "                             to which you're sending the transaction. This is not part of the \n"
@@ -351,23 +350,19 @@ Value sendtoaddress(const Array& params, bool fHelp)
 
     // Wallet comments
     CWalletTx wtx;
-    CCoinControl* coinControl = new CCoinControl();
-    if (params.size() > 2 && params[2].type() != null_type){
-      //wtx.mapValue["comment"] = params[2].get_str();
-      coinControl->nSplitBlock = params[2].get_int();
-      coinControl->fSplitBlock = true;
-    }
+    if (params.size() > 2 && params[2].type() != null_type && !params[2].get_str().empty())
+        wtx.mapValue["comment"] = params[2].get_str();
     if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
         wtx.mapValue["to"] = params[3].get_str();
 
     EnsureWalletIsUnlocked();
 
-    SendMoney(address.Get(), nAmount, wtx, coinControl);
+    SendMoney(address.Get(), nAmount, wtx);
 
     return wtx.GetHash().GetHex();
 }
 
-Value sendtoaddressix(const Array& params, bool fHelp)//instant send
+Value sendtoaddressix(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
@@ -403,11 +398,10 @@ Value sendtoaddressix(const Array& params, bool fHelp)//instant send
 
     EnsureWalletIsUnlocked();
 
-    SendMoney(address.Get(), nAmount, wtx, NULL ,true);
+    SendMoney(address.Get(), nAmount, wtx, true);
 
     return wtx.GetHash().GetHex();
 }
-
 Value listaddressgroupings(const Array& params, bool fHelp)
 {
     if (fHelp)
@@ -1936,7 +1930,7 @@ Value getwalletinfo(const Array& params, bool fHelp)
     return obj;
 }
 
-// ittrium: reserve balance from being staked for network protection
+// ppcoin: reserve balance from being staked for network protection
 Value reservebalance(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 2)
@@ -2088,10 +2082,12 @@ Array printMultiSend()
     ret.push_back("MultiSend Addresses to Send To:");
 
     Object vMS;
-    for (unsigned int i = 0; i < pwalletMain->vMultiSend.size(); i++) {
-        vMS.push_back(Pair("Address " + boost::lexical_cast<std::string>(i), pwalletMain->vMultiSend[i].first));
-        vMS.push_back(Pair("Percent", pwalletMain->vMultiSend[i].second));
-    }
+	for (unsigned int j = 0; j < pwalletMain->vMultiSend.size(); j++) {
+		for (unsigned int i = 0; i < pwalletMain->vMultiSend[j].second.size(); i++) {
+			vMS.push_back(Pair("Address " + boost::lexical_cast<std::string>(i), pwalletMain->vMultiSend[1].second[i].first));
+			vMS.push_back(Pair("Percent", pwalletMain->vMultiSend[i].second[i].second));
+		}
+	}
 
     ret.push_back(vMS);
     return ret;
@@ -2129,8 +2125,8 @@ Array printAddresses()
 unsigned int sumMultiSend()
 {
     unsigned int sum = 0;
-    for (unsigned int i = 0; i < pwalletMain->vMultiSend.size(); i++)
-        sum += pwalletMain->vMultiSend[i].second;
+    for (unsigned int i = 0; i < pwalletMain->vMultiSend[0].second.size(); i++)
+        sum += pwalletMain->vMultiSend[i].second[i].second;
     return sum;
 }
 
@@ -2244,7 +2240,7 @@ Value multisend(const Array& params, bool fHelp)
     }
 
     //if no commands are used
-    if (fHelp || params.size() != 2)
+    if (fHelp || params.size() > 3)
         throw runtime_error(
             "multisend <command>\n"
             "****************************************************************\n"
@@ -2253,7 +2249,7 @@ Value multisend(const Array& params, bool fHelp)
             "The MultiSend transaction is sent when the staked coins mature (100 confirmations)\n"
             "****************************************************************\n"
             "TO CREATE OR ADD TO THE MULTISEND VECTOR:\n"
-            "multisend <Ittrium Address> <percent>\n"
+			"multisend <Address to send from> <Ittrium Address> <percent>\n"
             "This will add a new address to the MultiSend vector\n"
             "Percent is a whole number 1 to 100.\n"
             "****************************************************************\n"
@@ -2270,14 +2266,16 @@ Value multisend(const Array& params, bool fHelp)
 
     //if the user is entering a new MultiSend item
     string strAddress = params[0].get_str();
+	string strSendAddress = params[1].get_str();
     CBitcoinAddress address(strAddress);
-    if (!address.IsValid())
+	CBitcoinAddress sendAddress(strSendAddress);
+    if (!(address.IsValid() || sendAddress.IsValid()))
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid XIT address");
-    if (boost::lexical_cast<int>(params[1].get_str()) < 0)
+    if (boost::lexical_cast<int>(params[2].get_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
-    unsigned int nPercent = boost::lexical_cast<unsigned int>(params[1].get_str());
+    unsigned int nPercent = boost::lexical_cast<unsigned int>(params[2].get_str());
 
     LOCK(pwalletMain->cs_wallet);
     {
@@ -2290,7 +2288,7 @@ Value multisend(const Array& params, bool fHelp)
         //MultiSend can only send 100% of your stake
         if (nPercent + sumMultiSend() > 100)
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Failed to add to MultiSend vector, the sum of your MultiSend is greater than 100%");
-
+		/*
         for (unsigned int i = 0; i < pwalletMain->vMultiSend.size(); i++) {
             if (pwalletMain->vMultiSend[i].first == strAddress)
                 throw JSONRPCError(RPC_INVALID_PARAMETER, "Failed to add to MultiSend vector, cannot use the same address twice");
@@ -2307,6 +2305,7 @@ Value multisend(const Array& params, bool fHelp)
             if (!walletdb.WriteMultiSend(pwalletMain->vMultiSend))
                 throw JSONRPCError(RPC_DATABASE_ERROR, "walletdb WriteMultiSend failed!");
         }
+		*/
     }
     return printMultiSend();
 }

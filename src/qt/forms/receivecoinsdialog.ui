@@ -130,24 +130,24 @@
         <item row="8" column="2">
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <widget class="QPushButton" name="receiveButton">
+           <widget class="QtMaterialFlatButton" name="receiveButton" native="true">
             <property name="minimumSize">
              <size>
               <width>150</width>
               <height>0</height>
              </size>
             </property>
-            <property name="text">
-             <string>&amp;Request payment</string>
+            <property name="text" stdset="0">
+             <string>Generate Address</string>
             </property>
-            <property name="icon">
+            <property name="icon" stdset="0">
              <iconset resource="../ittrium.qrc">
               <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="clearButton">
+           <widget class="QtMaterialFlatButton" name="clearButton" native="true">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -157,14 +157,14 @@
             <property name="toolTip">
              <string>Clear all fields of the form.</string>
             </property>
-            <property name="text">
+            <property name="text" stdset="0">
              <string>Clear</string>
             </property>
-            <property name="icon">
+            <property name="icon" stdset="0">
              <iconset resource="../ittrium.qrc">
               <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
             </property>
-            <property name="autoDefault">
+            <property name="autoDefault" stdset="0">
              <bool>false</bool>
             </property>
            </widget>
@@ -290,41 +290,41 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="showRequestButton">
+         <widget class="QtMaterialFlatButton" name="showRequestButton" native="true">
           <property name="enabled">
            <bool>false</bool>
           </property>
           <property name="toolTip">
            <string>Show the selected request (does the same as double clicking an entry)</string>
           </property>
-          <property name="text">
+          <property name="text" stdset="0">
            <string>Show</string>
           </property>
-          <property name="icon">
+          <property name="icon" stdset="0">
            <iconset resource="../ittrium.qrc">
             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
           </property>
-          <property name="autoDefault">
+          <property name="autoDefault" stdset="0">
            <bool>false</bool>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="removeRequestButton">
+         <widget class="QtMaterialFlatButton" name="removeRequestButton" native="true">
           <property name="enabled">
            <bool>false</bool>
           </property>
           <property name="toolTip">
            <string>Remove the selected entries from the list</string>
           </property>
-          <property name="text">
+          <property name="text" stdset="0">
            <string>Remove</string>
           </property>
-          <property name="icon">
+          <property name="icon" stdset="0">
            <iconset resource="../ittrium.qrc">
             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
           </property>
-          <property name="autoDefault">
+          <property name="autoDefault" stdset="0">
            <bool>false</bool>
           </property>
          </widget>
@@ -350,6 +350,11 @@
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
   <customwidget>
    <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>

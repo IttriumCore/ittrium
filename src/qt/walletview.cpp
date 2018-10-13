@@ -13,6 +13,7 @@
 #include "guiutil.h"
 #include "masternodeconfig.h"
 #include "multisenddialog.h"
+#include "multisigdialog.h"
 #include "optionsmodel.h"
 #include "overviewpage.h"
 #include "receivecoinsdialog.h"
@@ -21,11 +22,12 @@
 #include "transactiontablemodel.h"
 #include "transactionview.h"
 #include "walletmodel.h"
-
+#include "qtmaterialflatbutton.h"
 #include "ui_interface.h"
 
 #include <QAction>
 #include <QActionGroup>
+#include <QCheckBox>
 #include <QFileDialog>
 #include <QHBoxLayout>
 #include <QLabel>
@@ -46,13 +48,12 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     QHBoxLayout* hbox_buttons = new QHBoxLayout();
     transactionView = new TransactionView(this);
     vbox->addWidget(transactionView);
-    QPushButton* exportButton = new QPushButton(tr("&Export"), this);
+    QtMaterialFlatButton* exportButton = new QtMaterialFlatButton(tr("Export"), this);
     exportButton->setToolTip(tr("Export the data in the current tab to a file"));
 #ifndef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
     exportButton->setIcon(QIcon(":/icons/export"));
 #endif
     hbox_buttons->addStretch();
-
     // Sum of selected transactions
     QLabel* transactionSumLabel = new QLabel();                // Label
     transactionSumLabel->setObjectName("transactionSumLabel"); // Label ID as CSS-reference
@@ -263,6 +264,14 @@ void WalletView::gotoMultiSendDialog()
     multiSendDialog->setModel(walletModel);
     multiSendDialog->show();
 }
+
+void WalletView::gotoMultisigDialog(int index)
+{
+    MultisigDialog* multisig = new MultisigDialog(this);
+    multisig->setModel(walletModel);
+    multisig->showTab(index);
+}
+
 
 bool WalletView::handlePaymentRequest(const SendCoinsRecipient& recipient)
 {

@@ -412,7 +412,6 @@ bool CBudgetManager::AddProposal(CBudgetProposal& budgetProposal)
     }
 
     mapProposals.insert(make_pair(budgetProposal.GetHash(), budgetProposal));
-    LogPrintf("CBudgetManager::AddProposal - proposal %s added\n", budgetProposal.GetName ().c_str ());
     return true;
 }
 
@@ -442,7 +441,7 @@ void CBudgetManager::CheckAndRemove()
         CBudgetProposal* pbudgetProposal = &((*it2).second);
         pbudgetProposal->fValid = pbudgetProposal->IsValid(strError);
         if (!strError.empty ()) {
-            LogPrintf("CBudgetManager::CheckAndRemove - invalid budget proposal %s - %s\n", pbudgetProposal->GetName().c_str (), strError);
+            LogPrintf("CBudgetManager::CheckAndRemove - invalid budget proposal - %s\n", strError);
             strError = "";
         }
         ++it2;
@@ -1642,9 +1641,10 @@ bool CBudgetVote::SignatureValid(bool fSignatureCheck)
     CMasternode* pmn = mnodeman.Find(vin);
 
     if (pmn == NULL) {
-    if (fDebug){
-    LogPrintf("CBudgetVote::SignatureValid() - Unknown Masternode - %s\n", vin.prevout.hash.ToString());
-        }
+	    if (fDebug) {
+		    LogPrintf("CBudgetVote::SignatureValid() - Unknown Masternode - %s\n", vin.prevout.hash.ToString());
+	    }
+
         return false;
     }
 

@@ -26,7 +26,7 @@ Table of Contents
 - [Installing gitian](#installing-gitian)
 - [Setting up gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building ittrium](#building-ittrium)
+- [Building Ittrium](#building-ittrium)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -329,7 +329,7 @@ for gitian to work offline.
 Building Ittrium
 ----------------
 
-To build ittrium (for Linux, OSX and Windows) just follow the steps under 'perform
+To build Ittrium (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in the ittrium repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
@@ -408,6 +408,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[ittrium.gitian.sigs](https://github.com/IttriumCore/gitian.sigs/) repository, or if that's not possible to create a pull
+[ittrium/gitian.sigs](https://github.com/IttriumCore/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

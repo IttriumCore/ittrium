@@ -35,7 +35,7 @@
     <enum>QTabWidget::North</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>7</number>
    </property>
    <widget class="QWidget" name="OrderBook">
     <attribute name="title">
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyXIT">
+    <widget class="QtMaterialFlatButton" name="BuyXIT" native="true">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -441,10 +441,10 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Buy XIT</string>
      </property>
-     <property name="icon">
+     <property name="icon" stdset="0">
       <iconset resource="../ittrium.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
@@ -566,7 +566,7 @@
       <string>Order Type</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="Buy_Max_Amount">
+    <widget class="QtMaterialFlatButton" name="Buy_Max_Amount" native="true">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -580,7 +580,7 @@
        <pointsize>10</pointsize>
       </font>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Max</string>
      </property>
     </widget>
@@ -1623,7 +1623,7 @@
       <string>Units</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="Sell_Max_Amount">
+    <widget class="QtMaterialFlatButton" name="Sell_Max_Amount" native="true">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -1637,7 +1637,7 @@
        <pointsize>10</pointsize>
       </font>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Max</string>
      </property>
     </widget>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellXITBTN">
+    <widget class="QtMaterialFlatButton" name="SellXITBTN" native="true">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1750,11 +1750,11 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Sell XIT</string>
      </property>
-     <property name="icon">
-      <iconset resource="../ittrium">
+     <property name="icon" stdset="0">
+      <iconset resource="../ittrium.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -2931,7 +2931,7 @@
       <string>Bittrex XIT Deposit Address:</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="GenDepositBTN">
+    <widget class="QtMaterialFlatButton" name="GenDepositBTN" native="true">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -2940,10 +2940,10 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Generate Ittrium Deposit Address</string>
      </property>
-     <property name="icon">
+     <property name="icon" stdset="0">
       <iconset resource="../ittrium.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
@@ -3071,7 +3071,7 @@
      <property name="styleSheet">
       <string notr="true"/>
      </property>
-     <widget class="QPushButton" name="btnUpdateMarketData">
+     <widget class="QtMaterialFlatButton" name="btnUpdateMarketData" native="true">
       <property name="geometry">
        <rect>
         <x>575</x>
@@ -3098,19 +3098,19 @@
       <property name="styleSheet">
        <string notr="true">margin:0px;text-align:center;padding:2px;border-radius:3px;font-style:italic;width:100px;font-size:14px;font-family:calibri;font-weight:600;</string>
       </property>
-      <property name="text">
+      <property name="text" stdset="0">
        <string>Update</string>
       </property>
-      <property name="iconSize">
+      <property name="iconSize" stdset="0">
        <size>
         <width>150</width>
         <height>35</height>
        </size>
       </property>
-      <property name="autoDefault">
+      <property name="autoDefault" stdset="0">
        <bool>true</bool>
       </property>
-      <property name="default">
+      <property name="default" stdset="0">
        <bool>true</bool>
       </property>
      </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertIttrium">
+     <widget class="QtMaterialFlatButton" name="btnConvertIttrium" native="true">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3173,7 +3173,7 @@
       <property name="styleSheet">
        <string notr="true">border:1px solid #61696c;background:white;font-weight:600;</string>
       </property>
-      <property name="text">
+      <property name="text" stdset="0">
        <string>=</string>
       </property>
      </widget>
@@ -3240,7 +3240,7 @@
       <pixmap>:/images/bittrex</pixmap>
      </property>
     </widget>
-    <widget class="QPushButton" name="UpdateKeys">
+    <widget class="QtMaterialFlatButton" name="UpdateKeys" native="true">
      <property name="geometry">
       <rect>
        <x>460</x>
@@ -3249,10 +3249,10 @@
        <height>23</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="text" stdset="0">
       <string>Update API Keys</string>
      </property>
-     <property name="icon">
+     <property name="icon" stdset="0">
       <iconset resource="../ittrium.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
@@ -3407,6 +3407,13 @@
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../ittrium.qrc"/>
  </resources>

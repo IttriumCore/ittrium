@@ -41,6 +41,7 @@ using namespace boost;
 #define SPORK_14_NEW_PROTOCOL_ENFORCEMENT 10013
 #define SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2 10014
 #define SPORK_16_MN_WINNER_MINIMUM_AGE 10015
+#define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3 10016
 
 #define SPORK_2_SWIFTTX_DEFAULT 978307200                         //2001-1-1
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT 1424217600        //2015-2-18
@@ -57,6 +58,7 @@ using namespace boost;
 #define SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT 8000               // Age in seconds. This should be > MASTERNODE_REMOVAL_SECONDS to avoid
                                                                   // misconfigured new nodes in the list. 
                                                                   // Set this to zero to emulate classic behaviour
+#define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT 1539003750    //ON
 
 class CSporkMessage;
 class CSporkManager;

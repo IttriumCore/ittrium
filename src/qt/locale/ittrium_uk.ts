@@ -62,12 +62,12 @@
         <translation>Адреса отримання</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваша ITTRIUM-адреса для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Це ваша Ittrium-адреса для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Це ваші ITTRIUM адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Це ваші Ittrium адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Підтвердження шифрування гаманця</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші XIT'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші XIT'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

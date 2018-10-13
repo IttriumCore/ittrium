@@ -89,52 +89,52 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="newAddress">
+      <widget class="QtMaterialFlatButton" name="newAddress" native="true">
        <property name="toolTip">
         <string>Create a new address</string>
        </property>
-       <property name="text">
-        <string>&amp;New</string>
+       <property name="text" stdset="0">
+        <string>New</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="copyAddress">
+      <widget class="QtMaterialFlatButton" name="copyAddress" native="true">
        <property name="toolTip">
         <string>Copy the currently selected address to the system clipboard</string>
        </property>
-       <property name="text">
-        <string>&amp;Copy</string>
+       <property name="text" stdset="0">
+        <string>Copy</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="deleteAddress">
+      <widget class="QtMaterialFlatButton" name="deleteAddress" native="true">
        <property name="toolTip">
         <string>Delete the currently selected address from the list</string>
        </property>
-       <property name="text">
-        <string>&amp;Delete</string>
+       <property name="text" stdset="0">
+        <string>Delete</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -153,34 +153,34 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="exportButton">
+      <widget class="QtMaterialFlatButton" name="exportButton" native="true">
        <property name="toolTip">
         <string>Export the data in the current tab to a file</string>
        </property>
-       <property name="text">
-        <string>&amp;Export</string>
+       <property name="text" stdset="0">
+        <string>Export</string>
        </property>
-       <property name="icon">
+       <property name="icon" stdset="0">
         <iconset resource="../ittrium.qrc">
          <normaloff>:/icons/export</normaloff>:/icons/export</iconset>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="closeButton">
+      <widget class="QtMaterialFlatButton" name="closeButton" native="true">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <property name="text">
-        <string>C&amp;lose</string>
+       <property name="text" stdset="0">
+        <string>Close</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -189,6 +189,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../ittrium.qrc"/>
  </resources>

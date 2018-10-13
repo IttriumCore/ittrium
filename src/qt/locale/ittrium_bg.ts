@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите ITTRIUM адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите Ittrium адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите ITTRIUM адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите Ittrium адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия ITTRIUM от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия Ittrium от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,8 +239,8 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM адреса, с който да подпишете съобщението</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този ITTRIUM адрес</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Ittrium адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -413,8 +413,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM адреса, с който да подпишете съобщението</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -437,8 +437,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този ITTRIUM адрес</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Ittrium адрес</translation>
     </message>
     </context>
 <context>

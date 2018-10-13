@@ -72,8 +72,8 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 45 * 60;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in uxit) are considered zero fee (for relaying and mining)
- * We are ~100 times smaller then bitcoin (as of 2015-06-23), set minRelayTxFee only 10 times higher
+/** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
+ * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
 CFeeRate minRelayTxFee = CFeeRate(10000);
@@ -912,7 +912,7 @@ int GetIXConfirmations(uint256 nTXHash)
     return 0;
 }
 
-// ittrium: total coin age spent in transaction, in the unit of coin-days.
+// ppcoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
 // might not find out about their coin age. Older transactions are
@@ -1621,7 +1621,7 @@ int64_t GetBlockValue(int nHeight)
 
     if (nHeight < Params().LAST_POW_BLOCK())    //1.5% premine 300 Blocks * 1650 Coins = 495,000 XIT
      	nSubsidy = 1650 * COIN;
-	else if (nHeight <= 30000)					//slow start for instamine prevention 
+	else if (nHeight >= 301 && nHeight <= 30000)					//slow start for instamine prevention 
         nSubsidy = 3 * COIN;
     else if (nHeight > 30000 && nHeight <= 60000)
         nSubsidy = 6 * COIN;
@@ -2084,12 +2084,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         view.SetBestBlock(pindex->GetBlockHash());
         return true;
     }
-
-    if (pindex->nHeight <= Params().LAST_POW_BLOCK() && block.IsProofOfStake())
+    int nLastPOWBlock = Params().LAST_POW_BLOCK();
+        if (pindex->nHeight <= nLastPOWBlock && block.IsProofOfStake())
         return state.DoS(100, error("ConnectBlock() : PoS period not active"),
             REJECT_INVALID, "PoS-early");
 
-    if (pindex->nHeight > Params().LAST_POW_BLOCK() && block.IsProofOfWork())
+    if (pindex->nHeight > nLastPOWBlock && block.IsProofOfWork())
         return state.DoS(100, error("ConnectBlock() : PoW period ended"),
             REJECT_INVALID, "PoW-ended");
 
@@ -2108,7 +2108,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
     bool fEnforceBIP30 = (!pindex->phashBlock) || // Enforce on CreateNewBlock invocations which don't have a hash.
-                         !((pindex->nHeight == 0 && pindex->GetBlockHash() == uint256("0x000003616197a9a9093a9cdda330cb4e0d52c4d7d3585dd985602913d93dfc0a")));
+                         !((pindex->nHeight == 91842 && pindex->GetBlockHash() == uint256("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
+                             (pindex->nHeight == 91880 && pindex->GetBlockHash() == uint256("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
     if (fEnforceBIP30) {
         BOOST_FOREACH (const CTransaction& tx, block.vtx) {
             const CCoins* coins = view.AccessCoins(tx.GetHash());
@@ -2188,7 +2189,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         pos.nTxOffset += ::GetSerializeSize(tx, SER_DISK, CLIENT_VERSION);
     }
 
-    // ittrium: track money supply and mint amount info
+    // ppcoin: track money supply and mint amount info
     CAmount nMoneySupplyPrev = pindex->pprev ? pindex->pprev->nMoneySupply : 0;
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev;
@@ -2876,21 +2877,21 @@ CBlockIndex* AddToBlockIndex(const CBlock& block)
         //update previous block pointer
         pindexNew->pprev->pnext = pindexNew;
 
-        // ittrium: compute chain trust score
+        // ppcoin: compute chain trust score
         pindexNew->bnChainTrust = (pindexNew->pprev ? pindexNew->pprev->bnChainTrust : 0) + pindexNew->GetBlockTrust();
 
-        // ittrium: compute stake entropy bit for stake modifier
+        // ppcoin: compute stake entropy bit for stake modifier
         if (!pindexNew->SetStakeEntropyBit(pindexNew->GetStakeEntropyBit()))
             LogPrintf("AddToBlockIndex() : SetStakeEntropyBit() failed \n");
 
-        // ittrium: record proof-of-stake hash value
+        // ppcoin: record proof-of-stake hash value
         if (pindexNew->IsProofOfStake()) {
             if (!mapProofOfStake.count(hash))
                 LogPrintf("AddToBlockIndex() : hashProofOfStake not found in map \n");
             pindexNew->hashProofOfStake = mapProofOfStake[hash];
         }
 
-        // ittrium: compute stake modifier
+        // ppcoin: compute stake modifier
         uint64_t nStakeModifier = 0;
         bool fGeneratedStakeModifier = false;
         if (!ComputeNextStakeModifier(pindexNew->pprev, nStakeModifier, fGeneratedStakeModifier))
@@ -3055,7 +3056,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 
     // Check that the header is valid (particularly PoW).  This is mostly
     // redundant with the call in AcceptBlockHeader.
-    if (!CheckBlockHeader(block, state, fCheckPOW && block.IsProofOfWork()))
+    if (block.IsProofOfWork() && !CheckBlockHeader(block, state, fCheckPOW))
         return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
             REJECT_INVALID, "bad-header", true);
 
@@ -3064,6 +3065,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     if (block.GetBlockTime() > GetAdjustedTime() + (block.IsProofOfStake() ? 180 : 7200)) // 3 minute future drift for PoS
         return state.Invalid(error("CheckBlock() : block timestamp too far in the future"),
             REJECT_INVALID, "time-too-new");
+
 
     // Check the merkle root.
     if (fCheckMerkleRoot) {
@@ -3133,7 +3135,9 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         LogPrintf("CheckBlock() : skipping transaction locking checks\n");
     }
 
-    // masternode payments / budgets
+
+    // ----------- masternode payments / budgets -----------
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (pindexPrev != NULL) {
         int nHeight = 0;
@@ -3187,7 +3191,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     unsigned int nBitsRequired = GetNextWorkRequired(pindexPrev, &block);
 
-    if (block.IsProofOfWork() && (pindexPrev->nHeight + 1 <= 300)) {
+    if (block.IsProofOfWork() && (pindexPrev->nHeight + 1 <= 68589)) {
         double n1 = ConvertBitsToDouble(block.nBits);
         double n2 = ConvertBitsToDouble(nBitsRequired);
 
@@ -3248,8 +3252,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         return state.DoS(0, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
 
     // Reject block.nVersion=1 blocks when 95% (75% on testnet) of the network has upgraded:
-    if (block.nVersion < 2 &&
-        CBlockIndex::IsSuperMajority(2, pindexPrev, Params().RejectBlockOutdatedMajority())) {
+    if (block.nVersion < 2 && CBlockIndex::IsSuperMajority(2, pindexPrev, Params().RejectBlockOutdatedMajority())) {
         return state.Invalid(error("%s : rejected nVersion=1 block", __func__),
             REJECT_OBSOLETE, "bad-version");
     }
@@ -3318,23 +3321,8 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
         if (mi == mapBlockIndex.end())
             return state.DoS(0, error("%s : prev block %s not found", __func__, block.hashPrevBlock.ToString().c_str()), 0, "bad-prevblk");
         pindexPrev = (*mi).second;
-        if (pindexPrev->nStatus & BLOCK_FAILED_MASK) 
-        //{
-            //If this "invalid" block is an exact match from the checkpoints, then reconsider it
-//            if (pindex && Checkpoints::CheckBlock(pindex->nHeight - 1, block.hashPrevBlock, true)) {
-//                LogPrintf("%s : Reconsidering block %s height %d\n", __func__, pindexPrev->GetBlockHash().GetHex(), pindexPrev->nHeight);
-//                CValidationState statePrev;
-//                ReconsiderBlock(statePrev, pindexPrev);
-//                if (statePrev.IsValid()) {
-//                    ActivateBestChain(statePrev);
-//                    return true;
-//                }
-//            }
-
-            return state.DoS(100, error("%s : prev block height=%d hash=%s is invalid, unable to add block %s", __func__, pindexPrev->nHeight, block.hashPrevBlock.GetHex(), block.GetHash().GetHex()),
-                             REJECT_INVALID, "bad-prevblk");
-//        }
-
+        if (pindexPrev->nStatus & BLOCK_FAILED_MASK)
+            return state.DoS(100, error("%s : prev block invalid", __func__), REJECT_INVALID, "bad-prevblk");
     }
 
     if (!ContextualCheckBlockHeader(block, state, pindexPrev))
@@ -3362,21 +3350,8 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (mi == mapBlockIndex.end())
             return state.DoS(0, error("%s : prev block %s not found", __func__, block.hashPrevBlock.ToString().c_str()), 0, "bad-prevblk");
         pindexPrev = (*mi).second;
-        if (pindexPrev->nStatus & BLOCK_FAILED_MASK) 
-        //{
-            //If this "invalid" block is an exact match from the checkpoints, then reconsider it
-//            if (Checkpoints::CheckBlock(pindexPrev->nHeight, block.hashPrevBlock, true)) {
-//                LogPrintf("%s : Reconsidering block %s height %d\n", __func__, pindexPrev->GetBlockHash().GetHex(), pindexPrev->nHeight);
-//                CValidationState statePrev;
-//                ReconsiderBlock(statePrev, pindexPrev);
-//                if (statePrev.IsValid()) {
-//                    ActivateBestChain(statePrev);
-//                    return true;
-//                }
-//            }
-            return state.DoS(100, error("%s : prev block %s is invalid, unable to add block %s", __func__, block.hashPrevBlock.GetHex(), block.GetHash().GetHex()),
-                             REJECT_INVALID, "bad-prevblk");
-//        }
+        if (pindexPrev->nStatus & BLOCK_FAILED_MASK)
+            return state.DoS(100, error("%s : prev block invalid", __func__), REJECT_INVALID, "bad-prevblk");
     }
 
     if (block.GetHash() != Params().HashGenesisBlock() && !CheckWork(block, pindexPrev))
@@ -3487,13 +3462,13 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
     // Preliminary checks
     bool checked = CheckBlock(*pblock, state);
 
-    // ittrium: check proof-of-stake
+    // ppcoin: check proof-of-stake
     // Limited duplicity on stake: prevents block flood attack
     // Duplicate stake allowed only when there is orphan child block
     //if (pblock->IsProofOfStake() && setStakeSeen.count(pblock->GetProofOfStake())/* && !mapOrphanBlocksByPrev.count(hash)*/)
     //    return error("ProcessNewBlock() : duplicate proof-of-stake (%s, %d) for block %s", pblock->GetProofOfStake().first.ToString().c_str(), pblock->GetProofOfStake().second, pblock->GetHash().ToString().c_str());
 
-    // Ittrium: check proof-of-stake block signature
+    // NovaCoin: check proof-of-stake block signature
     if (!pblock->CheckBlockSignature())
         return error("ProcessNewBlock() : bad proof-of-stake block signature");
 
@@ -3515,7 +3490,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 
         MarkBlockAsReceived(pblock->GetHash());
         if (!checked) {
-            return error ("%s : CheckBlock FAILED for block %s", __func__, pblock->GetHash().GetHex());
+            return error("%s : CheckBlock FAILED", __func__);
         }
 
         // Store to disk
@@ -5397,30 +5372,18 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 }
 
 // Note: whenever a protocol update is needed toggle between both implementations (comment out the formerly active one)
-//       so we can leave the existing clients untouched (old SPORK will stay on so they don't see even older clients). 
+//       so we can leave the existing clients untouched (old SPORK will stay on so they don't see even older clients).
 //       Those old clients won't react to the changes of the other (new) SPORK because at the time of their implementation
-//
-
+//       it was the one which was commented out
 int ActiveProtocol()
 {
-
-    // SPORK_14 was used for 70710. Leave it 'ON' so they don't see < 70710 nodes. They won't react to SPORK_15
-    // messages because it's not in their code
-/*
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)) {
-        if (chainActive.Tip()->nHeight >= Params().ModifierUpgradeBlock())
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-    }
-
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-*/
-
-
-    // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their 
-    // own ModifierUpgradeBlock()
- 
+    if (IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT17;
+	
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    	return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT15;
+
+    // Return the current protocol version if no spork is active.
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
@@ -5584,7 +5547,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
                     pnode->setAddrKnown.clear();
 
                 // Rebroadcast our address
-                AdvertizeLocal(pnode);
+                AdvertiseLocal(pnode);
             }
             if (!vNodes.empty())
                 nLastRebroadcast = GetTime();

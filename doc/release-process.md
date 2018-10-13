@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/IttriumCore/ittrium/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/IttriumCore/Ittrium/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -113,6 +113,10 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
     ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../ittrium/contrib/gitian-descriptors/gitian-osx.yml
     mv build/out/ittrium-*-osx-unsigned.tar.gz inputs/ittrium-osx-unsigned.tar.gz
     mv build/out/ittrium-*.tar.gz build/out/ittrium-*.dmg ../
+
+    ./bin/gbuild --memory 3000 --commit ittrium=v${VERSION} ../ittrium/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../ittrium/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/ittrium-*.tar.gz build/out/src/ittrium-*.tar.gz ../
     popd
 
 Build output expected:
@@ -136,6 +140,7 @@ Verify the signatures
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../ittrium/contrib/gitian-descriptors/gitian-linux.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../ittrium/contrib/gitian-descriptors/gitian-win.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../ittrium/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../ittrium/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -146,6 +151,7 @@ Commit your signature to gitian.sigs:
     git add ${VERSION}-linux/${SIGNER}
     git add ${VERSION}-win-unsigned/${SIGNER}
     git add ${VERSION}-osx-unsigned/${SIGNER}
+    git add ${VERSION}-aarch64/${SIGNER}
     git commit -a
     git push  # Assuming you can push to the gitian.sigs tree
     popd
@@ -256,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/ittrium, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/ittriumcoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/IttriumCore/ittrium/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/IttriumCore/Ittrium/releases/new) with a link to the archived release notes.
 
   - Celebrate

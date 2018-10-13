@@ -22,11 +22,10 @@ public:
 
     QString getURI();
 
-protected slots:
-    void accept();
-
 private slots:
     void on_selectFileButton_clicked();
+	void on_acceptButton_clicked();
+	void on_cancelButton_clicked();
 
 private:
     Ui::OpenURIDialog* ui;

@@ -152,8 +152,8 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos XITs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos XITs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -219,8 +219,8 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>L'adresse ITTRIUM avec laquelle signer le message</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>L'adresse Ittrium avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse ITTRIUM</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Ittrium</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>L'adresse ITTRIUM avec laquelle le message a été signé</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>L'adresse Ittrium avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse ITTRIUM renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ittrium renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Envoyer des pièces à une adresse ITTRIUM</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Envoyer des pièces à une adresse Ittrium</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Modifier les options de configuration pour ITTRIUM</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Modifier les options de configuration pour Ittrium</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse ITTRIUM pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse Ittrium pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse ITTRIUM spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Ittrium spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ITTRIUM address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse ITTRIUM valide</translation>
+        <source>The entered address "%1" is not a valid Ittrium address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Ittrium valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1038,32 +1038,32 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 XIT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 5000 XIT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 XIT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 5000 XIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 10000 XIT</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 XIT pour anonymiser 10000 XIT</translation>
+        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 5000 XIT</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 XIT pour anonymiser 5000 XIT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 10000 XIT</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 XIT pour anonymiser 10000 XIT</translation>
+        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 5000 XIT</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 XIT pour anonymiser 5000 XIT</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 XIT per 10000 XIT you anonymize.</source>
-        <translation>0.1 XIT par 10000 XIT vous anonymisez.</translation>
+        <source>0.1 XIT per 5000 XIT you anonymize.</source>
+        <translation>0.1 XIT par 5000 XIT vous anonymisez.</translation>
     </message>
     </context>
 <context>
@@ -1461,8 +1461,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to send the payment to</source>
-        <translation>L'adresse ITTRIUM à laquelle envoyer le paiement</translation>
+        <source>The Ittrium address to send the payment to</source>
+        <translation>L'adresse Ittrium à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1507,8 +1507,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>L'adresse ITTRIUM avec laquelle signer le message</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>L'adresse Ittrium avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1535,16 +1535,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse ITTRIUM</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Ittrium</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>L'adresse ITTRIUM avec laquelle le message a été signé</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>L'adresse Ittrium avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse ITTRIUM renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ittrium renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

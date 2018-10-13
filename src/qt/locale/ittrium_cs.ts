@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše ITTRIUM adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Ittrium adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše ITTRIUM adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Ittrium adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše XITy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše XITy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte ITTRIUM adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <translation>Zadejte Ittrium adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM adresa pro podepsání zprávy</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ITTRIUM adresu</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Ittrium adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM adresa zprávy byla podpsána</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ITTRIUM adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Ittrium adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Odeslat platbuna ITTRIUM adresu</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Odeslat platbuna Ittrium adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a xit: URIs)</translation>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a ittrium: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>&amp;O ITTRIUM Core</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>&amp;O Ittrium Core</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Zobraz informace o ITTRIUM Core</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Zobraz informace o Ittrium Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Upravit možnosti konfigurace pro ITTRIUM</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Upravit možnosti konfigurace pro Ittrium</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší ITTRIUM adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Ittrium adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými ITTRIUM adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Ittrium adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a ITTRIUM: URI or payment request</source>
-        <translation>Otevřít ITTRIUM: URI nebo platební žádost</translation>
+        <source>Open a Ittrium: URI or payment request</source>
+        <translation>Otevřít Ittrium: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the ITTRIUM Core help message to get a list with possible ITTRIUM command-line options</source>
-        <translation>Zobrazit ITTRIUM Core pomocnou zpráv pro získání seznamu možných parametrů ITTRIUM pro příkazy do příkazové řádky</translation>
+        <source>Show the Ittrium Core help message to get a list with possible Ittrium command-line options</source>
+        <translation>Zobrazit Ittrium Core pomocnou zpráv pro získání seznamu možných parametrů Ittrium pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>ITTRIUM Core klient</translation>
+        <source>Ittrium Core client</source>
+        <translation>Ittrium Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1070,8 +1070,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ITTRIUM address.</source>
-        <translation>Zadaná adresa "%1" není validní ITTRIUM adresa.</translation>
+        <source>The entered address "%1" is not a valid Ittrium address.</source>
+        <translation>Zadaná adresa "%1" není validní Ittrium adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1116,12 +1116,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>About ITTRIUM Core</source>
-        <translation>O ITTRIUM Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>O Ittrium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1155,16 +1155,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Vítejte v ITTRIUM Core.</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Vítejte v Ittrium Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ITTRIUM Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude ITTRIUM Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ittrium Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Ittrium Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core will download and store a copy of the ITTRIUM block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ITTRIUM Core stáhne a uloží kopii ITTRIUM blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Ittrium Core will download and store a copy of the Ittrium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ittrium Core stáhne a uloží kopii Ittrium blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1175,8 +1175,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1442,24 +1442,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 XIT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 5000 XIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 10000 XIT</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 XIT pro anonymizaci 10000 XIT</translation>
+        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 5000 XIT</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 XIT pro anonymizaci 5000 XIT</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 XIT per 10000 XIT you anonymize.</source>
-        <translation>0.1 XIT za 10000 XIT anonymizujete.</translation>
+        <source>0.1 XIT per 5000 XIT you anonymize.</source>
+        <translation>0.1 XIT za 5000 XIT anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1524,16 +1524,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start ITTRIUM after logging in to the system.</source>
-        <translation>Automaticky spustit ITTRIUM po přihlášení do systému</translation>
+        <source>Automatically start Ittrium after logging in to the system.</source>
+        <translation>Automaticky spustit Ittrium po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start ITTRIUM on system login</source>
-        <translation>&amp;Spusti ITTRIUM při přihlášení do systému</translation>
+        <source>&amp;Start Ittrium on system login</source>
+        <translation>&amp;Spusti Ittrium při přihlášení do systému</translation>
     </message>
     <message>
-        <source>Amount of ITTRIUM to keep anonymized</source>
-        <translation>Počet ITTRIUM pro anonymní držení</translation>
+        <source>Amount of Ittrium to keep anonymized</source>
+        <translation>Počet Ittrium pro anonymní držení</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2199,8 +2199,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM adresa pro podepsání zprávy</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2227,16 +2227,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ITTRIUM adresu</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Ittrium adresu</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM adresa zprávy byla podpsána</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ITTRIUM adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Ittrium adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2278,8 +2278,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     </context>
 <context>

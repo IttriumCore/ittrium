@@ -71,10 +71,10 @@ void OptionsModel::Init()
 
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
-    fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
+    fCoinControlFeatures = settings.value("fCoinControlFeatures").toBool();
 
     if (!settings.contains("nObfuscationRounds"))
-        settings.setValue("nObfuscationRounds", 2);
+        settings.setValue("nObfuscationRounds", 3);
 
     if (!settings.contains("nAnonymizeIttriumAmount"))
         settings.setValue("nAnonymizeIttriumAmount", 1000);
@@ -110,6 +110,9 @@ void OptionsModel::Init()
         settings.setValue("bSpendZeroConfChange", true);
     if (!SoftSetBoolArg("-spendzeroconfchange", settings.value("bSpendZeroConfChange").toBool()))
         addOverriddenOption("-spendzeroconfchange");
+	if (!settings.contains("fShowOrphans"))
+		settings.setValue("fShowOrphans", true);
+	fShowOrphans = settings.value("fShowOrphans").toBool();
 #endif
 
     // Network
@@ -209,6 +212,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("bSpendZeroConfChange");
         case ShowMasternodesTab:
             return settings.value("fShowMasternodesTab");
+		case ShowOrphans:
+			return settings.value("fShowOrphans");
 #endif
         case DisplayUnit:
             return nDisplayUnit;
@@ -298,6 +303,11 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
                 setRestartRequired(true);
             }
             break;
+		case ShowOrphans:
+			if (settings.value("fShowOrphans") != value) {
+				settings.setValue("fShowOrphans", value);
+				setRestartRequired(true);
+			}
         case ShowMasternodesTab:
             if (settings.value("fShowMasternodesTab") != value) {
                 settings.setValue("fShowMasternodesTab", value);

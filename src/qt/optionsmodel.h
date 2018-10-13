@@ -43,6 +43,7 @@ public:
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
+		ShowOrphans,         // bool
         ObfuscationRounds,   // int
         AnonymizeIttriumAmount, //int
         ShowMasternodesTab,  // bool
@@ -80,6 +81,7 @@ private:
     QString language;
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
+	bool fShowOrphans;
     bool fCoinControlFeatures;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;

@@ -323,7 +323,7 @@ bool CMasternode::IsValidNetAddr()
     // TODO: regtest is fine with any addresses for now,
     // should probably be a bit smarter if one day we start to implement tests for this
     return Params().NetworkID() == CBaseChainParams::REGTEST ||
-           (IsReachable(addr) && addr.IsRoutable());
+           (IsReachable(addr) || addr.IsRoutable());
 }
 
 CMasternodeBroadcast::CMasternodeBroadcast()

@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw ITTRIUMadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Ittriumadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw ITTRIUMadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Ittriumadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw XITs stelen.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw XITs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -236,15 +236,15 @@
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een ITTRIUM adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <translation>Voer een Ittrium adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>Het ITTRIUM adres om het bericht met te ondertekenen</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Het Ittrium adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het ITTRIUM adres bezit</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Ittrium adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>Het ITTRIUM adres waarmee het bericht was ondertekend</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Het Ittrium adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde ITTRIUM adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Ittrium adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kern</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kern</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Verstuur munten naar een ITTRIUM adres</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Verstuur munten naar een Ittrium adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en ITTRIUM: URI's)</translation>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en Ittrium: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>&amp;Over ITTRIUM Kern</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>&amp;Over Ittrium Kern</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Toon informatie over ITTRIUM Kern</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Toon informatie over Ittrium Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Wijzig ITTRIUM configuratie opties</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Wijzig Ittrium configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw ITTRIUM adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Ittrium adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde ITTRIUM adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Ittrium adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a ITTRIUM: URI or payment request</source>
-        <translation>Open een ITTRIUM: URI of betaalverzoek</translation>
+        <source>Open a Ittrium: URI or payment request</source>
+        <translation>Open een Ittrium: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>ITTRIUM Core client</translation>
+        <source>Ittrium Core client</source>
+        <translation>Ittrium Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to ITTRIUM network</source>
-        <translation><numerusform>%n actieve connectie(s) naar ITTRIUM netwerk</numerusform><numerusform>%n actieve connectie(s) naar ITTRIUM netwerk</numerusform></translation>
+        <source>%n active connection(s) to Ittrium network</source>
+        <translation><numerusform>%n actieve connectie(s) naar Ittrium netwerk</numerusform><numerusform>%n actieve connectie(s) naar Ittrium netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1010,8 +1010,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ITTRIUM address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig ITTRIUM adres.</translation>
+        <source>The entered address "%1" is not a valid Ittrium address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Ittrium adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1040,16 +1040,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kern</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About ITTRIUM Core</source>
-        <translation>Over ITTRIUM Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>Over Ittrium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1079,16 +1079,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Welkom bij ITTRIUM Core</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Welkom bij Ittrium Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kern</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1300,24 +1300,24 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start ITTRIUM after logging in to the system.</source>
-        <translation>ITTRIUM automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Ittrium after logging in to the system.</source>
+        <translation>Ittrium automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start ITTRIUM on system login</source>
-        <translation>&amp;ITTRIUM starten bij systeemlogin</translation>
+        <source>&amp;Start Ittrium on system login</source>
+        <translation>&amp;Ittrium starten bij systeemlogin</translation>
     </message>
     <message>
-        <source>Amount of ITTRIUM to keep anonymized</source>
-        <translation>Hoeveelheid ITTRIUM anoniem te houden</translation>
+        <source>Amount of Ittrium to keep anonymized</source>
+        <translation>Hoeveelheid Ittrium anoniem te houden</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ITTRIUM.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van ITTRIUM.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ittrium.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Ittrium.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1512,8 +1512,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a ITTRIUM address (e.g. %1)</source>
-        <translation>Voer een ITTRIUM adres in (b.v. %1)</translation>
+        <source>Enter a Ittrium address (e.g. %1)</source>
+        <translation>Voer een Ittrium adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1702,8 +1702,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the ITTRIUM RPC console.</source>
-        <translation>Welkom bij de ITTRIUM RPC console.</translation>
+        <source>Welcome to the Ittrium RPC console.</source>
+        <translation>Welkom bij de Ittrium RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2024,8 +2024,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ITTRIUM Core is shutting down...</source>
-        <translation>ITTRIUM Core is aan het afsluiten...</translation>
+        <source>Ittrium Core is shutting down...</source>
+        <translation>Ittrium Core is aan het afsluiten...</translation>
     </message>
     </context>
 <context>
@@ -2035,8 +2035,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>Het ITTRIUM adres om het bericht met te ondertekenen</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Het Ittrium adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2067,16 +2067,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het ITTRIUM adres bezit</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Ittrium adres bezit</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>Het ITTRIUM adres waarmee het bericht was ondertekend</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Het Ittrium adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde ITTRIUM adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Ittrium adres</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2134,8 +2134,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kern</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2150,8 +2150,8 @@ MultiSend: %1</translation>
         <translation>De Dash Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The ITTRIUM Core developers</source>
-        <translation>De ITTRIUM Core ontwikkelaars</translation>
+        <source>The Ittrium Core developers</source>
+        <translation>De Ittrium Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2504,8 +2504,12 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The ITTRIUM Core Developers</source>
-        <translation>Copyright (C) 2015-%i The ITTRIUM Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The Ittrium Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Ittrium Core Ontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2017-%i The Ittrium Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Ittrium Core Ontwikkelaars</translation>
     </message>
     <message>
         <source>Error</source>

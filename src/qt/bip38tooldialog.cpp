@@ -16,6 +16,7 @@
 #include "bip38.h"
 #include "init.h"
 #include "wallet.h"
+#include "qtmaterialflatbutton.h"
 
 #include <string>
 #include <vector>

@@ -115,7 +115,7 @@ bool fLiteMode = false;
 // SwiftTX
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
-int nObfuscationRounds = 2;
+int nObfuscationRounds = 3;
 int nAnonymizeIttriumAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */

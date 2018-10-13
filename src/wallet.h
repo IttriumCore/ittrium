@@ -74,9 +74,9 @@ enum WalletFeature {
 enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
-    ONLY_NOT5000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT5000IFMN = 4, // ONLY_NONDENOMINATED and not 5000 XIT at the same time
-    ONLY_5000 = 5                        // find masternode outputs including locked ones (use with caution)
+    ONLY_NOT10000IFMN = 3,
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 XIT at the same time
+    ONLY_10000 = 5                        // find masternode outputs including locked ones (use with caution)
 };
 
 struct CompactTallyItem {
@@ -199,7 +199,7 @@ public:
     int nStakeSetUpdateTime;
 
     //MultiSend
-    std::vector<std::pair<std::string, int> > vMultiSend;
+	std::vector<std::pair<std::string, std::vector<std::pair<std::string, int>>>> vMultiSend;
     bool fMultiSendStake;
     bool fMultiSendMasternodeReward;
     bool fMultiSendNotify;
@@ -354,6 +354,12 @@ public:
     //! Adds a watch-only address to the store, without saving it to disk (used by LoadWallet)
     bool LoadWatchOnly(const CScript& dest);
 
+    //! Adds a MultiSig address to the store, and saves it to disk.
+    bool AddMultiSig(const CScript& dest);
+    bool RemoveMultiSig(const CScript& dest);
+    //! Adds a MultiSig address to the store, without saving it to disk (used by LoadWallet)
+    bool LoadMultiSig(const CScript& dest);
+
     bool Unlock(const SecureString& strWalletPassphrase, bool anonimizeOnly = false);
     bool ChangeWalletPassphrase(const SecureString& strOldWalletPassphrase, const SecureString& strNewWalletPassphrase);
     bool EncryptWallet(const SecureString& strWalletPassphrase);
@@ -412,6 +418,8 @@ public:
     bool ConvertList(std::vector<CTxIn> vCoins, std::vector<int64_t>& vecAmounts);
     bool CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int64_t nSearchInterval, CMutableTransaction& txNew, unsigned int& nTxNewTime);
     bool MultiSend();
+	bool isMSAddressEnabled(std::string address);
+	int indexOfMSAddress(std::string address);
     void AutoCombineDust();
 
     static CFeeRate minTxFee;
@@ -442,7 +450,7 @@ public:
     bool IsDenominated(const CTxIn& txin) const;
     bool IsDenominated(const CTransaction& tx) const;
 
-    bool IsDenominatedAmount(CAmount nInputAmount) const;
+    bool IsDenominatedAmount(int64_t nInputAmount) const;
 
     isminetype IsMine(const CTxIn& txin) const;
     CAmount GetDebit(const CTxIn& txin, const isminefilter& filter) const;
@@ -567,6 +575,9 @@ public:
 
     /** Watch-only address added */
     boost::signals2::signal<void(bool fHaveWatchOnly)> NotifyWatchonlyChanged;
+
+    /** MultiSig address added */
+    boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 };
 
 /** A key allocated from the key pool. */

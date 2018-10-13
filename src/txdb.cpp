@@ -247,7 +247,7 @@ bool CBlockTreeDB::LoadBlockIndexGuts()
                     if (!CheckProofOfWork(pindexNew->GetBlockHash(), pindexNew->nBits))
                         return error("LoadBlockIndex() : CheckProofOfWork failed: %s", pindexNew->ToString());
                 }
-                // ittrium: build setStakeSeen
+                // ppcoin: build setStakeSeen
                 if (pindexNew->IsProofOfStake())
                     setStakeSeen.insert(make_pair(pindexNew->prevoutStake, pindexNew->nStakeTime));
 

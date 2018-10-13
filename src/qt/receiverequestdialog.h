@@ -59,7 +59,7 @@ public:
 private slots:
     void on_btnCopyURI_clicked();
     void on_btnCopyAddress_clicked();
-
+	void on_closeButton_clicked();
     void update();
 
 private:

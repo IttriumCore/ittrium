@@ -62,12 +62,12 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones ITTRIUM para realizar pagos. Siempre verifique la cantidad y la dirección de recepción antes de enviar monedas.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones Ittrium para realizar pagos. Siempre verifique la cantidad y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones ITTRIUM para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones Ittrium para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar la encriptación de la Wallet</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM se cerrará ahora para finalizar el proceso de encriptación. Recuerde que encriptar su Wallet no previene completamente que tus XITs sean robados mediante malware infectando su ordenador.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium se cerrará ahora para finalizar el proceso de encriptación. Recuerde que encriptar su Wallet no previene completamente que tus XITs sean robados mediante malware infectando su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Introduzca la dirección ITTRIUM que querría encriptar usando BIP 38. Introduzca una contraseña en la caja central. Clickee en encriptar para computar la clave privada encriptada.</translation>
+        <translation>Introduzca la dirección Ittrium que querría encriptar usando BIP 38. Introduzca una contraseña en la caja central. Clickee en encriptar para computar la clave privada encriptada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Dirección:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>La dirección ITTRIUM con la que firmar el mensaje</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>La dirección Ittrium con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar la firma actual al clipboard del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Firmar el mensaje para demostrar que eres el propietario de esta dirección ITTRIUM</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Firmar el mensaje para demostrar que eres el propietario de esta dirección Ittrium</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Introducir la clave encriptada privada BIP 38. Introducir la contraseña en la caja central. Pulsar en Desencriptar Clave para computar la clave privada. Después de que la clave sea desencriptada, pulsando en 'Importar Dirección' añadirá esta clave privada a la wallet.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>La dirección ITTRIUM con la que el mensaje fue firmado</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>La dirección Ittrium con la que el mensaje fue firmado</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verificar el mensaje para asegurarse que fue firmado con la dirección ITTRIUM especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verificar el mensaje para asegurarse que fue firmado con la dirección Ittrium especificada</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,15 +602,15 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>Núcleo ITTRIUM</translation>
+        <source>Ittrium Core</source>
+        <translation>Núcleo Ittrium</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Enviar coins a una dirección ITTRIUM</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Enviar coins a una dirección Ittrium</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
         <translation>Solicitud de pago (genera un código QR y URIs)</translation>
     </message>
     <message>
@@ -622,24 +622,24 @@
         <translation>Explorar nodos maestros</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>&amp;Sobre el núcleo de ITTRIUM</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>&amp;Sobre el núcleo de Ittrium</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Mostrar información sobre el núcleo de ITTRIUM</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Mostrar información sobre el núcleo de Ittrium</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Modificar las opciones de configuración de ITTRIUM</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Modificar las opciones de configuración de Ittrium</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones ITTRIUM para demostrar que le pertenecen</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Ittrium para demostrar que le pertenecen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Verificar mensajes para asegurar que están firmados con la dirección ITTRIUM especificada</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Verificar mensajes para asegurar que están firmados con la dirección Ittrium especificada</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Abrir Fichero de Configuración de Nodos Maestros</translation>
     </message>
     <message>
-        <source>Open a ITTRIUM: URI or payment request</source>
-        <translation>Abrir un ITTRIUM: URI o solicitud de pago</translation>
+        <source>Open a Ittrium: URI or payment request</source>
+        <translation>Abrir un Ittrium: URI o solicitud de pago</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -682,16 +682,16 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the ITTRIUM Core help message to get a list with possible ITTRIUM command-line options</source>
-        <translation>Mostrar la ayuda de ITTRIUM Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the Ittrium Core help message to get a list with possible Ittrium command-line options</source>
+        <translation>Mostrar la ayuda de Ittrium Core para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>Cliente ITTRIUM Core</translation>
+        <source>Ittrium Core client</source>
+        <translation>Cliente Ittrium Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to ITTRIUM network</source>
-        <translation><numerusform>%n conexión(es) activa a la red ITTRIUM</numerusform><numerusform>%n conexion(es) activas a la red ITTRIUM</numerusform></translation>
+        <source>%n active connection(s) to Ittrium network</source>
+        <translation><numerusform>%n conexión(es) activa a la red Ittrium</numerusform><numerusform>%n conexion(es) activas a la red Ittrium</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1138,8 +1138,8 @@ MultiEnvío: %1</translation>
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ITTRIUM address.</source>
-        <translation>La dirección introducida "%1" no es una dirección ITTRIUM válida.</translation>
+        <source>The entered address "%1" is not a valid Ittrium address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Ittrium válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,16 +1184,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>Núcleo ITTRIUM</translation>
+        <source>Ittrium Core</source>
+        <translation>Núcleo Ittrium</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About ITTRIUM Core</source>
-        <translation>Acerca de ITTRIUM Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>Acerca de Ittrium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Bienvenido/a a ITTRIUM Core.</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Bienvenido/a a Ittrium Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ITTRIUM Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará ITTRIUM Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ittrium Core will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Ittrium Core sus datos.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core will download and store a copy of the ITTRIUM block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ITTRIUM Core descargará y guardará una copia de la cadena de bloques ITTRIUM. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>Ittrium Core will download and store a copy of the Ittrium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ittrium Core descargará y guardará una copia de la cadena de bloques Ittrium. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>Núcleo ITTRIUM</translation>
+        <source>Ittrium Core</source>
+        <translation>Núcleo Ittrium</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,12 +1401,12 @@ MultiEnvío: %1</translation>
         <translation>Introduzca Dirección a la cual Enviar</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ITTRIUM addresses after it matures.
-To Add: enter percentage to give and ITTRIUM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Ittrium addresses after it matures.
+To Add: enter percentage to give and Ittrium address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones ITTRIUM después de su maduración.
-Para Añadir: introduzca porcentaje a enviar y las direcciones ITTRIUM a añadir al vector MultiEnvío.
+        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones Ittrium después de su maduración.
+Para Añadir: introduzca porcentaje a enviar y las direcciones Ittrium a añadir al vector MultiEnvío.
 Para Eliminar: Introduzca la dirección a eliminar y pulse la tecla delete.
 MultiEnvío no se activará a menos que haga usted click en Activar</translation>
     </message>
@@ -1544,48 +1544,48 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 XIT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 5000 XIT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 XIT</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 XIT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 XIT</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 5000 XIT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 10000 XIT</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 XIT para anonimizar 10000 XIT</translation>
+        <source>This option is the quickest and will cost about ~0.025 XIT to anonymize 5000 XIT</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 XIT para anonimizar 5000 XIT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 10000 XIT</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 XIT para anonimizar 10000 XIT.</translation>
+        <source>This option is moderately fast and will cost about 0.05 XIT to anonymize 5000 XIT</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 XIT para anonimizar 5000 XIT.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 XIT per 10000 XIT you anonymize.</source>
-        <translation>0.1 XIT por 10000 XIT que anonimizas.</translation>
+        <source>0.1 XIT per 5000 XIT you anonymize.</source>
+        <translation>0.1 XIT por 5000 XIT que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuración de Ofuscación</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ITTRIUM's configuration screen.</source>
-        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de ITTRIUM.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Ittrium's configuration screen.</source>
+        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de Ittrium.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ITTRIUM's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de ITTRIUM.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Ittrium's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de Ittrium.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ITTRIUM's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de ITTRIUM.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Ittrium's configuration screen.</source>
+        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de Ittrium.</translation>
     </message>
 </context>
 <context>
@@ -1646,8 +1646,8 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Si deselecciona el gasto de cambio no confirmado, las entradas de una transacción&lt;br/&gt;no podrán ser usadas hasta que esa transacción tenga al menos una confirmación.&lt;br/&gt;Esto también afecta a cómo se calcula su balance actual.</translation>
     </message>
     <message>
-        <source>Automatically open the ITTRIUM client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente ITTRIUM en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
+        <source>Automatically open the Ittrium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Ittrium en el enrutador. Ésto sólo funciona si su enrutador soporta UPnP y esta función está activada.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1666,12 +1666,12 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically start ITTRIUM after logging in to the system.</source>
-        <translation>Arrancar ITTRIUM automáticamente después de identificarse en Windows.</translation>
+        <source>Automatically start Ittrium after logging in to the system.</source>
+        <translation>Arrancar Ittrium automáticamente después de identificarse en Windows.</translation>
     </message>
     <message>
-        <source>&amp;Start ITTRIUM on system login</source>
-        <translation>&amp;Arrancar ITTRIUM al inicio del sistema</translation>
+        <source>&amp;Start Ittrium on system login</source>
+        <translation>&amp;Arrancar Ittrium al inicio del sistema</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1686,8 +1686,8 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Esta cantidad actúa como un techo para desactivar la Ofuscación una vez alcanzado.</translation>
     </message>
     <message>
-        <source>Amount of ITTRIUM to keep anonymized</source>
-        <translation>Cantidad de ITTRIUM a mantener anonimizados</translation>
+        <source>Amount of Ittrium to keep anonymized</source>
+        <translation>Cantidad de Ittrium a mantener anonimizados</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1714,22 +1714,22 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ITTRIUM.</source>
-        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar ITTRIUM.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ittrium.</source>
+        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar Ittrium.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/IttriumCore/IttriumCore-translations</source>
+https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
+https://www.transifex.com/ittrium-project/ittrium-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the ITTRIUM network through a SOCKS5 proxy.</source>
-        <translation>Conectar a la red ITTRIUM mediante un proxy SOCKS5.</translation>
+        <source>Connect to the Ittrium network through a SOCKS5 proxy.</source>
+        <translation>Conectar a la red Ittrium mediante un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Balances</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ITTRIUM network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red ITTRIUM después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ittrium network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Ittrium después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -2093,12 +2093,12 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start xit: click-to-pay handler</source>
-        <translation>No se puede iniciar xit: módulo click-to-pay</translation>
+        <source>Cannot start ittrium: click-to-pay handler</source>
+        <translation>No se puede iniciar ittrium: módulo click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid ITTRIUM address or malformed URI parameters.</source>
-        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección ITTRIUM inválida o parámetros del identificador malformados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Ittrium address or malformed URI parameters.</source>
+        <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección Ittrium inválida o parámetros del identificador malformados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2183,8 +2183,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a ITTRIUM address (e.g. %1)</source>
-        <translation>Introduzca una dirección ITTRIUM (p.e. %1)</translation>
+        <source>Enter a Ittrium address (e.g. %1)</source>
+        <translation>Introduzca una dirección Ittrium (p.e. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2317,8 +2317,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Cadena de bloques</translation>
     </message>
     <message>
-        <source>Open the ITTRIUM debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir el fichero de depuración ITTRIUM en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
+        <source>Open the Ittrium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abrir el fichero de depuración Ittrium en el directorio actual de datos. Esto puede llevar unos segundos para ficheros de depuración grandes.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2485,8 +2485,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Fuera:</translation>
     </message>
     <message>
-        <source>Welcome to the ITTRIUM RPC console.</source>
-        <translation>Bienvenido a la consola RPC de ITTRIUM.</translation>
+        <source>Welcome to the Ittrium RPC console.</source>
+        <translation>Bienvenido a la consola RPC de Ittrium.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2556,12 +2556,12 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ITTRIUM network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red ITTRIUM.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ittrium network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red Ittrium.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ITTRIUM network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red ITTRIUM.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Ittrium network.</source>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red Ittrium.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2849,8 +2849,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Si la comisión personalizada se fija en 1000 uXITs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uXITs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uXITs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ITTRIUM transactions than the network can process.</source>
-        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones ITTRIUM de las que la red puede procesar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Ittrium transactions than the network can process.</source>
+        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones Ittrium de las que la red puede procesar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2953,8 +2953,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>fondos anónimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid ITTRIUM address</source>
-        <translation>Advertencia: Direcciones ITTRIUM inválidas</translation>
+        <source>Warning: Invalid Ittrium address</source>
+        <translation>Advertencia: Direcciones Ittrium inválidas</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3060,8 +3060,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to send the payment to</source>
-        <translation>La dirección ITTRIUM a la cual enviar el pago</translation>
+        <source>The Ittrium address to send the payment to</source>
+        <translation>La dirección Ittrium a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3100,8 +3100,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ITTRIUM: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ITTRIUM network.</source>
-        <translation>Un mensaje adjunto al ITTRIUM: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red ITTRIUM.</translation>
+        <source>A message that was attached to the Ittrium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ittrium network.</source>
+        <translation>Un mensaje adjunto al Ittrium: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red Ittrium.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3127,8 +3127,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ITTRIUM Core is shutting down...</source>
-        <translation>El programa ITTRIUM se está cerrando...</translation>
+        <source>Ittrium Core is shutting down...</source>
+        <translation>El programa Ittrium se está cerrando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3150,8 +3150,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>La dirección ITTRIUM con la que firmar el mensaje</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>La dirección Ittrium con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3182,16 +3182,16 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Copiar la firma actual al clipboard del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Firmar el mensaje para demostrar que eres el propietario de esta dirección ITTRIUM</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Firmar el mensaje para demostrar que eres el propietario de esta dirección Ittrium</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>La dirección ITTRIUM con la que el mensaje fue firmado</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>La dirección Ittrium con la que el mensaje fue firmado</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verificar el mensaje para asegurarse que fue firmado con la dirección ITTRIUM especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verificar el mensaje para asegurarse que fue firmado con la dirección Ittrium especificada</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3277,8 +3277,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>Núcleo ITTRIUM</translation>
+        <source>Ittrium Core</source>
+        <translation>Núcleo Ittrium</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3293,8 +3293,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The ITTRIUM Core developers</source>
-        <translation>Los desarrolladores de ITTRIUM Core</translation>
+        <source>The Ittrium Core developers</source>
+        <translation>Los desarrolladores de Ittrium Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3911,8 +3911,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Escuchar únicamente a la tarjeta de red indicada para conexiones JSON-RPC. Use la notación [host]:puerto para IPv6. Esta opción puede ser especificada varias veces (por defecto: escuchar en todas las tarjetas de red)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. ITTRIUM Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. ITTRIUM Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. Ittrium Core is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Ittrium Core esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3931,8 +3931,8 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <translation>Borrar todas las transacciones del monedero y solo recuperar partes de la cadena de bloque a traves de -rescan al inicio.</translation>
     </message>
     <message>
-        <source>Disable all ITTRIUM specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar toda la funcionalidad especifica ITTRIUM (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar toda la funcionalidad especifica Ittrium (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4086,41 +4086,41 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</translation>
         <source>To use ittriumd, or the -server option to ittrium-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=xitrpc
+rpcuser=ittriumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Ittrium Alert" admin@foo.com
 </source>
         <translation>Para usar ittriumd, o la opción -server de ittrium-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=xit
+rpcuser=ittrium
 rpcrpcpassword=%s
 (No necesitas recordar esta contraseña)
 El nombre de usuario y contraseña NO DEBEN ser los mismos.
 Si el archivo no existe, crearlo con permisos de solo lectura para el propietario.
 También es recomendado definir alertnotify de manera que seas notificado de problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "Ittrium Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. ITTRIUM Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que ITTRIUM Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. Ittrium Core is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que Ittrium Core ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XIT.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 XIT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 XIT.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 5000 XIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 XIT.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 XIT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 5000 XIT.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 5000 XIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4135,8 +4135,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ITTRIUM Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora ITTRIUM Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Ittrium Core will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Ittrium Core no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4167,8 +4167,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(39993 could be used only on mainnet)</source>
-        <translation>(39993 puede ser utilizado solo en mainnet)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation>(51472 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4179,8 +4179,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 39993 for mainnet)</source>
-        <translation>(debe ser 39993 para un mainnet)</translation>
+        <source>(must be 51472 for mainnet)</source>
+        <translation>(debe ser 51472 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4283,8 +4283,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The ITTRIUM Core Developers</source>
-        <translation>Copyright (C) 2015-%i The ITTRIUM Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Ittrium Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Ittrium Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2017-%i The Ittrium Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Ittrium Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4355,8 +4359,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Error al cargar wallet.dat: Billetera dañada</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ITTRIUM Core</source>
-        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo ITTRIUM</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ittrium Core</source>
+        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo Ittrium</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4467,8 +4471,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. ITTRIUM Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. ITTRIUM Core se cerrará.</translation>
+        <source>Initialization sanity check failed. Ittrium Core is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. Ittrium Core se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5087,8 +5091,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "ITTRIUM Alert" admin@foo.com
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ITTRIUM Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie ITTRIUM Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Ittrium Core to complete</source>
+        <translation>Monedero necesita ser reescrito: reinicie Ittrium Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -32,6 +32,36 @@
 using namespace json_spirit;
 using namespace std;
 
+#ifdef ENABLE_WALLET
+// Key used by getwork miners.
+// Allocated in InitRPCMining, free'd in ShutdownRPCMining
+static CReserveKey* pMiningKey = NULL;
+
+void InitRPCMining()
+{
+    if (!pwalletMain)
+        return;
+
+    // getwork/getblocktemplate mining rewards paid here:
+    pMiningKey = new CReserveKey(pwalletMain);
+}
+
+void ShutdownRPCMining()
+{
+    if (!pMiningKey)
+        return;
+
+    delete pMiningKey; pMiningKey = NULL;
+}
+#else
+void InitRPCMining()
+{
+}
+void ShutdownRPCMining()
+{
+}
+#endif
+
 /**
  * Return average network hashes per second based on the last 'lookup' blocks,
  * or from the last difficulty change if 'lookup' is nonpositive.
@@ -536,6 +566,38 @@ Value getblocktemplate(const Array& params, bool fHelp)
 
         transactions.push_back(entry);
     }
+	
+	Array coinbasetxn;
+    map<uint256, int64_t> setTxIndex1;
+    int j = 0;
+    BOOST_FOREACH (CTransaction& tx, pblock->vtx) {//Incase if multi coinbase
+		if(tx.IsCoinBase()){
+			uint256 txHash = tx.GetHash();
+			setTxIndex1[txHash] = j++;
+
+			/* if (tx.IsCoinBase())
+            continue; */
+
+			Object entry;
+
+			entry.push_back(Pair("data", EncodeHexTx(tx)));
+
+			entry.push_back(Pair("hash", txHash.GetHex()));
+
+			Array deps;
+			BOOST_FOREACH (const CTxIn& in, tx.vin) {
+				if (setTxIndex.count(in.prevout.hash))
+                deps.push_back(setTxIndex[in.prevout.hash]);
+			}
+			entry.push_back(Pair("depends", deps));
+
+			int index_in_template = j - 1;
+			entry.push_back(Pair("fee", pblocktemplate->vTxFees[index_in_template]));
+			entry.push_back(Pair("sigops", pblocktemplate->vTxSigOps[index_in_template]));
+
+			coinbasetxn.push_back(entry);
+		}
+    }
 
     Object aux;
     aux.push_back(Pair("flags", HexStr(COINBASE_FLAGS.begin(), COINBASE_FLAGS.end())));
@@ -558,6 +620,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
     result.push_back(Pair("transactions", transactions));
     result.push_back(Pair("coinbaseaux", aux));
     result.push_back(Pair("coinbasevalue", (int64_t)pblock->vtx[0].GetValueOut()));
+	result.push_back(Pair("coinbasetxn", coinbasetxn[0]));
     result.push_back(Pair("longpollid", chainActive.Tip()->GetBlockHash().GetHex() + i64tostr(nTransactionsUpdatedLast)));
     result.push_back(Pair("target", hashTarget.GetHex()));
     result.push_back(Pair("mintime", (int64_t)pindexPrev->GetMedianTimePast() + 1));

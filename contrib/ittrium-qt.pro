@@ -62,6 +62,7 @@ HEADERS += src/activemasternode.h \
            src/allocators.h \
            src/amount.h \
            src/base58.h \
+           src/bignum.h \
            src/bloom.h \
            src/chain.h \
            src/chainparams.h \
@@ -222,7 +223,6 @@ HEADERS += src/activemasternode.h \
            src/script/sigcache.h \
            src/script/sign.h \
            src/script/standard.h \
-           src/test/bignum.h \
            src/univalue/univalue.h \
            src/univalue/univalue_escapes.h \
            src/leveldb/db/builder.h \

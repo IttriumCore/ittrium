@@ -78,12 +78,6 @@ bool IsSporkActive(int nSporkID)
 {
     int64_t r = -1;
 
-    if(SPORK_13_ENABLE_SUPERBLOCKS == nSporkID)
-        return false;
-
-    if(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2 == nSporkID)
-        return true;
-
     if (mapSporksActive.count(nSporkID)) {
         r = mapSporksActive[nSporkID].nValue;
     } else {
@@ -100,6 +94,7 @@ bool IsSporkActive(int nSporkID)
         if (nSporkID == SPORK_14_NEW_PROTOCOL_ENFORCEMENT) r = SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) r = SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2_DEFAULT;
         if (nSporkID == SPORK_16_MN_WINNER_MINIMUM_AGE) r = SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT;
+        if (nSporkID == SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) r = SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -129,6 +124,7 @@ int64_t GetSporkValue(int nSporkID)
         if (nSporkID == SPORK_14_NEW_PROTOCOL_ENFORCEMENT) r = SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) r = SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2_DEFAULT;
         if (nSporkID == SPORK_16_MN_WINNER_MINIMUM_AGE) r = SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT;
+        if (nSporkID == SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) r = SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -205,17 +201,17 @@ bool CSporkManager::Sign(CSporkMessage& spork)
     std::string errorMessage = "";
 
     if (!obfuScationSigner.SetKey(strMasterPrivKey, errorMessage, key2, pubkey2)) {
-        LogPrintf("CMasternodePayments::Sign - ERROR: Invalid masternodeprivkey: '%s'\n", errorMessage);
+        LogPrintf("CSporkManager::Sign - ERROR: Invalid sporkkey: '%s'\n", errorMessage);
         return false;
     }
 
     if (!obfuScationSigner.SignMessage(strMessage, errorMessage, spork.vchSig, key2)) {
-        LogPrintf("CMasternodePayments::Sign - Sign message failed");
+        LogPrintf("CSporkManager::Sign - Sign message failed");
         return false;
     }
 
     if (!obfuScationSigner.VerifyMessage(pubkey2, spork.vchSig, strMessage, errorMessage)) {
-        LogPrintf("CMasternodePayments::Sign - Verify message failed");
+        LogPrintf("CSporkManager::Sign - Verify message failed");
         return false;
     }
 
@@ -277,6 +273,7 @@ int CSporkManager::GetSporkIDByName(std::string strName)
     if (strName == "SPORK_14_NEW_PROTOCOL_ENFORCEMENT") return SPORK_14_NEW_PROTOCOL_ENFORCEMENT;
     if (strName == "SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2") return SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2;
     if (strName == "SPORK_16_MN_WINNER_MINIMUM_AGE") return SPORK_16_MN_WINNER_MINIMUM_AGE;
+    if (strName == "SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3") return SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3;
 
     return -1;
 }
@@ -296,6 +293,7 @@ std::string CSporkManager::GetSporkNameByID(int id)
     if (id == SPORK_14_NEW_PROTOCOL_ENFORCEMENT) return "SPORK_14_NEW_PROTOCOL_ENFORCEMENT";
     if (id == SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) return "SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2";
     if (id == SPORK_16_MN_WINNER_MINIMUM_AGE) return "SPORK_16_MN_WINNER_MINIMUM_AGE";
+    if (id == SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) return "SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3";
 
     return "Unknown";
 }

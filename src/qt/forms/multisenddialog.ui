@@ -2,266 +2,330 @@
 <ui version="4.0">
  <class>MultiSendDialog</class>
  <widget class="QDialog" name="MultiSendDialog">
-  <property name="windowModality">
-   <enum>Qt::NonModal</enum>
-  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>652</width>
-    <height>300</height>
+    <width>777</width>
+    <height>538</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MultiSend</string>
   </property>
-  <widget class="QLineEdit" name="multiSendPercentEdit">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>130</y>
-     <width>201</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Enter whole numbers 1 - 100</string>
-   </property>
-   <property name="placeholderText">
-    <string>Enter % to Give (1-100)</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="multiSendAddressEdit">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>160</y>
-     <width>401</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="placeholderText">
-    <string>Enter Address to Send to</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>0</y>
-     <width>451</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
-   </property>
-   <property name="text">
-    <string>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XIT addresses after it matures.
-To Add: enter percentage to give and XIT address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-   </property>
-   <property name="wordWrap">
+  <widget class="QLabel" name="label">
+   <property name="enabled">
     <bool>true</bool>
    </property>
-  </widget>
-  <widget class="QLabel" name="message">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>200</y>
-     <width>351</width>
-     <height>91</height>
+     <x>10</x>
+     <y>10</y>
+     <width>521</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Add a Ittrium Adresses at the bottom and configure the Multisend settings for each of them</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="addButton">
+  <widget class="QScrollArea" name="addAddressScrollArea">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>230</y>
-     <width>120</width>
-     <height>23</height>
+     <x>10</x>
+     <y>90</y>
+     <width>759</width>
+     <height>261</height>
     </rect>
    </property>
-   <property name="toolTip">
-    <string/>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
-   <property name="statusTip">
-    <string>Add to MultiSend Vector</string>
+   <property name="widgetResizable">
+    <bool>true</bool>
    </property>
-   <property name="text">
-    <string>Add</string>
-   </property>
+   <widget class="QWidget" name="addAddressWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>757</width>
+      <height>259</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="addressList"/>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="disableButton">
+  <widget class="QWidget" name="verticalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>260</y>
-     <width>120</width>
-     <height>23</height>
+     <x>630</x>
+     <y>360</y>
+     <width>141</width>
+     <height>80</height>
     </rect>
    </property>
-   <property name="statusTip">
-    <string>Deactivate MultiSend</string>
-   </property>
-   <property name="text">
-    <string>Deactivate</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="addressBookButton">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>160</y>
-     <width>28</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Choose an address from the address book</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="../xit.qrc">
-     <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
-   </property>
-   <property name="shortcut">
-    <string>Alt+A</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>130</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Percentage of stake to send</string>
-   </property>
-   <property name="text">
-    <string>Percentage:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>160</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Address to send portion of stake to</string>
-   </property>
-   <property name="text">
-    <string>Address:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="deleteButton">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>230</y>
-     <width>120</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="statusTip">
-    <string>Delete Address From MultiSend Vector</string>
-   </property>
-   <property name="text">
-    <string>Delete</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="activateButton">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>260</y>
-     <width>120</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="statusTip">
-    <string>Activate MultiSend</string>
-   </property>
-   <property name="text">
-    <string>Activate</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="viewButton">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>200</y>
-     <width>251</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="statusTip">
-    <string>View MultiSend Vector</string>
-   </property>
-   <property name="text">
-    <string>View MultiSend</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>100</y>
-     <width>351</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <widget class="QCheckBox" name="multiSendStakeCheckBox">
+     <widget class="QtMaterialFlatButton" name="activateButton">
       <property name="text">
-       <string>Send For Stakes</string>
+       <string>Activate</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QCheckBox" name="multiSendMasternodeCheckBox">
+     <widget class="QtMaterialFlatButton" name="disableButton">
       <property name="text">
-       <string>Send For Masternode Rewards</string>
+       <string>Disable</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>431</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="multiSend">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>MultiSend Status:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="multiSendStatusLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Disabled</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="addressInfoLabel">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Address to send portion of stake to</string>
+        </property>
+        <property name="text">
+         <string>Click to add an address for MultiSend</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QtMaterialFlatButton" name="addressBookButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Choose an address from the address book</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../ittrium.qrc">
+          <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>360</y>
+     <width>151</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="MSStakingStatusLabel">
+        <property name="text">
+         <string>Send For Staking</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="multiSendStakeCheckBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="MSMasternodeLabel">
+        <property name="text">
+         <string>Send for Masternodes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="multiSendMasternodeCheckBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources>
-  <include location="../xit.qrc"/>
+  <include location="../ittrium.qrc"/>
  </resources>
  <connections/>
 </ui>

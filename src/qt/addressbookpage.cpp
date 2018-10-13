@@ -17,6 +17,7 @@
 #include "csvmodelwriter.h"
 #include "editaddressdialog.h"
 #include "guiutil.h"
+#include "qtmaterialflatbutton.h"
 
 #include <QIcon>
 #include <QMenu>
@@ -51,7 +52,7 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget* parent) : QDialog
         connect(ui->tableView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(accept()));
         ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         ui->tableView->setFocus();
-        ui->closeButton->setText(tr("C&hoose"));
+        ui->closeButton->setText(tr("Choose"));
         ui->exportButton->hide();
         break;
     case ForEditing:

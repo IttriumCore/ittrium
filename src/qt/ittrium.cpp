@@ -33,6 +33,9 @@
 #include "rpcserver.h"
 #include "ui_interface.h"
 #include "util.h"
+#include "qtmaterialstyle.h"
+#include <QFontDatabase>
+#include "qtmaterialtheme.h"
 
 #ifdef ENABLE_WALLET
 #include "wallet.h"
@@ -358,7 +361,7 @@ BitcoinApplication::~BitcoinApplication()
 #endif
     // Delete Qt-settings if user clicked on "Reset Options"
     QSettings settings;
-    if (optionsModel && optionsModel->resetSettings) {
+    if (optionsModel->resetSettings) {
         settings.clear();
         settings.sync();
     }
@@ -582,8 +585,7 @@ int main(int argc, char* argv[])
 
     /// 5. Now that settings and translations are available, ask user for data directory
     // User language is set up: pick a data directory
-    if (!Intro::pickDataDirectory())
-        return 0;
+    Intro::pickDataDirectory();
 
     /// 6. Determine availability of data directory and parse ittrium.conf
     /// - Do not call GetDataDir(true) before this step finishes

@@ -100,7 +100,20 @@ public slots:
     void peerSelected(const QItemSelection& selected, const QItemSelection& deselected);
     /** Handle updated peer information */
     void peerLayoutChanged();
+	/** Show custom context menu on Peers tab */
+	void showPeersTableContextMenu(const QPoint& point);
+	/** Show custom context menu on Bans tab */
+	void showBanTableContextMenu(const QPoint& point);
+	/** Hides ban table if no bans are present */
+	void showOrHideBanTableIfRequired();
+	/** clear the selected node */
+	void clearSelectedNode();
     /** Show folder with wallet backups in default browser */
+	void disconnectSelectedNode();
+	/** Ban a selected node on the Peers tab */
+	void banSelectedNode(int bantime);
+	/** Unban a selected node on the Bans tab */
+	void unbanSelectedNode();
     void showBackups();
 
 signals:
@@ -122,7 +135,9 @@ private:
     enum ColumnWidths {
         ADDRESS_COLUMN_WIDTH = 170,
         SUBVERSION_COLUMN_WIDTH = 140,
-        PING_COLUMN_WIDTH = 80
+        PING_COLUMN_WIDTH = 80,
+		BANSUBNET_COLUMN_WIDTH = 200,
+		BANTIME_COLUMN_WIDTH = 250
     };
 
     Ui::RPCConsole* ui;
@@ -131,6 +146,8 @@ private:
     int historyPtr;
     NodeId cachedNodeid;
     QCompleter *autoCompleter;
+	QMenu *peersTableContextMenu;
+	QMenu *banTableContextMenu;
 };
 
 #endif // BITCOIN_QT_RPCCONSOLE_H

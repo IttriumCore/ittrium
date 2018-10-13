@@ -26,6 +26,7 @@
 
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
+#include <algorithm>
 
 
 using namespace std;
@@ -40,8 +41,8 @@ bool bSpendZeroConfChange = true;
 bool fSendFreeTransactions = false;
 bool fPayAtLeastCustomFee = true;
 
-/**
- * Fees smaller than this (in uxit) are considered zero fee (for transaction creation)
+/** 
+ * Fees smaller than this (in duffs) are considered zero fee (for transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minTxFee 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
@@ -209,6 +210,37 @@ bool CWallet::LoadWatchOnly(const CScript& dest)
 {
     return CCryptoKeyStore::AddWatchOnly(dest);
 }
+
+bool CWallet::AddMultiSig(const CScript& dest)
+{
+    if (!CCryptoKeyStore::AddMultiSig(dest))
+        return false;
+    nTimeFirstKey = 1; // No birthday information
+    NotifyMultiSigChanged(true);
+    if (!fFileBacked)
+        return true;
+    return CWalletDB(strWalletFile).WriteMultiSig(dest);
+}
+
+bool CWallet::RemoveMultiSig(const CScript& dest)
+{
+    AssertLockHeld(cs_wallet);
+    if (!CCryptoKeyStore::RemoveMultiSig(dest))
+        return false;
+    if (!HaveMultiSig())
+        NotifyMultiSigChanged(false);
+    if (fFileBacked)
+        if (!CWalletDB(strWalletFile).EraseMultiSig(dest))
+            return false;
+
+    return true;
+}
+
+bool CWallet::LoadMultiSig(const CScript& dest)
+{
+    return CCryptoKeyStore::AddMultiSig(dest);
+}
+
 
 bool CWallet::Unlock(const SecureString& strWalletPassphrase, bool anonymizeOnly)
 {
@@ -431,7 +463,7 @@ bool CWallet::GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& 
 
     // Find possible candidates
     std::vector<COutput> vPossibleCoins;
-    AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_5000);
+    AvailableCoins(vPossibleCoins, true, NULL, false, ONLY_10000);
     if (vPossibleCoins.empty()) {
         LogPrintf("CWallet::GetMasternodeVinAndKeys -- Could not locate any valid masternode vin\n");
         return false;
@@ -1454,13 +1486,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 bool found = false;
                 if (nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
-                } else if (nCoinType == ONLY_NOT5000IFMN) {
+                } else if (nCoinType == ONLY_NOT10000IFMN) {
                     found = !(fMasterNode && pcoin->vout[i].nValue == 5000 * COIN);
-                } else if (nCoinType == ONLY_NONDENOMINATED_NOT5000IFMN) {
+                } else if (nCoinType == ONLY_NONDENOMINATED_NOT10000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
                     if (found && fMasterNode) found = pcoin->vout[i].nValue != 5000 * COIN; // do not use Hot MN funds
-                } else if (nCoinType == ONLY_5000) {
+                } else if (nCoinType == ONLY_10000) {
                     found = pcoin->vout[i].nValue == 5000 * COIN;
                 } else {
                     found = true;
@@ -1468,13 +1500,26 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (!found) continue;
 
                 isminetype mine = IsMine(pcoin->vout[i]);
-                if (!(IsSpent(wtxid, i)) && mine != ISMINE_NO &&
-                    (!IsLockedCoin((*it).first, i) || nCoinType == ONLY_5000) &&
-                    (pcoin->vout[i].nValue > 0 || fIncludeZeroValue) &&
-                    (!coinControl || !coinControl->HasSelected() || coinControl->fAllowOtherInputs || coinControl->IsSelected((*it).first, i)))
-                    vCoins.push_back(COutput(pcoin, i, nDepth,
-                        ((mine & ISMINE_SPENDABLE) != ISMINE_NO) ||
-                            (coinControl && coinControl->fAllowWatchOnly && (mine & ISMINE_WATCH_SOLVABLE) != ISMINE_NO)));
+                if (IsSpent(wtxid, i))
+                    continue;
+                if (mine == ISMINE_NO)
+                    continue;
+                if (mine == ISMINE_WATCH_ONLY)
+                    continue;
+
+                if (IsLockedCoin((*it).first, i) && nCoinType != ONLY_10000)
+                    continue;
+                if (pcoin->vout[i].nValue <= 0 && !fIncludeZeroValue)
+                    continue;
+                if (coinControl && coinControl->HasSelected() && !coinControl->fAllowOtherInputs && !coinControl->IsSelected((*it).first, i))
+                    continue;
+
+                bool fIsSpendable = false;
+                if ((mine & ISMINE_SPENDABLE) != ISMINE_NO)
+                    fIsSpendable = true;
+                if ((mine & ISMINE_MULTISIG) != ISMINE_NO)
+                    fIsSpendable = true;
+                vCoins.emplace_back(COutput(pcoin, i, nDepth, fIsSpendable));
             }
         }
     }
@@ -1561,7 +1606,7 @@ bool CWallet::SelectStakeCoins(std::set<std::pair<const CWalletTx*, unsigned int
 {
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true);
-    CAmount nAmountSelected = 0;
+    int64_t nAmountSelected = 0;
 
     BOOST_FOREACH (const COutput& out, vCoins) {
         //make sure not to outrun target amount
@@ -1797,7 +1842,7 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
     BOOST_FOREACH (const COutput& out, vCoins) {
         // masternode-like input should not be selected by AvailableCoins now anyway
-        //if(out.tx->vout[out.i].nValue == 5000*COIN) continue;
+        //if(out.tx->vout[out.i].nValue == 10000*COIN) continue;
         if (nValueRet + out.tx->vout[out.i].nValue <= nValueMax) {
             bool fAccepted = false;
 
@@ -1881,7 +1926,7 @@ bool CWallet::SelectCoinsDark(CAmount nValueMin, CAmount nValueMax, std::vector<
     nValueRet = 0;
 
     vector<COutput> vCoins;
-    AvailableCoins(vCoins, true, coinControl, nObfuscationRoundsMin < 0 ? ONLY_NONDENOMINATED_NOT5000IFMN : ONLY_DENOMINATED);
+    AvailableCoins(vCoins, true, coinControl, nObfuscationRoundsMin < 0 ? ONLY_NONDENOMINATED_NOT10000IFMN : ONLY_DENOMINATED);
 
     set<pair<const CWalletTx*, unsigned int> > setCoinsRet2;
 
@@ -1944,7 +1989,7 @@ bool CWallet::SelectCoinsCollateral(std::vector<CTxIn>& setCoinsRet, CAmount& nV
 
 int CWallet::CountInputsWithAmount(CAmount nInputAmount)
 {
-    CAmount nTotal = 0;
+    int64_t nTotal = 0;
     {
         LOCK(cs_wallet);
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it) {
@@ -2166,10 +2211,10 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (!SelectCoins(nTotalValue, setCoins, nValueIn, coinControl, coin_type, useIX)) {
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
-                    } else if (coin_type == ONLY_NOT5000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 5000 XIT.");
-                    } else if (coin_type == ONLY_NONDENOMINATED_NOT5000IFMN) {
-                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 XIT.");
+                    } else if (coin_type == ONLY_NOT10000IFMN) {
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 XIT.");
+                    } else if (coin_type == ONLY_NONDENOMINATED_NOT10000IFMN) {
+                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XIT.");
                     } else {
                         strFailReason = _("Unable to locate enough Obfuscation denominated funds for this transaction.");
                         strFailReason += " " + _("Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -2312,7 +2357,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, const CAmount& nValue, CWa
     return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, strFailReason, coinControl, coin_type, useIX, nFeePay);
 }
 
-// ittrium: create coin stake transaction
+// ppcoin: create coin stake transaction
 bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int64_t nSearchInterval, CMutableTransaction& txNew, unsigned int& nTxNewTime)
 {
     // The following split & combine thresholds are important to security
@@ -2465,7 +2510,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         if (nBytes >= DEFAULT_BLOCK_MAX_SIZE / 5)
             return error("CreateCoinStake : exceeded coinstake size limit");
 
-        CAmount nFeeNeeded = 0; // GetMinimumFee(nBytes, nTxConfirmTarget, mempool);
+        CAmount nFeeNeeded = GetMinimumFee(nBytes, nTxConfirmTarget, mempool); // AAA was --> 0;
 
         // Check enough fee is paid
         if (nMinFee < nFeeNeeded) {
@@ -3335,7 +3380,7 @@ void CWallet::AutoCombineDust()
         CAmount nTotalRewardsValue = 0;
         BOOST_FOREACH (const COutput& out, vCoins) {
             //no coins should get this far if they dont have proper maturity, this is double checking
-            if (out.tx->IsCoinStake() && out.tx->GetDepthInMainChain() < COINBASE_MATURITY + 1)
+            if (out.tx->IsCoinStake() && out.tx->GetDepthInMainChain() < Params().COINBASE_MATURITY() + 1)
                 continue;
 
             if (out.Value() > nAutoCombineThreshold * COIN)
@@ -3388,7 +3433,8 @@ void CWallet::AutoCombineDust()
 
 bool CWallet::MultiSend()
 {
-    if (IsInitialBlockDownload() || IsLocked()) {
+	// Stop the old blocks from sending multisends
+	if (chainActive.Tip()->nTime < (GetAdjustedTime() - 300) || IsLocked()) {
         return false;
     }
 
@@ -3399,16 +3445,16 @@ bool CWallet::MultiSend()
 
     std::vector<COutput> vCoins;
     AvailableCoins(vCoins);
-    int stakeSent = 0;
-    int mnSent = 0;
-    BOOST_FOREACH (const COutput& out, vCoins) {
+    bool stakeSent = false;
+    bool mnSent = false;
+    for (const COutput& out : vCoins) {
         //need output with precise confirm count - this is how we identify which is the output to send
-        if (out.tx->GetDepthInMainChain() != COINBASE_MATURITY + 1)
+	if (out.tx->GetDepthInMainChain() != Params().COINBASE_MATURITY() + 1)
             continue;
 
         COutPoint outpoint(out.tx->GetHash(), out.i);
         bool sendMSonMNReward = fMultiSendMasternodeReward && outpoint.IsMasternodeReward(out.tx);
-        bool sendMSOnStake = fMultiSendStake && out.tx->IsCoinStake() && !sendMSonMNReward; //output is either mnreward or stake reward, not both
+        bool sendMSOnStake = fMultiSendStake && out.tx->IsCoinStake() && !sendMSonMNReward && !outpoint.IsMasternodeReward(out.tx); //output is either mnreward or stake reward, not both
 
         if (!(sendMSOnStake || sendMSonMNReward))
             continue;
@@ -3420,33 +3466,46 @@ bool CWallet::MultiSend()
         }
 
         //Disabled Addresses won't send MultiSend transactions
+		bool isDisabled = false;
         if (vDisabledAddresses.size() > 0) {
             for (unsigned int i = 0; i < vDisabledAddresses.size(); i++) {
                 if (vDisabledAddresses[i] == CBitcoinAddress(destMyAddress).ToString()) {
-                    LogPrintf("Multisend: disabled address preventing multisend\n");
-                    return false;
+					isDisabled = true;
                 }
             }
         }
+	std::vector<std::pair<std::string, int>> vMultiSendAddressEntry;
+	bool isConfigured = false;
+		for (unsigned int i = 0; i < vMultiSend.size(); i++) {
+			if (CBitcoinAddress(destMyAddress).ToString() == vMultiSend[i].first && !vMultiSend[i].second.empty()) {
+				vMultiSendAddressEntry = vMultiSend[i].second;
+				isConfigured = true;
+			}
+		}
+		if (!isConfigured || isDisabled) {
+			continue;
+		}
 
         // create new coin control, populate it with the selected utxo, create sending vector
-        CCoinControl* cControl = new CCoinControl();
+	CCoinControl cControl;
         COutPoint outpt(out.tx->GetHash(), out.i);
-        cControl->Select(outpt);
-        cControl->destChange = destMyAddress;
+	cControl.Select(outpt);
+	cControl.destChange = destMyAddress;
 
         CWalletTx wtx;
         CReserveKey keyChange(this); // this change address does not end up being used, because change is returned with coin control switch
-        CAmount nFeeRet = 0;
-        vector<pair<CScript, CAmount> > vecSend;
+	
+	CAmount nFeeRet = 0;
+	vector<pair<CScript, CAmount> > vecSend;
 
-        // loop through multisend vector and add amounts and addresses to the sending vector
+        // loop through multisendaddressentry vector and add amounts and addresses to the sending vector
         const isminefilter filter = ISMINE_SPENDABLE;
-        CAmount nAmount = 0;
-        for (unsigned int i = 0; i < vMultiSend.size(); i++) {
-            // MultiSend vector is a pair of 1)Address as a std::string 2) Percent of stake to send as an int
-            nAmount = ((out.tx->GetCredit(filter) - out.tx->GetDebit(filter)) * vMultiSend[i].second) / 100;
-            CBitcoinAddress strAddSend(vMultiSend[i].first);
+	CAmount nAmount = 0;
+	
+        for (unsigned int i = 0; i < vMultiSendAddressEntry.size(); i++) {
+            // MultiSendAddressEntry vector is a pair of 1)Address as a std::string 2) Percent of stake to send as an int
+            nAmount = ((out.tx->GetCredit(filter) - out.tx->GetDebit(filter)) * vMultiSendAddressEntry[i].second) / 100;
+            CBitcoinAddress strAddSend(vMultiSendAddressEntry[i].first);
             CScript scriptPubKey;
             scriptPubKey = GetScriptForDestination(strAddSend.Get());
             vecSend.push_back(make_pair(scriptPubKey, nAmount));
@@ -3455,7 +3514,7 @@ bool CWallet::MultiSend()
         //get the fee amount
         CWalletTx wtxdummy;
         string strErr;
-        CreateTransaction(vecSend, wtxdummy, keyChange, nFeeRet, strErr, cControl, ALL_COINS, false, CAmount(0));
+	CreateTransaction(vecSend, wtxdummy, keyChange, nFeeRet, strErr, &cControl, ALL_COINS, false, CAmount(0));
         CAmount nLastSendAmount = vecSend[vecSend.size() - 1].second;
         if (nLastSendAmount < nFeeRet + 500) {
             LogPrintf("%s: fee of %s is too large to insert into last output\n");
@@ -3464,7 +3523,7 @@ bool CWallet::MultiSend()
         vecSend[vecSend.size() - 1].second = nLastSendAmount - nFeeRet - 500;
 
         // Create the transaction and commit it to the network
-        if (!CreateTransaction(vecSend, wtx, keyChange, nFeeRet, strErr, cControl, ALL_COINS, false, CAmount(0))) {
+	if (!CreateTransaction(vecSend, wtx, keyChange, nFeeRet, strErr, &cControl, ALL_COINS, false, CAmount(0))) {
             LogPrintf("MultiSend createtransaction failed\n");
             return false;
         }
@@ -3475,8 +3534,6 @@ bool CWallet::MultiSend()
         } else
             fMultiSendNotify = true;
 
-        delete cControl;
-
         //write nLastMultiSendHeight to DB
         CWalletDB walletdb(strWalletFile);
         nLastMultiSendHeight = chainActive.Tip()->nHeight;
@@ -3484,21 +3541,32 @@ bool CWallet::MultiSend()
             LogPrintf("Failed to write MultiSend setting to DB\n");
 
         LogPrintf("MultiSend successfully sent\n");
-        if (sendMSOnStake)
-            stakeSent++;
-        else
-            mnSent++;
 
-        //stop iterating if we are done
-        if (mnSent > 0 && stakeSent > 0)
-            return true;
-        if (stakeSent > 0 && !fMultiSendMasternodeReward)
-            return true;
-        if (mnSent > 0 && !fMultiSendStake)
+	//set which Multisend triggered
+        if (sendMSOnStake)
+            stakeSent = true;
+        else
+            mnSent = true;
+
+	//stop iterating if we have sent out all the MultiSend(s)
+	if ((stakeSent && mnSent) || (stakeSent && !fMultiSendMasternodeReward) || (mnSent && !fMultiSendStake))
             return true;
     }
 
     return true;
+}
+
+bool CWallet::isMSAddressEnabled(std::string address)
+{
+	return !(std::find(vDisabledAddresses.begin(), vDisabledAddresses.end(), address) != vDisabledAddresses.end());
+}
+
+int CWallet::indexOfMSAddress(std::string address)
+{
+	for (unsigned int i = 0; i < vMultiSend.size(); i++) {
+		if (vMultiSend[i].first == address)return i;
+	}
+	return -1;
 }
 
 CKeyPool::CKeyPool()

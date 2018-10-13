@@ -47,8 +47,8 @@ class CActiveMasternode;
 #define OBFUSCATION_RELAY_OUT 2
 #define OBFUSCATION_RELAY_SIG 3
 
-static const CAmount OBFUSCATION_COLLATERAL = (10 * COIN);
-static const CAmount OBFUSCATION_POOL_MAX = (99999.99 * COIN);
+static const int64_t OBFUSCATION_COLLATERAL = (10 * COIN);
+static const int64_t OBFUSCATION_POOL_MAX = (99999.99 * COIN);
 
 extern CObfuscationPool obfuScationPool;
 extern CObfuScationSigner obfuScationSigner;
@@ -112,7 +112,7 @@ public:
     }
 
     /// Add entries to use for Obfuscation
-    bool Add(const std::vector<CTxIn> vinIn, int64_t amountIn, const CTransaction collateralIn, const std::vector<CTxOut> voutIn)
+    bool Add(const std::vector<CTxIn> vinIn, CAmount amountIn, const CTransaction collateralIn, const std::vector<CTxOut> voutIn)
     {
         if (isSet) {
             return false;
@@ -496,7 +496,7 @@ public:
 
     /// Get the denominations for a specific amount of ittrium.
     int GetDenominationsByAmount(CAmount nAmount, int nDenomTarget = 0); // is not used anymore?
-    int GetDenominationsByAmounts(std::vector<CAmount>& vecAmount);
+    int GetDenominationsByAmounts(std::vector<int64_t>& vecAmount);
 
     std::string GetMessageByID(int messageID);
 
@@ -507,7 +507,7 @@ public:
     void RelayFinalTransaction(const int sessionID, const CTransaction& txNew);
     void RelaySignaturesAnon(std::vector<CTxIn>& vin);
     void RelayInAnon(std::vector<CTxIn>& vin, std::vector<CTxOut>& vout);
-    void RelayIn(const std::vector<CTxDSIn>& vin, const CAmount& nAmount, const CTransaction& txCollateral, const std::vector<CTxDSOut>& vout);
+    void RelayIn(const std::vector<CTxDSIn>& vin, const int64_t& nAmount, const CTransaction& txCollateral, const std::vector<CTxDSOut>& vout);
     void RelayStatus(const int sessionID, const int newState, const int newEntriesCount, const int newAccepted, const int errorID = MSG_NOERR);
     void RelayCompletedTransaction(const int sessionID, const bool error, const int errorID);
 };

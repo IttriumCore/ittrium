@@ -12,17 +12,17 @@
 
 BOOST_AUTO_TEST_SUITE(main_tests)
 
-CAmount nMoneySupplyPoWEnd = 330000 * COIN;
-
 BOOST_AUTO_TEST_CASE(subsidy_limit_test)
 {
     CAmount nSum = 0;
-    for (int nHeight = 1; nHeight < 200; nHeight += 1) {
+    for (int nHeight = 0; nHeight < 14000000; nHeight += 1000) {
+        /* @TODO fix subsidity, add nBits */
         CAmount nSubsidy = GetBlockValue(nHeight);
-        BOOST_CHECK(nSubsidy <= 1650 * COIN);
-        nSum += nSubsidy;
+        BOOST_CHECK(nSubsidy <= 50 * COIN);
+        nSum += nSubsidy * 1000;
+        BOOST_CHECK(MoneyRange(nSum));
     }
-    BOOST_CHECK(nSum == 33000000000000ULL);
+    BOOST_CHECK(nSum == 2099999997690000ULL);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

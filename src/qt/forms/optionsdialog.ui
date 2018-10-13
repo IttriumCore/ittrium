@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
@@ -239,6 +239,13 @@
             </property>
             <property name="text">
              <string>&amp;Spend unconfirmed change</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="showOrphans">
+            <property name="text">
+             <string>Filter Orphans from Transaction History</string>
             </property>
            </widget>
           </item>
@@ -476,7 +483,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/IttriumCore/IttriumCore-translations</string>
+https://www.transifex.com/ittrium-project/ittrium-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -638,14 +645,14 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</string>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_Buttons">
      <item>
-      <widget class="QPushButton" name="resetButton">
+      <widget class="QtMaterialFlatButton" name="resetButton" native="true">
        <property name="toolTip">
         <string>Reset all client options to default.</string>
        </property>
-       <property name="text">
-        <string>&amp;Reset Options</string>
+       <property name="text" stdset="0">
+        <string>Reset Options</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -702,24 +709,24 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</string>
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="okButton">
-       <property name="text">
-        <string>&amp;OK</string>
+      <widget class="QtMaterialFlatButton" name="okButton" native="true">
+       <property name="text" stdset="0">
+        <string>OK</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="default">
+       <property name="default" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="cancelButton">
-       <property name="text">
-        <string>&amp;Cancel</string>
+      <widget class="QtMaterialFlatButton" name="cancelButton" native="true">
+       <property name="text" stdset="0">
+        <string>Cancel</string>
        </property>
-       <property name="autoDefault">
+       <property name="autoDefault" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -733,6 +740,12 @@ https://www.transifex.com/IttriumCore/IttriumCore-translations</string>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qvalidatedlineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>

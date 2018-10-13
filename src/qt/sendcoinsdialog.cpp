@@ -17,6 +17,7 @@
 #include "optionsmodel.h"
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
+#include "qtmaterialflatbutton.h"
 
 #include "base58.h"
 #include "coincontrol.h"

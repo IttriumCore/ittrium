@@ -7,6 +7,7 @@
 
 #include "openuridialog.h"
 #include "ui_openuridialog.h"
+#include "qtmaterialflatbutton.h"
 
 #include "guiutil.h"
 #include "walletmodel.h"
@@ -32,7 +33,7 @@ QString OpenURIDialog::getURI()
     return ui->uriEdit->text();
 }
 
-void OpenURIDialog::accept()
+void OpenURIDialog::on_acceptButton_clicked()
 {
     SendCoinsRecipient rcp;
     if (GUIUtil::parseBitcoinURI(getURI(), &rcp)) {
@@ -41,6 +42,10 @@ void OpenURIDialog::accept()
     } else {
         ui->uriEdit->setValid(false);
     }
+}
+
+void OpenURIDialog::on_cancelButton_clicked() {
+	this->close();
 }
 
 void OpenURIDialog::on_selectFileButton_clicked()

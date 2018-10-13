@@ -42,11 +42,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case XIT:
-        return QString("xit");
+        return QString("ittrium");
     case mXIT:
-        return QString("mxit");
+        return QString("mittrium");
     case uXIT:
-        return QString::fromUtf8("uxit");
+        return QString::fromUtf8("uittrium");
     default:
         return QString("???");
     }

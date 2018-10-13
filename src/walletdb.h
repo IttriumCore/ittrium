@@ -99,6 +99,9 @@ public:
     bool WriteWatchOnly(const CScript& script);
     bool EraseWatchOnly(const CScript& script);
 
+    bool WriteMultiSig(const CScript& script);
+    bool EraseMultiSig(const CScript& script);
+
     bool WriteBestBlock(const CBlockLocator& locator);
     bool ReadBestBlock(CBlockLocator& locator);
 
@@ -106,8 +109,8 @@ public:
 
     // presstab
     bool WriteStakeSplitThreshold(uint64_t nStakeSplitThreshold);
-    bool WriteMultiSend(std::vector<std::pair<std::string, int> > vMultiSend);
-    bool EraseMultiSend(std::vector<std::pair<std::string, int> > vMultiSend);
+    bool WriteMultiSend(std::vector<std::pair<std::string, std::vector<std::pair<std::string, int>>>> vMultiSend);
+    bool EraseMultiSend(std::vector<std::pair<std::string, std::vector<std::pair<std::string, int>>>> vMultiSend);
     bool WriteMSettings(bool fMultiSendStake, bool fMultiSendMasternode, int nLastMultiSendHeight);
     bool WriteMSDisabledAddresses(std::vector<std::string> vDisabledAddresses);
     bool EraseMSDisabledAddresses(std::vector<std::string> vDisabledAddresses);

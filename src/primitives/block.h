@@ -1,7 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2017-2018 The Ittrium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +81,7 @@ public:
     // network and disk
     std::vector<CTransaction> vtx;
 
-    // ittrium: block signature - signed by one of the coin base txout[N]'s owner
+    // ppcoin: block signature - signed by one of the coin base txout[N]'s owner
     std::vector<unsigned char> vchBlockSig;
 
     // memory only
@@ -132,7 +130,7 @@ public:
         return block;
     }
 
-    // ittrium: two types of block: proof-of-work or proof-of-stake
+    // ppcoin: two types of block: proof-of-work or proof-of-stake
     bool IsProofOfStake() const
     {
         return (vtx.size() > 1 && vtx[1].IsCoinStake());

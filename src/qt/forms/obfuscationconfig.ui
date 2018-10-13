@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Configure Obfuscation</string>
   </property>
-  <widget class="QPushButton" name="buttonBasic">
+  <widget class="QtMaterialFlatButton" name="buttonBasic">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -26,7 +26,7 @@
     <string>Basic Privacy</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonHigh">
+  <widget class="QtMaterialFlatButton" name="buttonHigh">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -39,7 +39,7 @@
     <string>High Privacy</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonMax">
+  <widget class="QtMaterialFlatButton" name="buttonMax">
    <property name="geometry">
     <rect>
      <x>20</x>

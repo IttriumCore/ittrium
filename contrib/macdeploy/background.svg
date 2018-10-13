@@ -1,34 +1,15 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1000pt" height="640pt" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet">
-	<!-- kate: space-indent off;
-	Copyright (c) 2015 The Bitcoin Core developers
-	Distributed under the MIT software license, see the accompanying
-	file COPYING or http://www.opensource.org/licenses/mit-license.php.
-	-->
-	<style type="text/css"><![CDATA[
-		text {
-			font-family: "Tuffy";
-			font-size: 86px;
-			fill: gray;
-			text-anchor: middle;
-		}
-	]]></style>
-	<defs>
-		<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-			<stop offset="0%" style="stop-color:rgb(239,239,239);stop-opacity:1" />
-			<stop offset="33%" style="stop-color:rgb(239,239,239);stop-opacity:1" />
-			<stop offset="80%" style="stop-color:rgb(205,205,205);stop-opacity:1" />
-			<stop offset="100%" style="stop-color:rgb(204,204,204);stop-opacity:1" />
-		</linearGradient>
-	</defs>
-	<rect width="1000" height="640" style="fill:url(#gradient);stroke-width:0" />
-	<g transform="translate(500,0) scale(0.9, 1)">
-		<text x="0" y="114">PACKAGE_NAME</text>
-	</g>
-	<g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
-	fill="#000000" stroke="none">
-		<path d="M4995 3705 c-24 -23 -25 -29 -25 -165 l0 -140 -306 0 -306 0 -29 -29 c-29 -29 -29 -31 -29 -141 0 -110 0 -112 29 -141 l29 -29 306 0 306 0 0 -140 c0 -136 1 -142 25 -165 16 -17 35 -25 57 -25 29 0 72 32 306 226 180 149 274 233 278 250 13 53 -2 70 -278 299 -235 194 -277 225 -306 225 -22 0 -41 -8 -57 -25z" fixlter="url(#glow)"/>
-	</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 640" style="enable-background:new 0 0 1000 640;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#364059;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Helvetica Neue';font-weight:bold;}
+	.st3{font-size:48px;}
+</style>
+<rect y="0" class="st0" width="1000" height="640"/>
+<text transform="matrix(0.9 0 0 1 437.9185 333.5358)" class="st1 st2 st3">PACKAGE_NAME</text>
+<path class="st1" d="M371,586.5H71c-6.6,0-12-5.4-12-12v-509c0-6.6,5.4-12,12-12h300c6.6,0,12,5.4,12,12v509
+	C383,581.1,377.6,586.5,371,586.5z"/>
 </svg>

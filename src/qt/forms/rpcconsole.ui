@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_info">
       <attribute name="title">
@@ -343,14 +343,14 @@
         </widget>
        </item>
        <item row="16" column="0">
-        <widget class="QPushButton" name="openDebugLogfileButton">
+        <widget class="QtMaterialFlatButton" name="openDebugLogfileButton" native="true">
          <property name="toolTip">
           <string>Open the XIT debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
-         <property name="text">
-          <string>&amp;Open</string>
+         <property name="text" stdset="0">
+          <string>Open</string>
          </property>
-         <property name="autoDefault">
+         <property name="autoDefault" stdset="0">
           <bool>false</bool>
          </property>
         </widget>
@@ -390,17 +390,10 @@
           <number>3</number>
          </property>
          <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string notr="true">&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <widget class="QLineEdit" name="lineEdit"/>
          </item>
          <item>
-          <widget class="QPushButton" name="clearButton">
+          <widget class="QtMaterialFlatButton" name="clearButton" native="true">
            <property name="maximumSize">
             <size>
              <width>24</width>
@@ -410,17 +403,17 @@
            <property name="toolTip">
             <string>Clear console</string>
            </property>
-           <property name="text">
+           <property name="text" stdset="0">
             <string/>
            </property>
-           <property name="icon">
+           <property name="icon" stdset="0">
             <iconset resource="../ittrium.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
-           <property name="shortcut">
+           <property name="shortcut" stdset="0">
             <string notr="true">Ctrl+L</string>
            </property>
-           <property name="autoDefault">
+           <property name="autoDefault" stdset="0">
             <bool>false</bool>
            </property>
           </widget>
@@ -481,11 +474,11 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="btnClearTrafficGraph">
-             <property name="text">
-              <string>&amp;Clear</string>
+            <widget class="QtMaterialFlatButton" name="btnClearTrafficGraph" native="true">
+             <property name="text" stdset="0">
+              <string>Clear</string>
              </property>
-             <property name="autoDefault">
+             <property name="autoDefault" stdset="0">
               <bool>false</bool>
              </property>
             </widget>
@@ -688,17 +681,91 @@
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0" rowspan="2">
-        <widget class="QTableView" name="peerWidget">
-         <property name="horizontalScrollBarPolicy">
-          <enum>Qt::ScrollBarAsNeeded</enum>
+        <layout class="QVBoxLayout" name="verticalLayout_101">
+         <property name="spacing">
+          <number>0</number>
          </property>
-         <property name="sortingEnabled">
-          <bool>true</bool>
-         </property>
-         <attribute name="horizontalHeaderHighlightSections">
-          <bool>false</bool>
-         </attribute>
-        </widget>
+         <item>
+          <widget class="QTableView" name="peerWidget">
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="banHeading">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Banned peers</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="textInteractionFlags">
+            <set>Qt::NoTextInteraction</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableView" name="banlistWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="peerHeading">
@@ -1138,14 +1205,14 @@
         </spacer>
        </item>
        <item row="4" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_salvagewallet">
+        <widget class="QtMaterialFlatButton" name="btn_salvagewallet" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Salvage wallet</string>
          </property>
         </widget>
@@ -1168,14 +1235,14 @@
         </widget>
        </item>
        <item row="5" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_rescan">
+        <widget class="QtMaterialFlatButton" name="btn_rescan" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Rescan blockchain files</string>
          </property>
         </widget>
@@ -1198,14 +1265,14 @@
         </widget>
        </item>
        <item row="6" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_zapwallettxes1">
+        <widget class="QtMaterialFlatButton" name="btn_zapwallettxes1" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Recover transactions 1</string>
          </property>
         </widget>
@@ -1228,14 +1295,14 @@
         </widget>
        </item>
        <item row="7" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_zapwallettxes2">
+        <widget class="QtMaterialFlatButton" name="btn_zapwallettxes2" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Recover transactions 2</string>
          </property>
         </widget>
@@ -1258,14 +1325,14 @@
         </widget>
        </item>
        <item row="8" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_upgradewallet">
+        <widget class="QtMaterialFlatButton" name="btn_upgradewallet" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Upgrade wallet format</string>
          </property>
         </widget>
@@ -1288,14 +1355,14 @@
         </widget>
        </item>
        <item row="9" column="0" colspan="2">
-        <widget class="QPushButton" name="btn_reindex">
+        <widget class="QtMaterialFlatButton" name="btn_reindex" native="true">
          <property name="minimumSize">
           <size>
            <width>100</width>
            <height>23</height>
           </size>
          </property>
-         <property name="text">
+         <property name="text" stdset="0">
           <string>Rebuild index</string>
          </property>
         </widget>
@@ -1337,6 +1404,11 @@
   </layout>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>QtMaterialFlatButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialflatbutton.h</header>
+  </customwidget>
   <customwidget>
    <class>TrafficGraphWidget</class>
    <extends>QWidget</extends>

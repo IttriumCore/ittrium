@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina ITTRIUM adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina Ittrium adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina ITTRIUM adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina Ittrium adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,8 +160,8 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
-        <translation>ITTRIUM kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina XITs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <translation>Ittrium kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina XITs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -232,8 +232,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM adressen för signera meddelandet med</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna ITTRIUM adress</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Ittrium adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Ange</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM adressen meddelandet blev signerat med</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ITTRIUM adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Ittrium adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kärna</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>Skicka mynt till en ITTRIUM adress</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>Skicka mynt till en Ittrium adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och xit: URls)</translation>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och ittrium: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>Om ITTRIUM Kärnan</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>Om Ittrium Kärnan</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Visa information om ITTRIUM Kärnan</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Visa information om Ittrium Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Ändra konfigurationsval för ITTRIUM</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Ändra konfigurationsval för Ittrium</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Signera meddelanden med din ITTRIUM adress för att visa att du äger dem</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Ittrium adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ITTRIUM adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Ittrium adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>ITTRIUM kärn klient</translation>
+        <source>Ittrium Core client</source>
+        <translation>Ittrium kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -841,15 +841,15 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kärna</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kärna</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM adressen för signera meddelandet med</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna ITTRIUM adress</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna Ittrium adress</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>ITTRIUM adressen meddelandet blev signerat med</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Ittrium adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ITTRIUM adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Ittrium adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1181,8 +1181,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Kärna</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Kärna</translation>
     </message>
     </context>
 <context>

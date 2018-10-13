@@ -11,6 +11,7 @@
 #include "addressbookpage.h"
 #include "guiutil.h"
 #include "walletmodel.h"
+#include "qtmaterialflatbutton.h"
 
 #include "base58.h"
 #include "init.h"

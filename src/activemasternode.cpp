@@ -13,7 +13,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a XIT collateral input and register on the network
+// Bootup the Masternode, look for a 5000 XIT collateral input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -37,7 +37,8 @@ void CActiveMasternode::ManageStatus()
         pmn = mnodeman.Find(pubKeyMasternode);
         if (pmn != NULL) {
             pmn->Check();
-            if (pmn->IsEnabled() && pmn->protocolVersion == PROTOCOL_VERSION) EnableHotColdMasterNode(pmn->vin, pmn->addr);
+            if (pmn->IsEnabled() && pmn->protocolVersion >= ActiveProtocol()) 
+                EnableHotColdMasterNode(pmn->vin, pmn->addr);
         }
     }
 

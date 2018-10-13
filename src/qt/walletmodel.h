@@ -213,6 +213,7 @@ public:
 private:
     CWallet* wallet;
     bool fHaveWatchOnly;
+    bool fHaveMultiSig;
     bool fForceCheckBalanceChanged;
 
     // Wallet has an options model for wallet-specific options
@@ -266,6 +267,9 @@ signals:
     // Watch-only address added
     void notifyWatchonlyChanged(bool fHaveWatchonly);
 
+    // MultiSig address added
+    void notifyMultiSigChanged(bool fHaveMultiSig);
+
 public slots:
     /* Wallet status might have changed */
     void updateStatus();
@@ -275,8 +279,12 @@ public slots:
     void updateAddressBook(const QString& address, const QString& label, bool isMine, const QString& purpose, int status);
     /* Watch-only added */
     void updateWatchOnlyFlag(bool fHaveWatchonly);
+    /* MultiSig added */
+    void updateMultiSigFlag(bool fHaveMultiSig);
     /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
     void pollBalanceChanged();
+    /* Update address book labels in the database */
+    void updateAddressBookLabels(const CTxDestination& address, const string& strName, const string& strPurpose);
 };
 
 #endif // BITCOIN_QT_WALLETMODEL_H

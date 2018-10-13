@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie ITTRIUM überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie Ittrium überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie ITTRIUM empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie Ittrium empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre ITTRIUM-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie ITTRIUM überweisen.</translation>
+        <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre Ittrium-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Ittrium überweisen.</translation>
     </message>
     <message>
-        <source>These are your ITTRIUM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre ITTRIUM-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre Ittrium-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>ITTRIUM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
+        <source>Ittrium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XITs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer XITs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine ITTRIUM Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <translation>Gib eine Ittrium Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese ITTRIUM Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Ittrium Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>Die ITTRIUM Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Die Ittrium Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen ITTRIUM-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Ittrium-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>Send coins to a ITTRIUM address</source>
-        <translation>An eine ITTRIUM-Adresse überweisen</translation>
+        <source>Send coins to a Ittrium address</source>
+        <translation>An eine Ittrium-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and xit: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und xit: URIs)</translation>
+        <source>Request payments (generates QR codes and ittrium: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und ittrium: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -622,24 +622,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>Über.ITTRIUM Core</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>Über.Ittrium Core</translation>
     </message>
     <message>
-        <source>Show information about ITTRIUM Core</source>
-        <translation>Zeigt Informationen über ITTRIUM Core</translation>
+        <source>Show information about Ittrium Core</source>
+        <translation>Zeigt Informationen über Ittrium Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for ITTRIUM</source>
-        <translation>Konfiguration von ITTRIUM verändern</translation>
+        <source>Modify configuration options for Ittrium</source>
+        <translation>Konfiguration von Ittrium verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your ITTRIUM addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer ITTRIUM-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your Ittrium addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer Ittrium-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ITTRIUM addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten ITTRIUM-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified Ittrium addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Ittrium-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a ITTRIUM: URI or payment request</source>
-        <translation>Öffne eine ITTRIUM: URI or Zahlungsanfrage</translation>
+        <source>Open a Ittrium: URI or payment request</source>
+        <translation>Öffne eine Ittrium: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the ITTRIUM Core help message to get a list with possible ITTRIUM command-line options</source>
-        <translation>Zeige die ITTRIUM-Core Hilfe, um mögliche ITTRIUM Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the Ittrium Core help message to get a list with possible Ittrium command-line options</source>
+        <translation>Zeige die Ittrium-Core Hilfe, um mögliche Ittrium Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>ITTRIUM Core client</source>
-        <translation>ITTRIUM Core Client</translation>
+        <source>Ittrium Core client</source>
+        <translation>Ittrium Core Client</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1113,8 +1113,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ITTRIUM address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige ITTRIUM-Adresse.</translation>
+        <source>The entered address "%1" is not a valid Ittrium address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige Ittrium-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1159,16 +1159,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About ITTRIUM Core</source>
-        <translation>Über ITTRIUM Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>Über Ittrium Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1214,16 +1214,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Willkommen zu ITTRIUM Core.</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Willkommen zu Ittrium Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ITTRIUM Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie ITTRIUM Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ittrium Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie Ittrium Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core will download and store a copy of the ITTRIUM block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ITTRIUM Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>Ittrium Core will download and store a copy of the Ittrium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ittrium Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1234,8 +1234,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1372,12 +1372,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ITTRIUM addresses after it matures.
-To Add: enter percentage to give and ITTRIUM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Ittrium addresses after it matures.
+To Add: enter percentage to give and Ittrium address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen ITTRIUM-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die ITTRIUM-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Ittrium-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die Ittrium-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1705,8 +1705,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a ITTRIUM address (e.g. %1)</source>
-        <translation>ITTRIUM-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a Ittrium address (e.g. %1)</source>
+        <translation>Ittrium-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2106,8 +2106,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to send the payment to</source>
-        <translation>ITTRIUM-Adresse, an die überwiesen werden soll</translation>
+        <source>The Ittrium address to send the payment to</source>
+        <translation>Ittrium-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2146,8 +2146,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the ITTRIUM: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ITTRIUM network.</source>
-        <translation>Eine an die ITTRIUM-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das ITTRIUM-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the Ittrium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ittrium network.</source>
+        <translation>Eine an die Ittrium-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Ittrium-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2173,8 +2173,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ITTRIUM Core is shutting down...</source>
-        <translation>ITTRIUM Core wird beendet...</translation>
+        <source>Ittrium Core is shutting down...</source>
+        <translation>Ittrium Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2188,8 +2188,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>The ITTRIUM address to sign the message with</source>
-        <translation>ITTRIUM Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Ittrium address to sign the message with</source>
+        <translation>Ittrium Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2216,16 +2216,16 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ITTRIUM address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese ITTRIUM Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Ittrium address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Ittrium Adresse besitzt</translation>
     </message>
     <message>
-        <source>The ITTRIUM address the message was signed with</source>
-        <translation>Die ITTRIUM Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Ittrium address the message was signed with</source>
+        <translation>Die Ittrium Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ITTRIUM address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen ITTRIUM-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ittrium address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Ittrium-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2263,8 +2263,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2279,8 +2279,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The ITTRIUM Core developers</source>
-        <translation>Die ITTRIUM Core Entwickler</translation>
+        <source>The Ittrium Core developers</source>
+        <translation>Die Ittrium Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2997,8 +2997,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ITTRIUM Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte ITTRIUM Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart Ittrium Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte Ittrium Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -14,6 +14,7 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <set>
+#include "qtmaterialflatbutton.h"
 
 extern double GetDifficulty(const CBlockIndex* blockindex = NULL);
 
@@ -175,7 +176,7 @@ const CBlockIndex* getexplorerBlockIndex(int64_t height)
 
 std::string getexplorerBlockHash(int64_t Height)
 {
-    std::string genesisblockhash = "000003616197a9a9093a9cdda330cb4e0d52c4d7d3585dd985602913d93dfc0a";
+    std::string genesisblockhash = "000000fdacddaba54eb66a4c09dc795efbfc75fcd0572c99f489424367bc9ec9";
     CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if ((Height < 0) || (Height > pindexBest->nHeight)) {
         return genesisblockhash;
@@ -286,8 +287,8 @@ std::string BlockToString(CBlockIndex* pBlock)
 
 std::string TxToString(uint256 BlockHash, const CTransaction& tx)
 {
-    CAmount Input = 0;
-    CAmount Output = tx.GetValueOut();
+    int64_t Input = 0;
+    int64_t Output = tx.GetValueOut();
 
     std::string InputsContentCells[] = {_("#"), _("Taken from"), _("Address"), _("Amount")};
     std::string InputsContent = makeHTMLTableRow(InputsContentCells, sizeof(InputsContentCells) / sizeof(std::string));
@@ -391,7 +392,7 @@ std::string AddressToString(const CBitcoinAddress& Address)
     CScript AddressScript;
     AddressScript.SetDestination(Address.Get());
 
-    CAmount Sum = 0;
+    int64_t Sum = 0;
     bool fAddrIndex = false;
 
     if (!fAddrIndex)

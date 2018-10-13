@@ -6,8 +6,8 @@
 	<array>
 		<integer>300</integer>
 		<integer>300</integer>
-		<integer>800</integer>
-		<integer>620</integer>
+		<integer>1290</integer>
+		<integer>980</integer>
 	</array>
 	<key>background_picture</key>
 	<string>background.tiff</string>
@@ -19,13 +19,13 @@
 	<dict>
 		<key>Applications</key>
 		<array>
-			<integer>370</integer>
-			<integer>156</integer>
+			<integer>220</integer>
+			<integer>420</integer>
 		</array>
 		<key>Ittrium-Qt.app</key>
 		<array>
-			<integer>128</integer>
-			<integer>156</integer>
+			<integer>220</integer>
+			<integer>180</integer>
 		</array>
 	</dict>
 </dict>

@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>&amp;About ITTRIUM Core</source>
-        <translation>&amp;Sobre ITTRIUM Core</translation>
+        <source>&amp;About Ittrium Core</source>
+        <translation>&amp;Sobre Ittrium Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>About ITTRIUM Core</source>
-        <translation>Sobre ITTRIUM Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>Sobre Ittrium Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to ITTRIUM Core.</source>
-        <translation>Benvingut a ITTRIUM Core.</translation>
+        <source>Welcome to Ittrium Core.</source>
+        <translation>Benvingut a Ittrium Core.</translation>
     </message>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1132,8 +1132,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ITTRIUM Core</source>
-        <translation>ITTRIUM Core</translation>
+        <source>Ittrium Core</source>
+        <translation>Ittrium Core</translation>
     </message>
     <message>
         <source>Version %1</source>

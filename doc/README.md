@@ -3,7 +3,7 @@ Ittrium Core
 
 Setup
 ---------------------
-[Ittrium Core](http://ittrium.io) is the original Ittrium client and it builds the backbone of the network. However, it downloads and stores the entire history of ittrium transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Ittrium Core](https://www.ittrium.io/) is the original Ittrium client and it builds the backbone of the network. However, it downloads and stores the entire history of Ittrium transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -26,8 +26,9 @@ Drag Ittrium-Qt to your applications folder, and then run Ittrium-Qt.
 
 ### Need Help?
 
-***TODO***
-
+* See the documentation at the [Ittrium KB](https://kb.ittrium.io)
+for help and more information.
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=2499481.0) or on the [Ittrium Discord](https://discord.gg/a7vhegP).
 
 Building
 ---------------------
@@ -39,7 +40,7 @@ The following are developer notes on how to build Ittrium on your native platfor
 
 Development
 ---------------------
-The Ittrium repo's [root README](https://github.com/IttriumCore/ittrium/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Ittrium repo's [root README](https://github.com/IttriumCore/Ittrium/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -53,7 +54,7 @@ The Ittrium repo's [root README](https://github.com/IttriumCore/ittrium/blob/mas
 
 ### Resources
 
-* Discuss on the [BitcoinTalk]
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2499481.0) or the [Ittrium Subreddit](http://reddit.com/r/ittriumcoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

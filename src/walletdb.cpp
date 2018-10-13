@@ -130,6 +130,18 @@ bool CWalletDB::EraseWatchOnly(const CScript& dest)
     return Erase(std::make_pair(std::string("watchs"), dest));
 }
 
+bool CWalletDB::WriteMultiSig(const CScript& dest)
+{
+    nWalletDBUpdated++;
+    return Write(std::make_pair(std::string("multisig"), dest), '1');
+}
+
+bool CWalletDB::EraseMultiSig(const CScript& dest)
+{
+    nWalletDBUpdated++;
+    return Erase(std::make_pair(std::string("multisig"), dest));
+}
+
 bool CWalletDB::WriteBestBlock(const CBlockLocator& locator)
 {
     nWalletDBUpdated++;
@@ -155,30 +167,26 @@ bool CWalletDB::WriteStakeSplitThreshold(uint64_t nStakeSplitThreshold)
 }
 
 //presstab HyperStake
-bool CWalletDB::WriteMultiSend(std::vector<std::pair<std::string, int> > vMultiSend)
+bool CWalletDB::WriteMultiSend(std::vector<std::pair<std::string,std::vector<std::pair<std::string, int>>>> vMultiSend)
 {
     nWalletDBUpdated++;
     bool ret = true;
-    for (unsigned int i = 0; i < vMultiSend.size(); i++) {
-        std::pair<std::string, int> pMultiSend;
-        pMultiSend = vMultiSend[i];
-        if (!Write(std::make_pair(std::string("multisend"), i), pMultiSend, true))
-            ret = false;
-    }
-    return ret;
+	for (unsigned int i = 0; i < vMultiSend.size(); i++) {
+		if (!Write(std::make_pair(std::string("multisendv2"),i), vMultiSend[i], true))
+			ret = false;
+	}
+	return ret;
 }
 //presstab HyperStake
-bool CWalletDB::EraseMultiSend(std::vector<std::pair<std::string, int> > vMultiSend)
+bool CWalletDB::EraseMultiSend(std::vector<std::pair<std::string, std::vector<std::pair<std::string, int>>>> vMultiSend)
 {
-    nWalletDBUpdated++;
-    bool ret = true;
-    for (unsigned int i = 0; i < vMultiSend.size(); i++) {
-        std::pair<std::string, int> pMultiSend;
-        pMultiSend = vMultiSend[i];
-        if (!Erase(std::make_pair(std::string("multisend"), i)))
-            ret = false;
-    }
-    return ret;
+	nWalletDBUpdated++;
+	bool ret = true;
+	for (unsigned int i = 0; i < vMultiSend.size(); i++) {
+		if (!Erase(std::make_pair(std::string("multisendv2"), i)))
+			ret = false;
+	}
+	return ret;
 }
 //presstab HyperStake
 bool CWalletDB::WriteMSettings(bool fMultiSendStake, bool fMultiSendMasternode, int nLastMultiSendHeight)
@@ -474,6 +482,17 @@ bool ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue, CW
             // Watch-only addresses have no birthday information for now,
             // so set the wallet birthday to the beginning of time.
             pwallet->nTimeFirstKey = 1;
+	} else if (strType == "multisig") {
+		CScript script;
+		ssKey >> script;
+		char fYes;
+		ssValue >> fYes;
+		if (fYes == '1')
+			pwallet->LoadMultiSig(script);
+		
+		// MultiSig addresses have no birthday information for now,
+		// so set the wallet birthday to the beginning of time.
+		pwallet->nTimeFirstKey = 1;
         } else if (strType == "key" || strType == "wkey") {
             CPubKey vchPubKey;
             ssKey >> vchPubKey;
@@ -599,15 +618,13 @@ bool ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue, CW
         } else if (strType == "stakeSplitThreshold") //presstab HyperStake
         {
             ssValue >> pwallet->nStakeSplitThreshold;
-        } else if (strType == "multisend") //presstab HyperStake
+        } else if (strType == "multisendv2") //presstab HyperStake
         {
             unsigned int i;
             ssKey >> i;
-            std::pair<std::string, int> pMultiSend;
+			std::pair<std::string, std::vector<std::pair<std::string, int>>> pMultiSend;
             ssValue >> pMultiSend;
-            if (CBitcoinAddress(pMultiSend.first).IsValid()) {
-                pwallet->vMultiSend.push_back(pMultiSend);
-            }
+			pwallet->vMultiSend.push_back(pMultiSend);
         } else if (strType == "msettingsv2") //presstab HyperStake
         {
             std::pair<std::pair<bool, bool>, int> pSettings;
