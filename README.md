@@ -38,6 +38,7 @@ addnode=95.216.136.26
 addnode=95.216.148.31
 addnode=95.216.169.173
 addnode=159.69.3.16
+addnode=
 ```
 
 ### Coin Specs
