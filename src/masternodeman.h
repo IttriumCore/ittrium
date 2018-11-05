@@ -1,6 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Ittrium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -147,7 +146,6 @@ public:
     /// Return the number of (unique) Masternodes
     int size() { return vMasternodes.size(); }
 
-    /// Return the number of Masternodes older than (default) 8000 seconds
     int stable_size ();
 
     std::string ToString() const;

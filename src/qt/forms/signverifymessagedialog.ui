@@ -24,7 +24,7 @@
      </property>
      <widget class="QWidget" name="tabSignMessage">
       <attribute name="title">
-       <string>&amp;Sign Message</string>
+       <string>Sign Message</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_SM">
        <item>
@@ -231,7 +231,7 @@
      </widget>
      <widget class="QWidget" name="tabVerifyMessage">
       <attribute name="title">
-       <string>&amp;Verify Message</string>
+       <string>Verify Message</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_VM">
        <item>
@@ -381,7 +381,6 @@
    <class>QtMaterialFlatButton</class>
    <extends>QWidget</extends>
    <header>qtmaterialflatbutton.h</header>
-   <container>1</container>
   </customwidget>
   <customwidget>
    <class>QValidatedLineEdit</class>

@@ -10,36 +10,36 @@
         <translation>Crea una nova adreça</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Nou</translation>
+        <source>New</source>
+        <translation>Nou</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Copia l'adreça seleccionada al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Copia</translation>
+        <source>Copy</source>
+        <translation>Copia</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Elimina l'adreça seleccionada de la llista</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Elimina</translation>
+        <source>Delete</source>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta les dades de la pestanya actual a un fitxer</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporta</translation>
+        <source>Export</source>
+        <translation>Exporta</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>&amp;Tanca</translation>
+        <source>Close</source>
+        <translation>Tanca</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>Tria l'adreça on rebre les monedes</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>&amp;Tria</translation>
+        <source>Choose</source>
+        <translation>Tria</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -62,16 +62,16 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Copia adreça</translation>
+        <source>Copy Address</source>
+        <translation>Copia adreça</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
-        <translation>Copia l'eti&amp;queta</translation>
+        <source>Copy Label</source>
+        <translation>Copia l'etiqueta</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Edita</translation>
+        <source>Edit</source>
+        <translation>Edita</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -234,144 +234,144 @@
         <translation>Node</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Envia</translation>
+        <source>Send</source>
+        <translation>Envia</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Rep</translation>
+        <source>Receive</source>
+        <translation>Rep</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaccions</translation>
+        <source>Transactions</source>
+        <translation>Transaccions</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
         <translation>Mostra històric de transaccions</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Surt</translation>
+        <source>Exit</source>
+        <translation>Surt</translation>
     </message>
     <message>
         <source>Quit application</source>
         <translation>Surt de l'aplicació</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>Sobre &amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>Sobre Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
         <translation>Mostra informació sobre el Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opcions...</translation>
+        <source>Options...</source>
+        <translation>Opcions...</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
         <translation>Mostra o oculta la Finestra principal</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encripta el moneder...</translation>
+        <source>Encrypt Wallet...</source>
+        <translation>Encripta el moneder...</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Realitza una &amp;còpia de seguretat del moneder...</translation>
+        <source>Backup Wallet...</source>
+        <translation>Realitza una còpia de seguretat del moneder...</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Desbloqueja el moneder...</translation>
+        <source>Unlock Wallet...</source>
+        <translation>Desbloqueja el moneder...</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Desbloqueja el moneder</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>B&amp;loqueja el moneder</translation>
+        <source>Lock Wallet</source>
+        <translation>Bloqueja el moneder</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>Signar &amp;missatge...</translation>
+        <source>Sign message...</source>
+        <translation>Signar missatge...</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verifica el missatge...</translation>
+        <source>Verify message...</source>
+        <translation>Verifica el missatge...</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informació</translation>
+        <source>Information</source>
+        <translation>Informació</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
-        <translation>Consola de &amp;Depuració</translation>
+        <source>Debug console</source>
+        <translation>Consola de Depuració</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
-        <translation>Monitor de &amp;Xarxa</translation>
+        <source>Network Monitor</source>
+        <translation>Monitor de Xarxa</translation>
     </message>
     <message>
         <source>Show network monitor</source>
         <translation>Mostra el monitor de xarxa</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>&amp;Repara el moneder</translation>
+        <source>Wallet Repair</source>
+        <translation>Repara el moneder</translation>
     </message>
     <message>
         <source>Open configuration file</source>
         <translation>Obre el fitxer de configuració</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Adreces d'&amp;enviament...</translation>
+        <source>Sending addresses...</source>
+        <translation>Adreces d'enviament...</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Adreces de &amp;recepció...</translation>
+        <source>Receiving addresses...</source>
+        <translation>Adreces de recepció...</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Obre l'&amp;URI...</translation>
+        <source>Open URI...</source>
+        <translation>Obre l'URI...</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;Fitxer</translation>
+        <source>File</source>
+        <translation>Fitxer</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Configuració</translation>
+        <source>Settings</source>
+        <translation>Configuració</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Eines</translation>
+        <source>Tools</source>
+        <translation>Eines</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>A&amp;juda</translation>
+        <source>Help</source>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <source>Ittrium Core</source>
         <translation>Ittrium Core</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
-        <translation>&amp;Sobre Ittrium Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>Sobre Ittrium Core</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>Eina &amp;BIP38</translation>
+        <source>BIP38 tool</source>
+        <translation>Eina BIP38</translation>
     </message>
     <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Obre el fitxer de &amp;configuració del moneder</translation>
+        <source>Open Wallet Configuration File</source>
+        <translation>Obre el fitxer de configuració del moneder</translation>
     </message>
     <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Obre el fitxer de &amp;configuració del Node Mestre</translation>
+        <source>Open Masternode Configuration File</source>
+        <translation>Obre el fitxer de configuració del Node Mestre</translation>
     </message>
     <message>
         <source>Open Masternode configuration file</source>
@@ -518,8 +518,8 @@
         <translation>Edita l'adreça</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
-        <translation>&amp;Adreça</translation>
+        <source>Address</source>
+        <translation>Adreça</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -694,20 +694,20 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <source>Port:</source>
+        <translation>Port:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
         <translation>Tema de la interfície d'usuari:</translation>
     </message>
     <message>
-        <source>&amp;Reset Options</source>
-        <translation>&amp;Restableix les opcions</translation>
+        <source>Reset Options</source>
+        <translation>Restableix les opcions</translation>
     </message>
     <message>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Cancel·la</translation>
+        <source>Cancel</source>
+        <translation>Cancel·la</translation>
     </message>
     </context>
 <context>
@@ -729,36 +729,8 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Estat:</translation>
-    </message>
-    <message>
-        <source>Obfuscation</source>
-        <translation>Ofuscació</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Transaccions recents</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Restableix</translation>
-    </message>
-    <message>
-        <source>Disabled</source>
-        <translation>Desactivat</translation>
-    </message>
-    <message>
-        <source>Start Obfuscation</source>
-        <translation>Inicia ofuscació</translation>
-    </message>
-    <message>
-        <source>Stop Obfuscation</source>
-        <translation>Atura ofuscació</translation>
-    </message>
-    <message>
-        <source>Enabled</source>
-        <translation>Activat</translation>
     </message>
     </context>
 <context>
@@ -775,6 +747,53 @@
         <translation>Temps de Ping</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Reset</source>
+        <translation>Restableix</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantitat:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Import:</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioritat:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>no</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Canvi:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copia la quantitat</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'import</translation>
+    </message>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -809,8 +828,8 @@
 <context>
     <name>QRImageWidget</name>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Copia la imatge</translation>
+        <source>Copy Image</source>
+        <translation>Copia la imatge</translation>
     </message>
     </context>
 <context>
@@ -820,8 +839,8 @@
         <translation>Finestra d'eines</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informació</translation>
+        <source>Information</source>
+        <translation>Informació</translation>
     </message>
     <message>
         <source>General</source>
@@ -836,8 +855,8 @@
         <translation>Nombre de connexions</translation>
     </message>
     <message>
-        <source>&amp;Open</source>
-        <translation>&amp;Obre</translation>
+        <source>Open</source>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Network</source>
@@ -848,8 +867,8 @@
         <translation>Data de compilació</translation>
     </message>
     <message>
-        <source>&amp;Console</source>
-        <translation>&amp;Consola</translation>
+        <source>Console</source>
+        <translation>Consola</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -915,8 +934,8 @@
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Missatge:</translation>
+        <source>Message:</source>
+        <translation>Missatge:</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -942,8 +961,8 @@
         <translation>Codi QR</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Copia l'&amp;adreça</translation>
+        <source>Copy Address</source>
+        <translation>Copia l'adreça</translation>
     </message>
     <message>
         <source>URI</source>
@@ -1020,10 +1039,6 @@
         <translation>Minimitzar</translation>
     </message>
     <message>
-        <source>Obfuscation</source>
-        <translation>Ofuscació</translation>
-    </message>
-    <message>
         <source>Confirmation time:</source>
         <translation>Temps de Confirmació:</translation>
     </message>
@@ -1085,8 +1100,8 @@
         <translation>Signatures - Signa / Verifica un Missatge</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Signa el missatge</translation>
+        <source>Sign Message</source>
+        <translation>Signa el missatge</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1101,16 +1116,16 @@
         <translation>Signatura</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
-        <translation>Signa el &amp;missatge</translation>
+        <source>Sign Message</source>
+        <translation>Signa el missatge</translation>
     </message>
     <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verifica el missatge</translation>
+        <source>Verify Message</source>
+        <translation>Verifica el missatge</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifica el &amp;missatge</translation>
+        <source>Verify Message</source>
+        <translation>Verifica el missatge</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1283,13 +1298,16 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporta</translation>
+        <source>Export</source>
+        <translation>Exporta</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta les dades de la pestanya actual a un fitxer</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>
@@ -1300,10 +1318,6 @@
     <message>
         <source>Information</source>
         <translation>Informació</translation>
-    </message>
-    <message>
-        <source>Obfuscation options:</source>
-        <translation>Opcions d'ofuscació:</translation>
     </message>
     <message>
         <source>Options:</source>

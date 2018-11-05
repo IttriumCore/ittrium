@@ -466,20 +466,21 @@ string DecodeBase32(const string& str)
 
 static bool ParsePrechecks(const std::string& str)
 {
-    if (str.empty()) // No empty string allowed
-        return false;
-    if (str.size() >= 1 && (isspace(str[0]) || isspace(str[str.size()-1]))) // No padding allowed
-        return false;
-    if (str.size() != strlen(str.c_str())) // No embedded NUL characters allowed
-        return false;
-    return true;
+	if (str.empty()) // No empty string allowed
+		return false;
+	if (str.size() >= 1 && (isspace(str[0]) || isspace(str[str.size()-1]))) // No padding allowed
+		return false;
+	if (str.size() != strlen(str.c_str())) // No embedded NUL characters allowed
+		return false;
+	return true;
 }
 
 bool ParseInt32(const std::string& str, int32_t *out)
 {
-    if (!ParsePrechecks(str))
-        return false;
-    char *endp = NULL;
+	if (!ParsePrechecks(str))
+		return false;
+	char *endp = NULL;
+
     errno = 0; // strtol will not set errno if valid
     long int n = strtol(str.c_str(), &endp, 10);
     if(out) *out = (int32_t)n;

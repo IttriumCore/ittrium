@@ -3,38 +3,38 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Höger klicka för att ändra adress eller beteckning</translation>
+        <translation>Höger klicka för att redigera adress eller etikett</translation>
     </message>
     <message>
         <source>Create a new address</source>
         <translation>Skapa en ny adress</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Ny</translation>
+        <source>New</source>
+        <translation>Ny</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Kopiera</translation>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Radera den valda adressen från listan</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Radera</translation>
+        <source>Delete</source>
+        <translation>Radera</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportera data in den nuvarande fliken till en fil</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportera</translation>
+        <source>Export</source>
+        <translation>Exportera</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>Close</source>
         <translation>Stäng</translation>
     </message>
     <message>
@@ -46,7 +46,7 @@
         <translation>Välj adress att ta emot mynt med</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>Choose</source>
         <translation>Välj</translation>
     </message>
     <message>
@@ -66,16 +66,16 @@
         <translation>Det här är dina Ittrium adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiera Adress</translation>
+        <source>Copy Address</source>
+        <translation>Kopiera Adress</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
-        <translation>Kopiera &amp; Märk</translation>
+        <source>Copy Label</source>
+        <translation>Kopiera  Ettikera</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Redigera</translation>
+        <source>Edit</source>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -219,13 +219,13 @@
         <translation>BIP 38 Verktyg</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
+        <source>BIP 38 Encrypt</source>
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Skriv in en Ittrium adress som du vill kryptera med BIP 38.
-Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
+        <translation>Ange en Ittrium adress som du vill kryptera med BIP 38.
+Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -268,24 +268,24 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Signera meddelandet för att bevisa att du äger denna Ittrium adress</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Kryptera &amp;Nyckel</translation>
+        <source>Encrypt Key</source>
+        <translation>Kryptera Nyckel</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
         <translation>Återställ alla signatur meddelande fält</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
+        <source>Clear All</source>
+        <translation>Rensa allt</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 Avkryptera</translation>
+        <source>BIP 38 Decrypt</source>
+        <translation>BIP 38 Avkryptera</translation>
     </message>
     <message>
         <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Ange</translation>
+        <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
         <source>The Ittrium address the message was signed with</source>
@@ -296,8 +296,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Ittrium adressen.</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Avkryptera &amp;Nyckel</translation>
+        <source>Decrypt Key</source>
+        <translation>Avkryptera Nyckel</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -337,7 +337,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Plånboks upplåsningen var avbruten</translation>
+        <translation>Upplåsningen av plånboken var avbruten.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -387,31 +387,31 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Nod</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Översikt</translation>
+        <source>Overview</source>
+        <translation>Översikt</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
         <translation>Visa generell översikt av plånbok</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Skicka</translation>
+        <source>Send</source>
+        <translation>Skicka</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Motta</translation>
+        <source>Receive</source>
+        <translation>Motta</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaktioner</translation>
+        <source>Transactions</source>
+        <translation>Transaktioner</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Bläddra i transaktions historien</translation>
+        <translation>Bläddra i transaktions historiken</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
+        <source>Exit</source>
         <translation>gå ut</translation>
     </message>
     <message>
@@ -419,27 +419,27 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>Om &amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>Om Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
         <translation>Visa information om Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Alternativ...</translation>
+        <source>Options...</source>
+        <translation>Alternativ...</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Visa / Dölj</translation>
+        <source>Show / Hide</source>
+        <translation>Visa / Dölj</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
         <translation>Visa eller Dölj huvudfönstret</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>Encrypt Wallet...</source>
         <translation>Kryptera Plånbok</translation>
     </message>
     <message>
@@ -447,15 +447,15 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kryptera privata nycklar som tillhör din plånbok</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Säkerhetskopiera plånbok</translation>
+        <source>Backup Wallet...</source>
+        <translation>Säkerhetskopiera plånbok</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
         <translation>Säkerhetskopiera din plånbok till en annan plats</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
+        <source>Change Passphrase...</source>
         <translation>Ändra lösenfras</translation>
     </message>
     <message>
@@ -463,7 +463,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Ändra lösenfrasen som används för kryptering av plånbok</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
+        <source>Unlock Wallet...</source>
         <translation>lås upp plånbok</translation>
     </message>
     <message>
@@ -471,19 +471,19 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>lås upp plånbok</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
+        <source>Lock Wallet</source>
         <translation>lås plånbok</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>signera &amp; meddelande...</translation>
+        <source>Sign message...</source>
+        <translation>signera  meddelande...</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
+        <source>Verify message...</source>
         <translation>Verifiera meddelande</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
+        <source>Information</source>
         <translation>information</translation>
     </message>
     <message>
@@ -491,7 +491,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Visa diagnostik information</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
+        <source>Debug console</source>
         <translation>Felsökningskonsol</translation>
     </message>
     <message>
@@ -499,7 +499,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Öppna felsökningskonsol</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
+        <source>Network Monitor</source>
         <translation>Nätverks övervakare</translation>
     </message>
     <message>
@@ -507,7 +507,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Visa nätverksövervakare</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
+        <source>Peers list</source>
         <translation>enhets lista</translation>
     </message>
     <message>
@@ -515,8 +515,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Visa enhetslista</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Plånbok &amp;Reparera</translation>
+        <source>Wallet Repair</source>
+        <translation>Plånbok Reparera</translation>
     </message>
     <message>
         <source>Show wallet repair options</source>
@@ -527,15 +527,15 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Öppna konfigurations fil</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Visa Automatiskt &amp;Säkerthetskopior</translation>
+        <source>Show Automatic Backups</source>
+        <translation>Visa Automatiskt Säkerthetskopior</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
         <translation>Visa automatiskt skapade säkerhetskopior av plånbok</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>Sending addresses...</source>
         <translation>Sändnings adresser</translation>
     </message>
     <message>
@@ -543,7 +543,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Visa listan över använda sändningsadresser och etiketter</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>Receiving addresses...</source>
         <translation>Mottagar adresser</translation>
     </message>
     <message>
@@ -551,11 +551,11 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Visa listan över använda mottagar adresser och etiketter</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Öppna &amp; URl</translation>
+        <source>Open URI...</source>
+        <translation>Öppna  URl</translation>
     </message>
     <message>
-        <source>&amp;Command-line options</source>
+        <source>Command-line options</source>
         <translation>komanndo linje val</translation>
     </message>
     <message>
@@ -563,19 +563,19 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>synchroniserar ytterligare data %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
+        <source>File</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
+        <source>Settings</source>
         <translation>Inställningar</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
+        <source>Tools</source>
         <translation>Verktyg</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
+        <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
@@ -595,7 +595,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Begär betalning (genererar QR kod och ittrium: URls)</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
+        <source>Masternodes</source>
         <translation>Masternoder</translation>
     </message>
     <message>
@@ -603,7 +603,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
+        <source>About Ittrium Core</source>
         <translation>Om Ittrium Kärnan</translation>
     </message>
     <message>
@@ -623,7 +623,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Ittrium adressen.</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
+        <source>BIP38 tool</source>
         <translation>BIP38 Verktyg</translation>
     </message>
     <message>
@@ -792,10 +792,6 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>medel-hög</translation>
     </message>
     <message>
-        <source>n/a</source>
-        <translation>ingen uppgift</translation>
-    </message>
-    <message>
         <source>medium</source>
         <translation>medel</translation>
     </message>
@@ -897,16 +893,71 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
     </context>
 <context>
     <name>OverviewPage</name>
-    <message>
-        <source>n/a</source>
-        <translation>ingen uppgift</translation>
-    </message>
     </context>
 <context>
     <name>PaymentServer</name>
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kvantitet:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Antal:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Använd den föregående använda adressen</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Limma in adress från urklipp</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Etikett:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioritet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Avgift:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nej</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medel</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopiera kvantitet</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopiera antal</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -921,7 +972,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
+        <source>Information</source>
         <translation>information</translation>
     </message>
     <message>
@@ -936,7 +987,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Label:</source>
+        <source>Label:</source>
         <translation>Etikett:</translation>
     </message>
     <message>
@@ -1041,8 +1092,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Efter Avgift:</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
+        <source>Clear All</source>
+        <translation>Rensa allt</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -1088,7 +1139,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
+        <source>Label:</source>
         <translation>Etikett:</translation>
     </message>
     <message>
@@ -1146,8 +1197,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Återställ alla signatur meddelande fält</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
+        <source>Clear All</source>
+        <translation>Rensa allt</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -1167,7 +1218,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Plånboks upplåsningen var avbruten</translation>
+        <translation>Upplåsningen av plånboken var avbruten.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -1356,13 +1407,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportera</translation>
+        <source>Export</source>
+        <translation>Exportera</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportera data in den nuvarande fliken till en fil</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

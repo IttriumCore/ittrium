@@ -10,7 +10,7 @@
         <translation>Créer une nouvelle adresse</translation>
     </message>
     <message>
-        <source>&amp;New</source>
+        <source>New</source>
         <translation>Nouveau</translation>
     </message>
     <message>
@@ -18,7 +18,7 @@
         <translation>Copier l'adresse actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
+        <source>Copy</source>
         <translation>Copier</translation>
     </message>
     <message>
@@ -26,7 +26,7 @@
         <translation>Supprimer l'adresse actuellement séléctionnée de la liste</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
+        <source>Delete</source>
         <translation>Supprimer</translation>
     </message>
     <message>
@@ -34,11 +34,11 @@
         <translation>Exporter l</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Exporter</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>Close</source>
         <translation>Fermer</translation>
     </message>
     <message>
@@ -50,7 +50,7 @@
         <translation>Choisir l'adresse avec laquelle recevoir des pièces</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>Choose</source>
         <translation>Choisir</translation>
     </message>
     <message>
@@ -62,15 +62,15 @@
         <translation>Adresses de reception</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
+        <source>Copy Address</source>
         <translation>Copier l'adresse</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
+        <source>Copy Label</source>
         <translation>Copier le label</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
+        <source>Edit</source>
         <translation>Modifier</translation>
     </message>
     <message>
@@ -207,7 +207,7 @@
         <translation>BIP 38 outils</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
+        <source>BIP 38 Encrypt</source>
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
@@ -255,7 +255,7 @@
         <translation>Signer le message pour prouver que vous possédez cette adresse Ittrium</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
+        <source>Encrypt Key</source>
         <translation>Clé de cryptage</translation>
     </message>
     <message>
@@ -263,11 +263,11 @@
         <translation>Réinitialiser tous les champs de messages signés</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Tout effacer</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
+        <source>BIP 38 Decrypt</source>
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
@@ -279,7 +279,7 @@
         <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ittrium renseignée</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
+        <source>Decrypt Key</source>
         <translation>Décrypter la clé</translation>
     </message>
     <message>
@@ -362,15 +362,15 @@
         <translation>Vue d'ensemble du portefeuille</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
+        <source>Send</source>
         <translation>Envoyer</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
+        <source>Receive</source>
         <translation>Recevoir</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
+        <source>Transactions</source>
         <translation>Transactions</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>Afficher l'historique de transaction</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
+        <source>Exit</source>
         <translation>Quitter</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>Quitter l'application</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
+        <source>About Qt</source>
         <translation>A propos de Qt</translation>
     </message>
     <message>
@@ -394,11 +394,11 @@
         <translation>Afficher les information concernant Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
+        <source>Options...</source>
         <translation>Options...</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
+        <source>Show / Hide</source>
         <translation>Afficher / Cacher</translation>
     </message>
     <message>
@@ -406,7 +406,7 @@
         <translation>Afficher ou cacher la fenêtre principale</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>Encrypt Wallet...</source>
         <translation>Crypter le portefeuille...</translation>
     </message>
     <message>
@@ -414,7 +414,7 @@
         <translation>Crypter les clés privées appartenant à votre portefeuille</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
+        <source>Backup Wallet...</source>
         <translation>Sauvegarde du portefeuille...</translation>
     </message>
     <message>
@@ -422,7 +422,7 @@
         <translation>Sauvegarder ailleurs le portefeuille </translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
+        <source>Change Passphrase...</source>
         <translation>Changer la phrase de sécurité...</translation>
     </message>
     <message>
@@ -430,7 +430,7 @@
         <translation>Changer la phrase secrète utilisée pour l'encryptage du portefeuille</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
+        <source>Unlock Wallet...</source>
         <translation>Déverrouiller le portefeuille</translation>
     </message>
     <message>
@@ -438,27 +438,27 @@
         <translation>Déverrouiller le portefeuille</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
+        <source>Lock Wallet</source>
         <translation>Verrouiller le portefeuille</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
+        <source>Sign message...</source>
         <translation>Signer le message...</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
+        <source>Verify message...</source>
         <translation>Vérifier le message...</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
         <source>Show diagnostic information</source>
         <translation>Afficher les informations de dignostique</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
+        <source>Debug console</source>
         <translation>Console de déboggage</translation>
     </message>
     <message>
@@ -466,7 +466,7 @@
         <translation>Ouvrir la console de déboggage</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
+        <source>Peers list</source>
         <translation>Liste des pairs</translation>
     </message>
     <message>
@@ -474,7 +474,7 @@
         <translation>Afficher les infos des pairs</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
+        <source>Wallet Repair</source>
         <translation>Réparation du portefeuille</translation>
     </message>
     <message>
@@ -486,7 +486,7 @@
         <translation>Ouvrir le fichier de configuration</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
+        <source>Show Automatic Backups</source>
         <translation>Montrer les sauvegardes automatiques</translation>
     </message>
     <message>
@@ -494,7 +494,7 @@
         <translation>Montrer les sauvegardes de portefeuille créées automatiquements</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>Sending addresses...</source>
         <translation>Adresses d'envoie</translation>
     </message>
     <message>
@@ -502,7 +502,7 @@
         <translation>Montrer la liste des adresses et libellés d'envoies utilisés</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>Receiving addresses...</source>
         <translation>Adresses de réception</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@
         <translation>Montrer la liste des adresses et libellés de réception utilisés</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
+        <source>Open URI...</source>
         <translation>Ouvir URI...</translation>
     </message>
     <message>
@@ -518,27 +518,27 @@
         <translation>Synchronisation des données additionnelles : %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
+        <source>File</source>
+        <translation>Fichier</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Réglages</translation>
+        <source>Settings</source>
+        <translation>Réglages</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Outils</translation>
+        <source>Tools</source>
+        <translation>Outils</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <source>Help</source>
+        <translation>Aide</translation>
     </message>
     <message>
         <source>Send coins to a Ittrium address</source>
         <translation>Envoyer des pièces à une adresse Ittrium</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
+        <source>Masternodes</source>
         <translation>Masternodes</translation>
     </message>
     <message>
@@ -558,7 +558,7 @@
         <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Ittrium spécifié</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
+        <source>BIP38 tool</source>
         <translation>Outil BIP38</translation>
     </message>
     <message>
@@ -834,7 +834,7 @@ Adresse : %4
         <translation>Modifier l'adresse</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
+        <source>Address</source>
         <translation>Adresse</translation>
     </message>
     <message>
@@ -1080,7 +1080,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Options</translation>
     </message>
     <message>
-        <source>W&amp;allet</source>
+        <source>Wallet</source>
         <translation>Portefeuille</translation>
     </message>
     <message>
@@ -1106,6 +1106,73 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
     </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantité :</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Montant :</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Payer à :</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Choisir l'adresse précédemment utilisée</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Copier l'adresse depuis le presse-papier</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorité :</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Commission :</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>non</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Fonds insuffisants!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>moyen</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copier la quantité</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copier le montant</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirmer l'envoi des pièces</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
@@ -1115,7 +1182,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
+        <source>Save Image...</source>
         <translation>Enregistrer l'image</translation>
     </message>
     <message>
@@ -1130,8 +1197,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
         <source>General</source>
@@ -1170,7 +1237,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Vider la console</translation>
     </message>
     <message>
-        <source>&amp;Network Traffic</source>
+        <source>Network Traffic</source>
         <translation>Traffic du réseau</translation>
     </message>
     <message>
@@ -1221,7 +1288,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Amount:</source>
+        <source>Amount:</source>
         <translation>Montant :</translation>
     </message>
     <message>
@@ -1256,15 +1323,15 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>QR Code</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
+        <source>Copy URI</source>
         <translation>Copier L'URI</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
+        <source>Copy Address</source>
         <translation>Copier l'asdresse</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
+        <source>Save Image...</source>
         <translation>Enregistrer l'image</translation>
     </message>
     <message>
@@ -1334,10 +1401,6 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Envoyer des pièces</translation>
     </message>
     <message>
-        <source>Inputs...</source>
-        <translation>Entrés...</translation>
-    </message>
-    <message>
         <source>Insufficient funds!</source>
         <translation>Fonds insuffisants!</translation>
     </message>
@@ -1398,11 +1461,11 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>rapide</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
+        <source>Send</source>
         <translation>Envoyer</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Tout effacer</translation>
     </message>
     <message>
@@ -1457,7 +1520,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>Pay &amp;To:</source>
+        <source>Pay To:</source>
         <translation>Payer à :</translation>
     </message>
     <message>
@@ -1503,7 +1566,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>&amp;Sign Message</source>
+        <source>Sign Message</source>
         <translation>Signer le message</translation>
     </message>
     <message>
@@ -1547,7 +1610,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Ittrium renseignée</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
+        <source>Sign Message</source>
         <translation>Signer le message</translation>
     </message>
     <message>
@@ -1555,15 +1618,15 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Réinitialiser tous les champs de messages signés</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Tout effacer</translation>
     </message>
     <message>
-        <source>&amp;Verify Message</source>
+        <source>Verify Message</source>
         <translation>Vérifier le message</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
+        <source>Verify Message</source>
         <translation>Vérifier le message</translation>
     </message>
     <message>
@@ -1729,12 +1792,19 @@ Veuillez vérifier l'adresse et réessayer.</translation>
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Exporter</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporter l</translation>
+    </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     </context>
 <context>

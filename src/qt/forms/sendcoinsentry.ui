@@ -49,7 +49,7 @@
     <item row="0" column="0">
      <widget class="QLabel" name="payToLabel">
       <property name="text">
-       <string>Pay &amp;To:</string>
+       <string>Pay To:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -62,7 +62,7 @@
     <item row="2" column="0">
      <widget class="QLabel" name="amountLabel">
       <property name="text">
-       <string>A&amp;mount:</string>
+       <string>Amount:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -75,7 +75,7 @@
     <item row="1" column="0">
      <widget class="QLabel" name="labelLabel">
       <property name="text">
-       <string>&amp;Label:</string>
+       <string>Label:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -724,7 +724,7 @@
     <item row="2" column="0">
      <widget class="QLabel" name="amountLabel_is">
       <property name="text">
-       <string>A&amp;mount:</string>
+       <string>Amount:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1260,7 +1260,7 @@
     <item row="2" column="0">
      <widget class="QLabel" name="amountLabel_s">
       <property name="text">
-       <string>A&amp;mount:</string>
+       <string>Amount:</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

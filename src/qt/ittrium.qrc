@@ -5,8 +5,6 @@
         <file alias="receiving_addresses_m">res/icons/receive_m.png</file>
         <file alias="masternodes_m">res/icons/masternodes_m.png</file>
         <file alias="overview_m">res/icons/overview_m.png</file>
-        <file alias="lock_open">res/icons/lock_open.png</file>
-        <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="open">res/icons/open.png</file>
         <file alias="information">res/icons/information.png</file>
         <file alias="explorer">res/icons/explorer.png</file>
@@ -32,6 +30,8 @@
         <file alias="eye_plus">res/icons/eye_plus.png</file>
         <file alias="options">res/icons/configure.png</file>
         <file alias="receiving_addresses">res/icons/receive.png</file>
+        <file alias="privacy">res/icons/privacy.png</file>
+        <file alias="privacy_m">res/icons/privacy_m.png</file>
         <file alias="editpaste">res/icons/editpaste.png</file>
         <file alias="editcopy">res/icons/editcopy.png</file>
         <file alias="add">res/icons/add.png</file>
@@ -69,11 +69,13 @@
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="ittrium_logo_horizontal">res/images/ittrium_logo_horizontal.png</file>
-        <file alias="downArrow">res/images/downArrow.png</file>
-        <file alias="downArrow_small">res/images/downArrow_small.png</file>
-        <file alias="upArrow_small">res/images/upArrow_small.png</file>
-        <file alias="leftArrow_small">res/images/leftArrow_small.png</file>
-        <file alias="rightArrow_small">res/images/rightArrow_small.png</file>
+        <file alias="downArrow">res/images/downArrow_dark.png</file>
+        <file alias="downArrow_small">res/images/downArrow_small_dark.png</file>
+        <file alias="downArrow_small_white">res/images/downArrow_small.png</file>
+        <file alias="upArrow_small">res/images/upArrow_small_dark.png</file>
+        <file alias="upArrow_small_white">res/images/upArrow_small.png</file>
+        <file alias="leftArrow_small">res/images/leftArrow_small_dark.png</file>
+        <file alias="rightArrow_small">res/images/rightArrow_small_dark.png</file>
         <file alias="qtreeview_selected">res/images/qtreeview_selected.png</file>
         <file alias="walletFrame_bg">res/images/walletFrame_bg.png</file>
         <file alias="walletFrame">res/images/walletFrame.png</file>

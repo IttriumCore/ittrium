@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>576</width>
-    <height>417</height>
+    <height>442</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
-       <string>&amp;Main</string>
+       <string>Main</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Main">
        <item>
@@ -33,7 +33,7 @@
           <string>Automatically start Ittrium after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Ittrium on system login</string>
+          <string>Start Ittrium on system login</string>
          </property>
         </widget>
        </item>
@@ -42,7 +42,7 @@
          <item>
           <widget class="QLabel" name="databaseCacheLabel">
            <property name="text">
-            <string>Size of &amp;database cache</string>
+            <string>Size of database cache</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -85,7 +85,7 @@
          <item>
           <widget class="QLabel" name="threadsScriptVerifLabel">
            <property name="text">
-            <string>Number of script &amp;verification threads</string>
+            <string>Number of script verification threads</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -131,69 +131,66 @@
         </spacer>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4_Main">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</string>
+            <string>Percentage of incoming XIT which get automatically converted to zXIT via Zerocoin Protocol</string>
            </property>
            <property name="text">
-            <string>Obfuscation rounds to use</string>
+            <string>Percentage of autominted zXIT</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="obfuscationRounds">
+          <widget class="QSpinBox" name="zeromintPercentage">
            <property name="minimum">
-            <number>2</number>
+            <number>0</number>
            </property>
            <property name="maximum">
-            <number>8</number>
-           </property>
-           <property name="value">
-            <number>4</number>
+            <number>100</number>
            </property>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="labelPreferredDenom">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="toolTip">
-            <string>This amount acts as a threshold to turn off Obfuscation once it's reached.</string>
-           </property>
-           <property name="statusTip">
-            <string notr="true"/>
-           </property>
-           <property name="whatsThis">
-            <string notr="true"/>
-           </property>
-           <property name="accessibleName">
-            <string notr="true"/>
-           </property>
-           <property name="accessibleDescription">
-            <string notr="true"/>
+            <string>Wait with automatic conversion to Zerocoin until enough XIT for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Amount of Ittrium to keep anonymized</string>
+            <string>Preferred Automint zXIT Denomination</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="anonymizeIttrium">
-           <property name="minimum">
-            <number>100</number>
+          <widget class="QComboBox" name="preferredDenom">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>27</height>
+            </size>
            </property>
-           <property name="maximum">
-            <number>100000</number>
+           <property name="toolTip">
+            <string>Wait with automatic conversion to Zerocoin until enough XIT for this denomination is available</string>
            </property>
-           <property name="singleStep">
-            <number>100</number>
+           <property name="maxVisibleItems">
+            <number>9</number>
            </property>
-           <property name="value">
-            <number>1000</number>
+           <property name="maxCount">
+            <number>9</number>
            </property>
           </widget>
          </item>
@@ -203,7 +200,7 @@
      </widget>
      <widget class="QWidget" name="tabWallet">
       <attribute name="title">
-       <string>W&amp;allet</string>
+       <string>Wallet</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Wallet">
        <item>
@@ -218,7 +215,7 @@
              <string>Whether to show coin control features or not.</string>
             </property>
             <property name="text">
-             <string>Enable coin &amp;control features</string>
+             <string>Enable coin control features</string>
             </property>
            </widget>
           </item>
@@ -238,7 +235,7 @@
              <string>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</string>
             </property>
             <property name="text">
-             <string>&amp;Spend unconfirmed change</string>
+             <string>Spend unconfirmed change</string>
             </property>
            </widget>
           </item>
@@ -269,7 +266,7 @@
      </widget>
      <widget class="QWidget" name="tabNetwork">
       <attribute name="title">
-       <string>&amp;Network</string>
+       <string>Network</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Network">
        <item>
@@ -278,7 +275,7 @@
           <string>Automatically open the Ittrium client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
-          <string>Map port using &amp;UPnP</string>
+          <string>Map port using UPnP</string>
          </property>
         </widget>
        </item>
@@ -298,7 +295,7 @@
           <string>Connect to the Ittrium network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
-          <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
+          <string>Connect through SOCKS5 proxy (default proxy):</string>
          </property>
         </widget>
        </item>
@@ -307,7 +304,7 @@
          <item>
           <widget class="QLabel" name="proxyIpLabel">
            <property name="text">
-            <string>Proxy &amp;IP:</string>
+            <string>Proxy IP:</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -339,7 +336,7 @@
          <item>
           <widget class="QLabel" name="proxyPortLabel">
            <property name="text">
-            <string>&amp;Port:</string>
+            <string>Port:</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -400,7 +397,7 @@
      </widget>
      <widget class="QWidget" name="tabWindow">
       <attribute name="title">
-       <string>&amp;Window</string>
+       <string>Window</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Window">
        <item>
@@ -409,7 +406,7 @@
           <string>Show only a tray icon after minimizing the window.</string>
          </property>
          <property name="text">
-          <string>&amp;Minimize to the tray instead of the taskbar</string>
+          <string>Minimize to the tray instead of the taskbar</string>
          </property>
         </widget>
        </item>
@@ -419,7 +416,7 @@
           <string>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</string>
          </property>
          <property name="text">
-          <string>M&amp;inimize on close</string>
+          <string>Minimize on close</string>
          </property>
         </widget>
        </item>
@@ -440,7 +437,7 @@
      </widget>
      <widget class="QWidget" name="tabDisplay">
       <attribute name="title">
-       <string>&amp;Display</string>
+       <string>Display</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Display">
        <item>
@@ -448,7 +445,7 @@
          <item>
           <widget class="QLabel" name="langLabel">
            <property name="text">
-            <string>User Interface &amp;language:</string>
+            <string>User Interface language:</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -522,7 +519,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</string>
          <item>
           <widget class="QLabel" name="unitLabel">
            <property name="text">
-            <string>&amp;Unit to show amounts in:</string>
+            <string>Unit to show amounts in:</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -554,6 +551,19 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</string>
           <widget class="QValueComboBox" name="digits"/>
          </item>
         </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxHideZeroBalances">
+         <property name="toolTip">
+          <string>Hide empty balances</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Hide empty balances</string>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3_Display">

@@ -10,7 +10,7 @@
         <translation>Vytvoriť novú adresu</translation>
     </message>
     <message>
-        <source>&amp;New</source>
+        <source>New</source>
         <translation>Nový</translation>
     </message>
     <message>
@@ -18,7 +18,7 @@
         <translation>Skopírovať označenú adresu do schránky</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
+        <source>Copy</source>
         <translation>Kopírovať</translation>
     </message>
     <message>
@@ -26,7 +26,7 @@
         <translation>Vymazať označenú adresu zo zoznamu</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
+        <source>Delete</source>
         <translation>Vymazať</translation>
     </message>
     <message>
@@ -34,11 +34,11 @@
         <translation>Exportovať údaje na aktuálnej karte do súboru</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Exportovať</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>Close</source>
         <translation>Zatvoriť</translation>
     </message>
     <message>
@@ -50,7 +50,7 @@
         <translation>Vyberte adresu, na ktorej chcete mince prijať</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>Choose</source>
         <translation>Vybrať</translation>
     </message>
     <message>
@@ -70,15 +70,15 @@
         <translation>Toto sú vaše Ittrium adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
+        <source>Copy Address</source>
         <translation>Skopírovať adresu</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
+        <source>Copy Label</source>
         <translation>Skopírovať štítok</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
+        <source>Edit</source>
         <translation>Editovať</translation>
     </message>
     <message>
@@ -235,7 +235,7 @@
         <translation>BIP 38 Utilita</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
+        <source>BIP 38 Encrypt</source>
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
@@ -283,7 +283,7 @@
         <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Ittrium adresy</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
+        <source>Encrypt Key</source>
         <translation>Zašifrovať kľúč</translation>
     </message>
     <message>
@@ -291,11 +291,11 @@
         <translation>Zmazať všetky polia správy</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Všetko zmazať</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
+        <source>BIP 38 Decrypt</source>
         <translation>BIP 38 dešifrovanie</translation>
     </message>
     <message>
@@ -311,7 +311,7 @@
         <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Ittrium adresou</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
+        <source>Decrypt Key</source>
         <translation>Dešifrovať kľúč</translation>
     </message>
     <message>
@@ -402,7 +402,7 @@
         <translation>Uzol</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
+        <source>Overview</source>
         <translation>Prehľad</translation>
     </message>
     <message>
@@ -410,15 +410,15 @@
         <translation>Zobraziť všeobecný prehľad peňaženky</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
+        <source>Send</source>
         <translation>Odoslať</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
+        <source>Receive</source>
         <translation>Prijať</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
+        <source>Transactions</source>
         <translation>Transakcie</translation>
     </message>
     <message>
@@ -426,7 +426,7 @@
         <translation>Prezrieť históriu transakcií</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
+        <source>Exit</source>
         <translation>Koniec</translation>
     </message>
     <message>
@@ -434,7 +434,7 @@
         <translation>Ukončiť aplikáciu</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
+        <source>About Qt</source>
         <translation>O aplikácii</translation>
     </message>
     <message>
@@ -442,11 +442,11 @@
         <translation>Zobraziť informácie o Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
+        <source>Options...</source>
         <translation>Možnosti...</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
+        <source>Show / Hide</source>
         <translation>Zobraziť / Skryť</translation>
     </message>
     <message>
@@ -454,7 +454,7 @@
         <translation>Zobraziť alebo skryť hlavné okno</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>Encrypt Wallet...</source>
         <translation>Šifrovať peňaženku...</translation>
     </message>
     <message>
@@ -462,7 +462,7 @@
         <translation>Šifrujte súkromné kľúče, ktoré patria Vašej peňaženke</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
+        <source>Backup Wallet...</source>
         <translation>Zálohovať peňaženku...</translation>
     </message>
     <message>
@@ -470,7 +470,7 @@
         <translation>Zálohovať peňaženku na iné miesto</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
+        <source>Change Passphrase...</source>
         <translation>Zmeniť prístupovú frázu...</translation>
     </message>
     <message>
@@ -478,7 +478,7 @@
         <translation>Zmeniť prístupovú frázu, ktorá bola použitá na šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
+        <source>Unlock Wallet...</source>
         <translation>Odomknúť peňaženku...</translation>
     </message>
     <message>
@@ -486,19 +486,19 @@
         <translation>Odomknúť peňaženku</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
+        <source>Lock Wallet</source>
         <translation>Zamknúť peňaženku</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
+        <source>Sign message...</source>
         <translation>Podpísať správu...</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
+        <source>Verify message...</source>
         <translation>Overiť správu...</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
+        <source>Information</source>
         <translation>Informácie</translation>
     </message>
     <message>
@@ -506,7 +506,7 @@
         <translation>Zobraziť diagnostické informácie</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
+        <source>Debug console</source>
         <translation>Debugovacia konzola</translation>
     </message>
     <message>
@@ -514,7 +514,7 @@
         <translation>Otvoriť debugovaciu konzola</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
+        <source>Network Monitor</source>
         <translation>Monitor siete</translation>
     </message>
     <message>
@@ -522,7 +522,7 @@
         <translation>Zobraziť monitor siete</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
+        <source>Peers list</source>
         <translation>Zoznam uzlov</translation>
     </message>
     <message>
@@ -530,7 +530,7 @@
         <translation>Zobraziť informácie o uzloch</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
+        <source>Wallet Repair</source>
         <translation>Oprava peňaženky</translation>
     </message>
     <message>
@@ -542,7 +542,7 @@
         <translation>Otvoriť konfiguračný súbor</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
+        <source>Show Automatic Backups</source>
         <translation>Zobraziť automatické zálohy</translation>
     </message>
     <message>
@@ -550,7 +550,7 @@
         <translation>Zobraziť automaticky vytvorené zálohy peňaženky</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
+        <source>Sending addresses...</source>
         <translation>Odosielacie adresy</translation>
     </message>
     <message>
@@ -558,7 +558,7 @@
         <translation>Zobraziť zoznam použitých odosielajúcich adries a štítkov</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
+        <source>Receiving addresses...</source>
         <translation>Prijímacie adresy...</translation>
     </message>
     <message>
@@ -566,11 +566,11 @@
         <translation>Zobraziť zoznam použitých odosielajúcich adries a štítkov</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
+        <source>Open URI...</source>
         <translation>Otvoriť URI...</translation>
     </message>
     <message>
-        <source>&amp;Command-line options</source>
+        <source>Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
@@ -578,19 +578,19 @@
         <translation>Synchronizácia dodatočných údajov: %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
+        <source>File</source>
         <translation>Súbor</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
+        <source>Settings</source>
         <translation>Nastavenia</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
+        <source>Tools</source>
         <translation>Nástroje</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
+        <source>Help</source>
         <translation>Pomoc</translation>
     </message>
     <message>
@@ -610,15 +610,15 @@
         <translation>Vyžiadať platby (generuje QR kódy a ittrium: identifikátory URI)</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
+        <source>About Ittrium Core</source>
         <translation>O Ittrium Core</translation>
     </message>
     <message>
@@ -638,7 +638,7 @@
         <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Ittrium adresami</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
+        <source>BIP38 tool</source>
         <translation>BIP 38 Utilita</translation>
     </message>
     <message>
@@ -646,19 +646,19 @@
         <translation>Šifrovať a dešifrovať privátne kľúče pomocou prístupovej frázy</translation>
     </message>
     <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
+        <source>MultiSend</source>
+        <translation>MultiSend</translation>
     </message>
     <message>
         <source>MultiSend Settings</source>
         <translation>MultiSend Nastavenia</translation>
     </message>
     <message>
-        <source>Open Wallet &amp;Configuration File</source>
+        <source>Open Wallet Configuration File</source>
         <translation>Otvoriť konfiguračný súbor peňaženky</translation>
     </message>
     <message>
-        <source>Open &amp;Masternode Configuration File</source>
+        <source>Open Masternode Configuration File</source>
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
@@ -670,7 +670,7 @@
         <translation>Otvorte Ittrium: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
-        <source>&amp;Blockchain explorer</source>
+        <source>Blockchain explorer</source>
         <translation>Blockchain prehliadač</translation>
     </message>
     <message>
@@ -964,6 +964,53 @@ MultiSend: %1</translation>
     <name>PeerTableModel</name>
     </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Quantity:</source>
+        <translation>Množstvo:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Suma:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Vyberte predtým použitú adresu</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Vložte adresu zo schránky</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Priorita:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Poplatok:</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytov:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Zmena:</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Skopírovať sumu</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
@@ -976,7 +1023,7 @@ MultiSend: %1</translation>
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
+        <source>Information</source>
         <translation>Informácie</translation>
     </message>
     </context>
@@ -1056,7 +1103,7 @@ MultiSend: %1</translation>
         <translation>Zmena:</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Všetko zmazať</translation>
     </message>
     <message>
@@ -1133,7 +1180,7 @@ MultiSend: %1</translation>
         <translation>Zmazať všetky polia správy</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Všetko zmazať</translation>
     </message>
     <message>
@@ -1251,13 +1298,16 @@ MultiSend: %1</translation>
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Exportovať</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportovať údaje na aktuálnej karte do súboru</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

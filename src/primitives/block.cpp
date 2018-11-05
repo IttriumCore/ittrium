@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2018 The Ittrium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,24 +9,26 @@
 #include "primitives/block.h"
 
 #include "hash.h"
+#include "tinyformat.h"
 #include "script/standard.h"
 #include "script/sign.h"
 #include "tinyformat.h"
 #include "utilstrencodings.h"
-#include "util.h"
 #include "crypto/common.h"
+#include "util.h"
 #include "crypto/Lyra2Z/Lyra2Z.h"
 
 uint256 CBlockHeader::GetHash() const
 {
     uint256 thash;
 
-    lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
-
-    return thash;
-//    return HashQuark(BEGIN(nVersion), END(nNonce));
+    if(nVersion >= 4)
+    return Hash(BEGIN(nVersion), END(nAccumulatorCheckpoint));
+        
+    if(nVersion < 4) //AAA333
+                lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
+        return thash;
 }
-
 
 uint256 CBlock::BuildMerkleTree(bool* fMutated) const
 {
@@ -147,7 +150,7 @@ void CBlock::print() const
     LogPrintf("%s", ToString());
 }
 
-// ittrium: sign block
+// ppcoin: sign block
 bool CBlock::SignBlock(const CKeyStore& keystore)
 {
     std::vector<valtype> vSolutions;

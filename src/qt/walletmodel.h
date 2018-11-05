@@ -133,7 +133,10 @@ public:
     CAmount getBalance(const CCoinControl* coinControl = NULL) const;
     CAmount getUnconfirmedBalance() const;
     CAmount getImmatureBalance() const;
-    CAmount getAnonymizedBalance() const;
+    CAmount getLockedBalance() const;
+    CAmount getZerocoinBalance() const;
+    CAmount getUnconfirmedZerocoinBalance() const;
+    CAmount getImmatureZerocoinBalance() const;
     bool haveWatchOnly() const;
     CAmount getWatchBalance() const;
     CAmount getWatchUnconfirmedBalance() const;
@@ -143,6 +146,7 @@ public:
     bool setAddressBook(const CTxDestination& address, const string& strName, const string& strPurpose);
     void encryptKey(const CKey key, const std::string& pwd, const std::string& slt, std::vector<unsigned char>& crypted);
     void decryptKey(const std::vector<unsigned char>& crypted, const std::string& slt, const std::string& pwd, CKey& key);
+    void emitBalanceChanged(); // Force update of UI-elements even when no values have changed
 
     // Check address for validity
     bool validateAddress(const QString& address);
@@ -173,7 +177,7 @@ public:
     class UnlockContext
     {
     public:
-        UnlockContext(WalletModel* wallet, bool valid, bool relock);
+        UnlockContext(bool valid, bool relock);
         ~UnlockContext();
 
         bool isValid() const { return valid; }
@@ -187,7 +191,6 @@ public:
         }
 
     private:
-        WalletModel* wallet;
         bool valid;
         mutable bool relock; // mutable, as it can be set to false by copying
 
@@ -206,6 +209,8 @@ public:
     void lockCoin(COutPoint& output);
     void unlockCoin(COutPoint& output);
     void listLockedCoins(std::vector<COutPoint>& vOutpts);
+
+    void listZerocoinMints(std::list<CZerocoinMint>& listMints, bool fUnusedOnly = false, bool fMaturedOnly = false, bool fUpdateStatus = false);
 
     void loadReceiveRequests(std::vector<std::string>& vReceiveRequests);
     bool saveReceiveRequest(const std::string& sAddress, const int64_t nId, const std::string& sRequest);
@@ -228,14 +233,16 @@ private:
     CAmount cachedBalance;
     CAmount cachedUnconfirmedBalance;
     CAmount cachedImmatureBalance;
-    CAmount cachedAnonymizedBalance;
+    CAmount cachedZerocoinBalance;
+    CAmount cachedUnconfirmedZerocoinBalance;
+    CAmount cachedImmatureZerocoinBalance;
     CAmount cachedWatchOnlyBalance;
     CAmount cachedWatchUnconfBalance;
     CAmount cachedWatchImmatureBalance;
     EncryptionStatus cachedEncryptionStatus;
     int cachedNumBlocks;
     int cachedTxLocks;
-    int cachedObfuscationRounds;
+    int cachedZeromintPercentage;
 
     QTimer* pollTimer;
 
@@ -245,7 +252,9 @@ private:
 
 signals:
     // Signal that balance in wallet changed
-    void balanceChanged(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, const CAmount& anonymizedBalance, const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
+    void balanceChanged(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
+                        const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance, 
+                        const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
 
     // Encryption status of wallet changed
     void encryptionStatusChanged(int status);
@@ -269,7 +278,6 @@ signals:
 
     // MultiSig address added
     void notifyMultiSigChanged(bool fHaveMultiSig);
-
 public slots:
     /* Wallet status might have changed */
     void updateStatus();
@@ -277,6 +285,8 @@ public slots:
     void updateTransaction();
     /* New, updated or removed address book entry */
     void updateAddressBook(const QString& address, const QString& label, bool isMine, const QString& purpose, int status);
+    /* Zerocoin update */
+    void updateAddressBook(const QString &pubCoin, const QString &isUsed, int status);
     /* Watch-only added */
     void updateWatchOnlyFlag(bool fHaveWatchonly);
     /* MultiSig added */

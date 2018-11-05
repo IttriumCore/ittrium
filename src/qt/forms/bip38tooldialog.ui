@@ -24,7 +24,7 @@
      </property>
      <widget class="QWidget" name="tabBip38Encrypt">
       <attribute name="title">
-       <string>&amp;BIP 38 Encrypt</string>
+       <string>BIP 38 Encrypt</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_SM">
        <item>
@@ -249,7 +249,7 @@
      </widget>
      <widget class="QWidget" name="tabBip38Decrypt">
       <attribute name="title">
-       <string>&amp;BIP 38 Decrypt</string>
+       <string>BIP 38 Decrypt</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_VM">
        <item>

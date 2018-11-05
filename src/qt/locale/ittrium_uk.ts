@@ -10,7 +10,7 @@
         <translation>Створити нову адресу</translation>
     </message>
     <message>
-        <source>&amp;New</source>
+        <source>New</source>
         <translation>Новий</translation>
     </message>
     <message>
@@ -18,7 +18,7 @@
         <translation>Скопіювати вибрану адресу в буфер обміну</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
+        <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
@@ -26,7 +26,7 @@
         <translation>Видалити вибрану адресу зі списку</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
+        <source>Delete</source>
         <translation>Видалити</translation>
     </message>
     <message>
@@ -34,23 +34,23 @@
         <translation>Експортуйтувати дані поточної вкладки у файл</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Експорт</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>Close</source>
         <translation>Закрити</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Виберіть адресу для надсилання монет</translation>
+        <translation>Виберіть адресу надсилання монет</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
         <translation>Виберіть адресу отримання монет</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>Choose</source>
         <translation>Вибір</translation>
     </message>
     <message>
@@ -63,22 +63,22 @@
     </message>
     <message>
         <source>These are your Ittrium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваша Ittrium-адреса для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <translation>Це ваші Ittrium-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
         <source>These are your Ittrium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Це ваші Ittrium адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
+        <source>Copy Address</source>
         <translation>Копіювати адресу</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
+        <source>Copy Label</source>
         <translation>Копіювати мітку</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
+        <source>Edit</source>
         <translation>Редагувати</translation>
     </message>
     <message>
@@ -256,6 +256,9 @@
     <name>PeerTableModel</name>
     </context>
 <context>
+    <name>PrivacyDialog</name>
+    </context>
+<context>
     <name>QObject</name>
     </context>
 <context>
@@ -355,13 +358,16 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>Експорт</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Експортуйтувати дані поточної вкладки у файл</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

@@ -10,7 +10,7 @@
         <translation>Criar novo endereço</translation>
     </message>
     <message>
-        <source>&amp;New</source>
+        <source>New</source>
         <translation>Novo</translation>
     </message>
     <message>
@@ -18,28 +18,28 @@
         <translation>Copiar o endereço selecionado para a área de transferência</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Copiar</translation>
+        <source>Copy</source>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Deletar da lista o endereço selecionado</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Excluir</translation>
+        <source>Delete</source>
+        <translation>Excluir</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta os dados da aba ativa para um arquivo</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportar</translation>
+        <source>Export</source>
+        <translation>Exportar</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>&amp;Fechar</translation>
+        <source>Close</source>
+        <translation>Fechar</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>Escolha o endereço para receber moedas</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>Escol&amp;her</translation>
+        <source>Choose</source>
+        <translation>Escolher</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -70,16 +70,16 @@
         <translation>Esses são seus endereços Ittrium para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>C&amp;opiar endereço</translation>
+        <source>Copy Address</source>
+        <translation>Copiar endereço</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
-        <translation>Cop&amp;iar Descrição</translation>
+        <source>Copy Label</source>
+        <translation>Copiar Descrição</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Editar</translation>
+        <source>Edit</source>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -235,8 +235,8 @@
         <translation>BIP 38</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>Encriptar com &amp;BIP 38</translation>
+        <source>BIP 38 Encrypt</source>
+        <translation>Encriptar com BIP 38</translation>
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
@@ -283,7 +283,7 @@
         <translation>Assinar a Mensagem para provar que você e dono desse endereço Ittrium.</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
+        <source>Encrypt Key</source>
         <translation>Criptografar Chave</translation>
     </message>
     <message>
@@ -291,11 +291,11 @@
         <translation>Reiniciar todas os campos das mensagens assinadas</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Limpar todos</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
+        <source>BIP 38 Decrypt</source>
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
@@ -334,19 +334,19 @@
         <translation>Nó</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Enviar</translation>
+        <source>Send</source>
+        <translation>Enviar</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Receber</translation>
+        <source>Receive</source>
+        <translation>Receber</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transações</translation>
+        <source>Transactions</source>
+        <translation>Transações</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
+        <source>Backup Wallet...</source>
         <translation>Carteira de backup</translation>
     </message>
     <message>
@@ -450,6 +450,41 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantidade:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço usado anteriormente.</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da areá de trabalho. </translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>não</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
@@ -556,7 +591,7 @@
         <translation>Limpar todos os campos do formulário</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Limpar todos</translation>
     </message>
     <message>
@@ -677,7 +712,7 @@
         <translation>Reiniciar todas os campos das mensagens assinadas</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Limpar todos</translation>
     </message>
     <message>
@@ -855,8 +890,8 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportar</translation>
+        <source>Export</source>
+        <translation>Exportar</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -868,14 +903,17 @@
     </message>
     </context>
 <context>
+    <name>ZXitControlDialog</name>
+    </context>
+<context>
     <name>ittrium-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da Ittrium (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
+        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionacilidades específicas da Ittrium (Masternodes, Ofuscação, SwiftX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -928,10 +966,6 @@
     <message>
         <source>No compatible Masternode found.</source>
         <translation>Nenhum Masternode compatível encontrado.</translation>
-    </message>
-    <message>
-        <source>Obfuscation options:</source>
-        <translation>Opções de ofuscação:</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>
@@ -1094,8 +1128,8 @@
         <translation>Enviado para masternode, esperando na fila %s</translation>
     </message>
     <message>
-        <source>SwiftTX options:</source>
-        <translation>Opções SwiftTX:</translation>
+        <source>SwiftX options:</source>
+        <translation>Opções SwiftX:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -1196,10 +1230,6 @@
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Atualizar a carteira para a ultimo formato</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation>Use N masternodes separados para anonimizar fundos (2-8, padrão: %u)</translation>
     </message>
     <message>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>

@@ -20,9 +20,9 @@
 #include "util.h"
 #include "qtmaterialflatbutton.h"
 
-#include "json/json_spirit_value.h"
-
 #include <openssl/crypto.h>
+
+#include <univalue.h>
 
 #ifdef ENABLE_WALLET
 #include <db_cxx.h>
@@ -57,6 +57,7 @@ const QString ZAPTXES1("-zapwallettxes=1");
 const QString ZAPTXES2("-zapwallettxes=2");
 const QString UPGRADEWALLET("-upgradewallet");
 const QString REINDEX("-reindex");
+const QString RESYNC("-resync");
 
 const struct {
     const char* url;
@@ -194,20 +195,20 @@ void RPCExecutor::request(const QString& command)
         std::string strPrint;
         // Convert argument list to JSON objects in method-dependent way,
         // and pass it along with the method name to the dispatcher.
-        json_spirit::Value result = tableRPC.execute(
+        UniValue result = tableRPC.execute(
             args[0],
             RPCConvertValues(args[0], std::vector<std::string>(args.begin() + 1, args.end())));
 
         // Format result reply
-        if (result.type() == json_spirit::null_type)
+        if (result.isNull())
             strPrint = "";
-        else if (result.type() == json_spirit::str_type)
+        else if (result.isStr())
             strPrint = result.get_str();
         else
-            strPrint = write_string(result, true);
+            strPrint = result.write(2);
 
         emit reply(RPCConsole::CMD_REPLY, QString::fromStdString(strPrint));
-    } catch (json_spirit::Object& objError) {
+    } catch (UniValue& objError) {
         try // Nice formatting for standard-format error
         {
             int code = find_value(objError, "code").get_int();
@@ -215,7 +216,7 @@ void RPCExecutor::request(const QString& command)
             emit reply(RPCConsole::CMD_ERROR, QString::fromStdString(message) + " (code " + QString::number(code) + ")");
         } catch (std::runtime_error&) // raised when converting to invalid type, i.e. missing code or message
         {                             // Show raw JSON object
-            emit reply(RPCConsole::CMD_ERROR, QString::fromStdString(write_string(json_spirit::Value(objError), false)));
+            emit reply(RPCConsole::CMD_ERROR, QString::fromStdString(objError.write()));
         }
     } catch (std::exception& e) {
         emit reply(RPCConsole::CMD_ERROR, QString("Error: ") + QString::fromStdString(e.what()));
@@ -251,6 +252,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
     connect(ui->btn_zapwallettxes2, SIGNAL(clicked()), this, SLOT(walletZaptxes2()));
     connect(ui->btn_upgradewallet, SIGNAL(clicked()), this, SLOT(walletUpgrade()));
     connect(ui->btn_reindex, SIGNAL(clicked()), this, SLOT(walletReindex()));
+    connect(ui->btn_resync, SIGNAL(clicked()), this, SLOT(walletResync()));
 
     // set library version labels
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
@@ -494,6 +496,27 @@ void RPCConsole::walletUpgrade()
 void RPCConsole::walletReindex()
 {
     buildParameterlist(REINDEX);
+}
+
+/** Restart wallet with "-resync" */
+void RPCConsole::walletResync()
+{
+    QString resyncWarning = tr("This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.<br /><br />");
+        resyncWarning +=   tr("This needs quite some time and downloads a lot of data.<br /><br />");
+        resyncWarning +=   tr("Your transactions and funds will be visible again after the download has completed.<br /><br />");
+        resyncWarning +=   tr("Do you want to continue?.<br />");
+    QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm resync Blockchain"),
+        resyncWarning,
+        QMessageBox::Yes | QMessageBox::Cancel,
+        QMessageBox::Cancel);
+
+    if (retval != QMessageBox::Yes) {
+        // Resync canceled
+        return;
+    }
+
+    // Restart and resync
+    buildParameterlist(RESYNC);
 }
 
 /** Build command-line parameter list for restart */

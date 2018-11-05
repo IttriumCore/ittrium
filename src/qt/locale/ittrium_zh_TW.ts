@@ -10,36 +10,36 @@
         <translation>產生新位址</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;新增</translation>
+        <source>New</source>
+        <translation>新增</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>複製目前選取的位址到系統剪貼簿</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;刪除</translation>
+        <source>Copy</source>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>刪除列表中已選擇的位址</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;刪除</translation>
+        <source>Delete</source>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>匯出目前面板中的資料</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;匯出</translation>
+        <source>Export</source>
+        <translation>匯出</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>&amp;關閉</translation>
+        <source>Close</source>
+        <translation>關閉</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>選擇要接收Ittrium幣的位址</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>&amp;選取</translation>
+        <source>Choose</source>
+        <translation>選取</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -70,16 +70,16 @@
         <translation>這是你用來接收款項的 Ittrium 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;拷貝位址</translation>
+        <source>Copy Address</source>
+        <translation>拷貝位址</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
+        <source>Copy Label</source>
         <translation>複製標記</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;編輯</translation>
+        <source>Edit</source>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 工具</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 加密</translation>
+        <source>BIP 38 Encrypt</source>
+        <translation>BIP 38 加密</translation>
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
@@ -271,20 +271,20 @@
         <translation>使用簽章來證明你是該  Ittrium 位址的擁有者,</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>加密 &amp;鑰匙</translation>
+        <source>Encrypt Key</source>
+        <translation>加密 鑰匙</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
         <translation>重設所有已簽章訊息</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>清除 &amp;全部</translation>
+        <source>Clear All</source>
+        <translation>清除 全部</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 解密</translation>
+        <source>BIP 38 Decrypt</source>
+        <translation>BIP 38 解密</translation>
     </message>
     <message>
         <source>The Ittrium address the message was signed with</source>
@@ -295,8 +295,8 @@
         <translation>驗證訊息以確保該  Ittrium 位址已被簽章</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>解密 &amp;鑰匙</translation>
+        <source>Decrypt Key</source>
+        <translation>解密 鑰匙</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -386,136 +386,136 @@
         <translation>節點</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;總覽</translation>
+        <source>Overview</source>
+        <translation>總覽</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
         <translation>顯示錢包資訊</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;發送</translation>
+        <source>Send</source>
+        <translation>發送</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;接收</translation>
+        <source>Receive</source>
+        <translation>接收</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;交易</translation>
+        <source>Transactions</source>
+        <translation>交易</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
         <translation>瀏覽交易紀錄</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;退出</translation>
+        <source>Exit</source>
+        <translation>退出</translation>
     </message>
     <message>
         <source>Quit application</source>
         <translation>關閉程式</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>關於 &amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>關於 Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
         <translation>顯示 Qt 資訊</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;選項</translation>
+        <source>Options...</source>
+        <translation>選項</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;顯示 / 隱藏</translation>
+        <source>Show / Hide</source>
+        <translation>顯示 / 隱藏</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
         <translation>顯示或隱藏主視窗</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;錢包加密</translation>
+        <source>Encrypt Wallet...</source>
+        <translation>錢包加密</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>將你錢包中的私鑰加密</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;備份錢包</translation>
+        <source>Backup Wallet...</source>
+        <translation>備份錢包</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
         <translation>備份錢包到另外的位置</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;更改密碼</translation>
+        <source>Change Passphrase...</source>
+        <translation>更改密碼</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>更改使用中的錢包密碼</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;錢包解鎖</translation>
+        <source>Unlock Wallet...</source>
+        <translation>錢包解鎖</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>錢包解鎖</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;錢包上鎖</translation>
+        <source>Lock Wallet</source>
+        <translation>錢包上鎖</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>&amp;訊息簽章</translation>
+        <source>Sign message...</source>
+        <translation>訊息簽章</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;查驗訊息</translation>
+        <source>Verify message...</source>
+        <translation>查驗訊息</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;資訊</translation>
+        <source>Information</source>
+        <translation>資訊</translation>
     </message>
     <message>
         <source>Show diagnostic information</source>
         <translation>顯示診斷訊息</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;除錯命令列</translation>
+        <source>Debug console</source>
+        <translation>除錯命令列</translation>
     </message>
     <message>
         <source>Open debugging console</source>
         <translation>開啟除錯命令列</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;網路監控</translation>
+        <source>Network Monitor</source>
+        <translation>網路監控</translation>
     </message>
     <message>
         <source>Show network monitor</source>
         <translation>顯示網路監控</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;接點(Peers)列表</translation>
+        <source>Peers list</source>
+        <translation>接點(Peers)列表</translation>
     </message>
     <message>
         <source>Show peers info</source>
         <translation>顯示接點(Peers)資訊</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>&amp;錢包修復</translation>
+        <source>Wallet Repair</source>
+        <translation>錢包修復</translation>
     </message>
     <message>
         <source>Show wallet repair options</source>
@@ -526,56 +526,56 @@
         <translation>打開設定檔</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>&amp;顯示自動備份</translation>
+        <source>Show Automatic Backups</source>
+        <translation>顯示自動備份</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
         <translation>顯示自動建立的錢包備份</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;發送地址</translation>
+        <source>Sending addresses...</source>
+        <translation>發送地址</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>顯示曾經使用的發送地址及標籤</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;接收地址</translation>
+        <source>Receiving addresses...</source>
+        <translation>接收地址</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
         <translation>顯示曾經使用過的接收地址</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>&amp;打開網址</translation>
+        <source>Open URI...</source>
+        <translation>打開網址</translation>
     </message>
     <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;命令列工具</translation>
+        <source>Command-line options</source>
+        <translation>命令列工具</translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>其他資料同步中: %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;檔案</translation>
+        <source>File</source>
+        <translation>檔案</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;設定</translation>
+        <source>Settings</source>
+        <translation>設定</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;工具</translation>
+        <source>Tools</source>
+        <translation>工具</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;幫助</translation>
+        <source>Help</source>
+        <translation>幫助</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -594,16 +594,16 @@
         <translation>請求付款 (會產生 QR Code跟 ittrium 位址)</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
-        <translation>&amp;關於 Ittrium Core</translation>
+        <source>About Ittrium Core</source>
+        <translation>關於 Ittrium Core</translation>
     </message>
     <message>
         <source>Show information about Ittrium Core</source>
@@ -622,28 +622,28 @@
         <translation>驗證訊息簽章與 Ittrium 位址吻合</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 工具</translation>
+        <source>BIP38 tool</source>
+        <translation>BIP38 工具</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>使用密碼對私鑰加密解密</translation>
     </message>
     <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;多重發送</translation>
+        <source>MultiSend</source>
+        <translation>多重發送</translation>
     </message>
     <message>
         <source>MultiSend Settings</source>
         <translation>多重發送設定</translation>
     </message>
     <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>&amp;打開錢包設定檔</translation>
+        <source>Open Wallet Configuration File</source>
+        <translation>打開錢包設定檔</translation>
     </message>
     <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>&amp;打開Masternode設定檔</translation>
+        <source>Open Masternode Configuration File</source>
+        <translation>打開Masternode設定檔</translation>
     </message>
     <message>
         <source>Open Masternode configuration file</source>
@@ -654,8 +654,8 @@
         <translation>打開Ittrium: 位址或付款請求 </translation>
     </message>
     <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;區塊鏈瀏覽</translation>
+        <source>Blockchain explorer</source>
+        <translation>區塊鏈瀏覽</translation>
     </message>
     <message>
         <source>Block explorer window</source>
@@ -744,6 +744,25 @@
     <name>PeerTableModel</name>
     </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>選擇之前用過的位址</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>從剪貼簿貼上</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     </context>
 <context>
@@ -752,8 +771,8 @@
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;資訊</translation>
+        <source>Information</source>
+        <translation>資訊</translation>
     </message>
     </context>
 <context>
@@ -784,8 +803,8 @@
 <context>
     <name>SendCoinsDialog</name>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>清除 &amp;全部</translation>
+        <source>Clear All</source>
+        <translation>清除 全部</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -857,8 +876,8 @@
         <translation>重設所有已簽章訊息</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>清除 &amp;全部</translation>
+        <source>Clear All</source>
+        <translation>清除 全部</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -943,13 +962,16 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;匯出</translation>
+        <source>Export</source>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>匯出目前面板中的資料</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

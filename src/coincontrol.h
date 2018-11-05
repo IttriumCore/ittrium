@@ -36,9 +36,9 @@ public:
         destChange = CNoDestination();
         setSelected.clear();
         useSwiftTX = false;
-        useObfuScation = true;
+        useObfuScation = false;
         fAllowOtherInputs = false;
-        fAllowWatchOnly = false;
+        fAllowWatchOnly = true;
         nMinimumTotalFee = 0;
         fSplitBlock = false;
         nSplitBlock = 1;

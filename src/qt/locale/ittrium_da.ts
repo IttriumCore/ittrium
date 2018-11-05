@@ -7,39 +7,39 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Ny adresse</translation>
+        <translation>opret ny adresse</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Ny</translation>
+        <source>New</source>
+        <translation>Ny</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopier til udklipsholder</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Kopier</translation>
+        <source>Copy</source>
+        <translation>Kopier</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Slet den valgte adresse fra listen</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Slet</translation>
+        <source>Delete</source>
+        <translation>Slet</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksporter aktuelle tekst til en fil</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>E&amp;ksporter</translation>
+        <source>Export</source>
+        <translation>Eksporter</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>L&amp;uk</translation>
+        <source>Close</source>
+        <translation>Luk</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>Vælg egen modtageradresse </translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>V&amp;ælg</translation>
+        <source>Choose</source>
+        <translation>Vælg</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -70,15 +70,15 @@
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
+        <source>Copy Address</source>
         <translation>Kopier adresse</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
+        <source>Copy Label</source>
         <translation>Kopier tekst</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
+        <source>Edit</source>
         <translation>Ret</translation>
     </message>
     <message>
@@ -235,7 +235,7 @@
         <translation>BIP 38 værktøj</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
+        <source>BIP 38 Encrypt</source>
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
@@ -283,7 +283,7 @@
         <translation>Underskriv beskeden for at bevise, at De ejer denne Ittrium adresse.</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
+        <source>Encrypt Key</source>
         <translation>Krypter og underskriv</translation>
     </message>
     <message>
@@ -291,11 +291,11 @@
         <translation>Nulstil alle underskriftsfelter</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Nulstil alt</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
+        <source>BIP 38 Decrypt</source>
         <translation>BIP 38 dekryptér.</translation>
     </message>
     <message>
@@ -311,7 +311,7 @@
         <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Ittrium adresse.</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
+        <source>Decrypt Key</source>
         <translation>Dekrypteringsnøgle</translation>
     </message>
     <message>
@@ -402,7 +402,7 @@
         <translation>Node</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
+        <source>Overview</source>
         <translation>Overblik</translation>
     </message>
     <message>
@@ -410,128 +410,128 @@
         <translation>Vis et generelt overblik over tegnebogen</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Send</translation>
+        <source>Send</source>
+        <translation>Send</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Modtag</translation>
+        <source>Receive</source>
+        <translation>Modtag</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaktioner</translation>
+        <source>Transactions</source>
+        <translation>Transaktioner</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
         <translation>Vis transaktionshistorik</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
+        <source>Exit</source>
+        <translation>Exit</translation>
     </message>
     <message>
         <source>Quit application</source>
         <translation>Afslut applikationen</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>Om&amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>OmQt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
         <translation>Information om Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Indstillinger</translation>
+        <source>Options...</source>
+        <translation>Indstillinger</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Vis / skjul</translation>
+        <source>Show / Hide</source>
+        <translation>Vis / skjul</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
         <translation>Vis eller skjul hovedvinduet.</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Kryptografer tegnebog</translation>
+        <source>Encrypt Wallet...</source>
+        <translation>Kryptografer tegnebog</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Krypter den private nøgle som hører til tegnebogen.</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Sikkerhedskopier tegnebog</translation>
+        <source>Backup Wallet...</source>
+        <translation>Sikkerhedskopier tegnebog</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
         <translation>Sikkerhedskopier og gem et andet sted</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Skift kodeord</translation>
+        <source>Change Passphrase...</source>
+        <translation>Skift kodeord</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Skift kodeordet til kryptografering af tegnebog</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Lås tegnebogen op</translation>
+        <source>Unlock Wallet...</source>
+        <translation>Lås tegnebogen op</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Lås tegnebogen op</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Lås tegnebogen</translation>
+        <source>Lock Wallet</source>
+        <translation>Lås tegnebogen</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>Underskriv &amp; besked</translation>
+        <source>Sign message...</source>
+        <translation>Underskriv  besked</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;verificer besked</translation>
+        <source>Verify message...</source>
+        <translation>verificer besked</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;information</translation>
+        <source>Information</source>
+        <translation>information</translation>
     </message>
     <message>
         <source>Show diagnostic information</source>
         <translation>Vis diagnosticeringsinformation</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debugpanel</translation>
+        <source>Debug console</source>
+        <translation>Debugpanel</translation>
     </message>
     <message>
         <source>Open debugging console</source>
         <translation>Åben debugpanel</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Netværksmonitering</translation>
+        <source>Network Monitor</source>
+        <translation>Netværksmonitering</translation>
     </message>
     <message>
         <source>Show network monitor</source>
         <translation>Vis netværksmonitor</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Peersliste</translation>
+        <source>Peers list</source>
+        <translation>Peersliste</translation>
     </message>
     <message>
         <source>Show peers info</source>
         <translation>Vis information om PEERS</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Tegnebog &amp;Reparer</translation>
+        <source>Wallet Repair</source>
+        <translation>Tegnebog Reparer</translation>
     </message>
     <message>
         <source>Show wallet repair options</source>
@@ -542,56 +542,56 @@
         <translation>Åbn konfigurationsfil</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Vis &amp;sikkerhedskopier, der er taget automatisk</translation>
+        <source>Show Automatic Backups</source>
+        <translation>Vis sikkerhedskopier, der er taget automatisk</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
         <translation>Vis sikkerhedskopier, der er taget automatisk</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Afsenderadresser</translation>
+        <source>Sending addresses...</source>
+        <translation>Afsenderadresser</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Vis listen over brugte afsenderadresse med tilhørende tekst.</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Modtageradresse</translation>
+        <source>Receiving addresses...</source>
+        <translation>Modtageradresse</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
         <translation>Vis listen over brugte modtageradresser og tekst</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Åbn &amp;URL</translation>
+        <source>Open URI...</source>
+        <translation>Åbn URL</translation>
     </message>
     <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Kommandolinieparametre</translation>
+        <source>Command-line options</source>
+        <translation>Kommandolinieparametre</translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synkroniserer yderligere data %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;Fil</translation>
+        <source>File</source>
+        <translation>Fil</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;indstillinger</translation>
+        <source>Settings</source>
+        <translation>indstillinger</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;værktøj</translation>
+        <source>Tools</source>
+        <translation>værktøj</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;hjælp</translation>
+        <source>Help</source>
+        <translation>hjælp</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -610,16 +610,16 @@
         <translation>Anmod om betaling (genrerer QR kode og Ittrium URL)</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternoder</translation>
+        <source>Masternodes</source>
+        <translation>Masternoder</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
-        <translation>&amp;Om Ittrium kerne</translation>
+        <source>About Ittrium Core</source>
+        <translation>Om Ittrium kerne</translation>
     </message>
     <message>
         <source>Show information about Ittrium Core</source>
@@ -638,28 +638,28 @@
         <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Ittrium adresse</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP 38 værktøj</translation>
+        <source>BIP38 tool</source>
+        <translation>BIP 38 værktøj</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>Krypter og dekrypter private nøgler ved hjælp af et kodeord</translation>
     </message>
     <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;Massesending</translation>
+        <source>MultiSend</source>
+        <translation>Massesending</translation>
     </message>
     <message>
         <source>MultiSend Settings</source>
         <translation>Massesending, indstillinger</translation>
     </message>
     <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Åbn tegnebog &amp;konfigurationsfil</translation>
+        <source>Open Wallet Configuration File</source>
+        <translation>Åbn tegnebog konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Åbn &amp;Masternode konfigurationsfil</translation>
+        <source>Open Masternode Configuration File</source>
+        <translation>Åbn Masternode konfigurationsfil</translation>
     </message>
     <message>
         <source>Open Masternode configuration file</source>
@@ -670,8 +670,8 @@
         <translation>Åbn en Ittrium URl eller betalingsanmodning</translation>
     </message>
     <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;blockchain explorer</translation>
+        <source>Blockchain explorer</source>
+        <translation>blockchain explorer</translation>
     </message>
     <message>
         <source>Block explorer window</source>
@@ -899,10 +899,6 @@ Adresse: %4
         <translation>Modtaget med adresse</translation>
     </message>
     <message>
-        <source>DS Rounds</source>
-        <translation>DS gennemløb</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>Dato</translation>
     </message>
@@ -975,10 +971,6 @@ Adresse: %4
         <translation>Skift til "listeformat" for at benytte denne funktion</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
-        <translation>Ikke anonymiseret indhold valgt.&lt;b&gt;tilsløring vil være slået fra.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hvis De ønsker at anvende tilsløring skal De fravælge alt ikke anonymiseret indhold først, derefter afmærke boksen for tilsløring igen.</translation>
-    </message>
-    <message>
         <source>highest</source>
         <translation>højeste</translation>
     </message>
@@ -997,10 +989,6 @@ Adresse: %4
     <message>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>kan variere +/- %1 duff(s) pr. input</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>Ikke tilgængelig</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1082,16 +1070,16 @@ Adresse: %4
         <translation>Ret adresse</translation>
     </message>
     <message>
-        <source>&amp;Label</source>
-        <translation>&amp;tekstmarkør</translation>
+        <source>Label</source>
+        <translation>tekstmarkør</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
         <translation>Denne tekstmarkør e forbundet med denne adresse i listen.</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
-        <translation>&amp;adresse</translation>
+        <source>Address</source>
+        <translation>adresse</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
@@ -1298,20 +1286,20 @@ Adresse: %4
         <translation>Offentlig nøgle</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>S&amp;tart alias</translation>
+        <source>Start alias</source>
+        <translation>Start alias</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>Start &amp;all</translation>
+        <source>Start all</source>
+        <translation>Start all</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Start &amp;MANGLER</translation>
+        <source>Start MISSING</source>
+        <translation>Start MANGLER</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>&amp;opdateringsstatus</translation>
+        <source>Update status</source>
+        <translation>opdateringsstatus</translation>
     </message>
     <message>
         <source>Status will be updated automatically in (sec):</source>
@@ -1594,28 +1582,28 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Muligheder</translation>
     </message>
     <message>
-        <source>&amp;Main</source>
-        <translation>&amp;hoved</translation>
+        <source>Main</source>
+        <translation>hoved</translation>
     </message>
     <message>
-        <source>Size of &amp;database cache</source>
-        <translation>Størrelse på &amp;databasecache</translation>
+        <source>Size of database cache</source>
+        <translation>Størrelse på databasecache</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <source>Number of script &amp;verification threads</source>
-        <translation>antal af script &amp;verifikationstråde</translation>
+        <source>Number of script verification threads</source>
+        <translation>antal af script verifikationstråde</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
         <translation>(0=auto, &gt;0 efterlad så mange tråde fri)</translation>
     </message>
     <message>
-        <source>W&amp;allet</source>
-        <translation>T&amp;egnebog</translation>
+        <source>Wallet</source>
+        <translation>Tegnebog</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
@@ -1634,8 +1622,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Tillad indkomne forbindelser</translation>
     </message>
     <message>
-        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;forbind gennem SOCJS5 proxy (standardproxy):</translation>
+        <source>Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>forbind gennem SOCJS5 proxy (standardproxy):</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -1646,32 +1634,16 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Start Ittrium automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Ittrium on system login</source>
-        <translation>&amp;start Ittrium når der logges på systemet</translation>
-    </message>
-    <message>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>Denne indstilling bestemmer antallet af individuelle masternoder hvorgennem der tilsløres et input. &lt;br/&gt;Jo flere gennemløb der udføres, jo højere grad af tilsløring, og jo højere gebyrer.</translation>
-    </message>
-    <message>
-        <source>Obfuscation rounds to use</source>
-        <translation>Antal gennemløb der skal benyttes </translation>
-    </message>
-    <message>
-        <source>This amount acts as a threshold to turn off Obfuscation once it's reached.</source>
-        <translation>når dette antal er nået slås tilsløringsfunktonen fra. </translation>
-    </message>
-    <message>
-        <source>Amount of Ittrium to keep anonymized</source>
-        <translation>Antallet af Ittrium som skal holdes tilslørede</translation>
+        <source>Start Ittrium on system login</source>
+        <translation>start Ittrium når der logges på systemet</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Vis eller skjul møntkontrolfeatures</translation>
     </message>
     <message>
-        <source>Enable coin &amp;control features</source>
-        <translation>Aktiver mønt &amp;kontrolfeatures</translation>
+        <source>Enable coin control features</source>
+        <translation>Aktiver mønt kontrolfeatures</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1682,12 +1654,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vis fane med masternoder</translation>
     </message>
     <message>
-        <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;brug ikke bekræftede "penge tilbage"</translation>
+        <source>Spend unconfirmed change</source>
+        <translation>brug ikke bekræftede "penge tilbage"</translation>
     </message>
     <message>
-        <source>&amp;Network</source>
-        <translation>&amp;netværk</translation>
+        <source>Network</source>
+        <translation>netværk</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting Ittrium.</source>
@@ -1700,7 +1672,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
 https://www.transifex.com/ittrium-project/ittrium-project-translations</translation>
     </message>
     <message>
-        <source>Map port using &amp;UPnP</source>
+        <source>Map port using UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
@@ -1708,56 +1680,56 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Tilslut Ittrium netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
-        <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP</translation>
+        <source>Proxy IP:</source>
+        <translation>Proxy IP</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP adresse til proxyserveren (For eksempel IPV4: 127.0.0.1/IPv6: ::1)</translation>
     </message>
     <message>
-        <source>&amp;Port:</source>
-        <translation>&amp;port</translation>
+        <source>Port:</source>
+        <translation>port</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Proxyport (f.eks 9050)</translation>
     </message>
     <message>
-        <source>&amp;Window</source>
-        <translation>&amp;vindue</translation>
+        <source>Window</source>
+        <translation>vindue</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Vis kun ikonet efter minimering af vinduet</translation>
     </message>
     <message>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimer til bakken i stedet for til proceslinien</translation>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Minimer til bakken i stedet for til proceslinien</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Minimer i stedet for at afslutte applikationen når vinduet lukkes. Når dette er valgt er det kun muligt at lukke ned via filmenuen og afslut</translation>
     </message>
     <message>
-        <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimer og luk</translation>
+        <source>Minimize on close</source>
+        <translation>Minimer og luk</translation>
     </message>
     <message>
-        <source>&amp;Display</source>
-        <translation>&amp;Vis</translation>
+        <source>Display</source>
+        <translation>Vis</translation>
     </message>
     <message>
-        <source>User Interface &amp;language:</source>
-        <translation>Brugerinterface &amp;sprog:</translation>
+        <source>User Interface language:</source>
+        <translation>Brugerinterface sprog:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
         <translation>Brugers tema:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Enhed som beløb vises i</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Enhed som beløb vises i</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1784,16 +1756,16 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Nulstil alle klientoptioner til standard</translation>
     </message>
     <message>
-        <source>&amp;Reset Options</source>
-        <translation>&amp;nulstil optioner</translation>
+        <source>Reset Options</source>
+        <translation>nulstil optioner</translation>
     </message>
     <message>
-        <source>&amp;OK</source>
-        <translation>&amp;Ok</translation>
+        <source>OK</source>
+        <translation>Ok</translation>
     </message>
     <message>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Annuller</translation>
+        <source>Cancel</source>
+        <translation>Annuller</translation>
     </message>
     <message>
         <source>default</source>
@@ -1855,10 +1827,6 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Indskyder- eller masternodebelønning er stadig under behandling</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Saldi</translation>
-    </message>
-    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ittrium network after a connection is established, but this process has not completed yet.</source>
         <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Ittrium netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
@@ -1895,145 +1863,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>Obfuscation Balance:</source>
-        <translation>Sløret beløb</translation>
-    </message>
-    <message>
-        <source>0 XIT / 0 Rounds</source>
-        <translation>0 XIT / 0 gennemløb</translation>
-    </message>
-    <message>
-        <source>Enabled/Disabled</source>
-        <translation>Startet/Stoppet</translation>
-    </message>
-    <message>
-        <source>Try to manually submit a Obfuscation request.</source>
-        <translation>Prøv at send en manuel tilsløringsanmodning.</translation>
-    </message>
-    <message>
-        <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Nulstil den aktuelle status for tilsløringsfunktionen. (Kan forstyrre processen, hvilket kan koste mønter).</translation>
-    </message>
-    <message>
-        <source>Obfuscation</source>
-        <translation>Tilsløring</translation>
-    </message>
-    <message>
-        <source>Completion:</source>
-        <translation>Færdiggørelse:</translation>
-    </message>
-    <message>
-        <source>Amount and Rounds:</source>
-        <translation>Beløb og gennemløb</translation>
-    </message>
-    <message>
-        <source>Submitted Denom:</source>
-        <translation>Afsendte midler</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>Ikke tilgængelig</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Nylige transaktioner</translation>
     </message>
     <message>
-        <source>Start/Stop Mixing</source>
-        <translation>Start/Stop tilsløring</translation>
-    </message>
-    <message>
-        <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>Designerede midler afsendt til masternoden. &lt;br&gt;For at gennemføre tilsløringen må andre brugere afsende tilsvarende designerede midler.</translation>
-    </message>
-    <message>
-        <source>(Last Message)</source>
-        <translation>(seneste besked)</translation>
-    </message>
-    <message>
-        <source>Try Mix</source>
-        <translation>Prøv at usynliggøre</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Nulstil</translation>
-    </message>
-    <message>
         <source>out of sync</source>
         <translation>Ude af synk</translation>
-    </message>
-    <message>
-        <source>Disabled</source>
-        <translation>slået fra</translation>
-    </message>
-    <message>
-        <source>No inputs detected</source>
-        <translation>Ingen inputs valgt</translation>
-    </message>
-    <message>
-        <source>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</source>
-        <translation>Der er ikke tilstrækkelige kompatible inputs tilgængelige for tilsløring &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;vil tilsløre &lt;span style='color:red;'&gt;%2&lt;/span&gt; i stedet</translation>
-    </message>
-    <message>
-        <source>Overall progress</source>
-        <translation>Samlet status</translation>
-    </message>
-    <message>
-        <source>Denominated</source>
-        <translation>Designerede</translation>
-    </message>
-    <message>
-        <source>Anonymized</source>
-        <translation>Tilsløret</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation message:
-</source>
-        <translation>Seneste besked fra tilsløringsprocessen</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully reset.</source>
-        <translation>Tilsløringsfunktionen blev nulstillet </translation>
-    </message>
-    <message>
-        <source>If you don't want to see internal Obfuscation fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>Hvis de ikke ønsker at se de interne tilsløringsgebyrer og transaktioner, skal De vælge "Mest fremherskende" som type i transaktionsmenuen.</translation>
-    </message>
-    <message>
-        <source>Obfuscation requires at least %1 to use.</source>
-        <translation>Tilsløring kræver mindst %1 for at kunne anvendes </translation>
-    </message>
-    <message>
-        <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
-        <translation>Tegnebogen er låst, brugeren har afvist at låse den op. Tilsløring slås fra.</translation>
-    </message>
-    <message>
-        <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Der er fundet nok kompatible inputs for tilsløring af %1</translation>
-    </message>
-    <message>
-        <source>Start Obfuscation</source>
-        <translation>Start tilsløring</translation>
-    </message>
-    <message>
-        <source>Stop Obfuscation</source>
-        <translation>stop tilsløring</translation>
-    </message>
-    <message>
-        <source>Mixed</source>
-        <translation>Tilsløret</translation>
-    </message>
-    <message>
-        <source>Enabled</source>
-        <translation>Slået til</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Ikke tilgængelig</translation>
     </message>
 </context>
 <context>
@@ -2143,6 +1978,121 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ittrium network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Ittrium netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Nulstil</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Antal:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Beløb</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Betal Til</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Benyt en tidligere anvendt adresse.</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Indsæt adresse fra udklipsholderen.</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Mærkning</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Indtast et mærke til denne adresse for at tilføje den til listen over brugte adresser</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Amount</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioritet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Gebyr:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Affald:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nej</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Saldo for lille!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>Middel</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Møntkontrol, features</translation>
+    </message>
+    <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Hvis denne er aktiveret, men tilbagebetalingsadressen er tom, eller ugyldig, overskydende beløb vil blive fremsendt til en nyoprettet adresse</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>Brugerdefineret tilbagebetalingsadresse</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Penge tilbage:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>Ude af synk</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopiér antal</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopiér beløb</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Bekræft at De vil sende mønter</translation>
+    </message>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
@@ -2192,12 +2142,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
 <context>
     <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Gem billede</translation>
+        <source>Save Image...</source>
+        <translation>Gem billede</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Kopier billede</translation>
+        <source>Copy Image</source>
+        <translation>Kopier billede</translation>
     </message>
     <message>
         <source>Save QR Code</source>
@@ -2215,8 +2165,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Værktøjskasse</translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;information</translation>
+        <source>Information</source>
+        <translation>information</translation>
     </message>
     <message>
         <source>General</source>
@@ -2239,8 +2189,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Antal forbindelser</translation>
     </message>
     <message>
-        <source>&amp;Open</source>
-        <translation>&amp;Åben</translation>
+        <source>Open</source>
+        <translation>Åben</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -2291,20 +2241,20 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Antal masternoder</translation>
     </message>
     <message>
-        <source>&amp;Console</source>
-        <translation>&amp;konsol</translation>
+        <source>Console</source>
+        <translation>konsol</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Clear konsollet</translation>
     </message>
     <message>
-        <source>&amp;Network Traffic</source>
-        <translation>&amp;Netværkstrafik</translation>
+        <source>Network Traffic</source>
+        <translation>Netværkstrafik</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;clear</translation>
+        <source>Clear</source>
+        <translation>clear</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -2319,8 +2269,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Sendt</translation>
     </message>
     <message>
-        <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
+        <source>Peers</source>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
@@ -2379,8 +2329,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>PingtidPingtid</translation>
     </message>
     <message>
-        <source>&amp;Wallet Repair</source>
-        <translation>&amp;Tegnebog Reparer</translation>
+        <source>Wallet Repair</source>
+        <translation>Tegnebog Reparer</translation>
     </message>
     <message>
         <source>Wallet In Use:</source>
@@ -2510,12 +2460,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Genbrug en af de tidligere benyttede modtageradresser. &lt;br&gt; Genbrug af adresser kan kompromittere anonymiteten og sikkerheden. &lt;br&gt; Anbefales ikke, med mindre der blot er tale om genudsendelse af en tidligere genereret adresse.</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>G&amp;enbrug en eksisterendemodageradresse (ikke anbefalet)</translation>
+        <source>Reuse an existing receiving address (not recommended)</source>
+        <translation>Genbrug en eksisterendemodageradresse (ikke anbefalet)</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Besked</translation>
+        <source>Message:</source>
+        <translation>Besked</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2534,20 +2484,20 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Anvend denne formular for at anmode om betalinger. Alle felter er &lt;b&gt;valgfri&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Mærkning</translation>
+        <source>Label:</source>
+        <translation>Mærkning</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Beløbsfeltet er valgfrit. Efterlad det tomt, eller med værdien 0 for at anmode om et beløb, som afsenderen bestemmer.</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Beløb</translation>
+        <source>Amount:</source>
+        <translation>Beløb</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Anmod om betaling</translation>
+        <source>Request payment</source>
+        <translation>Anmod om betaling</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -2555,7 +2505,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
     </message>
     <message>
         <source>Clear</source>
-        <translation>&amp;clear</translation>
+        <translation>clear</translation>
     </message>
     <message>
         <source>Requested payments history</source>
@@ -2597,16 +2547,16 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>QR kode</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>Kopier &amp;URl</translation>
+        <source>Copy URI</source>
+        <translation>Kopier URl</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Kopier &amp;Adresse</translation>
+        <source>Copy Address</source>
+        <translation>Kopier Adresse</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Gem billede</translation>
+        <source>Save Image...</source>
+        <translation>Gem billede</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
@@ -2685,14 +2635,6 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
     <message>
         <source>Coin Control Features</source>
         <translation>Møntkontrol, features</translation>
-    </message>
-    <message>
-        <source>Inputs...</source>
-        <translation>Inputs...</translation>
-    </message>
-    <message>
-        <source>automatically selected</source>
-        <translation>Automatisk valgte</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -2779,10 +2721,6 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Minimer</translation>
     </message>
     <message>
-        <source>Obfuscation</source>
-        <translation>Tilsløring</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>pr. kilobyte</translation>
     </message>
@@ -2843,15 +2781,15 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Bekræft  og send</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
+        <source>Send</source>
+        <translation>Send</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
         <translation>Tøm alle felter i formularen</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Nulstil alt</translation>
     </message>
     <message>
@@ -2859,12 +2797,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Send til flere modtagere på én gang</translation>
     </message>
     <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Tilføj &amp;Modtager</translation>
+        <source>Add Recipient</source>
+        <translation>Tilføj Modtager</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2927,8 +2865,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Alle tilgængelige saldi (anbefales ikke)</translation>
     </message>
     <message>
-        <source>and SwiftTX</source>
-        <translation>og SwiftTX</translation>
+        <source>and SwiftX</source>
+        <translation>og SwiftX</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2954,17 +2892,9 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Et gebyr %1 gange højere end %2 pr. kilobyte er vanvittigt højt.</translation>
     </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform></translation>
-    </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Modtageradressen er ikke gyldig. Kontroller igen</translation>
-    </message>
-    <message>
-        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(Tilsløring kræver at dette beløb rundes op til nærmeste %1)</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3022,8 +2952,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Dette er en almindelig betaling</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betal &amp;Til</translation>
+        <source>Pay To:</source>
+        <translation>Betal Til</translation>
     </message>
     <message>
         <source>The Ittrium address to send the payment to</source>
@@ -3050,16 +2980,16 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Fjern denne postering</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Mærkning</translation>
+        <source>Label:</source>
+        <translation>Mærkning</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Indtast et mærke til denne adresse for at tilføje den til listen over brugte adresser</translation>
     </message>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;mount</translation>
+        <source>Amount:</source>
+        <translation>Amount</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -3108,8 +3038,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Underskrifter - Underskriv / verificer en besked</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Underskriv besked</translation>
+        <source>Sign Message</source>
+        <translation>Underskriv besked</translation>
     </message>
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
@@ -3160,28 +3090,28 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Ittrium adresse.</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
-        <translation>Underskriv &amp;Besked</translation>
+        <source>Sign Message</source>
+        <translation>Underskriv Besked</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
         <translation>Nulstil alle underskriftsfelter</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Clear All</source>
         <translation>Nulstil alt</translation>
     </message>
     <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;verificer besked</translation>
+        <source>Verify Message</source>
+        <translation>verificer besked</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
         <translation>Skriv den adresse der skal bruges til at underskrive med. (Vær sikker på at få det hele med, herunder alle linjerne, mellemrum, tabuleringer o.l. præcist) og signer nedenfor for at verificere beskeden. Vær forsigtig med ikke at læse mere ind i underskriften end den underskrevne besked for at undgå snyd fra et "man-in-the-middle" angreb.</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verificer &amp;Beske</translation>
+        <source>Verify Message</source>
+        <translation>Verificer Beske</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
@@ -3285,15 +3215,15 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Konflikt!</translation>
     </message>
     <message>
-        <source>%1/offline (verified via swifttx)</source>
+        <source>%1/offline (verified via SwiftX)</source>
         <translation>%1/offline (verified via svifttx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via swifttx)</source>
+        <source>%1/confirmed (verified via SwiftX)</source>
         <translation>%1/bekræftet (verified via svifttx)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via swifttx)</source>
+        <source>%1 confirmations (verified via SwiftX)</source>
         <translation>%1/bekræftelser (verified via svifttx)</translation>
     </message>
     <message>
@@ -3309,23 +3239,23 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>%1/bekræftelser</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1/offline (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
         <translation>%1/bekræftet(SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1/bekræftelser (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation>%1/offline (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation>%1/bekræftet (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
@@ -3791,15 +3721,15 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XIT.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1XIT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XIT.</source>
+        <translation>SwiftX understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1XIT.</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>E&amp;ksporter</translation>
+        <source>Export</source>
+        <translation>Eksporter</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -3834,6 +3764,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Tegnebogens data blev gemt i %1</translation>
     </message>
 </context>
+<context>
+    <name>ZXitControlDialog</name>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>ittrium-core</name>
     <message>
@@ -3881,8 +3818,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Ittrium funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle Ittrium funktioner fra (Masternoder, Tilsløring, SwiftX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3894,12 +3831,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Slå spork administrationsfunktionen til med den rette private nøgle</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Slå automatisk tilsløring til for alle midler i denne tegebog (0-1, default: %u)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Aktiver SwiftX, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -3990,10 +3923,6 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Output debug information (default: %u, supplying &lt;category&gt; er valgfri)</translation>
     </message>
     <message>
-        <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Tilfør tilsløring likviditet  ved at tilføje flere Ittrium løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
-    </message>
-    <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Forespørg peer adresser via DNS opslag, hvis antallet af adresser er laft (default: 1 med mindre -connect)</translation>
     </message>
@@ -4026,8 +3955,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</translat
         <translation>Understøt filtrering af blokke og transaktioner med bloom filters (default: %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4498,10 +4427,6 @@ For eksempel: alertnotify=Echo %% | mail - s "Ittrium ALARM!" e-mail@administrat
         <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
     </message>
     <message>
-        <source>Keep N XIT anonymized (default: %u)</source>
-        <translation>Behold N XIT anonymiserede (default: %u)</translation>
-    </message>
-    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Behold højest &lt;n&gt; transaktioner i hukommelsen, der ikke kan forbindes (default: %u)</translation>
     </message>
@@ -4644,10 +4569,6 @@ For eksempel: alertnotify=Echo %% | mail - s "Ittrium ALARM!" e-mail@administrat
     <message>
         <source>Obfuscation is idle.</source>
         <translation>Tilsløringssystem ledigt</translation>
-    </message>
-    <message>
-        <source>Obfuscation options:</source>
-        <translation>Tilsløringsmuligheder</translation>
     </message>
     <message>
         <source>Obfuscation request complete:</source>
@@ -4850,8 +4771,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Ittrium ALARM!" e-mail@administrat
         <translation>Afsendt til masternode, venter i kø %s</translation>
     </message>
     <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX optioner:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX optioner:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4952,10 +4873,6 @@ For eksempel: alertnotify=Echo %% | mail - s "Ittrium ALARM!" e-mail@administrat
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Opdater tegnebogen til det nyeste format</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation>Brug N forskellige masternoder for at anonymisere saldi (2-8, default: %u)</translation>
     </message>
     <message>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>

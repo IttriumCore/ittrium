@@ -69,6 +69,10 @@ void OptionsModel::Init()
         settings.setValue("strThirdPartyTxUrls", "");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
+    if (!settings.contains("fHideZeroBalances"))
+        settings.setValue("fHideZeroBalances", true);
+    fHideZeroBalances = settings.value("fHideZeroBalances").toBool();
+
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures").toBool();
@@ -79,7 +83,6 @@ void OptionsModel::Init()
     if (!settings.contains("nAnonymizeIttriumAmount"))
         settings.setValue("nAnonymizeIttriumAmount", 1000);
 
-    nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
     nAnonymizeIttriumAmount = settings.value("nAnonymizeIttriumAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
@@ -107,7 +110,7 @@ void OptionsModel::Init()
 // Wallet
 #ifdef ENABLE_WALLET
     if (!settings.contains("bSpendZeroConfChange"))
-        settings.setValue("bSpendZeroConfChange", true);
+        settings.setValue("bSpendZeroConfChange", false);
     if (!SoftSetBoolArg("-spendzeroconfchange", settings.value("bSpendZeroConfChange").toBool()))
         addOverriddenOption("-spendzeroconfchange");
 	if (!settings.contains("fShowOrphans"))
@@ -148,8 +151,10 @@ void OptionsModel::Init()
     if (!SoftSetArg("-lang", settings.value("language").toString().toStdString()))
         addOverriddenOption("-lang");
 
-    if (settings.contains("nObfuscationRounds"))
-        SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
+    if (settings.contains("nZeromintPercentage"))
+        SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
+    if (settings.contains("nPreferredDenom"))
+        SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeIttriumAmount"))
         SoftSetArg("-anonymizeittriumamount", settings.value("nAnonymizeIttriumAmount").toString().toStdString());
 
@@ -231,8 +236,12 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nDatabaseCache");
         case ThreadsScriptVerif:
             return settings.value("nThreadsScriptVerif");
-        case ObfuscationRounds:
-            return QVariant(nObfuscationRounds);
+        case HideZeroBalances:
+            return settings.value("fHideZeroBalances");
+        case ZeromintPercentage:
+            return QVariant(nZeromintPercentage);
+        case ZeromintPrefDenom:
+            return QVariant(nPreferredDenom);
         case AnonymizeIttriumAmount:
             return QVariant(nAnonymizeIttriumAmount);
         case Listen:
@@ -343,10 +352,20 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
                 setRestartRequired(true);
             }
             break;
-        case ObfuscationRounds:
-            nObfuscationRounds = value.toInt();
-            settings.setValue("nObfuscationRounds", nObfuscationRounds);
-            emit obfuscationRoundsChanged(nObfuscationRounds);
+        case ZeromintPercentage:
+            nZeromintPercentage = value.toInt();
+            settings.setValue("nZeromintPercentage", nZeromintPercentage);
+            emit zeromintPercentageChanged(nZeromintPercentage);
+            break;
+        case ZeromintPrefDenom:
+            nPreferredDenom = value.toInt();
+            settings.setValue("nPreferredDenom", nPreferredDenom);
+            emit preferredDenomChanged(nPreferredDenom);
+            break;
+        case HideZeroBalances:
+            fHideZeroBalances = value.toBool();
+            settings.setValue("fHideZeroBalances", fHideZeroBalances);
+            emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
         case AnonymizeIttriumAmount:
             nAnonymizeIttriumAmount = value.toInt();
@@ -404,8 +423,8 @@ bool OptionsModel::getProxySettings(QNetworkProxy& proxy) const
     proxyType curProxy;
     if (GetProxy(NET_IPV4, curProxy)) {
         proxy.setType(QNetworkProxy::Socks5Proxy);
-        proxy.setHostName(QString::fromStdString(curProxy.ToStringIP()));
-        proxy.setPort(curProxy.GetPort());
+        proxy.setHostName(QString::fromStdString(curProxy.proxy.ToStringIP()));
+        proxy.setPort(curProxy.proxy.GetPort());
 
         return true;
     } else

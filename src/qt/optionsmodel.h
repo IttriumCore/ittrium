@@ -43,8 +43,10 @@ public:
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
-		ShowOrphans,         // bool
-        ObfuscationRounds,   // int
+		    ShowOrphans,         // bool
+        ZeromintPercentage,  // int
+        ZeromintPrefDenom,   // int
+        HideZeroBalances,    // bool
         AnonymizeIttriumAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
@@ -81,8 +83,9 @@ private:
     QString language;
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
-	bool fShowOrphans;
+	  bool fShowOrphans;
     bool fCoinControlFeatures;
+    bool fHideZeroBalances;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -91,9 +94,11 @@ private:
 
 signals:
     void displayUnitChanged(int unit);
-    void obfuscationRoundsChanged(int);
+    void zeromintPercentageChanged(int);
+    void preferredDenomChanged(int);
     void anonymizeIttriumAmountChanged(int);
     void coinControlFeaturesChanged(bool);
+    void hideZeroBalancesChanged(bool);
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H

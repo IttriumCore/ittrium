@@ -53,7 +53,10 @@ std::string CTxIn::ToString() const
     str += "CTxIn(";
     str += prevout.ToString();
     if (prevout.IsNull())
-        str += strprintf(", coinbase %s", HexStr(scriptSig));
+        if(scriptSig.IsZerocoinSpend())
+            str += strprintf(", zerocoinspend %s", HexStr(scriptSig));
+        else
+            str += strprintf(", coinbase %s", HexStr(scriptSig));
     else
         str += strprintf(", scriptSig=%s", scriptSig.ToString().substr(0,24));
     if (nSequence != std::numeric_limits<unsigned int>::max())
@@ -71,10 +74,13 @@ CTxOut::CTxOut(const CAmount& nValueIn, CScript scriptPubKeyIn)
 
 bool COutPoint::IsMasternodeReward(const CTransaction* tx) const
 {
-    if(!tx->IsCoinStake())
-        return false;
+	if (tx->IsCoinStake())
+		return (n == tx->vout.size() - 1) && (tx->vout[1].scriptPubKey != tx->vout[n].scriptPubKey);
 
-    return (n == tx->vout.size() - 1) && (tx->vout[1].scriptPubKey != tx->vout[n].scriptPubKey);
+	if (tx->IsCoinBase())
+		return (n == tx->vout.size() - 1);
+
+	return false;
 }
 
 uint256 CTxOut::GetHash() const
@@ -135,16 +141,77 @@ CAmount CTransaction::GetValueOut() const
     CAmount nValueOut = 0;
     for (std::vector<CTxOut>::const_iterator it(vout.begin()); it != vout.end(); ++it)
     {
-        // XIT: previously MoneyRange() was called here. This has been replaced with negative check and boundary wrap check.
-        if (it->nValue < 0)
-            throw std::runtime_error("CTransaction::GetValueOut() : value out of range : less than 0");
+	if (it->nValue < 0)
+		throw std::runtime_error("CTransaction::GetValueOut() : value out of range : less than 0");
 
-        if ((nValueOut + it->nValue) < nValueOut)
-            throw std::runtime_error("CTransaction::GetValueOut() : value out of range : wraps the int64_t boundary");
+	if ((nValueOut + it->nValue) < nValueOut)
+		throw std::runtime_error("CTransaction::GetValueOut() : value out of range : wraps the int64_t boundary");
 
-        nValueOut += it->nValue;
+	nValueOut += it->nValue;
     }
     return nValueOut;
+}
+
+CAmount CTransaction::GetZerocoinMinted() const
+{
+    for (const CTxOut txOut : vout) {
+        if(!txOut.scriptPubKey.IsZerocoinMint())
+            continue;
+
+        return txOut.nValue;
+    }
+
+    return  CAmount(0);
+}
+
+bool CTransaction::UsesUTXO(const COutPoint out)
+{
+    for (const CTxIn in : vin) {
+        if (in.prevout == out)
+            return true;
+    }
+
+    return false;
+}
+
+std::list<COutPoint> CTransaction::GetOutPoints() const
+{
+    std::list<COutPoint> listOutPoints;
+    uint256 txHash = GetHash();
+    for (unsigned int i = 0; i < vout.size(); i++)
+        listOutPoints.emplace_back(COutPoint(txHash, i));
+    return listOutPoints;
+}
+
+CAmount CTransaction::GetZerocoinSpent() const
+{
+    if(!IsZerocoinSpend())
+        return 0;
+
+    CAmount nValueOut = 0;
+    for (const CTxIn txin : vin) {
+        if(!txin.scriptSig.IsZerocoinSpend())
+            LogPrintf("%s is not zcspend\n", __func__);
+
+        std::vector<char, zero_after_free_allocator<char> > dataTxIn;
+        dataTxIn.insert(dataTxIn.end(), txin.scriptSig.begin() + 4, txin.scriptSig.end());
+
+        CDataStream serializedCoinSpend(dataTxIn, SER_NETWORK, PROTOCOL_VERSION);
+        libzerocoin::CoinSpend spend(Params().Zerocoin_Params(), serializedCoinSpend);
+        nValueOut += libzerocoin::ZerocoinDenominationToAmount(spend.getDenomination());
+    }
+
+    return nValueOut;
+}
+
+int CTransaction::GetZerocoinMintCount() const
+{
+    int nCount = 0;
+    for (const CTxOut out : vout) {
+        if (out.scriptPubKey.IsZerocoinMint())
+            nCount++;
+    }
+    return nCount;
 }
 
 double CTransaction::ComputePriority(double dPriorityInputs, unsigned int nTxSize) const

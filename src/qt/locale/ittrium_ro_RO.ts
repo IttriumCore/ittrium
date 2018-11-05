@@ -10,36 +10,36 @@
         <translation>Creează o nouă adresă</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Nou/Nouă</translation>
+        <source>New</source>
+        <translation>Nou/Nouă</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Copiază adresa selectată în clipboard</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Copiază</translation>
+        <source>Copy</source>
+        <translation>Copiază</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Șterge adresa selectată din listă</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Șterge</translation>
+        <source>Delete</source>
+        <translation>Șterge</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportă datele din fila curentă într-un fișier</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportă</translation>
+        <source>Export</source>
+        <translation>Exportă</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>&amp;Închide </translation>
+        <source>Close</source>
+        <translation>Închide </translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>Alege adresa la care vrei să primești monedele</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>&amp;Alege</translation>
+        <source>Choose</source>
+        <translation>Alege</translation>
     </message>
     </context>
 <context>
@@ -110,6 +110,9 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>PrivacyDialog</name>
     </context>
 <context>
     <name>QObject</name>
@@ -171,13 +174,16 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportă</translation>
+        <source>Export</source>
+        <translation>Exportă</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportă datele din fila curentă într-un fișier</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

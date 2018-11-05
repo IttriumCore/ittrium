@@ -9,6 +9,7 @@
 #ifndef BITCOIN_HASH_H
 #define BITCOIN_HASH_H
 
+
 #include "crypto/ripemd160.h"
 #include "crypto/sha256.h"
 #include "serialize.h"
@@ -22,41 +23,12 @@
 #include "crypto/sph_keccak.h"
 #include "crypto/sph_skein.h"
 
+#include <vector>
 #include <iomanip>
 #include <openssl/sha.h>
 #include <sstream>
-#include <vector>
 
 using namespace std;
-
-/** A hasher class for Bitcoin's 256-bit hash (double SHA-256). */
-class CHash256
-{
-private:
-    CSHA256 sha;
-
-public:
-    static const size_t OUTPUT_SIZE = CSHA256::OUTPUT_SIZE;
-
-    void Finalize(unsigned char hash[OUTPUT_SIZE])
-    {
-        unsigned char buf[sha.OUTPUT_SIZE];
-        sha.Finalize(buf);
-        sha.Reset().Write(buf, sha.OUTPUT_SIZE).Finalize(hash);
-    }
-
-    CHash256& Write(const unsigned char* data, size_t len)
-    {
-        sha.Write(data, len);
-        return *this;
-    }
-
-    CHash256& Reset()
-    {
-        sha.Reset();
-        return *this;
-    }
-};
 
 #ifdef GLOBALDEFINED
 #define GLOBAL
@@ -88,7 +60,35 @@ GLOBAL sph_skein512_context z_skein;
 #define ZKECCAK (memcpy(&ctx_keccak, &z_keccak, sizeof(z_keccak)))
 #define ZSKEIN (memcpy(&ctx_skein, &z_skein, sizeof(z_skein)))
 
-/* ----------- Bitcoin Hash ------------------------------------------------- */
+/** A hasher class for Bitcoin's 256-bit hash (double SHA-256). */
+class CHash256
+{
+private:
+    CSHA256 sha;
+
+public:
+    static const size_t OUTPUT_SIZE = CSHA256::OUTPUT_SIZE;
+
+    void Finalize(unsigned char hash[OUTPUT_SIZE])
+    {
+        unsigned char buf[sha.OUTPUT_SIZE];
+        sha.Finalize(buf);
+        sha.Reset().Write(buf, sha.OUTPUT_SIZE).Finalize(hash);
+    }
+
+    CHash256& Write(const unsigned char* data, size_t len)
+    {
+        sha.Write(data, len);
+        return *this;
+    }
+
+    CHash256& Reset()
+    {
+        sha.Reset();
+        return *this;
+    }
+};
+
 /** A hasher class for Bitcoin's 160-bit hash (SHA-256 + RIPEMD-160). */
 class CHash160
 {

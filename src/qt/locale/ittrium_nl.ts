@@ -10,36 +10,36 @@
         <translation>Maak een nieuw adres aan</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Nieuw</translation>
+        <source>New</source>
+        <translation>Nieuw</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopieer het geselecteerde adres naar het klembord</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Kopiëren</translation>
+        <source>Copy</source>
+        <translation>Kopiëren</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Verwijder het geselecteerde adres uit de lijst</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Verwijderen</translation>
+        <source>Delete</source>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporteer de data in de huidige tab naar een bestand</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
+        <source>Export</source>
+        <translation>Exporteren</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>&amp;Sluiten</translation>
+        <source>Close</source>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -50,8 +50,8 @@
         <translation>Kies het adres om op te ontvangen</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
-        <translation>K&amp;iezen</translation>
+        <source>Choose</source>
+        <translation>Kiezen</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -70,16 +70,16 @@
         <translation>Dit zijn uw Ittriumadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiëer Adres</translation>
+        <source>Copy Address</source>
+        <translation>Kopiëer Adres</translation>
     </message>
     <message>
-        <source>Copy &amp;Label</source>
-        <translation>Kopiëer &amp;Label</translation>
+        <source>Copy Label</source>
+        <translation>Kopiëer Label</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Bewerken</translation>
+        <source>Edit</source>
+        <translation>Bewerken</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -231,8 +231,8 @@
         <translation>BIP 38 Tool</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 Versleuteling</translation>
+        <source>BIP 38 Encrypt</source>
+        <translation>BIP 38 Versleuteling</translation>
     </message>
     <message>
         <source>Enter a Ittrium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
@@ -279,20 +279,20 @@
         <translation>Onderteken het bericht om te bewijzen dat u het Ittrium adres bezit</translation>
     </message>
     <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Versleutel &amp;Sleutel</translation>
+        <source>Encrypt Key</source>
+        <translation>Versleutel Sleutel</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
         <translation>Maak alle ondertekenvelden leeg</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <source>Clear All</source>
+        <translation>Verwijder Alles</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 ontsleuteling</translation>
+        <source>BIP 38 Decrypt</source>
+        <translation>BIP 38 ontsleuteling</translation>
     </message>
     <message>
         <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
@@ -307,7 +307,7 @@
         <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Ittrium adres</translation>
     </message>
     <message>
-        <source>Decrypt &amp;Key</source>
+        <source>Decrypt Key</source>
         <translation>Ontsleutelen Sleutel</translation>
     </message>
     <message>
@@ -398,59 +398,59 @@
         <translation>Node</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Overzicht</translation>
+        <source>Overview</source>
+        <translation>Overzicht</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
         <translation>Toon algemeen overzicht van de portemonnee</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Verzenden</translation>
+        <source>Send</source>
+        <translation>Verzenden</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Ontvangen</translation>
+        <source>Receive</source>
+        <translation>Ontvangen</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transacties</translation>
+        <source>Transactions</source>
+        <translation>Transacties</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
         <translation>Blader door transactiegescheidenis</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Sluiten</translation>
+        <source>Exit</source>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <source>Quit application</source>
         <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>Over &amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>Over Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
         <translation>Toon informatie over Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opties...</translation>
+        <source>Options...</source>
+        <translation>Opties...</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Tonen / Verbergen</translation>
+        <source>Show / Hide</source>
+        <translation>Tonen / Verbergen</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
         <translation>Toon of verberg het hoofdvenster</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
+        <source>Encrypt Wallet...</source>
         <translation>Versleutel portemonnee</translation>
     </message>
     <message>
@@ -458,7 +458,7 @@
         <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
+        <source>Backup Wallet...</source>
         <translation>Backup Portemonnee...</translation>
     </message>
     <message>
@@ -466,68 +466,68 @@
         <translation>Backup portemonnee naar een andere locatie</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Wijzig Wachtwoord...</translation>
+        <source>Change Passphrase...</source>
+        <translation>Wijzig Wachtwoord...</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Wijzig het wachtwoord voor uw portemonneversleuteling</translation>
     </message>
     <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Open portemonnee...</translation>
+        <source>Unlock Wallet...</source>
+        <translation>Open portemonnee...</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Open portemonnee</translation>
     </message>
     <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Sluit portemonnee</translation>
+        <source>Lock Wallet</source>
+        <translation>Sluit portemonnee</translation>
     </message>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>Bericht &amp;Ondertekenen...</translation>
+        <source>Sign message...</source>
+        <translation>Bericht Ondertekenen...</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
-        <translation>Bericht &amp;Verifiëren... </translation>
+        <source>Verify message...</source>
+        <translation>Bericht Verifiëren... </translation>
     </message>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
+        <source>Information</source>
+        <translation>Informatie</translation>
     </message>
     <message>
         <source>Show diagnostic information</source>
         <translation>Toon diagnostische informatie</translation>
     </message>
     <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
+        <source>Debug console</source>
+        <translation>Debug console</translation>
     </message>
     <message>
         <source>Open debugging console</source>
         <translation>Open debugging console</translation>
     </message>
     <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Netwerk Monitor</translation>
+        <source>Network Monitor</source>
+        <translation>Netwerk Monitor</translation>
     </message>
     <message>
         <source>Show network monitor</source>
         <translation>Toon netwerk monitor</translation>
     </message>
     <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Peers lijst</translation>
+        <source>Peers list</source>
+        <translation>Peers lijst</translation>
     </message>
     <message>
         <source>Show peers info</source>
         <translation>Toon informatie van peers</translation>
     </message>
     <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Portemonnee &amp;Repareren </translation>
+        <source>Wallet Repair</source>
+        <translation>Portemonnee Repareren </translation>
     </message>
     <message>
         <source>Show wallet repair options</source>
@@ -538,36 +538,36 @@
         <translation>Open configuratie bestand</translation>
     </message>
     <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Toon Automatische &amp;Backups</translation>
+        <source>Show Automatic Backups</source>
+        <translation>Toon Automatische Backups</translation>
     </message>
     <message>
         <source>Show automatically created wallet backups</source>
         <translation>Toon automatisch aangemaakte portemonnee backups</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Verzendadressen...</translation>
+        <source>Sending addresses...</source>
+        <translation>Verzendadressen...</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Toon de lijst van verzendadressen en labels</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Ontvangstadressen...</translation>
+        <source>Receiving addresses...</source>
+        <translation>Ontvangstadressen...</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
         <translation>Toon de lijst van ontvangstadressen en labels</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
+        <source>Open URI...</source>
+        <translation>Open URI...</translation>
     </message>
     <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Opdrachtregelopties</translation>
+        <source>Command-line options</source>
+        <translation>Opdrachtregelopties</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -578,20 +578,20 @@
         <translation>Synchroniseren aanvullende gegevens: %p%</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;Bestand</translation>
+        <source>File</source>
+        <translation>Bestand</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Instellingen</translation>
+        <source>Settings</source>
+        <translation>Instellingen</translation>
     </message>
     <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Gereedschap</translation>
+        <source>Tools</source>
+        <translation>Gereedschap</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <source>Help</source>
+        <translation>Help</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
@@ -610,16 +610,16 @@
         <translation>Vraag betaling aan (genereert QR-codes en Ittrium: URI's)</translation>
     </message>
     <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
         <source>Browse masternodes</source>
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Ittrium Core</source>
-        <translation>&amp;Over Ittrium Kern</translation>
+        <source>About Ittrium Core</source>
+        <translation>Over Ittrium Kern</translation>
     </message>
     <message>
         <source>Show information about Ittrium Core</source>
@@ -638,28 +638,28 @@
         <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Ittrium adressen</translation>
     </message>
     <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 tool</translation>
+        <source>BIP38 tool</source>
+        <translation>BIP38 tool</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
         <translation>Versleutelen en ontsleutelen door middel van een wachtwoord/wachtzin</translation>
     </message>
     <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
+        <source>MultiSend</source>
+        <translation>MultiSend</translation>
     </message>
     <message>
         <source>MultiSend Settings</source>
         <translation>MultiSend intellingen</translation>
     </message>
     <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Open Portemonnee &amp;Configuratiebestand</translation>
+        <source>Open Wallet Configuration File</source>
+        <translation>Open Portemonnee Configuratiebestand</translation>
     </message>
     <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Open &amp;Masternode Configuratiebestand</translation>
+        <source>Open Masternode Configuration File</source>
+        <translation>Open Masternode Configuratiebestand</translation>
     </message>
     <message>
         <source>Open Masternode configuration file</source>
@@ -670,8 +670,8 @@
         <translation>Open een Ittrium: URI of betaalverzoek</translation>
     </message>
     <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Blockchain verkenner</translation>
+        <source>Blockchain explorer</source>
+        <translation>Blockchain verkenner</translation>
     </message>
     <message>
         <source>Block explorer window</source>
@@ -683,7 +683,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Ittrium network</source>
-        <translation><numerusform>%n actieve connectie(s) naar Ittrium netwerk</numerusform><numerusform>%n actieve connectie(s) naar Ittrium netwerk</numerusform></translation>
+        <translation><numerusform>%n actieve verbinding(en) naar het Ittrium netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Ittrium netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -754,6 +754,22 @@
         <translation>Inkomende transactie</translation>
     </message>
     <message>
+        <source>Sent MultiSend transaction</source>
+        <translation>Verzend MultiSend transactie</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>Datum: %1
+Hoeveelheid: %2
+Type: %3
+Adres: %4
+</translation>
+    </message>
+    <message>
         <source>Staking is active
  MultiSend: %1</source>
         <translation>Staking is actief
@@ -791,6 +807,14 @@ MultiSend: %1</translation>
     <message>
         <source>Blockchain Explorer</source>
         <translation>Blockchain Verkenner</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Terug</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Volgende</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
@@ -863,8 +887,20 @@ MultiSend: %1</translation>
         <translation>(on)selecteer alles</translation>
     </message>
     <message>
+        <source>List mode</source>
+        <translation>Lijstmodus</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Received with label</source>
+        <translation>Ontvangen met label</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Ontvangen met adres</translation>
     </message>
     <message>
         <source>Date</source>
@@ -919,6 +955,10 @@ MultiSend: %1</translation>
         <translation>Kopieer prioriteit</translation>
     </message>
     <message>
+        <source>Copy change</source>
+        <translation>Kopieer wisselgeld</translation>
+    </message>
+    <message>
         <source>highest</source>
         <translation>hoogste</translation>
     </message>
@@ -933,10 +973,6 @@ MultiSend: %1</translation>
     <message>
         <source>medium-high</source>
         <translation>medium-hoog</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>N/B</translation>
     </message>
     <message>
         <source>medium</source>
@@ -986,12 +1022,12 @@ MultiSend: %1</translation>
         <translation>Wijzig Adres</translation>
     </message>
     <message>
-        <source>&amp;Label</source>
-        <translation>&amp;Label</translation>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
-        <translation>&amp;Adres</translation>
+        <source>Address</source>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -1042,6 +1078,18 @@ MultiSend: %1</translation>
     <message>
         <source>Ittrium Core</source>
         <translation>Ittrium Kern</translation>
+    </message>
+    <message>
+        <source>(%1-bit)</source>
+        <translation>(%1-bit)</translation>
+    </message>
+    <message>
+        <source>About Ittrium Core</source>
+        <translation>Over Ittrium Core</translation>
+    </message>
+    <message>
+        <source>Command-line options</source>
+        <translation>Command-line opties</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1142,12 +1190,16 @@ MultiSend: %1</translation>
         <translation>Pubkey</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>&amp;all starten</translation>
+        <source>Start all</source>
+        <translation>all starten</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Start &amp;ontbrekende</translation>
+        <source>Start MISSING</source>
+        <translation>Start ontbrekende</translation>
+    </message>
+    <message>
+        <source>Update status</source>
+        <translation>Status bijwerken</translation>
     </message>
     <message>
         <source>0</source>
@@ -1272,20 +1324,20 @@ MultiSend: %1</translation>
         <translation>Opties</translation>
     </message>
     <message>
-        <source>&amp;Main</source>
-        <translation>&amp;Algemeen</translation>
+        <source>Main</source>
+        <translation>Algemeen</translation>
     </message>
     <message>
-        <source>Size of &amp;database cache</source>
-        <translation>Grootte van cache &amp;gegevens</translation>
+        <source>Size of database cache</source>
+        <translation>Grootte van cache gegevens</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <source>W&amp;allet</source>
-        <translation>P&amp;ortemonnee</translation>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1304,76 +1356,72 @@ MultiSend: %1</translation>
         <translation>Ittrium automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start Ittrium on system login</source>
-        <translation>&amp;Ittrium starten bij systeemlogin</translation>
+        <source>Start Ittrium on system login</source>
+        <translation>Ittrium starten bij systeemlogin</translation>
     </message>
     <message>
-        <source>Amount of Ittrium to keep anonymized</source>
-        <translation>Hoeveelheid Ittrium anoniem te houden</translation>
-    </message>
-    <message>
-        <source>&amp;Network</source>
-        <translation>&amp;Netwerk</translation>
+        <source>Network</source>
+        <translation>Netwerk</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting Ittrium.</source>
         <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Ittrium.</translation>
     </message>
     <message>
-        <source>Map port using &amp;UPnP</source>
-        <translation>Map poort gebruikt &amp;UPnP</translation>
+        <source>Map port using UPnP</source>
+        <translation>Map poort gebruikt UPnP</translation>
     </message>
     <message>
-        <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
+        <source>Proxy IP:</source>
+        <translation>Proxy IP:</translation>
     </message>
     <message>
-        <source>&amp;Port:</source>
-        <translation>&amp;Poort:</translation>
+        <source>Port:</source>
+        <translation>Poort:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Proxy-poort (v.b. 9050)</translation>
     </message>
     <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Venster</translation>
+        <source>Window</source>
+        <translation>Venster</translation>
     </message>
     <message>
-        <source>M&amp;inimize on close</source>
+        <source>Minimize on close</source>
         <translation>Minimaliseer bij sluiten</translation>
     </message>
     <message>
-        <source>&amp;Display</source>
-        <translation>&amp;Vertoon</translation>
+        <source>Display</source>
+        <translation>Weergave</translation>
     </message>
     <message>
-        <source>User Interface &amp;language:</source>
-        <translation>Gebruiksinterface &amp;language:</translation>
+        <source>User Interface language:</source>
+        <translation>Gebruiksinterface language:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
         <translation>Gebruiksinterface thema:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>Toon &amp;Unit in volgende hoeveelheden:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Toon Unit in volgende hoeveelheden:</translation>
     </message>
     <message>
         <source>Decimal digits</source>
         <translation>Decimale cijfers</translation>
     </message>
     <message>
-        <source>&amp;Reset Options</source>
-        <translation>&amp;Herstellings Opties</translation>
+        <source>Reset Options</source>
+        <translation>Herstellings Opties</translation>
     </message>
     <message>
-        <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Annuleren</translation>
+        <source>Cancel</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <source>default</source>
@@ -1407,10 +1455,6 @@ MultiSend: %1</translation>
         <translation>Immatuur:</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Balansen</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Totaal:</translation>
     </message>
@@ -1423,48 +1467,12 @@ MultiSend: %1</translation>
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Status:</translation>
-    </message>
-    <message>
-        <source>0 XIT / 0 Rounds</source>
-        <translation>0 XIT / 0 Rondes</translation>
-    </message>
-    <message>
-        <source>Enabled/Disabled</source>
-        <translation>Ingeschakeld/Uitgeschakeld</translation>
-    </message>
-    <message>
-        <source>Obfuscation</source>
-        <translation>Verduistering</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>N/B</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Recente transacties</translation>
     </message>
     <message>
         <source>out of sync</source>
-        <translation>geen synchronisatie</translation>
-    </message>
-    <message>
-        <source>Disabled</source>
-        <translation>Uitgeschakeld</translation>
-    </message>
-    <message>
-        <source>Mixed</source>
-        <translation>Gemengd</translation>
-    </message>
-    <message>
-        <source>Enabled</source>
-        <translation>Ingeschakeld</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>NB</translation>
+        <translation>niet gesynchroniseerd</translation>
     </message>
 </context>
 <context>
@@ -1505,6 +1513,121 @@ MultiSend: %1</translation>
         <translation>Pingtijd</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Enter an amount of XIT to convert to zXIT</source>
+        <translation>Vul de hoeveleheid in om XIT te converteren naar zXIT</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zXIT</source>
+        <translation>zXIT</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Resetten</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Betaal Naar:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Kies een eerder gebruikt adres</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Plak adres vanaf klembord</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Label:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Available Funds</source>
+        <translation>Beschikbare Fondsen</translation>
+    </message>
+    <message>
+        <source>0 x</source>
+        <translation> 0 x</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioriteit:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Kost:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Stof:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nee</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medium</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wijzig:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>niet gesynchroniseerd</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopieer kwanititeit</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopieer hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Confirm Rescan</source>
+        <translation>Bevestig Rescan</translation>
+    </message>
+    <message>
+        <source>Duration: </source>
+        <translation>Duur:</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Bevestig verzending coins</translation>
+    </message>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -1551,12 +1674,12 @@ MultiSend: %1</translation>
 <context>
     <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
+        <source>Save Image...</source>
+        <translation>Afbeelding opslaan...</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Kopieer afbeelding</translation>
+        <source>Copy Image</source>
+        <translation>Kopieer afbeelding</translation>
     </message>
     <message>
         <source>Save QR Code</source>
@@ -1570,8 +1693,8 @@ MultiSend: %1</translation>
 <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
+        <source>Information</source>
+        <translation>Informatie</translation>
     </message>
     <message>
         <source>General</source>
@@ -1594,8 +1717,8 @@ MultiSend: %1</translation>
         <translation>Aantal connecties</translation>
     </message>
     <message>
-        <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
+        <source>Open</source>
+        <translation>Open</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -1608,6 +1731,10 @@ MultiSend: %1</translation>
     <message>
         <source>Last block time</source>
         <translation>Laatste blocktijd</translation>
+    </message>
+    <message>
+        <source>Debug log file</source>
+        <translation>Debug logbestand</translation>
     </message>
     <message>
         <source>Using OpenSSL version</source>
@@ -1638,8 +1765,16 @@ MultiSend: %1</translation>
         <translation>Aantal Masternodes</translation>
     </message>
     <message>
-        <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <source>Console</source>
+        <translation>Console</translation>
+    </message>
+    <message>
+        <source>Clear console</source>
+        <translation>Console leegmaken</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Leegmaken</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1650,8 +1785,8 @@ MultiSend: %1</translation>
         <translation>Verstuurd</translation>
     </message>
     <message>
-        <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
+        <source>Peers</source>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Protocol</source>
@@ -1745,12 +1880,28 @@ MultiSend: %1</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Bericht:</translation>
+        <source>Message:</source>
+        <translation>Bericht:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Label:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Request payment</source>
+        <translation>Verzoek betaling</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>Leegmaken</translation>
+    </message>
+    <message>
+        <source>Requested payments history</source>
+        <translation>Betalingsverzoeken geschiedenis</translation>
     </message>
     <message>
         <source>Show</source>
@@ -1780,12 +1931,16 @@ MultiSend: %1</translation>
         <translation>QR Code</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Kopieer &amp;Adres</translation>
+        <source>Copy URI</source>
+        <translation>Kopieer URI</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
+        <source>Copy Address</source>
+        <translation>Kopieer Adres</translation>
+    </message>
+    <message>
+        <source>Save Image...</source>
+        <translation>Afbeelding opslaan...</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -1850,10 +2005,6 @@ MultiSend: %1</translation>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>automatically selected</source>
-        <translation>automatisch geselecteerd</translation>
-    </message>
-    <message>
         <source>Quantity:</source>
         <translation>Kwantiteit:</translation>
     </message>
@@ -1910,12 +2061,12 @@ MultiSend: %1</translation>
         <translation>Minimaliseer</translation>
     </message>
     <message>
-        <source>Obfuscation</source>
-        <translation>Verduistering</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>per kilobyte</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Aangepast:</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1934,16 +2085,16 @@ MultiSend: %1</translation>
         <translation>Aanbevolen</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>V&amp;erzonden</translation>
+        <source>Send</source>
+        <translation>Verzonden</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <source>Clear All</source>
+        <translation>Verwijder Alles</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -1974,12 +2125,56 @@ MultiSend: %1</translation>
         <translation>Kopieer prioriteit</translation>
     </message>
     <message>
+        <source>Copy change</source>
+        <translation>Kopieer wisselgeld</translation>
+    </message>
+    <message>
         <source>using</source>
         <translation>gebruikt</translation>
     </message>
     <message>
+        <source>anonymous funds</source>
+        <translation>anonieme financiën</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Ittrium address</source>
+        <translation>Waarschuwing: Ongeldig Ittrium adres</translation>
+    </message>
+    <message>
+        <source>any available funds (not recommended)</source>
+        <translation>elke beschikbare fonds (niet aanbevolen)</translation>
+    </message>
+    <message>
+        <source>and SwiftX</source>
+        <translation>en SwiftX</translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation>%1 naar %2</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>Ben je zeker dat je wilt verzenden?</translation>
+    </message>
+    <message>
+        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
+        <translation>Totale hoeveelheid = &lt;b&gt;%1 &lt;/b&gt;&lt;br /&gt;= %2</translation>
+    </message>
+    <message>
         <source>Confirm send coins</source>
         <translation>Bevestig verzending coins</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Betaal alleen de minimumkost van %1</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown change address</source>
+        <translation>Waarschuwing: Ongekend wisselgeld adres</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1989,8 +2184,16 @@ MultiSend: %1</translation>
 <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
+        <source>This is a normal payment.</source>
+        <translation>Dit is een normale betaling.</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Betaal Naar:</translation>
+    </message>
+    <message>
+        <source>The Ittrium address to send the payment to</source>
+        <translation>Het Ittrium adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2009,8 +2212,20 @@ MultiSend: %1</translation>
         <translation>Alt+P</translation>
     </message>
     <message>
+        <source>Label:</source>
+        <translation>Label:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
         <source>Message:</source>
         <translation>Bericht:</translation>
+    </message>
+    <message>
+        <source>This is an unverified payment request.</source>
+        <translation>Dit is een ongeverifieerde betalingsverzoek.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2020,19 +2235,35 @@ MultiSend: %1</translation>
         <source>Memo:</source>
         <translation>Memo:</translation>
     </message>
-    </context>
+    <message>
+        <source>This is a verified payment request.</source>
+        <translation>Dit is een geverifieerd betalingsverzoek.</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
+    </message>
+</context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <source>Ittrium Core is shutting down...</source>
         <translation>Ittrium Core is aan het afsluiten...</translation>
     </message>
-    </context>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
+    </message>
+</context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Onderteken Bericht</translation>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation>Handtekeningen - Onderteken / Verifieer een Bericht</translation>
+    </message>
+    <message>
+        <source>Sign Message</source>
+        <translation>Onderteken Bericht</translation>
     </message>
     <message>
         <source>The Ittrium address to sign the message with</source>
@@ -2079,20 +2310,32 @@ MultiSend: %1</translation>
         <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Ittrium adres</translation>
     </message>
     <message>
+        <source>Sign Message</source>
+        <translation>Onderteken Bericht</translation>
+    </message>
+    <message>
         <source>Reset all sign message fields</source>
         <translation>Maak alle ondertekenvelden leeg</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <source>Clear All</source>
+        <translation>Verwijder Alles</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifeer &amp;Message</translation>
+        <source>Verify Message</source>
+        <translation>Verifieer Bericht</translation>
+    </message>
+    <message>
+        <source>Verify Message</source>
+        <translation>Verifeer Message</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Maak alle verifiëren van het bericht velden leeg</translation>
+    </message>
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2318,6 +2561,10 @@ MultiSend: %1</translation>
         <translation>Verzenden naar</translation>
     </message>
     <message>
+        <source>Payment to yourself</source>
+        <translation>Betaling naar jezelf</translation>
+    </message>
+    <message>
         <source>Obfuscated</source>
         <translation>Verduisterd</translation>
     </message>
@@ -2373,6 +2620,10 @@ MultiSend: %1</translation>
         <translation>Andere</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Adres of label invullen om te zoeken</translation>
+    </message>
+    <message>
         <source>Min amount</source>
         <translation>Minimale hoeveelheid</translation>
     </message>
@@ -2395,6 +2646,14 @@ MultiSend: %1</translation>
     <message>
         <source>Edit label</source>
         <translation>Label wijzigen</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Bekijk transactiedetails</translation>
+    </message>
+    <message>
+        <source>Export Transaction History</source>
+        <translation>Exporteer Transactiegeschiedenis</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -2433,6 +2692,10 @@ MultiSend: %1</translation>
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
+        <source>Range:</source>
+        <translation>Bereik:</translation>
+    </message>
+    <message>
         <source>to</source>
         <translation>naar</translation>
     </message>
@@ -2457,8 +2720,8 @@ MultiSend: %1</translation>
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
+        <source>Export</source>
+        <translation>Exporteren</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -2473,6 +2736,10 @@ MultiSend: %1</translation>
         <translation>Backup portemonnee</translation>
     </message>
     <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Portemonneegegevens (*.dat)</translation>
+    </message>
+    <message>
         <source>Backup Failed</source>
         <translation>Backup mislukt</translation>
     </message>
@@ -2480,7 +2747,38 @@ MultiSend: %1</translation>
         <source>Backup Successful</source>
         <translation>Backup Succesvol</translation>
     </message>
-    </context>
+    <message>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation>De portemonneegegevens zijn succesvol opgeslagen op %1.</translation>
+    </message>
+</context>
+<context>
+    <name>ZXitControlDialog</name>
+    <message>
+        <source>Select zXIT to Spend</source>
+        <translation>Selecteer zXIT om te spenderen</translation>
+    </message>
+    <message>
+        <source>Quantity</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zXIT</source>
+        <translation>zXIT</translation>
+    </message>
+    <message>
+        <source>Select/Deselect All</source>
+        <translation>Selecteer/Deselecteer Alles</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>Is Uitgeefbaar</translation>
+    </message>
+</context>
 <context>
     <name>ittrium-core</name>
     <message>
@@ -2512,16 +2810,260 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2017-%i The Ittrium Core Ontwikkelaars</translation>
     </message>
     <message>
+        <source>(default: %s)</source>
+        <translation>(standaard: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(standaard: 1)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Block creatie opties:</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Kan geen willekeurige Masternode vinden.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Kan de portemonnee niet downgraden</translation>
+    </message>
+    <message>
+        <source>Collateral not valid.</source>
+        <translation>Terugbetaling niet geldig.</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Connectie opties:</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i The Bitcoin Core Ontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Ontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Copyright (C) 2015-%i The PIVX Core Ontwikkelaars</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Debugging/Test opties:</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Klaar met laden</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>Error tijdens het laden van de block database</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>Error tijdens het laden van wallet.dat</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation>Error tijdens het openen van de block database</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Error tijdens het lezen van de database, aan het afsluiten.</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Error</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Error: Schijfruimte is laag!</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Mislukt om block te lezen</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Transactie aan het voltooien.</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Genoeg gebruikers gevonden, aan het ondertekenen (%s aan het wachten)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>Genoeg gebruikers gevonden, aan het ondertekenen ...</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Importeren...</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>Modus is niet compatibel.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Versie is niet compatibel.</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Het genesis block kan niet worden gevonden of is incorrect. Klopt datadir voor het netwerk?</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informatie</translation>
     </message>
     <message>
+        <source>Input is not valid.</source>
+        <translation>Ongeldige invoer.</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Onvoldoende saldo.</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>Ongeldige hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Ongeldige privésleutel.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Ongeldige script gedetecteerd.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt;kan zijn: </translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Portemonnee aan het laden...</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Masternode opties:</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>Masternode wachtrij zit vol.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>Bezig met mixen...</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>Geen Masternodes gedetecteerd.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>Node relay opties:</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>Niet in de Masternode lijst.</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Opties:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Wachtwoord voor JSON-RPC connecties</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>RPC server opties:</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Sessie niet voltooid!</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Ondertekenen mislukt.</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Staking opties:</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX opties:</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Dit is experimentele software.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Dit is geen Masternode.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Transactiekosten zijn te hoog.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transactie is niet geldig.</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transactie te groot</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Gebruik het test netwerk</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Portemonnee is vergrendeld.</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Portemonnee opties:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Portemonnee venster titel</translation>
+    </message>
+    <message>
         <source>Warning</source>
         <translation>Waarschuwing</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Waarschuwing: Deze versie is verouderd, upgrade vereist!</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ notificatie opties:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin opties:</translation>
+    </message>
+    <message>
+        <source>failed to validate zerocoin</source>
+        <translation>mislukt om zerocoin te valideren</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>tijdens het opstarten</translation>
     </message>
     </context>
 </TS>

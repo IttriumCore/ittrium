@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017 The PIVX developers
 // Copyright (c) 2017-2018 The Ittrium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -807,12 +807,12 @@ void MultisigDialog::on_addAddressButton_clicked()
     addressFrame->setObjectName(QStringLiteral("addressFrame"));
 
     QVBoxLayout* frameLayout = new QVBoxLayout(addressFrame);
-    frameLayout->setSpacing(2);
+    frameLayout->setSpacing(1);
     frameLayout->setObjectName(QStringLiteral("frameLayout"));
     frameLayout->setContentsMargins(6, 6, 6, 6);
 
     QHBoxLayout* addressLayout = new QHBoxLayout();
-    addressLayout->setSpacing(4);
+    addressLayout->setSpacing(0);
     addressLayout->setObjectName(QStringLiteral("addressLayout"));
 
     QLabel* addressLabel = new QLabel(addressFrame);

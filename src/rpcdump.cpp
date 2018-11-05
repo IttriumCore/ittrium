@@ -26,9 +26,8 @@
 #include <openssl/aes.h>
 #include <openssl/sha.h>
 
-#include "json/json_spirit_value.h"
+#include <univalue.h>
 
-using namespace json_spirit;
 using namespace std;
 
 void EnsureWalletIsUnlocked();
@@ -80,7 +79,7 @@ std::string DecodeDumpString(const std::string& str)
     return ret.str();
 }
 
-Value importprivkey(const Array& params, bool fHelp)
+UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
@@ -127,7 +126,7 @@ Value importprivkey(const Array& params, bool fHelp)
 
         // Don't throw error in case a key is already there
         if (pwalletMain->HaveKey(vchAddress))
-            return Value::null;
+            return NullUniValue;
 
         pwalletMain->mapKeyMetadata[vchAddress].nCreateTime = 1;
 
@@ -142,10 +141,10 @@ Value importprivkey(const Array& params, bool fHelp)
         }
     }
 
-    return Value::null;
+    return NullUniValue;
 }
 
-Value importaddress(const Array& params, bool fHelp)
+UniValue importaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
@@ -193,7 +192,7 @@ Value importaddress(const Array& params, bool fHelp)
 
         // Don't throw error in case an address is already there
         if (pwalletMain->HaveWatchOnly(script))
-            return Value::null;
+            return NullUniValue;
 
         pwalletMain->MarkDirty();
 
@@ -206,10 +205,10 @@ Value importaddress(const Array& params, bool fHelp)
         }
     }
 
-    return Value::null;
+    return NullUniValue;
 }
 
-Value importwallet(const Array& params, bool fHelp)
+UniValue importwallet(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
@@ -302,10 +301,10 @@ Value importwallet(const Array& params, bool fHelp)
     if (!fGood)
         throw JSONRPCError(RPC_WALLET_ERROR, "Error adding some keys to wallet");
 
-    return Value::null;
+    return NullUniValue;
 }
 
-Value dumpprivkey(const Array& params, bool fHelp)
+UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
@@ -335,7 +334,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
 }
 
 
-Value dumpwallet(const Array& params, bool fHelp)
+UniValue dumpwallet(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
@@ -390,10 +389,10 @@ Value dumpwallet(const Array& params, bool fHelp)
     file << "\n";
     file << "# End of dump\n";
     file.close();
-    return Value::null;
+    return NullUniValue;
 }
 
-Value bip38encrypt(const Array& params, bool fHelp)
+UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
@@ -422,24 +421,24 @@ Value bip38encrypt(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "Private key for address " + strAddress + " is not known");
 
     uint256 privKey = vchSecret.GetPrivKey_256();
-    string encryptedOut = BIP38_Encrypt(strAddress, strPassphrase, privKey);
+    string encryptedOut = BIP38_Encrypt(strAddress, strPassphrase, privKey, vchSecret.IsCompressed());
 
-    Object result;
+    UniValue result(UniValue::VOBJ);
     result.push_back(Pair("Addess", strAddress));
     result.push_back(Pair("Encrypted Key", encryptedOut));
 
     return result;
 }
 
-Value bip38decrypt(const Array& params, bool fHelp)
+UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
             "bip38decrypt \"ittriumaddress\"\n"
             "\nDecrypts and then imports password protected private key.\n"
             "\nArguments:\n"
-            "1. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with\n"
-            "2. \"encryptedkey\"   (string, required) The encrypted private key\n"
+            "1. \"encryptedkey\"   (string, required) The encrypted private key\n"
+            "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with\n"
 
             "\nResult:\n"
             "\"key\"                (string) The decrypted private key\n"
@@ -448,15 +447,15 @@ Value bip38decrypt(const Array& params, bool fHelp)
     EnsureWalletIsUnlocked();
 
     /** Collect private key and passphrase **/
-    string strPassphrase = params[0].get_str();
-    string strKey = params[1].get_str();
+    string strKey = params[0].get_str();
+    string strPassphrase = params[1].get_str();
 
     uint256 privKey;
     bool fCompressed;
     if (!BIP38_Decrypt(strPassphrase, strKey, privKey, fCompressed))
         throw JSONRPCError(RPC_WALLET_ERROR, "Failed To Decrypt");
 
-    Object result;
+    UniValue result(UniValue::VOBJ);
     result.push_back(Pair("privatekey", HexStr(privKey)));
 
     CKey key;

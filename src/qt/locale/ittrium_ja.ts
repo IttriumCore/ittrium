@@ -10,7 +10,7 @@
         <translation>新しいアドレスを作成</translation>
     </message>
     <message>
-        <source>&amp;New</source>
+        <source>New</source>
         <translation>＆新規</translation>
     </message>
     <message>
@@ -18,7 +18,7 @@
         <translation>クリップボードへ現在選択しているアドレスをコピー</translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
+        <source>Copy</source>
         <translation>＆コピー</translation>
     </message>
     <message>
@@ -26,15 +26,15 @@
         <translation>リストから選択されたアドレスを削除</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
+        <source>Delete</source>
         <translation>＆削除</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>＆エクスポート</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>Close</source>
         <translation>＆閉じる</translation>
     </message>
     <message>
@@ -46,7 +46,7 @@
         <translation>受信用アドレスを選んでコインを受け取る</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>Choose</source>
         <translation>＆選択</translation>
     </message>
     <message>
@@ -58,11 +58,11 @@
         <translation>受信用アドレス</translation>
     </message>
     <message>
-        <source>&amp;Copy Address</source>
+        <source>Copy Address</source>
         <translation>＆アドレスをコビー</translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
+        <source>Edit</source>
         <translation>＆編集</translation>
     </message>
     <message>
@@ -180,6 +180,9 @@
     <name>PeerTableModel</name>
     </context>
 <context>
+    <name>PrivacyDialog</name>
+    </context>
+<context>
     <name>QObject</name>
     </context>
 <context>
@@ -255,9 +258,12 @@
 <context>
     <name>WalletView</name>
     <message>
-        <source>&amp;Export</source>
+        <source>Export</source>
         <translation>＆エクスポート</translation>
     </message>
+    </context>
+<context>
+    <name>ZXitControlDialog</name>
     </context>
 <context>
     <name>ittrium-core</name>

@@ -15,8 +15,8 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;New</source>
-        <translation>&amp;New</translation>
+        <source>New</source>
+        <translation>New</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -25,8 +25,8 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <source>Copy</source>
+        <translation>Copy</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -35,8 +35,8 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Delete</source>
-        <translation>&amp;Delete</translation>
+        <source>Delete</source>
+        <translation>Delete</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -45,13 +45,13 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
+        <source>Export</source>
+        <translation>Export</translation>
     </message>
     <message>
         <location line="+20"/>
-        <source>C&amp;lose</source>
-        <translation>C&amp;lose</translation>
+        <source>Close</source>
+        <translation>Close</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+44"/>
@@ -65,8 +65,8 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>C&amp;hoose</source>
-        <translation>C&amp;hoose</translation>
+        <source>Choose</source>
+        <translation>Choose</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -90,18 +90,18 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Copy Address</translation>
+        <source>Copy Address</source>
+        <translation>Copy Address</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copy &amp;Label</source>
-        <translation>Copy &amp;Label</translation>
+        <source>Copy Label</source>
+        <translation>Copy Label</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <source>Edit</source>
+        <translation>Edit</translation>
     </message>
     <message>
         <location line="+187"/>
@@ -127,7 +127,7 @@
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+157"/>
+        <location filename="../addresstablemodel.cpp" line="+198"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
@@ -302,7 +302,7 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;BIP 38 Encrypt</source>
+        <source>BIP 38 Encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -365,7 +365,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Encrypt &amp;Key</source>
+        <source>Encrypt Key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -376,12 +376,12 @@
     <message>
         <location line="+3"/>
         <location line="+139"/>
-        <source>Clear &amp;All</source>
-        <translation type="unfinished">Clear &amp;All</translation>
+        <source>Clear All</source>
+        <translation type="unfinished">Clear All</translation>
     </message>
     <message>
         <location line="-80"/>
-        <source>&amp;BIP 38 Decrypt</source>
+        <source>BIP 38 Decrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -401,7 +401,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Decrypt &amp;Key</source>
+        <source>Decrypt Key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -505,7 +505,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+123"/>
+        <location filename="../bitcoingui.cpp" line="+127"/>
         <source>Wallet</source>
         <translation>Wallet</translation>
     </message>
@@ -515,9 +515,9 @@
         <translation>Node</translation>
     </message>
     <message>
-        <location line="+157"/>
-        <source>&amp;Overview</source>
-        <translation>&amp;Overview</translation>
+        <location line="+161"/>
+        <source>Overview</source>
+        <translation>Overview</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -526,18 +526,18 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Send</source>
-        <translation>&amp;Send</translation>
+        <source>Send</source>
+        <translation>Send</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>&amp;Receive</source>
-        <translation>&amp;Receive</translation>
+        <source>Receive</source>
+        <translation>Receive</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <source>Transactions</source>
+        <translation>Transactions</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -545,9 +545,14 @@
         <translation>Browse transaction history</translation>
     </message>
     <message>
-        <location line="+40"/>
-        <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
+        <location line="+11"/>
+        <source>Privacy Actions for zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Exit</source>
+        <translation>Exit</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -557,8 +562,8 @@
     <message>
         <location line="+7"/>
         <location line="+2"/>
-        <source>About &amp;Qt</source>
-        <translation>About &amp;Qt</translation>
+        <source>About Qt</source>
+        <translation>About Qt</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -567,13 +572,13 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Options...</source>
-        <translation>&amp;Options...</translation>
+        <source>Options...</source>
+        <translation>Options...</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Show / Hide</translation>
+        <source>Show / Hide</source>
+        <translation>Show / Hide</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -582,8 +587,8 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encrypt Wallet...</translation>
+        <source>Encrypt Wallet...</source>
+        <translation>Encrypt Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -592,8 +597,8 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup Wallet...</translation>
+        <source>Backup Wallet...</source>
+        <translation>Backup Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -602,8 +607,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Change Passphrase...</translation>
+        <source>Change Passphrase...</source>
+        <translation>Change Passphrase...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -612,8 +617,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Unlock Wallet...</translation>
+        <source>Unlock Wallet...</source>
+        <translation>Unlock Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -622,23 +627,23 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Lock Wallet</translation>
+        <source>Lock Wallet</source>
+        <translation>Lock Wallet</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign &amp;message...</source>
-        <translation>Sign &amp;message...</translation>
+        <source>Sign message...</source>
+        <translation>Sign message...</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verify message...</translation>
+        <source>Verify message...</source>
+        <translation>Verify message...</translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -647,8 +652,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
+        <source>Debug console</source>
+        <translation>Debug console</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -657,8 +662,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Network Monitor</translation>
+        <source>Network Monitor</source>
+        <translation>Network Monitor</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -667,8 +672,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Peers list</translation>
+        <source>Peers list</source>
+        <translation>Peers list</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -677,8 +682,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet &amp;Repair</source>
-        <translation>Wallet &amp;Repair</translation>
+        <source>Wallet Repair</source>
+        <translation>Wallet Repair</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -692,8 +697,8 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Show Automatic &amp;Backups</translation>
+        <source>Show Automatic Backups</source>
+        <translation>Show Automatic Backups</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -702,8 +707,8 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Sending addresses...</translation>
+        <source>Sending addresses...</source>
+        <translation>Sending addresses...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -712,8 +717,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Receiving addresses...</translation>
+        <source>Receiving addresses...</source>
+        <translation>Receiving addresses...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -722,16 +727,46 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
+        <source>Multisignature creation...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Multisignature spending...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Spend from a multisignature address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Multisignature signing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign with a multisignature address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Open URI...</source>
+        <translation>Open URI...</translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Command-line options</translation>
+        <source>Command-line options</source>
+        <translation>Command-line options</translation>
     </message>
     <message numerus="yes">
-        <location line="+428"/>
+        <location line="+463"/>
         <source>Processed %n blocks of transaction history.</source>
         <translation>
             <numerusform>Processed %n block of transaction history.</numerusform>
@@ -744,24 +779,29 @@
         <translation>Synchronizing additional data: %p%</translation>
     </message>
     <message>
-        <location line="-421"/>
-        <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <location line="+27"/>
+        <source>%1 behind. Scanning block %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-480"/>
+        <source>File</source>
+        <translation>File</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Settings</source>
+        <translation>Settings</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;Settings</source>
-        <translation>&amp;Settings</translation>
+        <source>Tools</source>
+        <translation>Tools</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;Tools</source>
-        <translation>&amp;Tools</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <source>Help</source>
+        <translation>Help</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -769,13 +809,13 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <location line="-396"/>
-        <location line="+831"/>
+        <location line="-427"/>
+        <location line="+890"/>
         <source>Ittrium Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-652"/>
+        <location line="-707"/>
         <source>Send coins to a Ittrium address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -785,8 +825,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>&amp;Masternodes</source>
+        <location line="+21"/>
+        <source>Privacy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -795,8 +840,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
-        <source>&amp;About Ittrium Core</source>
+        <location line="+31"/>
+        <source>About Ittrium Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -821,7 +866,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;BIP38 tool</source>
+        <source>BIP38 tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -831,7 +876,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;MultiSend</source>
+        <source>MultiSend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -841,12 +886,12 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>Open Wallet &amp;Configuration File</source>
+        <source>Open Wallet Configuration File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Open &amp;Masternode Configuration File</source>
+        <source>Open Masternode Configuration File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -855,13 +900,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+17"/>
         <source>Open a Ittrium: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>&amp;Blockchain explorer</source>
+        <source>Blockchain explorer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -875,12 +920,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+201"/>
+        <location line="+214"/>
         <source>Ittrium Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+190"/>
+        <location line="+212"/>
         <source>%n active connection(s) to Ittrium network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -951,12 +996,7 @@
         </translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>%1 behind</source>
-        <translation>%1 behind</translation>
-    </message>
-    <message>
-        <location line="+5"/>
+        <location line="+9"/>
         <source>Catching up...</source>
         <translation>Catching up...</translation>
     </message>
@@ -986,7 +1026,7 @@
         <translation>Information</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+69"/>
         <source>Sent transaction</source>
         <translation>Sent transaction</translation>
     </message>
@@ -1014,7 +1054,7 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+51"/>
         <source>Staking is active
  MultiSend: %1</source>
         <translation type="unfinished"></translation>
@@ -1061,7 +1101,17 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+18"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Forward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
         <source>Address / Block / Transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1076,7 +1126,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../blockexplorer.cpp" line="+473"/>
+        <location filename="../blockexplorer.cpp" line="+476"/>
         <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ittrium.conf).</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1084,9 +1134,9 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+73"/>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>Total: %1 (OBF compatible: %2 / Enabled: %3)</translation>
+        <location filename="../clientmodel.cpp" line="+77"/>
+        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+101"/>
@@ -1183,8 +1233,8 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>DS Rounds</source>
-        <translation type="unfinished"></translation>
+        <source>Type</source>
+        <translation type="unfinished">Type</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1207,7 +1257,7 @@ Address: %4
         <translation>Priority</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+50"/>
+        <location filename="../coincontroldialog.cpp" line="+52"/>
         <source>Copy address</source>
         <translation>Copy address</translation>
     </message>
@@ -1273,17 +1323,12 @@ Address: %4
         <translation>Copy change</translation>
     </message>
     <message>
-        <location line="+157"/>
+        <location line="+163"/>
         <source>Please switch to &quot;List mode&quot; to use this function.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+196"/>
-        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+31"/>
+        <location line="+220"/>
         <source>highest</source>
         <translation>highest</translation>
     </message>
@@ -1303,18 +1348,13 @@ Address: %4
         <translation>medium-high</translation>
     </message>
     <message>
-        <location line="+207"/>
+        <location line="+238"/>
         <source>Can vary +/- %1 duff(s) per input.</source>
         <translation>Can vary +/- %1 duff(s) per input.</translation>
     </message>
     <message>
-        <location line="+130"/>
-        <source>n/a</source>
-        <translation>n/a</translation>
-    </message>
-    <message>
         <location filename="../forms/coincontroldialog.ui" line="-334"/>
-        <location filename="../coincontroldialog.cpp" line="-335"/>
+        <location filename="../coincontroldialog.cpp" line="-236"/>
         <source>medium</source>
         <translation>medium</translation>
     </message>
@@ -1344,12 +1384,12 @@ Address: %4
         <translation>(%1 locked)</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+62"/>
         <source>none</source>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+126"/>
         <source>yes</source>
         <translation>yes</translation>
     </message>
@@ -1392,7 +1432,7 @@ Address: %4
     </message>
     <message>
         <location line="+54"/>
-        <location line="+62"/>
+        <location line="+81"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -1416,8 +1456,8 @@ Address: %4
     </message>
     <message>
         <location line="+11"/>
-        <source>&amp;Label</source>
-        <translation>&amp;Label</translation>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1426,8 +1466,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Address</source>
-        <translation>&amp;Address</translation>
+        <source>Address</source>
+        <translation>Address</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1684,22 +1724,22 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>S&amp;tart alias</source>
+        <source>Start alias</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Start &amp;all</source>
+        <source>Start all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Start &amp;MISSING</source>
+        <source>Start MISSING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Update status</source>
+        <source>Update status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1718,7 +1758,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+190"/>
+        <location line="+189"/>
         <source>Confirm masternode start</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1920,6 +1960,228 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
+    <name>MultisigDialog</name>
+    <message>
+        <location filename="../forms/multisigdialog.ui" line="+20"/>
+        <source>Multisignature Address Interactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Create MultiSignature Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>How many people must sign to verify a transaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter the minimum number of signatures required to sign transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Address Label:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add Address / Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Local addresses or public keys that can sign:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>Create a new multisig address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+345"/>
+        <location line="+183"/>
+        <source>Status:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-491"/>
+        <source>Use below to quickly import an address by its redeem. Don&apos;t forget to add a label before clicking import!
+Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
+Please be patient after clicking import.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Import Redeem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Create MultiSignature Tx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Inputs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Coin Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Quantity Selected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+14"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Amount:</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Add an input to fund the outputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add a Raw Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Address / Amount:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Add destinations to send XIT to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add Destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Create a transaction object using the given inputs to the given outputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Noto Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Sign MultiSignature Tx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Transaction Hex:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Sign the transaction from this wallet or from provided private keys</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sign</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Commit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Add private keys to sign the transaction with</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add Private Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Sign with only private keys (Not Recommened)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../multisigdialog.cpp" line="+250"/>
+        <source>Invalid Tx Hash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Vout position must be positive.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+535"/>
+        <source>Maximum possible addresses reached. (16)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>Vout Position: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Amount: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Maximum (15)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <location filename="../forms/obfuscationconfig.ui" line="+14"/>
@@ -2041,13 +2303,13 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;Main</source>
-        <translation>&amp;Main</translation>
+        <source>Main</source>
+        <translation>Main</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>Size of &amp;database cache</source>
-        <translation>Size of &amp;database cache</translation>
+        <source>Size of database cache</source>
+        <translation>Size of database cache</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -2056,8 +2318,8 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Number of script &amp;verification threads</source>
-        <translation>Number of script &amp;verification threads</translation>
+        <source>Number of script verification threads</source>
+        <translation>Number of script verification threads</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -2065,9 +2327,9 @@ Please check the address and try again.</source>
         <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
     </message>
     <message>
-        <location line="+105"/>
-        <source>W&amp;allet</source>
-        <translation>W&amp;allet</translation>
+        <location line="+102"/>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -2091,8 +2353,8 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Connect through SOCKS5 proxy (default proxy):</translation>
+        <source>Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>Connect through SOCKS5 proxy (default proxy):</translation>
     </message>
     <message>
         <location line="-82"/>
@@ -2100,44 +2362,24 @@ Please check the address and try again.</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <location line="-179"/>
+        <location line="-176"/>
         <source>Automatically start Ittrium after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Ittrium on system login</source>
+        <source>Start Ittrium on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+102"/>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Obfuscation rounds to use</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+24"/>
-        <source>This amount acts as a threshold to turn off Obfuscation once it&apos;s reached.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>Amount of Ittrium to keep anonymized</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+38"/>
+        <location line="+179"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Whether to show coin control features or not.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable coin &amp;control features</source>
-        <translation>Enable coin &amp;control features</translation>
+        <source>Enable coin control features</source>
+        <translation>Enable coin control features</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2151,13 +2393,13 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Spend unconfirmed change</translation>
+        <source>Spend unconfirmed change</source>
+        <translation>Spend unconfirmed change</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>&amp;Network</source>
-        <translation>&amp;Network</translation>
+        <source>Network</source>
+        <translation>Network</translation>
     </message>
     <message>
         <location line="+192"/>
@@ -2172,18 +2414,39 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="-204"/>
-        <source>Map port using &amp;UPnP</source>
-        <translation>Map port using &amp;UPnP</translation>
+        <source>Map port using UPnP</source>
+        <translation>Map port using UPnP</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="-133"/>
+        <source>Percentage of incoming XIT which get automatically converted to zXIT via Zerocoin Protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Percentage of autominted zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <location line="+16"/>
+        <source>Wait with automatic conversion to Zerocoin until enough XIT for this denomination is available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>Preferred Automint zXIT Denomination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+114"/>
         <source>Connect to the Ittrium network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
+        <source>Proxy IP:</source>
+        <translation>Proxy IP:</translation>
     </message>
     <message>
         <location line="+25"/>
@@ -2192,8 +2455,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <source>Port:</source>
+        <translation>Port:</translation>
     </message>
     <message>
         <location line="+25"/>
@@ -2202,8 +2465,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+36"/>
-        <source>&amp;Window</source>
-        <translation>&amp;Window</translation>
+        <source>Window</source>
+        <translation>Window</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2212,8 +2475,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimize to the tray instead of the taskbar</translation>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Minimize to the tray instead of the taskbar</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2222,18 +2485,18 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimize on close</translation>
+        <source>Minimize on close</source>
+        <translation>Minimize on close</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>&amp;Display</source>
-        <translation>&amp;Display</translation>
+        <source>Display</source>
+        <translation>Display</translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>User Interface &amp;language:</source>
-        <translation>User Interface &amp;language:</translation>
+        <source>User Interface language:</source>
+        <translation>User Interface language:</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -2242,8 +2505,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unit to show amounts in:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Unit to show amounts in:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -2278,21 +2541,26 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Reset Options</source>
-        <translation>&amp;Reset Options</translation>
+        <source>Reset Options</source>
+        <translation>Reset Options</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Cancel</translation>
+        <source>Cancel</source>
+        <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+99"/>
+        <location filename="../optionsdialog.cpp" line="+87"/>
+        <source>I don&apos;t care</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <source>default</source>
         <translation>default</translation>
     </message>
@@ -2302,7 +2570,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+88"/>
         <source>Confirm options reset</source>
         <translation>Confirm options reset</translation>
     </message>
@@ -2336,49 +2604,51 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Form</translation>
     </message>
     <message>
-        <location line="+302"/>
+        <location line="+43"/>
+        <source>XIT Balances</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+259"/>
         <source>Available:</source>
         <translation>Available:</translation>
     </message>
     <message>
         <location line="+16"/>
+        <location line="+702"/>
         <source>Your current spendable balance</source>
         <translation>Your current spendable balance</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="-661"/>
         <source>Pending:</source>
         <translation>Pending:</translation>
     </message>
     <message>
         <location line="-236"/>
+        <location line="+820"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
         <translation>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="-708"/>
+        <location line="+1118"/>
         <source>Immature:</source>
         <translation>Immature:</translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="-1147"/>
         <source>Staked or masternode rewards that has not yet matured</source>
         <translation>Staked or masternode rewards that has not yet matured</translation>
     </message>
     <message>
-        <location line="-163"/>
-        <source>Balances</source>
-        <translation>Balances</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <location line="+1015"/>
-        <location line="+93"/>
+        <location line="-153"/>
+        <location line="+1393"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ittrium network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1063"/>
+        <location line="-1348"/>
         <source>Unconfirmed transactions to watch-only addresses</source>
         <translation>Unconfirmed transactions to watch-only addresses</translation>
     </message>
@@ -2389,11 +2659,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+42"/>
+        <location line="+807"/>
+        <location line="+255"/>
         <source>Total:</source>
         <translation>Total:</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="-1001"/>
         <source>Your current total balance</source>
         <translation>Your current total balance</translation>
     </message>
@@ -2418,211 +2690,143 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Spendable:</translation>
     </message>
     <message>
-        <location line="+51"/>
-        <source>Status:</source>
-        <translation>Status:</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Obfuscation Balance:</source>
+        <location line="+525"/>
+        <source>Combined Balances (including unconfirmed and immature coins)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
-        <source>0 XIT / 0 Rounds</source>
+        <location line="+3"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Combined Balances&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+24"/>
-        <source>Enabled/Disabled</source>
-        <translation>Enabled/Disabled</translation>
-    </message>
-    <message>
-        <location line="+516"/>
-        <source>Try to manually submit a Obfuscation request.</source>
+        <location line="+74"/>
+        <source>Total Balance, including unconfirmed and immature coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it&apos;s in the process of Mixing, which can cost you money!)</source>
+        <location line="+36"/>
+        <source>XIT:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+28"/>
-        <location filename="../overviewpage.cpp" line="+478"/>
-        <location line="+11"/>
+        <location line="+35"/>
+        <source>zXIT:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current percentage of zXIT.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+66"/>
+        <source>0 %</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <location line="+13"/>
+        <source>Locked XIT or Masternode collaterals. These are excluded from zXIT minting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+33"/>
+        <location line="+189"/>
+        <location line="+31"/>
+        <location line="+44"/>
+        <source>0.000 000 00 XIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-284"/>
+        <source>Locked:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <location line="+10"/>
-        <location line="+12"/>
-        <source>Obfuscation</source>
+        <source>Unlocked XITs. These can be used for zXIT minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-637"/>
-        <source>Completion:</source>
-        <translation>Completion:</translation>
+        <location line="-7"/>
+        <source>Unlocked:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+40"/>
-        <source>Amount and Rounds:</source>
-        <translation>Amount and Rounds:</translation>
+        <location line="+77"/>
+        <source>Zerocoin Balance</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Submitted Denom:</source>
-        <translation>Submitted Denom:</translation>
+        <location line="+104"/>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zXIT are spendable.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>n/a</source>
-        <translation>n/a</translation>
+        <location line="-100"/>
+        <source>Mature:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+663"/>
+        <location line="+23"/>
+        <location line="+35"/>
+        <source>All available zXIT, unconfirmed and immature zXIT included.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location line="+17"/>
+        <location line="+27"/>
+        <location line="+17"/>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-57"/>
+        <source>Unconfirmed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+127"/>
         <source>Recent transactions</source>
         <translation>Recent transactions</translation>
     </message>
     <message>
-        <location line="-197"/>
-        <source>Start/Stop Mixing</source>
-        <translation>Start/Stop Mixing</translation>
-    </message>
-    <message>
-        <location line="-469"/>
-        <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</translation>
-    </message>
-    <message>
-        <location line="+501"/>
-        <source>(Last Message)</source>
-        <translation>(Last Message)</translation>
-    </message>
-    <message>
-        <location line="+28"/>
-        <source>Try Mix</source>
-        <translation>Try Mix</translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Reset</source>
-        <translation>Reset</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="-381"/>
-        <location line="+1"/>
+        <location filename="../overviewpage.cpp" line="+135"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>out of sync</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <location line="+1"/>
-        <location line="+1"/>
-        <location line="+293"/>
-        <source>Disabled</source>
-        <translation>Disabled</translation>
-    </message>
-    <message>
-        <location line="-117"/>
-        <location line="+6"/>
-        <source>No inputs detected</source>
-        <translation>No inputs detected</translation>
-    </message>
-    <message numerus="yes">
-        <location line="-2"/>
-        <location line="+35"/>
-        <location line="+10"/>
-        <source>%n Rounds</source>
-        <translation>
-            <numerusform>%n Round</numerusform>
-            <numerusform>%n Rounds</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="-7"/>
-        <source>Not enough compatible inputs to anonymize &lt;span style=&apos;color:red;&apos;&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style=&apos;color:red;&apos;&gt;%2&lt;/span&gt; instead</source>
-        <translation>Not enough compatible inputs to anonymize &lt;span style=&apos;color:red;&apos;&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style=&apos;color:red;&apos;&gt;%2&lt;/span&gt; instead</translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>Overall progress</source>
-        <translation>Overall progress</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Denominated</source>
-        <translation>Denominated</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Anonymized</source>
-        <translation>Anonymized</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+1"/>
-        <source>Denominated inputs have %5 of %n rounds on average</source>
-        <translation>
-            <numerusform>Denominated inputs have %5 of %n rounds on average</numerusform>
-            <numerusform>Denominated inputs have %5 of %n rounds on average</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+44"/>
-        <source>Last Obfuscation message:
+        <location line="+93"/>
+        <source>Current percentage of zXIT.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage.
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
-        <source>Obfuscation was successfully reset.</source>
+        <location line="+4"/>
+        <source>AutoMint is currently enabled and set to </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>If you don&apos;t want to see internal Obfuscation fees/transactions select &quot;Most Common&quot; as Type on the &quot;Transactions&quot; tab.</source>
+        <location line="+1"/>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in ittrium.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Obfuscation requires at least %1 to use.</source>
+        <location line="+3"/>
+        <source>AutoMint is currently disabled.
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in ittrium.conf</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-160"/>
-        <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Found enough compatible inputs to anonymize %1</translation>
-    </message>
-    <message>
-        <location line="-208"/>
-        <location line="+291"/>
-        <location line="+89"/>
-        <source>Start Obfuscation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-378"/>
-        <location line="+381"/>
-        <source>Stop Obfuscation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-121"/>
-        <source>Mixed</source>
-        <translation>Mixed</translation>
-    </message>
-    <message>
-        <location line="+41"/>
-        <source>Enabled</source>
-        <translation>Enabled</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>N/A</source>
-        <translation>N/A</translation>
     </message>
 </context>
 <context>
@@ -2766,6 +2970,653 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
 </context>
 <context>
+    <name>PrivacyDialog</name>
+    <message>
+        <location filename="../forms/privacydialog.ui" line="+55"/>
+        <source>XIT which were anonymized via Zerocin Protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Zerocoin XIT (zXIT)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Zerocoin Actions:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ittrium network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <location line="+46"/>
+        <source>Enter an amount of XIT to convert to zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-43"/>
+        <location filename="../privacydialog.cpp" line="+150"/>
+        <location line="+113"/>
+        <source>Mint Zerocoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <location line="+329"/>
+        <location line="+30"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-349"/>
+        <location line="+629"/>
+        <source>zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-622"/>
+        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Mintable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>0.000 000 00 XIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Reset</source>
+        <translation type="unfinished">Reset</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Coin Control...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Quantity:</source>
+        <translation type="unfinished">Quantity:</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Amount:</translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>ReScan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Status and/or Mesages from the last Mint Action.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>zXIT Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>zXIT Selected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Quantity Selected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Spend Zerocoin. Without &apos;Pay To:&apos; address creates payments to yourself.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../privacydialog.cpp" line="+46"/>
+        <location line="+4"/>
+        <location line="+12"/>
+        <location line="+100"/>
+        <location line="+4"/>
+        <source>Spend Zerocoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Available (mature and spendable) zXIT for spending</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Available Balance:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Available (mature and spendable) zXIT for spending
+
+zXIT are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+417"/>
+        <source>0 zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-394"/>
+        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Security Level:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Security Level 1 - 100 (default: 42)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Pay To:</source>
+        <translation type="unfinished">Pay To:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>The Ittrium address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Choose previously used address</source>
+        <translation type="unfinished">Choose previously used address</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+A</source>
+        <translation type="unfinished">Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation type="unfinished">Paste address from clipboard</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Label:</source>
+        <translation type="unfinished">Label:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation type="unfinished">Enter a label for this address to add it to the list of used addresses</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Amount:</source>
+        <translation type="unfinished">Amount:</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Convert Change to Zerocoin (might cost additional fees)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Minimize Change</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Information about the available Zerocoin funds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Zerocoin Stats:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <location line="+38"/>
+        <source>Total Balance including unconfirmed and immature zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-35"/>
+        <source>Total Zerocoin  Balance:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Denominations with value 1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-367"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
+        <source>0 x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-354"/>
+        <source>Denominations with value 5:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 5:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 10:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 10:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 50:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 50:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 100:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 100:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 500:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 500:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 1000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 1000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Denominations with value 5000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Denom. with value 5000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+106"/>
+        <source>Note: This hidden objects are used for communication between the &apos;Coin Control&apos; dialog and its parent objects. We don&apos;t want to change/reimplement the existing Coin Control, so this objects must be here, even when we don&apos;t use them. No, we don&apos;t like this approach, either.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Priority:</source>
+        <translation type="unfinished">Priority:</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Fee:</source>
+        <translation type="unfinished">Fee:</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Dust:</source>
+        <translation type="unfinished">Dust:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>no</source>
+        <translation type="unfinished">no</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Bytes:</source>
+        <translation type="unfinished">Bytes:</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Insufficient funds!</source>
+        <translation type="unfinished">Insufficient funds!</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location filename="../privacydialog.cpp" line="-391"/>
+        <location line="+1"/>
+        <location line="+481"/>
+        <location line="+1"/>
+        <source>Coins automatically selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>medium</source>
+        <translation type="unfinished">medium</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished">Coin Control Features</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation type="unfinished">If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation type="unfinished">Custom change address</translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>Amount After Fee:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Change:</source>
+        <translation type="unfinished">Change:</translation>
+    </message>
+    <message>
+        <location filename="../privacydialog.cpp" line="-481"/>
+        <source>out of sync</source>
+        <translation type="unfinished">out of sync</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+111"/>
+        <source>Mint Status: Okay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-105"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished">Copy quantity</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation type="unfinished">Copy amount</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <location line="+3"/>
+        <source>zXIT is currently disabled due to maintenance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+113"/>
+        <source>zXIT is currently undergoing maintenance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-99"/>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Message: Enter an amount &gt; 0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Minting </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Successfully minted </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source> zXIT in </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source> sec. Used denominations:
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
+Please be patient...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+16"/>
+        <location line="+216"/>
+        <source>Duration: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-232"/>
+        <location line="+16"/>
+        <location line="+216"/>
+        <source> sec.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-221"/>
+        <source>Starting ResetSpentZerocoin: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>No &apos;Pay To&apos; address provided, creating local payment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid Ittrium Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Invalid Send Amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Confirm additional Fees</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source> to address </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>with Security Level </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Confirm send coins</source>
+        <translation type="unfinished">Confirm send coins</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Spending Zerocoin.
+Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
+Please be patient...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Too much inputs (</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>) needed. 
+Maximum allowed: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location line="+4"/>
+        <source>Spend Zerocoin failed with status = </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>zXIT Spend #: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>denomination: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>serial: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Spend is 1 of : </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>value out: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>address: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>zXIT Mint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Sending successful, return code: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>txid: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>fee: </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="../bitcoinunits.cpp" line="+252"/>
@@ -2778,7 +3629,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+762"/>
+        <location line="+776"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -2832,13 +3683,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     <name>QRImageWidget</name>
     <message>
         <location filename="../receiverequestdialog.cpp" line="+35"/>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <source>Save Image...</source>
+        <translation>Save Image...</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Copy Image</translation>
+        <source>Copy Image</source>
+        <translation>Copy Image</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -2860,8 +3711,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2887,8 +3738,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <location line="+23"/>
         <location line="+36"/>
         <location line="+23"/>
-        <location line="+20"/>
-        <location line="+30"/>
+        <location line="+23"/>
+        <location line="+36"/>
         <location line="+23"/>
         <location line="+454"/>
         <location line="+23"/>
@@ -2903,22 +3754,22 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <location line="+23"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location line="+78"/>
+        <location line="+91"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
     <message>
-        <location line="-891"/>
+        <location line="-913"/>
         <source>Number of connections</source>
         <translation>Number of connections</translation>
     </message>
     <message>
-        <location line="+125"/>
-        <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
+        <location line="+134"/>
+        <source>Open</source>
+        <translation>Open</translation>
     </message>
     <message>
-        <location line="-184"/>
+        <location line="-193"/>
         <source>Startup time</source>
         <translation>Startup time</translation>
     </message>
@@ -2928,7 +3779,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Network</translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+112"/>
         <source>Last block time</source>
         <translation>Last block time</translation>
     </message>
@@ -2938,7 +3789,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Debug log file</translation>
     </message>
     <message>
-        <location line="-249"/>
+        <location line="-258"/>
         <source>Using OpenSSL version</source>
         <translation>Using OpenSSL version</translation>
     </message>
@@ -2948,12 +3799,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Build date</translation>
     </message>
     <message>
-        <location line="+132"/>
+        <location line="+141"/>
         <source>Current number of blocks</source>
         <translation>Current number of blocks</translation>
     </message>
     <message>
-        <location line="-207"/>
+        <location line="-216"/>
         <source>Client version</source>
         <translation>Client version</translation>
     </message>
@@ -2963,7 +3814,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Using BerkeleyDB version</translation>
     </message>
     <message>
-        <location line="+151"/>
+        <location line="+160"/>
         <source>Block chain</source>
         <translation>Block chain</translation>
     </message>
@@ -2973,14 +3824,14 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-99"/>
+        <location line="-108"/>
         <source>Number of Masternodes</source>
         <translation>Number of Masternodes</translation>
     </message>
     <message>
-        <location line="+113"/>
-        <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <location line="+122"/>
+        <source>Console</source>
+        <translation>Console</translation>
     </message>
     <message>
         <location line="+49"/>
@@ -2989,13 +3840,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+23"/>
-        <source>&amp;Network Traffic</source>
-        <translation>&amp;Network Traffic</translation>
+        <source>Network Traffic</source>
+        <translation>Network Traffic</translation>
     </message>
     <message>
         <location line="+52"/>
-        <source>&amp;Clear</source>
-        <translation>&amp;Clear</translation>
+        <source>Clear</source>
+        <translation>Clear</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -3014,13 +3865,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+41"/>
-        <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
+        <source>Peers</source>
+        <translation>Peers</translation>
     </message>
     <message>
         <location line="+41"/>
-        <location filename="../rpcconsole.cpp" line="+261"/>
-        <location line="+460"/>
+        <location filename="../rpcconsole.cpp" line="+263"/>
+        <location line="+481"/>
         <source>Select a peer to view detailed information.</source>
         <translation>Select a peer to view detailed information.</translation>
     </message>
@@ -3091,11 +3942,16 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+40"/>
-        <source>&amp;Wallet Repair</source>
-        <translation>&amp;Wallet Repair</translation>
+        <source>Wallet Repair</source>
+        <translation>Wallet Repair</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+15"/>
+        <source>Delete local Blockchain Folders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
         <source>Wallet In Use:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3150,7 +4006,17 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-216"/>
+        <location line="+23"/>
+        <source>-resync:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-246"/>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
     </message>
@@ -3185,7 +4051,32 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="-66"/>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+1"/>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Confirm resync Blockchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</translation>
     </message>
@@ -3256,13 +4147,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;euse an existing receiving address (not recommended)</translation>
+        <source>Reuse an existing receiving address (not recommended)</source>
+        <translation>Reuse an existing receiving address (not recommended)</translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>&amp;Message:</source>
-        <translation>&amp;Message:</translation>
+        <source>Message:</source>
+        <translation>Message:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -3287,8 +4178,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <source>Label:</source>
+        <translation>Label:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -3298,13 +4189,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="-19"/>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Amount:</translation>
+        <source>Amount:</source>
+        <translation>Amount:</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Request payment</translation>
+        <source>Request payment</source>
+        <translation>Request payment</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -3366,18 +4257,18 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+46"/>
-        <source>Copy &amp;URI</source>
-        <translation>Copy &amp;URI</translation>
+        <source>Copy URI</source>
+        <translation>Copy URI</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Copy &amp;Address</source>
-        <translation>Copy &amp;Address</translation>
+        <source>Copy Address</source>
+        <translation>Copy Address</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <source>Save Image...</source>
+        <translation>Save Image...</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="+63"/>
@@ -3467,9 +4358,9 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+234"/>
+        <location filename="../sendcoinsdialog.cpp" line="+231"/>
         <location line="+25"/>
-        <location line="+413"/>
+        <location line="+397"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
@@ -3479,17 +4370,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Coin Control Features</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>Inputs...</source>
-        <translation>Inputs...</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>automatically selected</source>
-        <translation>automatically selected</translation>
-    </message>
-    <message>
-        <location line="+19"/>
+        <location line="+49"/>
         <source>Insufficient funds!</source>
         <translation>Insufficient funds!</translation>
     </message>
@@ -3594,12 +4475,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Minimize</translation>
     </message>
     <message>
-        <location line="+582"/>
-        <source>Obfuscation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-501"/>
+        <location line="+81"/>
         <source>per kilobyte</source>
         <translation>per kilobyte</translation>
     </message>
@@ -3624,12 +4500,27 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>(Smart fee not initialized yet. This usually takes a few blocks...)</translation>
     </message>
     <message>
-        <location line="-155"/>
+        <location line="+197"/>
+        <source>SwiftX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-352"/>
         <source>Confirmation time:</source>
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <location line="-165"/>
+        <location line="-947"/>
+        <source>Open Coin Control...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Coins automatically selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+772"/>
         <source>If the custom fee is set to 1000 uXITs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uXITs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uXITs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3676,8 +4567,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
+        <source>Send</source>
+        <translation>Send</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3686,8 +4577,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <source>Clear All</source>
+        <translation>Clear All</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3696,21 +4587,21 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Add &amp;Recipient</source>
-        <translation>Add &amp;Recipient</translation>
+        <source>Add Recipient</source>
+        <translation>Add Recipient</translation>
     </message>
     <message>
-        <location line="+57"/>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <location line="+35"/>
+        <source>Anonymized XIT</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+23"/>
         <source>Balance:</source>
         <translation>Balance:</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-584"/>
+        <location filename="../sendcoinsdialog.cpp" line="-571"/>
         <source>Copy quantity</source>
         <translation>Copy quantity</translation>
     </message>
@@ -3750,7 +4641,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Copy change</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+143"/>
         <source>The split block tool does not work when sending to outside addresses. Try again.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3761,34 +4652,27 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+8"/>
-        <location line="+6"/>
-        <location line="+9"/>
+        <location line="+3"/>
         <source>using</source>
         <translation>using</translation>
     </message>
     <message>
-        <location line="-15"/>
-        <location line="+6"/>
+        <location line="-3"/>
         <source>anonymous funds</source>
         <translation>anonymous funds</translation>
     </message>
     <message>
-        <location line="+632"/>
-        <source>Warning: Invalid Ittrium address</source>
+        <location line="+622"/>
+        <source>Warning: Invalid XIT address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-623"/>
+        <location line="-619"/>
         <source>any available funds (not recommended)</source>
         <translation>any available funds (not recommended)</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>and SwiftTX</source>
-        <translation>and SwiftTX</translation>
-    </message>
-    <message>
-        <location line="+23"/>
+        <location line="+28"/>
         <location line="+4"/>
         <location line="+4"/>
         <location line="+3"/>
@@ -3816,7 +4700,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Confirm send coins</translation>
     </message>
     <message>
-        <location line="+233"/>
+        <location line="+230"/>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
     </message>
@@ -3834,12 +4718,12 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>The recipient address is not valid, please recheck.</translation>
     </message>
     <message>
-        <location line="-343"/>
-        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
+        <location line="-329"/>
+        <source>and SwiftX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+38"/>
         <source> split into %1 outputs using the UTXO splitter.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3849,7 +4733,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="+208"/>
+        <location line="+205"/>
         <source>The amount to pay must be larger than 0.</source>
         <translation>The amount to pay must be larger than 0.</translation>
     </message>
@@ -3913,8 +4797,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Pay &amp;To:</source>
-        <translation>Pay &amp;To:</translation>
+        <source>Pay To:</source>
+        <translation>Pay To:</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -3950,8 +4834,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="-1044"/>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <source>Label:</source>
+        <translation>Label:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -3962,8 +4846,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <location line="+7"/>
         <location line="+521"/>
         <location line="+536"/>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;mount:</translation>
+        <source>Amount:</source>
+        <translation>Amount:</translation>
     </message>
     <message>
         <location line="-1041"/>
@@ -4025,8 +4909,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Sign Message</translation>
+        <source>Sign Message</source>
+        <translation>Sign Message</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -4092,8 +4976,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="-140"/>
-        <source>Sign &amp;Message</source>
-        <translation>Sign &amp;Message</translation>
+        <source>Sign Message</source>
+        <translation>Sign Message</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -4103,13 +4987,13 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     <message>
         <location line="+3"/>
         <location line="+143"/>
-        <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <source>Clear All</source>
+        <translation>Clear All</translation>
     </message>
     <message>
         <location line="-84"/>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verify Message</translation>
+        <source>Verify Message</source>
+        <translation>Verify Message</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -4118,8 +5002,8 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+61"/>
-        <source>Verify &amp;Message</source>
-        <translation>Verify &amp;Message</translation>
+        <source>Verify Message</source>
+        <translation>Verify Message</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -4263,22 +5147,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>conflicted</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verified via swifttx)</translation>
-    </message>
-    <message>
         <location line="+2"/>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmed (verified via swifttx)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmations (verified via swifttx)</translation>
-    </message>
-    <message>
-        <location line="+29"/>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -4294,29 +5163,44 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <location line="-26"/>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <location line="-37"/>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verification failed)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/confirmed (SwiftTX verification failed)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+32"/>
@@ -4648,12 +5532,42 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Obfuscated</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+2"/>
+        <source>Converted XIT to zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Spent zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Received XIT from zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Minted Change as zXIT from zXIT Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Converted zXIT to XIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+22"/>
+        <source>zXIT Accumulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>(n/a)</source>
         <translation>(n/a)</translation>
     </message>
@@ -4788,6 +5702,31 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+1"/>
+        <source>Received XIT from zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Mint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend, Change in zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin Spend to Self</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Other</source>
         <translation>Other</translation>
     </message>
@@ -4832,7 +5771,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Show transaction details</translation>
     </message>
     <message>
-        <location line="+193"/>
+        <location line="+195"/>
         <source>Export Transaction History</source>
         <translation>Export Transaction History</translation>
     </message>
@@ -4842,7 +5781,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Comma separated file (*.csv)</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+11"/>
         <source>Confirmed</source>
         <translation>Confirmed</translation>
     </message>
@@ -4877,7 +5816,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Exporting Failed</source>
         <translation>Exporting Failed</translation>
     </message>
@@ -4887,7 +5826,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>There was an error trying to save the transaction history to %1.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-4"/>
         <source>Exporting Successful</source>
         <translation>Exporting Successful</translation>
     </message>
@@ -4897,7 +5836,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>The transaction history was successfully saved to %1.</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+121"/>
         <source>Range:</source>
         <translation>Range:</translation>
     </message>
@@ -4926,7 +5865,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+274"/>
+        <location filename="../walletmodel.cpp" line="+317"/>
         <location line="+9"/>
         <location line="+9"/>
         <source>Send Coins</source>
@@ -4935,16 +5874,16 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 XIT.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 XIT.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+49"/>
-        <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
+        <location filename="../walletview.cpp" line="+51"/>
+        <source>Export</source>
+        <translation>Export</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4957,7 +5896,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation>Selected amount:</translation>
     </message>
     <message>
-        <location line="+236"/>
+        <location line="+256"/>
         <source>Backup Wallet</source>
         <translation>Backup Wallet</translation>
     </message>
@@ -4988,9 +5927,43 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
 </context>
 <context>
+    <name>ZXitControlDialog</name>
+    <message>
+        <location filename="../forms/zxitcontroldialog.ui" line="+20"/>
+        <source>Select zXIT to Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+14"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>zXIT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Select/Deselect All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Is Spendable</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ittrium-core</name>
     <message>
-        <location filename="../ittriumstrings.cpp" line="+12"/>
+        <location filename="../ittriumstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5021,6 +5994,11 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Cannot obtain a lock on data directory %s. Ittrium Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5045,32 +6023,17 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished">Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Disable all Ittrium specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation type="unfinished">Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+8"/>
         <source>Enable spork administration functionality with the appropriate private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation type="unfinished">Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation type="unfinished">Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
     </message>
@@ -5080,7 +6043,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished">Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+11"/>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
         <translation type="unfinished">Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</translation>
     </message>
@@ -5121,11 +6084,6 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation type="unfinished">How thorough the block verification of -checkblocks is (0-4, default: %u)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation type="unfinished">If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
     </message>
@@ -5133,6 +6091,11 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <location line="+3"/>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation type="unfinished">In this mode -genproclimit controls how many blocks are generated immediately.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5180,14 +6143,14 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished">Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation type="unfinished">Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5225,12 +6188,7 @@ https://www.transifex.com/ittrium-project/ittrium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation type="unfinished">SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation type="unfinished">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
@@ -5391,8 +6349,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Block creation options:</source>
         <translation type="unfinished">Block creation options:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Calculating missing accumulators...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5501,6 +6469,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Disable safemode, override a real safe mode event (default: %u)</source>
         <translation type="unfinished">Disable safemode, override a real safe mode event (default: %u)</translation>
     </message>
@@ -5525,7 +6503,22 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished">Done loading</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+1"/>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation type="unfinished">Enable the client to act as a masternode (0-1, default: %u)</translation>
     </message>
@@ -5621,13 +6614,28 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished">Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Failed to read block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Failed to read block</source>
         <translation type="unfinished">Failed to read block</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5716,18 +6724,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Insufficient funds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Insufficient funds.</source>
         <translation type="unfinished">Insufficient funds.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid -onion address: &apos;%s&apos;</translation>
+        <source>Invalid -onion address or hostname: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid -proxy address: &apos;%s&apos;</translation>
+        <source>Invalid -proxy address or hostname: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5761,6 +6774,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation type="unfinished">Invalid masternodeprivkey. Please see documenation.</translation>
     </message>
@@ -5785,12 +6803,74 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished">Invalid script detected.</translation>
     </message>
     <message>
-        <location line="-165"/>
+        <location line="+98"/>
+        <source>SwiftX options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-273"/>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="-152"/>
+        <source> mints deleted
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source> mints updated, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source> unconfirmed transactions removed
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Disable all Ittrium specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Enable automatic wallet backups triggered after each zXIT minting (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5800,7 +6880,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+29"/>
         <source>Display the stake modifier calculations in the debug.log file.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5810,17 +6890,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Enable publish hash block in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5830,12 +6905,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5845,12 +6915,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+53"/>
-        <source>Keep N XIT anonymized (default: %u)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+58"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation type="unfinished">Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
     </message>
@@ -5908,6 +6973,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Loading masternode payment cache...</source>
         <translation type="unfinished">Loading masternode payment cache...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading sporks...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6031,11 +7101,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Obfuscation options:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Obfuscation request complete:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6063,6 +7128,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Password for JSON-RPC connections</source>
         <translation type="unfinished">Password for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Preparing for resync...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6106,8 +7181,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+        <source>Recalculating coin supply may take 30-60 minutes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Recalculating supply statistics may take 30-60 minutes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation type="unfinished">Receive and display P2P network alerts (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Reindex the accumulator database</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6128,6 +7218,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Rescanning...</source>
         <translation type="unfinished">Rescanning...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ResetMintZerocoin finished: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6188,6 +7288,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: %u)</source>
         <translation type="unfinished">Set minimum block size in bytes (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6295,12 +7400,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <translation type="unfinished">Submitted to masternode, waiting in queue %s</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>SwiftTX options:</source>
-        <translation type="unfinished">SwiftTX options:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Synchronization failed</source>
         <translation type="unfinished">Synchronization failed</translation>
     </message>
@@ -6358,6 +7458,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation type="unfinished">Threshold for disconnecting misbehaving peers (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Tor control port password (default: empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6426,11 +7536,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation type="unfinished">Use N separate masternodes to anonymize funds  (2-8, default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation type="unfinished">Use OpenSSL (https) for JSON-RPC connections</translation>
     </message>
@@ -6443,6 +7548,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
         <translation type="unfinished">Use UPnP to map the listening port (default: 1 when listening)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6542,6 +7652,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Ittrium Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>ZeroMQ notification options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Zerocoin options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>failed to validate zerocoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

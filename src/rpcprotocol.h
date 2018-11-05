@@ -6,18 +6,17 @@
 #ifndef BITCOIN_RPCPROTOCOL_H
 #define BITCOIN_RPCPROTOCOL_H
 
-#include <boost/asio.hpp>
-#include <boost/asio/ssl.hpp>
-#include <boost/iostreams/concepts.hpp>
-#include <boost/iostreams/stream.hpp>
 #include <list>
 #include <map>
 #include <stdint.h>
 #include <string>
+#include <boost/iostreams/concepts.hpp>
+#include <boost/iostreams/stream.hpp>
+#include <boost/asio.hpp>
+#include <boost/asio/ssl.hpp>
+#include <boost/filesystem.hpp>
 
-#include "json/json_spirit_reader_template.h"
-#include "json/json_spirit_utils.h"
-#include "json/json_spirit_writer_template.h"
+#include <univalue.h>
 
 //! HTTP status codes
 enum HTTPStatusCode {
@@ -52,6 +51,7 @@ enum RPCErrorCode {
     RPC_VERIFY_REJECTED = -26,         //! Transaction or block was rejected by network rules
     RPC_VERIFY_ALREADY_IN_CHAIN = -27, //! Transaction already in chain
     RPC_IN_WARMUP = -28,               //! Client still warming up
+    RPC_GBT_POS_ERROR = -29,           //! GetBlockTemplate error during PoS period
 
     //! Aliases for backward compatibility
     RPC_TRANSACTION_ERROR = RPC_VERIFY_ERROR,
@@ -153,9 +153,18 @@ bool ReadHTTPRequestLine(std::basic_istream<char>& stream, int& proto, std::stri
 int ReadHTTPStatus(std::basic_istream<char>& stream, int& proto);
 int ReadHTTPHeaders(std::basic_istream<char>& stream, std::map<std::string, std::string>& mapHeadersRet);
 int ReadHTTPMessage(std::basic_istream<char>& stream, std::map<std::string, std::string>& mapHeadersRet, std::string& strMessageRet, int nProto, size_t max_size);
-std::string JSONRPCRequest(const std::string& strMethod, const json_spirit::Array& params, const json_spirit::Value& id);
-json_spirit::Object JSONRPCReplyObj(const json_spirit::Value& result, const json_spirit::Value& error, const json_spirit::Value& id);
-std::string JSONRPCReply(const json_spirit::Value& result, const json_spirit::Value& error, const json_spirit::Value& id);
-json_spirit::Object JSONRPCError(int code, const std::string& message);
+std::string JSONRPCRequest(const std::string& strMethod, const UniValue& params, const UniValue& id);
+UniValue JSONRPCReplyObj(const UniValue& result, const UniValue& error, const UniValue& id);
+std::string JSONRPCReply(const UniValue& result, const UniValue& error, const UniValue& id);
+UniValue JSONRPCError(int code, const std::string& message);
+
+/** Get name of RPC authentication cookie file */
+boost::filesystem::path GetAuthCookieFile();
+/** Generate a new RPC authentication cookie and write it to disk */
+bool GenerateAuthCookie(std::string *cookie_out);
+/** Read the RPC authentication cookie from disk */
+bool GetAuthCookie(std::string *cookie_out);
+/** Delete RPC authentication cookie from disk */
+void DeleteAuthCookie();
 
 #endif // BITCOIN_RPCPROTOCOL_H

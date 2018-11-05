@@ -6,8 +6,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "libzerocoin/Params.h"
 #include "chainparams.h"
-
 #include "random.h"
 #include "util.h"
 #include "utilstrencodings.h"
@@ -37,7 +37,6 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
     // it'll get a pile of addresses with newer timestamps.
     // Seed nodes are given a random 'last seen time' of between one and two
     // weeks ago.
-	
     const int64_t nOneWeek = 7 * 24 * 60 * 60;
     for (unsigned int i = 0; i < count; i++) {
         struct in6_addr ip;
@@ -63,12 +62,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
  	(9999, uint256("0x87bc66f59d2357927e42d4846b807bc3e61084c3e06b63569545ed7698aef7f7"))
  	(19333, uint256("0xa0209e76d00be2a96c6f422c73ae34a341c9981b1b8064bcd39d5d7d5ce70dd0"))
  	(27033, uint256("0x89f578d968265cc425253199da3b6a01dbd99b706338d20ce78ae93299f3a605"))
- 	(69333, uint256("0x751aca0839a2a72ef1f400d17f2461f0eafb185508ef5639b4336d2d7f2cbc9e"));
-
+  (69333, uint256("0x751aca0839a2a72ef1f400d17f2461f0eafb185508ef5639b4336d2d7f2cbc9e"))
+  (90369, uint256("0xa9e3259d93d0e5e96bd35f9718890d708a86452a507838cab6dc442c7717b4db"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1533333333, 	// * UNIX timestamp of last checkpoint block
-    27033,    			// * total number of transactions between genesis and last checkpoint
+    90369,    			// * total number of transactions between genesis and last checkpoint
     				//   (the tx=... number in the SetBestChain debug.log lines)
     1440        	// * estimated number of transactions per day after checkpoint
 };
@@ -88,6 +87,15 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     1533333339,
     0,
     100};
+
+libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
+{
+    assert(this);
+    static CBigNum bnTrustedModulus(zerocoinModulus);
+    static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
+
+    return &ZCParams;
+}
 
 class CMainParams : public CChainParams
 {
@@ -114,7 +122,7 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 3 * 60; // XIT: 1 minutes
+        nTargetTimespan = 3 * 60; // XIT: 3 minutes
         nTargetSpacing = 60;  // XIT: 1 minute
         nLastPOWBlock = 300;
         nMaturity = 60;
@@ -188,6 +196,26 @@ public:
         strSporkKey = "04d37d371dde4335c7f3a80efab4848024b0d782bb5b4a36c21f9a8fd5c620c6a7a09821f77776b77987a947efd3218336d4aa59670a4e309a93a8dc6026ed03d8";
         strObfuscationPoolDummyAddress = "ifd6BU5MDvKsTW9Vfqyo6SNW3KFjv7YEz";
         nStartMasternodePayments = 150; 
+
+        /** Zerocoin */
+     zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
+        "4069182906412495150821892985591491761845028084891200728449926873928072877767359714183472702618963750149718246911"
+        "6507761337985909570009733045974880842840179742910064245869181719511874612151517265463228221686998754918242243363"
+        "7259085141865462043576798423387184774447920739934236584823824281198163815010674810451660377306056201619676256133"
+        "8441436038339044149526344321901146575444541784240209246165157233507787077498171257724679629263863563732899121548"
+        "31438167899885040445364023527381951378636564391212010397122822120720357";
+        nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
+        nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
+        nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
+        nRequiredAccumulation = 1;
+        nDefaultSecurityLevel = 100; //full security level for accumulators
+        nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
+        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+
+        /** Staking Requirements */
+        nStakeMinStartProtocol = 70910; // Starting protocol version (ActiveProtocol())
+        nStakeMinConfirmations = 600; // Required number of confirmations
+        nStakeMinAmount = 100 * COIN; // Minimum required staking amount
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -261,7 +289,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fRequireRPCPassword = true;
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
@@ -272,6 +300,11 @@ public:
         //strSporkKey = "040182ab1fac9a519cf3f49f0e4dd7d364f966c29ebbc29de2a5cfa0ff9dbd64a92805cc9edc221ae15f07405d6da4264d798e68e9a43603f55954a2ce2ddb0677";
         //strObfuscationPoolDummyAddress = "";
         nStartMasternodePayments = 150; 
+
+        /** Staking Requirements */
+        nStakeMinStartProtocol = 70910; // Starting protocol version (ActiveProtocol())
+        nStakeMinConfirmations = 600; // Required number of confirmations
+        nStakeMinAmount = 100 * COIN; // Minimum required staking amount
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {

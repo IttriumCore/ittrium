@@ -84,6 +84,16 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     /* Theme selector static themes */
     ui->theme->addItem(QString("Default"), QVariant("default"));
 
+    /* Preferred Zerocoin Denominations */
+    ui->preferredDenom->addItem(QString(tr("Any")), QVariant("0"));
+    ui->preferredDenom->addItem(QString("1"), QVariant("1"));
+    ui->preferredDenom->addItem(QString("5"), QVariant("5"));
+    ui->preferredDenom->addItem(QString("10"), QVariant("10"));
+    ui->preferredDenom->addItem(QString("50"), QVariant("50"));
+    ui->preferredDenom->addItem(QString("100"), QVariant("100"));
+    ui->preferredDenom->addItem(QString("500"), QVariant("500"));
+    ui->preferredDenom->addItem(QString("1000"), QVariant("1000"));
+
     /* Theme selector external themes */
     boost::filesystem::path pathAddr = GetDataDir() / "themes";
     QDir dir(pathAddr.string().c_str());
@@ -185,6 +195,10 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->bitcoinAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
+    // Zerocoin mint percentage
+    mapper->addMapping(ui->zeromintPercentage, OptionsModel::ZeromintPercentage);
+    // Zerocoin preferred denomination
+    mapper->addMapping(ui->preferredDenom, OptionsModel::ZeromintPrefDenom);
 
     /* Wallet */
     mapper->addMapping(ui->spendZeroConfChange, OptionsModel::SpendZeroConfChange);
@@ -199,7 +213,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->proxyIp, OptionsModel::ProxyIP);
     mapper->addMapping(ui->proxyPort, OptionsModel::ProxyPort);
 
-/* Window */
+    /* Window */
 #ifndef Q_OS_MAC
     mapper->addMapping(ui->minimizeToTray, OptionsModel::MinimizeToTray);
     mapper->addMapping(ui->minimizeOnClose, OptionsModel::MinimizeOnClose);
@@ -212,11 +226,9 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->thirdPartyTxUrls, OptionsModel::ThirdPartyTxUrls);
+    mapper->addMapping(ui->checkBoxHideZeroBalances, OptionsModel::HideZeroBalances);
 
-
-    /* Obfuscation Rounds */
-    mapper->addMapping(ui->obfuscationRounds, OptionsModel::ObfuscationRounds);
-    mapper->addMapping(ui->anonymizeIttrium, OptionsModel::AnonymizeIttriumAmount);
+    /* Masternode Tab */
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
 }
 

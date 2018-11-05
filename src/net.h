@@ -643,7 +643,10 @@ public:
 	static void DumpBanlist();
     static bool Unban(const CNetAddr& ip);
     static bool Unban(const CSubNet& subNet);
-    static void GetBanned(banmap_t &banMap);
+    static bool BannedIsDirty();
+    static void GetBanned(banmap_t &banmap);
+    static void SetBanned(const banmap_t &banmap);
+    static void SetBannedIsDirty(bool dirty=true);
     void copyStats(CNodeStats& stats);
 	//!clean unused entries (if bantime has expired)
 	static void SweepBanned();
@@ -657,6 +660,7 @@ public:
 
     static uint64_t GetTotalBytesRecv();
     static uint64_t GetTotalBytesSent();
+	
 };
 
 class CExplicitNetCleanup

@@ -21,6 +21,7 @@
         <file alias="ru">locale/ittrium_ru.qm</file>
         <file alias="sk">locale/ittrium_sk.qm</file>
         <file alias="sv">locale/ittrium_sv.qm</file>
+        <file alias="tr">locale/ittrium_tr.qm</file>
         <file alias="uk">locale/ittrium_uk.qm</file>
         <file alias="zh_CN">locale/ittrium_zh_CN.qm</file>
         <file alias="zh_TW">locale/ittrium_zh_TW.qm</file>

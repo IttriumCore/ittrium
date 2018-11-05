@@ -21,7 +21,6 @@ void PrintLockContention(const char* pszName, const char* pszFile, int nLine)
 #endif /* DEBUG_LOCKCONTENTION */
 
 #ifdef DEBUG_LOCKORDER
-//
 // Early deadlock detection.
 // Problem being solved:
 //    Thread 1 locks  A, then B, then C
@@ -30,7 +29,6 @@ void PrintLockContention(const char* pszName, const char* pszFile, int nLine)
 // Solution implemented here:
 // Keep track of pairs of locks: (A before B), (A before C), etc.
 // Complain if any thread tries to lock in a different order.
-//
 
 struct CLockLocation {
     CLockLocation(const char* pszName, const char* pszFile, int nLine, bool fTryIn)
