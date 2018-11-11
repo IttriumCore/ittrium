@@ -215,8 +215,8 @@ public:
 
         /** Staking Requirements */
         nStakeMinStartProtocol = 70910; // Starting protocol version (ActiveProtocol())
-        nStakeMinConfirmations = 600; // Required number of confirmations
-        nStakeMinAmount = 100 * COIN; // Minimum required staking amount
+        nStakeMinConfirmations = 60; // Required number of confirmations
+        nStakeMinAmount = 5 * COIN; // Minimum required staking amount
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
