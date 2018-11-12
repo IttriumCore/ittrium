@@ -42,7 +42,7 @@ using namespace boost;
 #define SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2 10014
 #define SPORK_16_MN_WINNER_MINIMUM_AGE 10015
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3 10016
-#define SPORK_18_NEW_PROTOCOL_DYNAMIC 10017
+#define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4 10017
 #define SPORK_19_ENABLE_ZEROCOIN 10018
 #define SPORK_20_ZEROCOIN_MAINTENANCE_MODE 10019
 
@@ -62,9 +62,9 @@ using namespace boost;
                                                                    // misconfigured new nodes in the list. 
                                                                    // Set this to zero to emulate classic behaviour
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT 1529303404    //ON
-#define SPORK_18_NEW_PROTOCOL_DYNAMIC_DEFAULT 4070908800          //OFF
+#define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4_DEFAULT 4070908800          //OFF
                                                                    // Will be whatever value is provided during spork update.
-                                                                   // Example `spork SPORK_19_NEW_PROTOCOL_DYNAMIC 70910` will set active
+                                                                   // Example `spork SPORK_19_NEW_PROTOCOL_ENFORCEMENT_4 70910` will set active
                                                                    // protocol version to `70910`.
 #define SPORK_19_ENABLE_ZEROCOIN_DEFAULT 4070908800               //OFF
 #define SPORK_20_ZEROCOIN_MAINTENANCE_MODE_DEFAULT 4070908800     //OFF

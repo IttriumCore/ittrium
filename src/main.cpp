@@ -5519,7 +5519,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
             !pSporkDB->SporkExists(SPORK_20_ZEROCOIN_MAINTENANCE_MODE) &&
             !pSporkDB->SporkExists(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) &&
-            !pSporkDB->SporkExists(SPORK_18_NEW_PROTOCOL_DYNAMIC) &&
+            !pSporkDB->SporkExists(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4) &&
             !pSporkDB->SporkExists(SPORK_19_ENABLE_ZEROCOIN)) {
             LogPrintf("Required sporks not found, asking peer to send them\n");
             pfrom->PushMessage("getsporks");
@@ -6333,8 +6333,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
 int ActiveProtocol()
 {
-    if (IsSporkActive(SPORK_18_NEW_PROTOCOL_DYNAMIC))
-        return GetSporkValue(SPORK_18_NEW_PROTOCOL_DYNAMIC);
+    if (IsSporkActive(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT18;
 	
     if (IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3))
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT17;
