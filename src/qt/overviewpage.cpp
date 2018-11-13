@@ -214,10 +214,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
  //       nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
     // XIT Balance
-    CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
-    CAmount xitAvailableBalance = balance - immatureBalance;
+    CAmount xitAvailableBalance = balance - (immatureBalance + unconfirmedBalance + nLockedBalance);
+       if (xitAvailableBalance < 0) xitAvailableBalance = 0;
+    
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
-    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance - nLockedBalance; // increment nLockedBalance twice because it was added to
+    CAmount nUnlockedBalance = balance - nLockedBalance - nLockedBalance; // increment nLockedBalance twice because it was added to
                                                                                 // nTotalBalance above
     // zXIT Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
@@ -227,14 +228,14 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     getPercentage(nUnlockedBalance, zerocoinBalance, sPercentage, szPercentage);
     // Combined balances
     CAmount availableTotalBalance = xitAvailableBalance + matureZerocoinBalance;
-    CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
+    CAmount sumTotalBalance = balance + zerocoinBalance;
 
     // XIT labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, xitAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance, false, BitcoinUnits::separatorAlways));
 
     // Watchonly labels
     ui->labelWatchAvailable->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchOnlyBalance, false, BitcoinUnits::separatorAlways));
@@ -275,7 +276,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showXITAvailable = settingShowAllBalances || xitAvailableBalance != nTotalBalance;
+    bool showXITAvailable = settingShowAllBalances || xitAvailableBalance != balance;
     bool showWatchOnlyXITAvailable = watchOnlyBalance != nTotalWatchBalance;
     bool showXITPending = settingShowAllBalances || unconfirmedBalance != 0;
     bool showWatchOnlyXITPending = watchUnconfBalance != 0;
@@ -305,7 +306,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelzBalanceUnconfirmedText->setVisible(showzXITUnconfirmed);
     ui->labelzBalanceImmature->setVisible(showzXITImmature);
     ui->labelzBalanceImmatureText->setVisible(showzXITImmature);
-    bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
+    bool showPercentages = ! (zerocoinBalance == 0 && balance == 0);
     ui->labelXITPercent->setVisible(showPercentages);
     ui->labelzXITPercent->setVisible(showPercentages);
 
