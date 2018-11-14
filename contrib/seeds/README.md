@@ -8,8 +8,7 @@ and remove old versions as necessary.
 
 The seeds compiled into the release are created from fuzzbawls' DNS seed data, like this:
 
-    curl -s http://seeder.fuzzbawls.pw/ittrium-mainnet.txt > seeds_main.txt
-    python3 makeseeds.py < seeds_main.txt > nodes_main.txt
+    Create seed text files for nodes_main.txt and nodes_test.txt and copy into this folder (ittrium/contrib/seeds)
     python3 generate-seeds.py . > ../../src/chainparamsseeds.h
 
 ## Dependencies
