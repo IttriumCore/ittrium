@@ -1284,7 +1284,7 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
 
 bool CheckZerocoinMint(const uint256& txHash, const CTxOut& txout, CValidationState& state, bool fCheckOnly)
 {
-    if(!fCheckOnly && GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN))
+    if(!fCheckOnly && GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN))
         return state.DoS(100, error("CheckZerocoinMint(): Zerocoin transactions are not allowed yet"));
 
     PublicCoin pubCoin(Params().Zerocoin_Params());
@@ -1324,7 +1324,7 @@ bool IsZerocoinSpendUnknown(CoinSpend coinSpend, uint256 hashTx, CValidationStat
 
 bool CheckZerocoinSpend(const CTransaction tx, bool fVerifySignature, CValidationState& state)
 {
-    if(GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN))
+    if(GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN))
         return state.DoS(100, error("CheckZerocoinSpend(): Zerocoin transactions are not allowed yet"));
 
     //max needed non-mint outputs should be 2 - one for redemption address and a possible 2nd for change
@@ -1427,7 +1427,7 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
 
     // Size limits
     unsigned int nMaxSize = MAX_BLOCK_SIZE_LEGACY;
-    if(GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN))
+    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN))
         nMaxSize = MAX_ZEROCOIN_TX_SIZE;
 
     if (::GetSerializeSize(tx, SER_NETWORK, PROTOCOL_VERSION) > nMaxSize)
@@ -1574,10 +1574,10 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         *pfMissingInputs = false;
 
     //Temporarily disable zerocoin for maintenance
-    if (GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE) && tx.ContainsZerocoins())
+    if (GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE) && tx.ContainsZerocoins())
         return state.DoS(10, error("AcceptToMemoryPool : Zerocoin transactions are temporarily disabled for maintenance"), REJECT_INVALID, "bad-tx");
 
-    if (!CheckTransaction(tx, GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN), true, state))
+    if (!CheckTransaction(tx, GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN), true, state))
         return state.DoS(100, error("AcceptToMemoryPool: : CheckTransaction failed"), REJECT_INVALID, "bad-tx");
 
     // Coinbase is only valid in a block, not as a loose transaction
@@ -1703,7 +1703,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         // merely non-standard transaction.
         if (!tx.IsZerocoinSpend()) {
             unsigned int nSigOps = GetLegacySigOpCount(tx);
-            unsigned int nMaxSigOps = GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN) ? MAX_TX_SIGOPS_CURRENT : MAX_TX_SIGOPS_LEGACY;
+            unsigned int nMaxSigOps = GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN) ? MAX_TX_SIGOPS_CURRENT : MAX_TX_SIGOPS_LEGACY;
             nSigOps += GetP2SHSigOpCount(tx, view);
             if(nSigOps > nMaxSigOps)
                 return state.DoS(0,
@@ -1803,7 +1803,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
     if (pfMissingInputs)
         *pfMissingInputs = false;
 
-    if (!CheckTransaction(tx, GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN), true, state))
+    if (!CheckTransaction(tx, GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN), true, state))
         return error("AcceptableInputs: : CheckTransaction failed");
 
     // Coinbase is only valid in a block, not as a loose transaction
@@ -1899,7 +1899,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
         // MAX_BLOCK_SIGOPS; we still consider this an invalid rather than
         // merely non-standard transaction.
         unsigned int nSigOps = GetLegacySigOpCount(tx);
-        unsigned int nMaxSigOps = GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN) ? MAX_TX_SIGOPS_CURRENT : MAX_TX_SIGOPS_LEGACY;
+        unsigned int nMaxSigOps = GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN) ? MAX_TX_SIGOPS_CURRENT : MAX_TX_SIGOPS_LEGACY;
         nSigOps += GetP2SHSigOpCount(tx, view);
         if (nSigOps > nMaxSigOps)
             return state.DoS(0,
@@ -2884,7 +2884,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     blockundo.vtxundo.reserve(block.vtx.size() - 1);
     CAmount nValueOut = 0;
     CAmount nValueIn = 0;
-    unsigned int nMaxBlockSigOps = block.nTime > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN) ? MAX_BLOCK_SIGOPS_CURRENT : MAX_BLOCK_SIGOPS_LEGACY;
+    unsigned int nMaxBlockSigOps = block.nTime > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN) ? MAX_BLOCK_SIGOPS_CURRENT : MAX_BLOCK_SIGOPS_LEGACY;
     for (unsigned int i = 0; i < block.vtx.size(); i++) {
         const CTransaction& tx = block.vtx[i];
 
@@ -2895,7 +2895,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 REJECT_INVALID, "bad-blk-sigops");
 
         //Temporarily disable zerocoin transactions for maintenance
-        if (block.nTime > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE) && !IsInitialBlockDownload() && tx.ContainsZerocoins()) {
+        if (block.nTime > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE) && !IsInitialBlockDownload() && tx.ContainsZerocoins()) {
             return state.DoS(100, error("ConnectBlock() : zerocoin transactions are currently in maintenance mode"));
         }
         if (tx.IsZerocoinSpend()) {
@@ -3898,14 +3898,14 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
         return state.DoS(50, error("CheckBlockHeader() : proof of work failed"),
             REJECT_INVALID, "high-hash");
 
-    // Version 4 header must be used when SPORK_19_ENABLE_ZEROCOIN is activated. And never before.
-    if (block.GetBlockTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN)) {
+    // Version 4 header must be used when SPORK_20_ENABLE_ZEROCOIN is activated. And never before.
+    if (block.GetBlockTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN)) {
         if (block.nVersion < Params().Zerocoin_HeaderVersion())
-            return state.DoS(50, error("CheckBlockHeader() : block version must be above 4 after SPORK_20"),
+            return state.DoS(50, error("CheckBlockHeader() : block version must be above 4 after SPORK_21"),
             REJECT_INVALID, "block-version");
     } else {
         if (block.nVersion >= Params().Zerocoin_HeaderVersion())
-            return state.DoS(50, error("CheckBlockHeader() : block version must be below 4 before SPORK_20"),
+            return state.DoS(50, error("CheckBlockHeader() : block version must be below 4 before SPORK_21"),
             REJECT_INVALID, "block-version");
     }
 
@@ -3949,7 +3949,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     // because we receive the wrong transactions for it.
 
     // Size limits
-    unsigned int nMaxBlockSize = GetAdjustedTime() > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN) ? MAX_BLOCK_SIZE_CURRENT : MAX_BLOCK_SIZE_LEGACY;
+    unsigned int nMaxBlockSize = GetAdjustedTime() > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN) ? MAX_BLOCK_SIZE_CURRENT : MAX_BLOCK_SIZE_LEGACY;
     if (block.vtx.empty() || block.vtx.size() > nMaxBlockSize || ::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION) > nMaxBlockSize)
         return state.DoS(100, error("CheckBlock() : size limits failed"),
             REJECT_INVALID, "bad-blk-length");
@@ -4029,7 +4029,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     // -------------------------------------------
 
     // Check transactions
-    bool fZerocoinActive = block.nTime > GetSporkValue(SPORK_19_ENABLE_ZEROCOIN);
+    bool fZerocoinActive = block.nTime > GetSporkValue(SPORK_20_ENABLE_ZEROCOIN);
     vector<CBigNum> vBlockSerials;
     for (const CTransaction& tx : block.vtx) {
         if (!CheckTransaction(tx, fZerocoinActive, true, state))
@@ -5517,10 +5517,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         // available. If not, ask the first peer connected for them.
         if (!pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
             !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
-            !pSporkDB->SporkExists(SPORK_20_ZEROCOIN_MAINTENANCE_MODE) &&
+            !pSporkDB->SporkExists(SPORK_21_ZEROCOIN_MAINTENANCE_MODE) &&
             !pSporkDB->SporkExists(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) &&
             !pSporkDB->SporkExists(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4) &&
-            !pSporkDB->SporkExists(SPORK_19_ENABLE_ZEROCOIN)) {
+            !pSporkDB->SporkExists(SPORK_19_NEW_PROTOCOL_DYNAMIC) &&
+            !pSporkDB->SporkExists(SPORK_20_ENABLE_ZEROCOIN)) {
             LogPrintf("Required sporks not found, asking peer to send them\n");
             pfrom->PushMessage("getsporks");
             fRequestedSporksIDB = true;
@@ -6333,6 +6334,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
 int ActiveProtocol()
 {
+    if (IsSporkActive(SPORK_19_NEW_PROTOCOL_DYNAMIC))
+        return GetSporkValue(SPORK_19_NEW_PROTOCOL_DYNAMIC);
+	
     if (IsSporkActive(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4))
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT18;
 	

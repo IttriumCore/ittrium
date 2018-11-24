@@ -24,12 +24,13 @@ bool TransactionRecord::showTransaction(const CWalletTx& wtx)
         if (!wtx.IsInMainChain()) {
             return false;
         }
-        return true;
     }
-	else {
-		QSettings settings;
-		return (!settings.value("fShowOrphans").toBool() || wtx.GetDepthInMainChain() >= 0);
-	}
+        return true;
+//    }
+//	else {
+//		QSettings settings;
+//		return (!settings.value("fShowOrphans").toBool() || wtx.GetDepthInMainChain() >= 0);
+//	}
 }
 
 /*

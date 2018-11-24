@@ -2421,10 +2421,10 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
 
-    if (GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN))
+    if (GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN))
         throw JSONRPCError(RPC_WALLET_ERROR, "Error: Zerocoin functionality is not enabled on the Ittrium network yet.");
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE))
+    if(GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE))
         throw JSONRPCError(RPC_WALLET_ERROR, "zXIT is currently disabled due to maintenance.");
 
     if (pwalletMain->IsLocked())
@@ -2470,10 +2470,10 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
                     "an address is required"
             + HelpRequiringPassphrase());
 
-    if (GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN))
+    if (GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN))
         throw JSONRPCError(RPC_WALLET_ERROR, "Error: Zerocoin functionality is not enabled on the Ittrium network yet.");
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE))
+    if(GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE))
         throw JSONRPCError(RPC_WALLET_ERROR, "zXIT is currently disabled due to maintenance.");
 
     int64_t nTimeStart = GetTimeMillis();

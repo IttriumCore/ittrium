@@ -26,7 +26,7 @@ using namespace boost;
     - This would result in old clients getting confused about which spork is for what
 */
 #define SPORK_START 10001
-#define SPORK_END 10019
+#define SPORK_END 10020
 
 #define SPORK_2_SWIFTTX 10001
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING 10002
@@ -43,8 +43,9 @@ using namespace boost;
 #define SPORK_16_MN_WINNER_MINIMUM_AGE 10015
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3 10016
 #define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4 10017
-#define SPORK_19_ENABLE_ZEROCOIN 10018
-#define SPORK_20_ZEROCOIN_MAINTENANCE_MODE 10019
+#define SPORK_19_NEW_PROTOCOL_DYNAMIC 10018
+#define SPORK_20_ENABLE_ZEROCOIN 10019
+#define SPORK_21_ZEROCOIN_MAINTENANCE_MODE 10020
 
 #define SPORK_2_SWIFTTX_DEFAULT 978307200                         //2001-1-1
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT 1424217600        //2015-2-18
@@ -64,10 +65,11 @@ using namespace boost;
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT 1529303404    //ON
 #define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4_DEFAULT 4070908800          //OFF
                                                                    // Will be whatever value is provided during spork update.
-                                                                   // Example `spork SPORK_19_NEW_PROTOCOL_ENFORCEMENT_4 70910` will set active
-                                                                   // protocol version to `70910`.
-#define SPORK_19_ENABLE_ZEROCOIN_DEFAULT 4070908800               //OFF
-#define SPORK_20_ZEROCOIN_MAINTENANCE_MODE_DEFAULT 4070908800     //OFF
+                                                                   // Example `spork SPORK_21_NEW_PROTOCOL_ENFORCEMENT_4 70910` will set active
+                                                                   // protocol version to `70911`.
+#define SPORK_19_NEW_PROTOCOL_DYNAMIC_DEFAULT 4070908800          //OFF
+#define SPORK_20_ENABLE_ZEROCOIN_DEFAULT 4070908800               //OFF
+#define SPORK_21_ZEROCOIN_MAINTENANCE_MODE_DEFAULT 4070908800     //OFF
 
 class CSporkMessage;
 class CSporkManager;

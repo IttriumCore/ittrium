@@ -73,6 +73,10 @@ void OptionsModel::Init()
         settings.setValue("fHideZeroBalances", true);
     fHideZeroBalances = settings.value("fHideZeroBalances").toBool();
 
+    if (!settings.contains("fHideOrphans"))
+        settings.setValue("fHideOrphans", false);
+    fHideOrphans = settings.value("fHideOrphans").toBool();
+
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures").toBool();
@@ -113,9 +117,9 @@ void OptionsModel::Init()
         settings.setValue("bSpendZeroConfChange", false);
     if (!SoftSetBoolArg("-spendzeroconfchange", settings.value("bSpendZeroConfChange").toBool()))
         addOverriddenOption("-spendzeroconfchange");
-	if (!settings.contains("fShowOrphans"))
-		settings.setValue("fShowOrphans", true);
-	fShowOrphans = settings.value("fShowOrphans").toBool();
+//	if (!settings.contains("fShowOrphans"))
+//		settings.setValue("fShowOrphans", true);
+//	fShowOrphans = settings.value("fShowOrphans").toBool();
 #endif
 
     // Network
@@ -217,8 +221,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("bSpendZeroConfChange");
         case ShowMasternodesTab:
             return settings.value("fShowMasternodesTab");
-		case ShowOrphans:
-			return settings.value("fShowOrphans");
+//        case ShowOrphans:
+//           return settings.value("fShowOrphans");
 #endif
         case DisplayUnit:
             return nDisplayUnit;
@@ -238,6 +242,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case HideZeroBalances:
             return settings.value("fHideZeroBalances");
+        case HideOrphans:
+            return settings.value("fHideOrphans");
         case ZeromintPercentage:
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
@@ -312,11 +318,11 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
                 setRestartRequired(true);
             }
             break;
-		case ShowOrphans:
-			if (settings.value("fShowOrphans") != value) {
-				settings.setValue("fShowOrphans", value);
-				setRestartRequired(true);
-			}
+//		case ShowOrphans:
+//			if (settings.value("fShowOrphans") != value) {
+//				settings.setValue("fShowOrphans", value);
+//				setRestartRequired(true);
+//			}
         case ShowMasternodesTab:
             if (settings.value("fShowMasternodesTab") != value) {
                 settings.setValue("fShowMasternodesTab", value);
@@ -366,6 +372,11 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             fHideZeroBalances = value.toBool();
             settings.setValue("fHideZeroBalances", fHideZeroBalances);
             emit hideZeroBalancesChanged(fHideZeroBalances);
+            break;
+        case HideOrphans:
+            fHideOrphans = value.toBool();
+            settings.setValue("fHideOrphans", fHideOrphans);
+            emit hideOrphansChanged(fHideOrphans);
             break;
         case AnonymizeIttriumAmount:
             nAnonymizeIttriumAmount = value.toInt();

@@ -104,7 +104,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->dummyHideWidget->hide(); // Dummy widget with elements to hide
 
     //temporary disable for maintenance
-    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE)) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE)) {
         ui->pushButtonMintzXIT->setEnabled(false);
         ui->pushButtonMintzXIT->setToolTip(tr("zXIT is currently disabled due to maintenance."));
 
@@ -157,12 +157,12 @@ void PrivacyDialog::on_pushButtonMintzXIT_clicked()
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    if (GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN)) {
+    if (GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN)) {
         QMessageBox::information(this, tr("Mint Zerocoin"), tr("Zerocoin functionality is not enabled on the Ittrium network yet."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE)) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"), tr("zXIT is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
@@ -273,12 +273,12 @@ void PrivacyDialog::on_pushButtonSpendzXIT_clicked()
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
         return;
 
-    if (GetAdjustedTime() < GetSporkValue(SPORK_19_ENABLE_ZEROCOIN)) {
+    if (GetAdjustedTime() < GetSporkValue(SPORK_20_ENABLE_ZEROCOIN)) {
         QMessageBox::information(this, tr("Spend Zerocoin"), tr("Zerocoin functionality is not enabled on the Ittrium network yet."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_20_ZEROCOIN_MAINTENANCE_MODE)) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_21_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
                                  tr("zXIT is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;

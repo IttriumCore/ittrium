@@ -240,7 +240,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="showOrphans">
+           <widget class="QCheckBox" name="checkBoxHideOrphans">
             <property name="text">
              <string>Filter Orphans from Transaction History</string>
             </property>
