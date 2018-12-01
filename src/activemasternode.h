@@ -3,6 +3,7 @@
 // Copyright (c) 2015-2016 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef ACTIVEMASTERNODE_H
 #define ACTIVEMASTERNODE_H
 

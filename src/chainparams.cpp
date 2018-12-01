@@ -65,13 +65,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
  	(69333, uint256("0x751aca0839a2a72ef1f400d17f2461f0eafb185508ef5639b4336d2d7f2cbc9e"))
  	(90369, uint256("0xa9e3259d93d0e5e96bd35f9718890d708a86452a507838cab6dc442c7717b4db"))
 	(99879, uint256("0x09f07b93863c421d8826ef7eafb1610237f2f817820ac2ab6ee2c1e1793de3d6"))
-	(100439, uint256("0xe733ee2c2139fc2acc545f4c8291c12aa1ef92809648b362384d4df705420222"));
+	(100439, uint256("0xe733ee2c2139fc2acc545f4c8291c12aa1ef92809648b362384d4df705420222"))
 	(120000, uint256("0xe71bfd9b83553901ff9044c7a7b572de6b5a2f577691603319d6dccbfbf921666"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1533333333, 	// * UNIX timestamp of last checkpoint block
-    100439,    			// * total number of transactions between genesis and last checkpoint
+    120000,    			// * total number of transactions between genesis and last checkpoint
     				//   (the tx=... number in the SetBestChain debug.log lines)
     1440        	// * estimated number of transactions per day after checkpoint
 };
@@ -217,7 +217,7 @@ public:
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
 
         /** Staking Requirements */
-        nStakeMinStartProtocol = 70910; // Starting protocol version (ActiveProtocol())
+        nStakeMinStartProtocol = 70911; // Starting protocol version (ActiveProtocol())
         nStakeMinConfirmations = 60; // Required number of confirmations
         nStakeMinAmount = 5 * COIN; // Minimum required staking amount
     }

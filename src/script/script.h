@@ -594,8 +594,9 @@ public:
     bool IsZerocoinSpend() const;
 
     /** Called by IsStandardTx and P2SH/BIP62 VerifyScript (which makes it consensus-critical). */
-    bool IsPushOnly(const_iterator pc) const;
     bool IsPushOnly() const;
+    bool IsPushOnly(const_iterator pc) const;
+    //bool IsPushOnly() const;  //v2.0.3//
     /**
      * Returns whether the script is guaranteed to fail at execution,
      * regardless of the initial stack. This allows outputs to be pruned
