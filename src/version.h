@@ -17,13 +17,13 @@ static const int PROTOCOL_VERSION = 70911;
 static const int INIT_PROTO_VERSION = 209;
 
 //! In this version, 'getheaders' was introduced.
-static const int GETHEADERS_VERSION = 70077;
+static const int GETHEADERS_VERSION = 70911;
 
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70900;
+static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70911;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT15 = 70811;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT17 = 70900;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT18 = 70910;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT18 = 70911;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this
