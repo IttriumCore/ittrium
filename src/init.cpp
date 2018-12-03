@@ -1372,12 +1372,6 @@ bool AppInit2(boost::thread_group& threadGroup)
                                 listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
                             pindex = chainActive.Next(pindex);
                         }
-
-                        // if we have iterated to the end of the blockchain, then checkpoints should be in sync
-                        if (pindex->nHeight + 1 <= chainActive.Height())
-                            pindex = chainActive[pindex->nHeight + 1];
-                        else
-                            break;
                     }
                 }
 
