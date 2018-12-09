@@ -228,8 +228,8 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
                                           clientModel(0),
                                           historyPtr(0),
                                           cachedNodeid(-1),
-										  peersTableContextMenu(0),
-										  banTableContextMenu(0)
+                                          peersTableContextMenu(0),
+                                          banTableContextMenu(0)
 {
     ui->setupUi(this);
     GUIUtil::restoreWindowGeometry("nRPCConsoleWindow", this->size(), this);

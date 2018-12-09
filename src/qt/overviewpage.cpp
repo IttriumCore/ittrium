@@ -417,5 +417,6 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 
 void OverviewPage::hideOrphans(bool fHide)
 {
-    filter->setHideOrphans(fHide);
+    if (filter)
+        filter->setHideOrphans(fHide);
 }

@@ -60,6 +60,7 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     connect(ui->connectSocks, SIGNAL(toggled(bool)), ui->proxyPort, SLOT(setEnabled(bool)));
 
     ui->proxyIp->installEventFilter(this);
+    ui->proxyPort->installEventFilter(this);
 
 /* Window elements init */
 #ifdef Q_OS_MAC
@@ -112,27 +113,18 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
         QLocale locale(langStr);
 
         /** check if the locale name consists of 2 parts (language_country) */
-        if (langStr.contains("_")) {
-#if QT_VERSION >= 0x040800
+        if(langStr.contains("_"))
+        {
             /** display language strings as "native language - native country (locale name)", e.g. "Deutsch - Deutschland (de)" */
             ui->lang->addItem(locale.nativeLanguageName() + QString(" - ") + locale.nativeCountryName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
-#else
-            /** display language strings as "language - country (locale name)", e.g. "German - Germany (de)" */
-            ui->lang->addItem(QLocale::languageToString(locale.language()) + QString(" - ") + QLocale::countryToString(locale.country()) + QString(" (") + langStr + QString(")"), QVariant(langStr));
-#endif
-        } else {
-#if QT_VERSION >= 0x040800
+        }
+        else
+        {
             /** display language strings as "native language (locale name)", e.g. "Deutsch (de)" */
             ui->lang->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
-#else
-            /** display language strings as "language (locale name)", e.g. "German (de)" */
-            ui->lang->addItem(QLocale::languageToString(locale.language()) + QString(" (") + langStr + QString(")"), QVariant(langStr));
-#endif
         }
     }
-#if QT_VERSION >= 0x040700
     ui->thirdPartyTxUrls->setPlaceholderText("https://example.com/tx/%s");
-#endif
 
     ui->unit->setModel(new BitcoinUnits(this));
 
@@ -142,7 +134,7 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     mapper->setOrientation(Qt::Vertical);
 
     /* setup/change UI elements when proxy IP is invalid/valid */
-    connect(this, SIGNAL(proxyIpChecks(QValidatedLineEdit*, int)), this, SLOT(doProxyIpChecks(QValidatedLineEdit*, int)));
+    connect(this, SIGNAL(proxyIpChecks(QValidatedLineEdit*, QLineEdit*)), this, SLOT(doProxyIpChecks(QValidatedLineEdit*, QLineEdit*)));
 }
 
 OptionsDialog::~OptionsDialog()
@@ -168,6 +160,9 @@ void OptionsDialog::setModel(OptionsModel* model)
         mapper->setModel(model);
         setMapper();
         mapper->toFirst();
+
+        /* keep consistency for action triggered elsewhere */
+        connect(model, SIGNAL(hideOrphansChanged(bool)), this, SLOT(updateHideOrphans(bool)));
     }
 
     /* warn when one of the following settings changes by user action (placed here so init via mapper doesn't trigger them) */
@@ -177,7 +172,6 @@ void OptionsDialog::setModel(OptionsModel* model)
     connect(ui->threadsScriptVerif, SIGNAL(valueChanged(int)), this, SLOT(showRestartWarning()));
     /* Wallet */
     connect(ui->spendZeroConfChange, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
-//	connect(ui->showOrphans, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
     /* Network */
     connect(ui->allowIncoming, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
     connect(ui->connectSocks, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
@@ -202,7 +196,6 @@ void OptionsDialog::setMapper()
 
     /* Wallet */
     mapper->addMapping(ui->spendZeroConfChange, OptionsModel::SpendZeroConfChange);
-//	mapper->addMapping(ui->showOrphans, OptionsModel::ShowOrphans);
     mapper->addMapping(ui->coinControlFeatures, OptionsModel::CoinControlFeatures);
 
     /* Network */
@@ -299,30 +292,50 @@ void OptionsDialog::clearStatusLabel()
     ui->statusLabel->clear();
 }
 
-void OptionsDialog::doProxyIpChecks(QValidatedLineEdit* pUiProxyIp, int nProxyPort)
+void OptionsDialog::updateHideOrphans(bool fHide)
 {
-    Q_UNUSED(nProxyPort);
+    if(ui->checkBoxHideOrphans->isChecked() != fHide)
+        ui->checkBoxHideOrphans->setChecked(fHide);
+}
 
+void OptionsDialog::doProxyIpChecks(QValidatedLineEdit* pUiProxyIp, QLineEdit* pUiProxyPort)
+{
     const std::string strAddrProxy = pUiProxyIp->text().toStdString();
     CService addrProxy;
 
-    /* Check for a valid IPv4 / IPv6 address */
+    // Check for a valid IPv4 / IPv6 address
     if (!(fProxyIpValid = LookupNumeric(strAddrProxy.c_str(), addrProxy))) {
         disableOkButton();
         pUiProxyIp->setValid(false);
         ui->statusLabel->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel->setText(tr("The supplied proxy address is invalid."));
-    } else {
-        enableOkButton();
-        ui->statusLabel->clear();
+        return;
     }
+    // Check proxy port
+    if (!pUiProxyPort->hasAcceptableInput()){
+        disableOkButton();
+        ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+        ui->statusLabel->setText(tr("The supplied proxy port is invalid."));
+        return;
+    }
+
+    proxyType checkProxy = proxyType(addrProxy);
+    if (!checkProxy.IsValid()) {
+        disableOkButton();
+        ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+        ui->statusLabel->setText(tr("The supplied proxy settings are invalid."));
+        return;
+    }
+
+    enableOkButton();
+    ui->statusLabel->clear();
 }
 
 bool OptionsDialog::eventFilter(QObject* object, QEvent* event)
 {
     if (event->type() == QEvent::FocusOut) {
-        if (object == ui->proxyIp) {
-            emit proxyIpChecks(ui->proxyIp, ui->proxyPort->text().toInt());
+        if (object == ui->proxyIp || object == ui->proxyPort) {
+            emit proxyIpChecks(ui->proxyIp, ui->proxyPort);
         }
     }
     return QDialog::eventFilter(object, event);
