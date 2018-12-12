@@ -69,9 +69,17 @@ void CActiveMasternode::ManageStatus()
             service = CService(strMasterNodeAddr);
         }
 
-        // The service needs the correct default port to work properly
-        if(!CMasternodeBroadcast::CheckDefaultPort(strMasterNodeAddr, errorMessage, "CActiveMasternode::ManageStatus()"))
+        if (Params().NetworkID() == CBaseChainParams::MAIN) {
+            if (service.GetPort() != 39993) {
+                notCapableReason = strprintf("Invalid port: %u - only 39993 is supported on mainnet.", service.GetPort());
+                LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
+                return;
+            }
+        } else if (service.GetPort() == 39993) {
+            notCapableReason = strprintf("Invalid port: %u - 39993 is only supported on mainnet.", service.GetPort());
+            LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
             return;
+        }
 
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString());
 
@@ -260,10 +268,17 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
     }
 
     CService service = CService(strService);
-
-    // The service needs the correct default port to work properly
-    if(!CMasternodeBroadcast::CheckDefaultPort(strService, errorMessage, "CActiveMasternode::Register()"))
+    if (Params().NetworkID() == CBaseChainParams::MAIN) {
+        if (service.GetPort() != 39993) {
+            errorMessage = strprintf("Invalid port %u for masternode %s - only 39993 is supported on mainnet.", service.GetPort(), strService);
+            LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
+            return false;
+        }
+    } else if (service.GetPort() == 39993) {
+        errorMessage = strprintf("Invalid port %u for masternode %s - 39993 is only supported on mainnet.", service.GetPort(), strService);
+        LogPrintf("CActiveMasternode::Register() - %s\n", errorMessage);
         return false;
+    }
 
     addrman.Add(CAddress(service), CNetAddr("127.0.0.1"), 2 * 60 * 60);
 

@@ -113,7 +113,7 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-		pchMessageStart[0] = 0xf9;
+        pchMessageStart[0] = 0xf9;
         pchMessageStart[1] = 0xc3;
         pchMessageStart[2] = 0xb9;
         pchMessageStart[3] = 0xf0;

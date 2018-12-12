@@ -216,7 +216,6 @@ libbitcoin_server_a_SOURCES = \
   rpcrawtransaction.cpp \
   rpcserver.cpp \
   script/sigcache.cpp \
-  sporkdb.cpp \
   timedata.cpp \
   txdb.cpp \
   txmempool.cpp \

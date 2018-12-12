@@ -18,7 +18,6 @@
 #include "miner.h"
 #include "obfuscation.h"
 #include "primitives/transaction.h"
-#include "scheduler.h"
 #include "ui_interface.h"
 #include "wallet.h"
 
@@ -85,7 +84,7 @@ static CNode* pnodeLocalHost = NULL;
 uint64_t nLocalHostNonce = 0;
 static std::vector<ListenSocket> vhListenSocket;
 CAddrMan addrman;
-int nMaxConnections = 125;
+int nMaxConnections = 64;
 bool fAddressesInitialized = false;
 
 vector<CNode*> vNodes;
