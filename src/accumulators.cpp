@@ -1,5 +1,5 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2018 The Ittrium Core developers
+// Copyright (c) 2018-2019 The Ittrium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -155,7 +155,7 @@ bool EraseCheckpoints(int nStartHeight, int nEndHeight)
 //Get checkpoint value for a specific block height
 bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint)
 {
-    if (nHeight <= chainActive.Height() && chainActive[nHeight]->GetBlockHeader().nVersion < Params().Zerocoin_HeaderVersion()) {
+    if (nHeight < Params().Zerocoin_StartHeight()) {
         nCheckpoint = 0;
         return true;
     }
@@ -189,7 +189,7 @@ bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint)
         }
 
         //make sure this block is eligible for accumulation
-        if (pindex->GetBlockHeader().nVersion < Params().Zerocoin_HeaderVersion()) {
+        if (pindex->nHeight < Params().Zerocoin_StartHeight()) {
             pindex = chainActive[pindex->nHeight + 1];
             continue;
         }

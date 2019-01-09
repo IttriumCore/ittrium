@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2016-2018 The PIVX developers
-// Copyright (c) 2018-2018 The Ittrium developers
+// Copyright (c) 2018-2019 The Ittrium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -63,31 +63,39 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
     if (fLiteMode) return; //disable all obfuscation/masternode related functionality
 
     if (strCommand == "spork") {
-        //LogPrintf("ProcessSpork::spork\n");
+        if(fDebug) LogPrintf("%s: spork\n", __func__);
+
         CDataStream vMsg(vRecv);
         CSporkMessage spork;
         vRecv >> spork;
 
-        if (chainActive.Tip() == NULL) return;
+        if (chainActive.Tip() == NULL) {
+			if(fDebug) LogPrintf("%s: chainActive.Tip() is null\n", __func__);
+			return;
+		}
 
         // Ignore spork messages about unknown/deleted sporks
         std::string strSpork = sporkManager.GetSporkNameByID(spork.nSporkID);
-        if (strSpork == "Unknown") return;
+        if (strSpork == "Unknown") {
+			if(fDebug) LogPrintf("%s: unknown spork\n", __func__);
+			return;
+		}
 
         uint256 hash = spork.GetHash();
         if (mapSporksActive.count(spork.nSporkID)) {
             if (mapSporksActive[spork.nSporkID].nTimeSigned >= spork.nTimeSigned) {
-                if (fDebug) LogPrintf("spork - seen %s block %d \n", hash.ToString(), chainActive.Tip()->nHeight);
+                if(fDebug) LogPrintf("%s: seen %s block %d \n", __func__, hash.ToString(), chainActive.Tip()->nHeight);
+                
                 return;
             } else {
-                if (fDebug) LogPrintf("spork - got updated spork %s block %d \n", hash.ToString(), chainActive.Tip()->nHeight);
+                if(fDebug) LogPrintf("%s: got updated spork %s block %d \n", __func__, hash.ToString(), chainActive.Tip()->nHeight);
             }
         }
 
         LogPrintf("spork - new %s ID %d Time %d bestHeight %d\n", hash.ToString(), spork.nSporkID, spork.nValue, chainActive.Tip()->nHeight);
 
         if (!sporkManager.CheckSignature(spork)) {
-            LogPrintf("spork - invalid signature\n");
+            LogPrintf("%s: invalid signature\n", __func__);
             Misbehaving(pfrom->GetId(), 100);
             return;
         }
@@ -95,9 +103,6 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
         mapSporks[hash] = spork;
         mapSporksActive[spork.nSporkID] = spork;
         sporkManager.Relay(spork);
-
-        //does a task if needed
-        ExecuteSpork(spork.nSporkID, spork.nValue);
 
         // Ittrium: add to spork database.
         pSporkDB->WriteSpork(spork.nSporkID, spork);
@@ -126,17 +131,10 @@ int64_t GetSporkValue(int nSporkID)
         if (nSporkID == SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) r = SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT) r = SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_10_MASTERNODE_PAY_UPDATED_NODES) r = SPORK_10_MASTERNODE_PAY_UPDATED_NODES_DEFAULT;
-        if (nSporkID == SPORK_11_RESET_BUDGET) r = SPORK_11_RESET_BUDGET_DEFAULT;
-        if (nSporkID == SPORK_12_RECONSIDER_BLOCKS) r = SPORK_12_RECONSIDER_BLOCKS_DEFAULT;
         if (nSporkID == SPORK_13_ENABLE_SUPERBLOCKS) r = SPORK_13_ENABLE_SUPERBLOCKS_DEFAULT;
         if (nSporkID == SPORK_14_NEW_PROTOCOL_ENFORCEMENT) r = SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) r = SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2_DEFAULT;
-        if (nSporkID == SPORK_16_MN_WINNER_MINIMUM_AGE) r = SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT;
-        if (nSporkID == SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) r = SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT;
-        if (nSporkID == SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4) r = SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4_DEFAULT;
-        if (nSporkID == SPORK_19_NEW_PROTOCOL_DYNAMIC) r = SPORK_19_NEW_PROTOCOL_DYNAMIC_DEFAULT;
-        if (nSporkID == SPORK_20_ENABLE_ZEROCOIN) r = SPORK_20_ENABLE_ZEROCOIN_DEFAULT;
-        if (nSporkID == SPORK_21_ZEROCOIN_MAINTENANCE_MODE) r = SPORK_21_ZEROCOIN_MAINTENANCE_MODE_DEFAULT;
+        if (nSporkID == SPORK_16_ZEROCOIN_MAINTENANCE_MODE) r = SPORK_16_ZEROCOIN_MAINTENANCE_MODE_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -152,19 +150,6 @@ bool IsSporkActive(int nSporkID)
     return r < GetTime();
 }
 
-void ExecuteSpork(int nSporkID, int nValue)
-{
-    if (nSporkID == SPORK_11_RESET_BUDGET && nValue == 1) {
-        budget.Clear();
-    }
-
-    //correct fork via spork technology
-    if (nSporkID == SPORK_12_RECONSIDER_BLOCKS && nValue > 0) {
-        LogPrintf("Spork::ExecuteSpork -- Reconsider Last %d Blocks\n", nValue);
-
-        ReprocessBlocks(nValue);
-    }
-}
 
 void ReprocessBlocks(int nBlocks)
 {
@@ -285,17 +270,10 @@ int CSporkManager::GetSporkIDByName(std::string strName)
     if (strName == "SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT") return SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT;
     if (strName == "SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT") return SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT;
     if (strName == "SPORK_10_MASTERNODE_PAY_UPDATED_NODES") return SPORK_10_MASTERNODE_PAY_UPDATED_NODES;
-    if (strName == "SPORK_11_RESET_BUDGET") return SPORK_11_RESET_BUDGET;
-    if (strName == "SPORK_12_RECONSIDER_BLOCKS") return SPORK_12_RECONSIDER_BLOCKS;
     if (strName == "SPORK_13_ENABLE_SUPERBLOCKS") return SPORK_13_ENABLE_SUPERBLOCKS;
     if (strName == "SPORK_14_NEW_PROTOCOL_ENFORCEMENT") return SPORK_14_NEW_PROTOCOL_ENFORCEMENT;
     if (strName == "SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2") return SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2;
-    if (strName == "SPORK_16_MN_WINNER_MINIMUM_AGE") return SPORK_16_MN_WINNER_MINIMUM_AGE;
-    if (strName == "SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3") return SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3;
-    if (strName == "SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4") return SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4;
-    if (strName == "SPORK_19_NEW_PROTOCOL_DYNAMIC") return SPORK_19_NEW_PROTOCOL_DYNAMIC;
-    if (strName == "SPORK_20_ENABLE_ZEROCOIN") return SPORK_20_ENABLE_ZEROCOIN;
-    if (strName == "SPORK_21_ZEROCOIN_MAINTENANCE_MODE") return SPORK_21_ZEROCOIN_MAINTENANCE_MODE;
+    if (strName == "SPORK_16_ZEROCOIN_MAINTENANCE_MODE") return SPORK_16_ZEROCOIN_MAINTENANCE_MODE;
 
     return -1;
 }
@@ -309,17 +287,10 @@ std::string CSporkManager::GetSporkNameByID(int id)
     if (id == SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT) return "SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT";
     if (id == SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT) return "SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT";
     if (id == SPORK_10_MASTERNODE_PAY_UPDATED_NODES) return "SPORK_10_MASTERNODE_PAY_UPDATED_NODES";
-    if (id == SPORK_11_RESET_BUDGET) return "SPORK_11_RESET_BUDGET";
-    if (id == SPORK_12_RECONSIDER_BLOCKS) return "SPORK_12_RECONSIDER_BLOCKS";
     if (id == SPORK_13_ENABLE_SUPERBLOCKS) return "SPORK_13_ENABLE_SUPERBLOCKS";
     if (id == SPORK_14_NEW_PROTOCOL_ENFORCEMENT) return "SPORK_14_NEW_PROTOCOL_ENFORCEMENT";
     if (id == SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) return "SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2";
-    if (id == SPORK_16_MN_WINNER_MINIMUM_AGE) return "SPORK_16_MN_WINNER_MINIMUM_AGE";
-    if (id == SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3) return "SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3";
-    if (id == SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4) return "SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4";
-    if (id == SPORK_19_NEW_PROTOCOL_DYNAMIC) return "SPORK_19_NEW_PROTOCOL_DYNAMIC";
-    if (id == SPORK_20_ENABLE_ZEROCOIN) return "SPORK_20_ENABLE_ZEROCOIN";
-    if (id == SPORK_21_ZEROCOIN_MAINTENANCE_MODE) return "SPORK_21_ZEROCOIN_MAINTENANCE_MODE";
+    if (id == SPORK_16_ZEROCOIN_MAINTENANCE_MODE) return "SPORK_16_ZEROCOIN_MAINTENANCE_MODE";
 
     return "Unknown";
 }

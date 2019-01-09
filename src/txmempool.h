@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2016-2017 The PIVX developers
+// Copyright (c) 2016-2017 The Ittrium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +19,7 @@ class CAutoFile;
 
 inline double AllowFreeThreshold()
 {
-    return COIN * 144 / 250;
+    return COIN * 1440 / 250;
 }
 
 inline bool AllowFree(double dPriority)

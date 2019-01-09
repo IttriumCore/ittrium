@@ -1352,32 +1352,20 @@ bool AppInit2(boost::thread_group& threadGroup)
 
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
-                    int nZerocoinStartHeight = GetZerocoinStartHeight();
-                    if (nZerocoinStartHeight != 0) {
-                        if (chainActive.Height() > nZerocoinStartHeight) {
-                            RecalculateZXITMinted();
-                            RecalculateZXITSpent();
-                        }
+                    if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
+                        RecalculateZXITMinted();
+                        RecalculateZXITSpent();
                     }
                     RecalculateXITSupply(1);
                 }
 
                 // Force recalculation of accumulators.
                 if (GetBoolArg("-reindexaccumulators", false)) {
-                    int nZerocoinStartHeight = GetZerocoinStartHeight();
-                    if (nZerocoinStartHeight != 0) {
-                        CBlockIndex* pindex = chainActive[nZerocoinStartHeight];
-                        while (pindex->nHeight < chainActive.Height()) {
-                            if (!count(listAccCheckpointsNoDB.begin(), listAccCheckpointsNoDB.end(), pindex->nAccumulatorCheckpoint))
-                                listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
-                            pindex = chainActive.Next(pindex);
-                        }
-
-                        // if we have iterated to the end of the blockchain, then checkpoints should be in sync
-                        if (pindex->nHeight + 1 <= chainActive.Height())
-                            pindex = chainActive[pindex->nHeight + 1];
-                        else
-                            break;
+                    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
+                    while (pindex->nHeight < chainActive.Height()) {
+                        if (!count(listAccCheckpointsNoDB.begin(), listAccCheckpointsNoDB.end(), pindex->nAccumulatorCheckpoint))
+                            listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
+                        pindex = chainActive.Next(pindex);
                     }
                 }
 

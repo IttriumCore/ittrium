@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Ittrium developers
+// Copyright (c) 2018-2019 The Ittrium developerss
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -67,6 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(99879, uint256("0x09f07b93863c421d8826ef7eafb1610237f2f817820ac2ab6ee2c1e1793de3d6"))
 	(100439, uint256("0xe733ee2c2139fc2acc545f4c8291c12aa1ef92809648b362384d4df705420222"))
 	(120000, uint256("0xe71bfd9b83553901ff9044c7a7b572de6b5a2f577691603319d6dccbfbf921666"));
+  //(151259, uint256("0x"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -134,6 +135,16 @@ public:
         nModifierUpdateBlock = 1;  //***CHECK-->615800***
         nMaxMoneyOut = 33000000 * COIN;
 
+        /** Height or Time Based Activations **/
+        nModifierUpdateBlock = 0;
+        nZerocoinStartHeight = 151301;
+        nZerocoinStartTime = 1546486413; // Jan 3, 2019 3:33:33 AM (Happy 10th Birthday Bitcoin!)
+        nBlockEnforceSerialRange = 151303; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 151304; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 151302; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 151259; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 151300; //Start enforcing the invalid UTXO's
+
         /**
 		block.nTime = 1533333333 
 		block.nNonce = 445453 
@@ -165,11 +176,11 @@ public:
         assert(hashGenesisBlock == uint256("0x000000fdacddaba54eb66a4c09dc795efbfc75fcd0572c99f489424367bc9ec9"));
         assert(genesis.hashMerkleRoot == uint256("0xfc052cd7cd34c839bde40a2c9e484ef50c48858667c3d6dd2938b6668479c374"));
 
-	vSeeds.push_back(CDNSSeedData("01.ittriumno.de", "01.ittriumno.de"));
-	vSeeds.push_back(CDNSSeedData("02.ittriumno.de", "02.ittriumno.de"));
-	vSeeds.push_back(CDNSSeedData("03.ittriumno.de", "03.ittriumno.de"));
-	vSeeds.push_back(CDNSSeedData("04.ittriumno.de", "04.ittriumno.de"));
-	vSeeds.push_back(CDNSSeedData("05.ittriumno.de", "05.ittriumno.de"));
+        vSeeds.push_back(CDNSSeedData("88.99.123.145", "88.99.123.145"));
+        vSeeds.push_back(CDNSSeedData("02.ittriumno.de", "02.ittriumno.de"));
+        vSeeds.push_back(CDNSSeedData("03.ittriumno.de", "03.ittriumno.de"));
+        vSeeds.push_back(CDNSSeedData("04.ittriumno.de", "04.ittriumno.de"));
+        vSeeds.push_back(CDNSSeedData("05.ittriumno.de", "05.ittriumno.de"));
 
         // Ittrium addresses start with 'i'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 103);
@@ -184,7 +195,7 @@ public:
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
 
-        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+        //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
@@ -213,14 +224,9 @@ public:
         nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
-        nDefaultSecurityLevel = 100; //full security level for accumulators
+        nDefaultSecurityLevel = 42; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
-
-        /** Staking Requirements */
-        nStakeMinStartProtocol = 70911; // Starting protocol version (ActiveProtocol())
-        nStakeMinConfirmations = 60; // Required number of confirmations
-        nStakeMinAmount = 5 * COIN; // Minimum required staking amount
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -291,7 +297,7 @@ public:
         // Testnet ittrium BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
-        convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
+        //convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = false;
@@ -306,10 +312,6 @@ public:
         //strObfuscationPoolDummyAddress = "";
         nStartMasternodePayments = 150; 
 
-        /** Staking Requirements */
-        nStakeMinStartProtocol = 70910; // Starting protocol version (ActiveProtocol())
-        nStakeMinConfirmations = 60; // Required number of confirmations
-        nStakeMinAmount = 5 * COIN; // Minimum required staking amount
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
